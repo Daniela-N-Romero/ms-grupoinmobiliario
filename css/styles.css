@@ -1,0 +1,22 @@
+.header{
+    background-color: rgba(0, 0, 255, 0.411);
+}
+
+.nav-link, .nav-link.show {
+    text-align: center;
+}
+
+.navbar-nav .dropdown-menu{
+    background-color: transparent;
+}
+
+.nav-link.nav-link-inlineblock{
+    display: inline-block;
+}
+
+.dropdown-toggle{
+    border: 1px solid rgba(124, 124, 124, 0.474);
+    border-radius: 20% 20%;
+    padding: 0 .8em;
+
+} 
