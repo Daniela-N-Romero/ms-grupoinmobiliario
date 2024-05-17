@@ -18,7 +18,7 @@
 <body>
     <header class="header container-fluid">
         
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-md d-md-flex">
 
                     <a href="/index.html"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +31,7 @@
                         <!--copia lo de arriba  -->
                             <li class="nav-item"><a class="nav-link" aria-current="page" href="/index.html">Inicio</a></li>
                             <li class="nav-item dropdown text-center"><a class="nav-link nav-link-inlineblock" href="./pages/nosotros.html">Nosotros</a>
-                                <a class="nav-link dropdown-toggle d-inline ms-2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <a class="nav-link dropdown-toggle d-inline" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/pages/nosotros.html">Quienes somos</a></li>
                                     <li><hr class="dropdown-divider"/></li>
@@ -42,7 +42,7 @@
                             <li class="nav-item">
                                     
                                 <li class="nav-item dropdown text-center"><a class="nav-link nav-link-inlineblock" href="./pages/obras.html">Nuestras Obras</a>
-                                    <a class="nav-link dropdown-toggle d-inline ms-2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                    <a class="nav-link dropdown-toggle d-inline" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                                     <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="/pages/viviendas.html">Viviendas personalizadas</a></li>
                                             <li><hr class="dropdown-divider"/></li>
@@ -70,13 +70,6 @@
                 <li class="slider_item"><img class="slider__img" src="./assets/8.jpeg" alt="..."></li>
             </ul>
         </div> -->
-
-        <section class="prueba">
-            <p>lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit ipsum neque nisi mollitia rerum odit, sed recusandae tempora. At labore, expedita veniam esse relore lorem     prehenderit non voluptatumeque ad consectetur ex itaque eaque odit.
-            </p>
-            <a href="">hola soy un enlace</a>
-        </section> 
-
 
         <section class="index__hero">
             <!-- The video -->
@@ -128,33 +121,28 @@
 
     <footer class="footer cointainer-fluid">
 
-        <div class="row">
+        <div class="row gx-0 flex-column flex-md-row align-items-center">
         
-            <div class="">
-                <a class="" href="./index.html"><img class="" src="/assets/3.png" alt=""></a>
+            <div class="col-md-4 d-md-flex flex-md-column align-items-center">
+                <a href="/index.html"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo mt-3" role="button" tabindex="0"></a>
                 <ul class="footer__breadcrumbs">
                         <li class="footer__breadcrumb"><a href="./index.html">Inicio</a></li>
                 </ul>
             </div>
-            <div class="">
+            <div class="col-md-4">
                 <ul class="">
                     <li class="dato-item"><i class="bi bi-telephone"></i>11-1111-1111</li>
                     <li class="dato-item"><i class="bi bi-geo-alt"></i>Berazategui</li>
                     <li class="dato-item"><i class="bi bi-envelope"></i>ejemplo@gmail.com</li>
                 </ul>
             </div>
-            <div class="socialmedia">
+            <div class="socialmedia col-md-2">
                     <a class="mx-3 mx-md-0" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>                  
                     <a class="mx-3 mx-md-0" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                     
             </div>
-
         </div>
-
-
-
-
-
+      
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
