@@ -15,20 +15,14 @@
         }
         &--li{
             color: $primary-color-dark-blue;
-            margin-bottom: .3rem;
+            margin-bottom: .6rem;
             i{
                 padding-right: .5rem;
             }
             a{
-                color: $primary-color-dark-blue;
-                font-weight: 700;
-                padding: .3rem;
+                @extend %btn-dark;
                 &:hover{
-
-                    color: $secondary-color-purple;
-                    transition: .5s;
-                    border-radius: 5px;
-                    box-shadow: 5px 5px 10px $secondary-color-dark-gray;
+                    @extend %btn-hover-dark-blue;
                 }
             }
         }
@@ -44,15 +38,24 @@
         }
         &--contacto{
             @include min-width(992px){
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
+                
                     li{
                         display: inline-block;
+                        
                     }
             }
-
+            
+        }
+        &__datos{
+            @include min-width(1024px){
+                min-width: 80%;
+                
+            }
         }
     }
 }

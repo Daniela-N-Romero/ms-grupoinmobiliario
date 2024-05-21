@@ -1,4 +1,9 @@
-.logo{
+
+%small-logo{
     width: 7rem;
-    margin-left: 1rem;
+    margin-left: 1rem; 
+}
+
+.logo{
+    @extend %small-logo;
 }

@@ -11,8 +11,8 @@
         }
 
     }    a{
-        color: white;
-    }
+                @extend %btn-light;
+        }
     
     &-toggler{
         background-color: white;
@@ -32,31 +32,36 @@
     background-color: $primary-color-gray;
     a{
         color: $primary-color-blue;
+        &:hover{
+            background-color: $primary-color-light-blue-transparent;
+        }
     }
 }
 
-.nav-link{
-    &:hover{color: $primary-color-light-blue;}
+.nav-link.nav-link-block{
+    &:hover{@extend %btn-hover-light-border;}
     &.show{color: $primary-color-light-blue}; 
 }
 
-.nav-link.nav-link-inlineblock {
-    display: inline-block;
-}
-
 .nav-link.dropdown-toggle{
-        &.show{
-        color: $secondary-color-purple;
-
-    }
-        @include min-width(768px){
-            margin-right: 1.5rem;
+            &.show{
+        color: $secondary-color-dark-gray;
     }
 }
 
-.navbar-expand-md .navbar-nav .nav-link{
+.nav-item.dropdown{
     @include min-width(768px){
-        padding-right:0;
-        padding-left: 1rem;
+        margin-right:.2rem;
+        margin-left: 1rem;
+        &:hover{
+            color: white;
+            background-color: transparent;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
+            transition: all .5s;
+        a:hover{
+            color: $primary-color-gray;
+        }    
+        }
     }
+
 }

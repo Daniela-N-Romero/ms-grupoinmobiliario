@@ -1,5 +1,6 @@
 
 $primary-color-gray:rgb(240, 236, 229);
+$primary-color-light-blue-transparent:rgba(182, 187, 196, 0.315);
 $primary-color-light-blue:rgb(182, 187, 196);
 $primary-color-blue:rgb(49, 48, 77);
 $primary-color-dark-blue: rgb(22, 26, 48);
@@ -7,11 +8,8 @@ $primary-color-dark-blue: rgb(22, 26, 48);
 
 $secondary-color-light-gray:rgb(243, 248, 246);
 $secondary-color-dark-gray:rgb(156, 160, 160);
+$secondary-color-light-blue-transparent:rgba(188, 208, 244, 0.418);
 $secondary-color-light-blue:rgb(188, 208, 244);
 $secondary-color-purple:rgb(67, 65, 124);
 $secondary-color-dark-purple: rgb(50, 59, 110);
 
-%small-logo{
-    width: 7rem;
-    margin-left: 1rem; 
-}
