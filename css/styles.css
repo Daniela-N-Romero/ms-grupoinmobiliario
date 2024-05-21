@@ -89,6 +89,9 @@ ul {
     align-content: center;
   }
 }
+.navbar a {
+  font-size: 1.3rem;
+}
 .navbar-toggler {
   background-color: white;
   margin-right: 1rem;
@@ -111,7 +114,14 @@ ul {
 .nav-link.nav-link-block.show {
   color: rgb(182, 187, 196);
 }
+.nav-link.nav-link-block:hover {
+  color: rgb(240, 236, 229);
+}
 
+.nav-link.dropdown-toggle {
+  font-size: 1.3rem;
+  color: rgb(240, 236, 229);
+}
 .nav-link.dropdown-toggle.show {
   color: rgb(156, 160, 160);
 }
@@ -121,17 +131,19 @@ ul {
     margin-right: 0.2rem;
     margin-left: 1rem;
   }
+  .nav-item.dropdownhover {
+    color: white;
+  }
+  .nav-item.dropdown .nav-link-inlineblock:hover {
+    color: rgb(240, 236, 229);
+  }
   .nav-item.dropdown:hover {
     color: white;
     background-color: transparent;
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
     transition: all 0.5s;
   }
-  .nav-item.dropdown:hover a:hover {
-    color: rgb(240, 236, 229);
-  }
 }
-
 section.index_hero {
   width: 100vw;
 }
@@ -148,19 +160,23 @@ section.index_hero {
   color: rgb(240, 236, 229);
 }
 
-.footer__div--li a:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(22, 26, 48);
-  border: 1px solid rgb(50, 59, 110);
-  box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.521);
-  transition: all 0.5s;
+@media screen and (min-width: 768px) {
+  .footer__div--li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 26, 48);
+    border: 1px solid rgb(50, 59, 110);
+    box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.521);
+    transition: all 0.5s;
+  }
 }
 
-.nav-link.nav-link-block:hover {
-  color: white;
-  background-color: transparent;
-  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
-  transition: all 0.5s;
+@media screen and (min-width: 768px) {
+  .nav-link.nav-link-block:hover {
+    color: white;
+    background-color: transparent;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
+    transition: all 0.5s;
+  }
 }
 
 section.index_hero {

@@ -15,45 +15,50 @@
 </head>
 
 <body>
-    <header class="header container-fluid">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a href="../index.html"><img src="../assets/3.png" alt="Logo a página de inicio" class="logo w-25" role="button" tabindex="0"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Botón de Barra de navegación">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="/pages/nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+    <header class="header">
+        
+        <nav class="container navbar navbar-expand-md d-md-flex" aria-label="Barra de navegacion">
+
+                <a href="/index.html" aria-label="Logo a página de inicio"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Botón de Barra de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto align-items-center">  
+                    <!--copia lo de arriba  -->
+                        <li class="nav-item"><a class="nav-link nav-link-block" aria-current="page" href="/index.html" role="button" tabindex="0" aria-label="Ir al inicio">Inicio</a></li>
+                        <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="nosotros.html" role="button" tabindex="0" aria-label="Informacion acerca de nosotros">Nosotros</a>
+                            <a class="nav-link dropdown-toggle d-inline-block" role="button"  tabindex="0" aria-label="Más informacion acerca de nosotros" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="nosotros.html"  role="button" tabaria-labelex="0" aria-label="Quienes somos">Quienes somos</a></li>
+                                <li><hr class="dropdown-divider"/></li>
+                                <li><a class="dropdown-item" href="nosotros.html"  role="button" tabindex="0" aria-label="Preguntas frecuentes">Preguntas frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <!-- seguir revisando lo del dropdown en mobile -->
+                        <li class="nav-item">
+                                
+                            <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="./obras.html" role="button"  tabindex="0" aria-label="Ver nuestras obras">Nuestras Obras</a>
+                                <a class="nav-link dropdown-toggle d-inline-block" role="button"  tabindex="0" aria-label="Ver más acerca de nuestras obras" data-bs-toggle="dropdown" aria-expanded="false"></a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/pages/nosotros.html">Quienes somos</a></li>
-                                    <li><hr class="dropdown-divider"/></li>
-                                    <li><a class="dropdown-item" href="/pages/nosotros.html">Preguntas frecuentes</a></li>
+                                        <li><a class="dropdown-item" href="./viviendas.html"  role="button" tabindex="0" alt="Ver viviendas personalizadas">Viviendas personalizadas</a></li>
+                                        <li><hr class="dropdown-divider"/></li>
+                                        <li><a class="dropdown-item" href="./galerias.html"  role="button" tabindex="0" aria-label="Ver galerias y exteriores">Galerias y exteriores</a></li>
+                                        <li><hr class="dropdown-divider"/></li>
+                                        <li><a class="dropdown-item" href="./modelos.html"  role="button" tabindex="0" aria-label="Ver modelos estándar">Modelos estándar</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown d-flex">
-                                <a class="nav-link" href="/pages/obras.html">Nuestras obras</a>
-                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/pages/viviendas.html">Viviendas personalizadas</a></li>
-                                    <li><hr class="dropdown-divider"/></li>
-                                    <li><a class="dropdown-item" href="/pages/galerias.html">Galerias y exteriores</a></li>
-                                    <li><hr class="dropdown-divider"/></li>
-                                    <li><a class="dropdown-item" href="/pages/modelos.html">Modelos estándar</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="/pages/contacto.html">Contactanos</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+                        
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-link-block" href="./contacto.html" role="button" tabindex="0" aria-label="Contactanos">Contactanos</a></li>
+                    </ul>
+                </div>  
+
+        </nav>
+    
+</header>
 
     <main class="container">
         <h1>soy las obras</h1>
@@ -74,7 +79,38 @@
         </div> -->
     </main>
 
-    <footer class="footer cointainer-fluid"></footer>
+    <footer class="footer">
+
+        <div class="container-fluid container-lg">
+            <div class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between">
+                <a class="footer__div footer__div__logo footer__div--link" href="/index.html" aria-label="Logo a página de inicio"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
+                <div class="footer__div footer__div__datos ">
+                    <ul class="footer__div--breadcrumbs">
+                        <li class="footer__div--li">
+                            <a class="footer__div--link" href="./index.html" role="button" tabindex="0" aria-label="Ir a página de inicio">> Inicio</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__div--contacto">
+                        <li class="footer__div--li">
+                            <a class="footer__div--link" href="tel:+5491164773427" role="button" tabindex="0" aria-label="Llamar a MS Construcción" target="_blank" rel="noopener">
+                            <i class="footer__div--icon bi bi-telephone"></i>+54 9 11-6477-3427</a>
+                        </li>
+                        <li class="footer__div--li">
+                            <a class="footer__div--link" href="https://maps.app.goo.gl/usi6L6zmYAmDoGAv8" target="_blank" role="button" tabindex="0" aria-label="Ver la ubicación de MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-geo-alt"></i>G. E. Hudson, Berazategui</a>
+                        </li>
+                        <li class="footer__div--li">
+                            <a class="footer__div--link" href="mailto:info@msconstruccion.net" role="button" tabindex="0" aria-label="Enviar un correo electronico a MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-envelope"></i>info@msconstruccion.net</a>
+                        </li>
+                        <li class="footer__div--li">
+                            <a class="footer__div--link" href="https://www.instagram.com/msconstructor/" target="_blank" role="button" tabindex="0" aria-label="Ir al Instagram de MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-instagram"></i>@msconstructor</a>
+                        </li>
+                    </ul>                        
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

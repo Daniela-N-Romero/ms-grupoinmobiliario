@@ -1,67 +1,72 @@
-.header{
+    .header {
     background-color: $primary-color-dark-blue;
-}
+    }
 
-.navbar{
-
+    .navbar {
     @include flex(space-between);
-    @include min-width(768px){
-        .navbar.navbar-expand-md{
-            @include flex(space-around);
+    @include min-width(768px) {
+        .navbar.navbar-expand-md {
+        @include flex(space-around);
         }
+    }
+    a {
+        font-size: 1.3rem;
+        @extend %btn-light;
+    }
 
-    }    a{
-                @extend %btn-light;
-        }
-    
-    &-toggler{
+    &-toggler {
         background-color: white;
-        margin-right: 1rem; 
-
+        margin-right: 1rem;
     }
-    
+    }
 
-
-}
-
-.navbar-collapse{
+    .navbar-collapse {
     flex-grow: 0;
-}
+    }
 
-.navbar-nav .dropdown-menu {
+    .navbar-nav .dropdown-menu {
     background-color: $primary-color-gray;
-    a{
+    a {
         color: $primary-color-blue;
-        &:hover{
-            background-color: $primary-color-light-blue-transparent;
+        &:hover {
+        background-color: $primary-color-light-blue-transparent;
         }
     }
-}
+    }
 
-.nav-link.nav-link-block{
-    &:hover{@extend %btn-hover-light-border;}
-    &.show{color: $primary-color-light-blue}; 
-}
+    .nav-link.nav-link-block {
+    &.show {
+        color: $primary-color-light-blue;
+    }
+    &:hover {
+        @extend %btn-hover-light-border;
+        color: $primary-color-gray;
+    }
+    }
 
-.nav-link.dropdown-toggle{
-            &.show{
+    .nav-link.dropdown-toggle {
+    font-size: 1.3rem;
+    color: $primary-color-gray;
+    &.show {
         color: $secondary-color-dark-gray;
     }
-}
+    }
+    @include min-width(768px) {
+    .nav-item.dropdown {
+        &hover {
+        color: white;
+        }
+        & .nav-link-inlineblock:hover {
+        color: $primary-color-gray;
+        }
 
-.nav-item.dropdown{
-    @include min-width(768px){
-        margin-right:.2rem;
+        margin-right: 0.2rem;
         margin-left: 1rem;
-        &:hover{
-            color: white;
-            background-color: transparent;
-            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
-            transition: all .5s;
-        a:hover{
-            color: $primary-color-gray;
-        }    
+        &:hover {
+        color: white;
+        background-color: transparent;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
+        transition: all 0.5s;
         }
     }
-
-}
+    }
