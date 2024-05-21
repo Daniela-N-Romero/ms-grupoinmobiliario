@@ -53,6 +53,12 @@ ul {
     margin-bottom: 1rem;
   }
 }
+.footer__div--breadcrumbs li .footer__div--link {
+  color: rgb(49, 48, 77);
+}
+.footer__div--breadcrumbs li .footer__div--current-link {
+  color: rgb(67, 65, 124);
+}
 @media screen and (min-width: 992px) {
   .footer__div--contacto {
     width: 100%;
