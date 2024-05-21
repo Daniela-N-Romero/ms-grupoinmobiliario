@@ -19,11 +19,65 @@ ul {
 }
 
 .footer {
+  margin-top: 10px;
   background-color: rgb(182, 187, 196);
+  box-shadow: 0px -3px 5px rgb(156, 160, 160);
 }
-
-.footer__breadcrumbs ul li a:hover {
-  color: red;
+.footer__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+.footer__div__logo {
+  margin-bottom: 1rem;
+}
+.footer__div__logo img {
+  margin-top: 1rem;
+}
+.footer__div--li {
+  color: rgb(22, 26, 48);
+  margin-bottom: 0.3rem;
+}
+.footer__div--li i {
+  padding-right: 0.5rem;
+}
+.footer__div--li a {
+  color: rgb(22, 26, 48);
+  font-weight: 700;
+  padding: 0.3rem;
+}
+.footer__div--li a:hover {
+  color: rgb(67, 65, 124);
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(156, 160, 160);
+}
+.footer__div--breadcrumbs {
+  margin-bottom: 0;
+}
+.footer__div--breadcrumbs li {
+  display: inline-block;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .footer__div--breadcrumbs li {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__div--contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer__div--contacto li {
+    display: inline-block;
+  }
 }
 
 .header {

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css" />
     <title>MS Construcción.</title>
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="header container-fluid">
+    <header class="header">
         
             <nav class="navbar navbar-expand-md d-md-flex">
 
@@ -61,92 +61,73 @@
         </div>
     </header>
 
-    <main class="main container gx-0">
-                
-        <!-- <div class="slider">
-            <ul class="slider__ul">
-                <li class="slider_item"><img class="slider__img" src="./assets/6.jpeg" alt="..."></li>
-                <li class="slider_item"><img class="slider__img" src="./assets/7.jpeg" alt="..."></li>
-                <li class="slider_item"><img class="slider__img" src="./assets/8.jpeg" alt="..."></li>
-            </ul>
-        </div> -->
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+            <section class="col-12 index__hero d-flex">
+                <!-- <video  width="250px" height="auto" autoplay muted loop id="index__hero-video" src="./assets/10.mp4" type="video/mp4">                </video> -->
+                <div class="index__hero-content">
+                    <h1>TITULO H1</h1>
+                    <a href="">boton</a>
+                </div>
+            </section>
+            <section class="col-12 index__intro">
+                <h2>Introduccion</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia cumque in, similique itaque quas, dolor sed quia facilis mollitia enim, quaerat quisquam assumenda molestias tenetur praesentium doloremque vero hic?</p>
+                <a href=""></a>
 
-        <section class="index__hero">
-            <!-- The video -->
-            <video width="100%" height="auto" autoplay muted loop id="index-video">
-                <source src="./assets/10.mp4" type="video/mp4">
-            </video>
-            
-            <!-- overlay text -->
-            <div class="content">
-                <h1>Una frase a modo de slogan</h1>
-                <a class="btn btn-secondary">Predi tu presupuesto</a>
-            </div>
-        </section>
+            </section>
+            <section class="col-12 index__servicios">
+                <h2>Nuestros servicios</h2>
+                <div class="servicios">
+                    <img src="./assets/2.png" class="w-25" alt="">
+                    <p>Servicio#1</p>
+                </div>
+                <div class="servicios">
+                    <img src="./assets/2.png" class="w-25"  alt="">
+                    <p>Servicio#2</p>
+                </div>
+                <div class="servicios">
+                    <img src="./assets/2.png" class="w-25"  alt="">
+                    <p>Servicio#3</p>
+                </div>
 
-        <div class="container">
-        <section class="index__intro ">
-            <h2 class="subtitulo">Introduccion</h2>
-            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id. Laboriosam, praesentium. Pariatur consectetur, eum accusantium, rerum quidem corporis cupiditate maxime iusto inventore culpa ea beatae magnam. Officiis, optio facere!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id. Laboriosam, praesentium. Pariatur consectetur, eum accusantium, rerum quidem corporis cupiditate maxime iusto inventore culpa ea beatae magnam. Officiis, optio facere! </p>
-            <a href="" class="btn btn-secondary">Quienes somos</a>
-        </section>
-
-        <section class="index__servicios ">
-            <h2>Nuestros servicios</h2>
-            <div class="servicios">
-                <img src="./assets/5.png" alt="" class="servicios__imagen w-25">
-                <p class="servicios__ejemplo">Llave en mano</p>
-            </div>
-            <div class="servicios">
-                <img src="./assets/5.png" alt="" class="servicios__imagen w-25">
-                <p class="servicios__ejemplo">Viviendas personalizadas</p>
-            </div>
-            <div class="servicios">
-                <img src="./assets/5.png" alt="" class="servicios__imagen w-25">
-                <p class="servicios__ejemplo">Galerias</p>
-            </div>
-        </section>
-
-        <section class="index__obras">
-            <h2>Trabajos Realizados</h2>
-            <div class="d-flex" >
-                <img class="w-100" src="./assets/7.jpeg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea facere odio veniam reiciendis laboriosam, quisquam sunt pariatur, quidem vel cumque a obcaecati unde illo quas temporibus sit dolorum quis.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut obcaecati debitis perspiciatis labore, error consequuntur aperiam doloremque vero ipsum impedit quia officiis voluptatibus accusamus atque dolores iure, voluptas illum non!</p>
-            </div>
-
-        </section>
-    </div>
-
+            </section>
+            <section class="col-12 index__obras d-flex flex-column">
+                <img src="./assets/8.jpeg" class="order-1 w-25" alt="">
+                <div class="d-flex flex-column">
+                    <h2>Trabajos realizados</h2>
+                    <p>lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iste vitae? Quia nam ex nostrum repudiandae et cupiditate voluptatibus ipsam iste modi, cum totam officia explicabo rem obcaecati nulla dignissimos.</p>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="footer cointainer-fluid">
+    <footer class="footer">
 
-        <div class="row gx-0 flex-column flex-md-row align-items-center">
-        
-            <div class="col-md-4 d-md-flex flex-md-column align-items-center">
-                <a href="/index.html"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo mt-3" role="button" tabindex="0"></a>
-                <ul class="footer__breadcrumbs">
-                        <li class="footer__breadcrumb"><a href="./index.html">Inicio</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="">
-                    <li class="dato-item"><i class="bi bi-telephone"></i>11-1111-1111</li>
-                    <li class="dato-item"><i class="bi bi-geo-alt"></i>Berazategui</li>
-                    <li class="dato-item"><i class="bi bi-envelope"></i>ejemplo@gmail.com</li>
-                </ul>
-            </div>
-            <div class="socialmedia col-md-2">
-                    <a class="mx-3 mx-md-0" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>                  
-                    <a class="mx-3 mx-md-0" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                    
+        <div class="container">
+            <div class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between">
+                <a class="footer__div footer__div__logo footer__div--link" href="/index.html"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
+                <div class="footer__div footer__div__datos ">
+                    <ul class="footer__div--breadcrumbs">
+                        <li class="footer__div--li">
+                            <a class="footer__div--link" href="./index.html" role="button" tabindex="0" alt="Ir a página de inicio">> Inicio</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__div--contacto">
+                        <li class="footer__div--li"><i class="footer__div--icon bi bi-telephone"></i><a class="footer__div--link" href="tel:+541136444421" role="button" tabindex="0" alt="Llamar a MS Construcción">11-1111-1111</a></li>
+                        <li class="footer__div--li"><i class="footer__div--icon bi bi-geo-alt"></i><a class="footer__div--link" href="https://maps.app.goo.gl/usi6L6zmYAmDoGAv8" target="_blank" role="button" tabindex="0" alt="Ver la ubicación de MS Construcción">G. E. Hudson, Berazategui</a></li>
+                        <li class="footer__div--li"><i class="footer__div--icon bi bi-envelope"></i><a class="footer__div--link" href="mailto:info@msconstruccion.net" role="button" tabindex="0" alt="Enviar un correo electronico a MS Construcción">info@msconstruccion.net</a></li>
+                        <li class="footer__div--li"><i class="footer__div--icon bi bi-instagram"></i><a class="footer__div--link" href="https://www.instagram.com/msconstructor/" role="button" tabindex="0" alt="Ir al Instagram de MS Construcción">@msconstructor</a></li>
+                    </ul>                        
+                </div>
             </div>
         </div>
-      
+    
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
+
