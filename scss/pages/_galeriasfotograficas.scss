@@ -1,0 +1,15 @@
+.gallery__tittle{
+    text-align: center;
+}
+
+.gallery__section{
+    color: blue;
+    &--title{
+        position: relative;
+        z-index: 10;
+        top: 250px;
+        &link{
+            color: green;
+        }
+    }
+}

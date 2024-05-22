@@ -194,4 +194,20 @@ section.index_hero {
   margin-left: 1rem;
 }
 
+.gallery__tittle {
+  text-align: center;
+}
+
+.gallery__section {
+  color: blue;
+}
+.gallery__section--title {
+  position: relative;
+  z-index: 10;
+  top: 250px;
+}
+.gallery__section--titlelink {
+  color: green;
+}
+
 /*# sourceMappingURL=styles.css.map */
