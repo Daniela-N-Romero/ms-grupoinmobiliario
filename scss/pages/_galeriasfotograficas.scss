@@ -1,15 +1,27 @@
-.gallery__tittle{
+.gallery__title{
+    background-color: $primary-color-gray;
+    padding: 2rem;
     text-align: center;
+    
 }
 
 .gallery__section{
-    color: blue;
+    position: relative;
     &--title{
-        position: relative;
+        position: absolute;
         z-index: 10;
-        top: 250px;
+        top: 50%;
+        left: 20%;
         &link{
             color: green;
         }
+    }
+}
+
+.carousel-inner{
+    margin-bottom: 1.5rem;
+    img{  
+        width: 100%;
+        opacity: 80%;
     }
 }

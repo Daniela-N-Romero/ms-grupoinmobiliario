@@ -194,20 +194,31 @@ section.index_hero {
   margin-left: 1rem;
 }
 
-.gallery__tittle {
+.gallery__title {
+  background-color: rgb(240, 236, 229);
+  padding: 2rem;
   text-align: center;
 }
 
 .gallery__section {
-  color: blue;
+  position: relative;
 }
 .gallery__section--title {
-  position: relative;
+  position: absolute;
   z-index: 10;
-  top: 250px;
+  top: 50%;
+  left: 20%;
 }
 .gallery__section--titlelink {
   color: green;
+}
+
+.carousel-inner {
+  margin-bottom: 1.5rem;
+}
+.carousel-inner img {
+  width: 100%;
+  opacity: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
