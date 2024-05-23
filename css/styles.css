@@ -117,10 +117,10 @@ ul {
   background-color: rgba(182, 187, 196, 0.315);
 }
 
-.nav-link.nav-link-block.show {
+.nav-link.nav-link-block.show, .nav-link.nav-link-inlineblock.show {
   color: rgb(182, 187, 196);
 }
-.nav-link.nav-link-block:hover {
+.nav-link.nav-link-block:hover, .nav-link.nav-link-inlineblock:hover {
   color: rgb(240, 236, 229);
 }
 
@@ -139,9 +139,6 @@ ul {
   }
   .nav-item.dropdownhover {
     color: white;
-  }
-  .nav-item.dropdown .nav-link-inlineblock:hover {
-    color: rgb(240, 236, 229);
   }
   .nav-item.dropdown:hover {
     color: white;
@@ -166,23 +163,19 @@ section.index_hero {
   color: rgb(240, 236, 229);
 }
 
-@media screen and (min-width: 768px) {
-  .footer__div--li a:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(22, 26, 48);
-    border: 1px solid rgb(50, 59, 110);
-    box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.521);
-    transition: all 0.5s;
-  }
+.footer__div--li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(22, 26, 48);
+  border: 1px solid rgb(50, 59, 110);
+  box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.521);
+  transition: all 0.5s;
 }
 
-@media screen and (min-width: 768px) {
-  .nav-link.nav-link-block:hover {
-    color: white;
-    background-color: transparent;
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
-    transition: all 0.5s;
-  }
+.nav-link.nav-link-block:hover, .nav-link.nav-link-inlineblock:hover {
+  color: white;
+  background-color: transparent;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
+  transition: all 0.5s;
 }
 
 section.index_hero {
@@ -198,27 +191,49 @@ section.index_hero {
   background-color: rgb(240, 236, 229);
   padding: 2rem;
   text-align: center;
+  box-shadow: 0px 0px 0px -10px rgb(243, 248, 246), 2px 5px 10px 1px;
 }
 
 .gallery__section {
-  position: relative;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 90px 30px rgb(243, 248, 246), 2px 5px 10px 1px;
 }
 .gallery__section--title {
   position: absolute;
+  display: inline-block;
   z-index: 10;
-  top: 50%;
-  left: 20%;
+  padding: 0.4rem 1rem;
+  box-shadow: 0px 0px 90px 30px rgb(182, 187, 196), 2px 5px 10px 1px;
+  background-color: rgb(156, 160, 160);
+  border: 1px solid rgb(240, 236, 229);
+  border-radius: 13px;
 }
 .gallery__section--titlelink {
-  color: green;
+  color: rgb(22, 26, 48);
+  font-weight: 900;
+}
+.gallery__section--title:hover {
+  background-color: rgb(22, 26, 48);
+  border: 1px 1 px solid rgb(67, 65, 124);
+  transition: all 0.5s;
+}
+.gallery__section--title:hover a {
+  color: rgb(243, 248, 246);
 }
 
-.carousel-inner {
-  margin-bottom: 1.5rem;
-}
 .carousel-inner img {
   width: 100%;
-  opacity: 80%;
+  opacity: 90%;
+  overflow: hidden;
+}
+@media screen and (min-width: 992) {
+  .carousel-inner img {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

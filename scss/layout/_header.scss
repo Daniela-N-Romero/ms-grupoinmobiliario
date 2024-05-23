@@ -26,15 +26,15 @@
 
     .navbar-nav .dropdown-menu {
     background-color: $primary-color-gray;
-    a {
-        color: $primary-color-blue;
-        &:hover {
-        background-color: $primary-color-light-blue-transparent;
+        a {
+            color: $primary-color-blue;
+            &:hover {
+            background-color: $primary-color-light-blue-transparent;
+            }
         }
     }
-    }
 
-    .nav-link.nav-link-block {
+    .nav-link.nav-link-block, .nav-link.nav-link-inlineblock {
     &.show {
         color: $primary-color-light-blue;
     }
@@ -45,8 +45,8 @@
     }
 
     .nav-link.dropdown-toggle {
-    font-size: 1.3rem;
-    color: $primary-color-gray;
+        font-size: 1.3rem;
+        color: $primary-color-gray;
     &.show {
         color: $secondary-color-dark-gray;
     }
@@ -55,9 +55,6 @@
     .nav-item.dropdown {
         &hover {
         color: white;
-        }
-        & .nav-link-inlineblock:hover {
-        color: $primary-color-gray;
         }
 
         margin-right: 0.2rem;
