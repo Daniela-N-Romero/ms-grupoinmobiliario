@@ -34,7 +34,7 @@
         }
     }
 
-    .nav-link.nav-link-block, .nav-link.nav-link-inlineblock {
+    .nav-link.nav-link-block {
     &.show {
         color: $primary-color-light-blue;
     }
@@ -43,6 +43,8 @@
         color: $primary-color-gray;
     }
     }
+
+    // .nav-link.nav-link-inlineblockhover
 
     .nav-link.dropdown-toggle {
         font-size: 1.3rem;

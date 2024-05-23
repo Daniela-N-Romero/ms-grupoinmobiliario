@@ -38,16 +38,18 @@
         }
         
     }
+    @include min-width(768px){
+           max-height: 30vh;
+           overflow: hidden;
+    }
 }
 
 .carousel-inner{
-
     img{  
         width: 100%;
         opacity: 90%;
         overflow: hidden;
-        @include min-width(992){
-            width: 50%;
-        }
+        
     }
-}
+} 
+

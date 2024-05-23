@@ -117,10 +117,10 @@ ul {
   background-color: rgba(182, 187, 196, 0.315);
 }
 
-.nav-link.nav-link-block.show, .nav-link.nav-link-inlineblock.show {
+.nav-link.nav-link-block.show {
   color: rgb(182, 187, 196);
 }
-.nav-link.nav-link-block:hover, .nav-link.nav-link-inlineblock:hover {
+.nav-link.nav-link-block:hover {
   color: rgb(240, 236, 229);
 }
 
@@ -171,7 +171,7 @@ section.index_hero {
   transition: all 0.5s;
 }
 
-.nav-link.nav-link-block:hover, .nav-link.nav-link-inlineblock:hover {
+.nav-link.nav-link-block:hover {
   color: white;
   background-color: transparent;
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
@@ -224,16 +224,17 @@ section.index_hero {
 .gallery__section--title:hover a {
   color: rgb(243, 248, 246);
 }
+@media screen and (min-width: 768px) {
+  .gallery__section {
+    max-height: 30vh;
+    overflow: hidden;
+  }
+}
 
 .carousel-inner img {
   width: 100%;
   opacity: 90%;
   overflow: hidden;
-}
-@media screen and (min-width: 992) {
-  .carousel-inner img {
-    width: 50%;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
