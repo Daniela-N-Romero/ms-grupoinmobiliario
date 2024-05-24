@@ -13,6 +13,7 @@
     // align-items: center;
     box-shadow: 0px 0px 90px 30px $secondary-color-light-gray, 2px 5px 10px 1px;
     position: relative;
+    z-index: -10;
     &--title{
         position: absolute;
         display: inline-block;
@@ -20,17 +21,17 @@
         padding: .2rem 1.5rem;
         font-size: 1.2rem;
         // box-shadow: 0px 0px 90px 30px $primary-color-light-blue, 2px 5px 10px 1px;
-        background-color: $primary-color-dark-blue;
+        background-color: $sea-light-blue;
         // border: 1px solid $primary-color-gray;
         border-radius: 50px;
         text-align: center;
         max-width: 60%;
-        bottom: 45%; 
+        bottom: 10%; 
         left: 20%;
         right: 20%;
 
         &link{
-            color: $primary-color-gray;
+            color: black;
             font-weight: 900;
             
      
@@ -54,7 +55,7 @@
 .carousel-inner{
     img{  
         width: 100%;
-        opacity: 90%;
+        backdrop-filter: sepia(90%);
         overflow: hidden;
         
     }

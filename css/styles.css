@@ -16,7 +16,7 @@ ul {
 
 .footer {
   margin-top: 10px;
-  background-color: rgb(182, 187, 196);
+  background-color: rgb(22, 26, 48);
   box-shadow: 0px -3px 5px rgb(156, 160, 160);
 }
 .footer__div {
@@ -35,7 +35,7 @@ ul {
   margin-top: 1rem;
 }
 .footer__div--li {
-  color: rgb(22, 26, 48);
+  color: rgb(188, 208, 244);
   margin-bottom: 0.6rem;
 }
 .footer__div--li i {
@@ -46,7 +46,7 @@ ul {
 }
 .footer__div--breadcrumbs li {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 @media screen and (min-width: 992px) {
   .footer__div--breadcrumbs li {
@@ -54,10 +54,13 @@ ul {
   }
 }
 .footer__div--breadcrumbs li .footer__div--link {
-  color: rgb(49, 48, 77);
+  color: rgb(188, 208, 244);
 }
 .footer__div--breadcrumbs li .footer__div--current-link {
-  color: rgb(67, 65, 124);
+  color: rgb(188, 208, 244);
+}
+.footer__div--contacto {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 992px) {
   .footer__div--contacto {
@@ -78,7 +81,10 @@ ul {
 }
 
 .header {
-  background-color: rgb(22, 26, 48);
+  background-color: rgb(182, 187, 196);
+  background: linear-gradient(180deg, rgb(22, 26, 48), rgb(22, 26, 48), rgb(50, 59, 110) 99%);
+  box-shadow: 5px 5px 150px 1px;
+  display: flex;
 }
 
 .navbar {
@@ -96,7 +102,7 @@ ul {
   }
 }
 .navbar a {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .navbar-toggler {
   background-color: white;
@@ -124,8 +130,12 @@ ul {
   color: rgb(240, 236, 229);
 }
 
+.nav-link.nav-link-inlineblock:hover {
+  color: white;
+}
+
 .nav-link.dropdown-toggle {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: rgb(240, 236, 229);
 }
 .nav-link.dropdown-toggle.show {
@@ -151,7 +161,7 @@ section.index_hero {
   width: 100vw;
 }
 
-.navbar a, .footer__div--li a {
+.footer__div--li a, .navbar a {
   color: rgb(22, 26, 48);
   font-weight: 700;
   padding: 0.3rem;
@@ -159,7 +169,7 @@ section.index_hero {
   border: 1px solid transparent;
 }
 
-.navbar a {
+.footer__div--li a, .navbar a {
   color: rgb(240, 236, 229);
 }
 
@@ -183,7 +193,7 @@ section.index_hero {
 }
 
 .logo {
-  width: 7rem;
+  width: 5rem;
   margin-left: 1rem;
 }
 
@@ -198,6 +208,7 @@ section.index_hero {
   margin-bottom: 1.5rem;
   box-shadow: 0px 0px 90px 30px rgb(243, 248, 246), 2px 5px 10px 1px;
   position: relative;
+  z-index: -10;
 }
 .gallery__section--title {
   position: absolute;
@@ -205,16 +216,16 @@ section.index_hero {
   z-index: 10;
   padding: 0.2rem 1.5rem;
   font-size: 1.2rem;
-  background-color: rgb(22, 26, 48);
+  background-color: rgb(87, 166, 161);
   border-radius: 50px;
   text-align: center;
   max-width: 60%;
-  bottom: 45%;
+  bottom: 10%;
   left: 20%;
   right: 20%;
 }
 .gallery__section--titlelink {
-  color: rgb(240, 236, 229);
+  color: black;
   font-weight: 900;
 }
 .gallery__section--title:hover {
@@ -234,7 +245,7 @@ section.index_hero {
 
 .carousel-inner img {
   width: 100%;
-  opacity: 90%;
+  backdrop-filter: sepia(90%);
   overflow: hidden;
 }
 

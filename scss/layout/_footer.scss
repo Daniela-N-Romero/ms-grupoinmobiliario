@@ -1,6 +1,7 @@
 .footer{
+    
     margin-top: 10px;
-    background-color: $primary-color-light-blue;
+    background-color: $primary-color-dark-blue;
     box-shadow: 0px -3px 5px $secondary-color-dark-gray;
     &__div{
         @include flex-column();
@@ -14,13 +15,13 @@
             }
         }
         &--li{
-            color: $primary-color-dark-blue;
+            color: $secondary-color-light-blue;
             margin-bottom: .6rem;
             i{
                 padding-right: .5rem;
             }
             a{
-                @extend %btn-dark;
+                @extend %btn-light;
                 &:hover{
                     @extend %btn-hover-dark-blue;
                 }
@@ -30,19 +31,20 @@
             margin-bottom: 0;
             li{
             display: inline-block;
-            margin-top: 1rem;            
+            margin-top: .5rem;            
             @include min-width(992px){
                 margin-bottom: 1rem;
             }
             .footer__div--link{
-                color: $primary-color-blue;
+                color: $secondary-color-light-blue;
             }
             .footer__div--current-link{
-                color: $secondary-color-purple;
+                color: $secondary-color-light-blue;
             }
             }
         }
         &--contacto{
+            margin-bottom: 0;
             @include min-width(992px){
                 width: 100%;
                 display: flex;

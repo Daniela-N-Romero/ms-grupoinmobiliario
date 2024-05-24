@@ -1,16 +1,20 @@
     .header {
-    background-color: $primary-color-dark-blue;
+    background-color: $primary-color-light-blue;
+    background: linear-gradient(180deg,$primary-color-dark-blue, $primary-color-dark-blue, $secondary-color-dark-purple 99%);
+    box-shadow: 5px 5px 150px 1px;
+    display: flex;
     }
 
     .navbar {
     @include flex(space-between);
+    //align-items: end;
     @include min-width(768px) {
         .navbar.navbar-expand-md {
         @include flex(space-around);
         }
     }
     a {
-        font-size: 1.3rem;
+        font-size: 1rem;
         @extend %btn-light;
     }
 
@@ -44,10 +48,12 @@
     }
     }
 
-    // .nav-link.nav-link-inlineblockhover
+    .nav-link.nav-link-inlineblock:hover{
+        color: white;
+    }
 
     .nav-link.dropdown-toggle {
-        font-size: 1.3rem;
+        font-size: 1rem;
         color: $primary-color-gray;
     &.show {
         color: $secondary-color-dark-gray;
