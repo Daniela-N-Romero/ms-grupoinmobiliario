@@ -7,25 +7,32 @@
 
 .gallery__section{    
     margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;        
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;        
+    // justify-content: center;
+    // align-items: center;
     box-shadow: 0px 0px 90px 30px $secondary-color-light-gray, 2px 5px 10px 1px;
+    position: relative;
     &--title{
         position: absolute;
         display: inline-block;
         z-index: 10;
-        padding: .4rem 1rem;
-        box-shadow: 0px 0px 90px 30px $primary-color-light-blue, 2px 5px 10px 1px;
-        // backdrop-filter: blur(4px);
-        background-color: $secondary-color-dark-gray;
-        border: 1px solid $primary-color-gray;
-        border-radius: 13px;
+        padding: .2rem 1.5rem;
+        font-size: 1.2rem;
+        // box-shadow: 0px 0px 90px 30px $primary-color-light-blue, 2px 5px 10px 1px;
+        background-color: $primary-color-dark-blue;
+        // border: 1px solid $primary-color-gray;
+        border-radius: 50px;
+        text-align: center;
+        max-width: 60%;
+        bottom: 45%; 
+        left: 20%;
+        right: 20%;
 
         &link{
-            color: $primary-color-dark-blue;
+            color: $primary-color-gray;
             font-weight: 900;
+            
      
         }
         &:hover{
