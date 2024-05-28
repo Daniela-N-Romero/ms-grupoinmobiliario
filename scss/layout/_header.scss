@@ -1,8 +1,10 @@
     .header {
-    background-color: $primary-color-light-blue;
-    background: linear-gradient(180deg,$primary-color-dark-blue, $primary-color-dark-blue, $secondary-color-dark-purple 99%);
+    background-color: $logo-blue;
+    background: linear-gradient(180deg,$logo-blue, $logo-blue, $secondary-color-dark-purple 90%);
     box-shadow: 5px 5px 150px 1px;
     display: flex;
+    position: relative;
+    z-index: 20;
     }
 
     .navbar {
