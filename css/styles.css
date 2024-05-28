@@ -204,6 +204,31 @@ section.index_hero {
   margin-left: 1rem;
 }
 
+.index__hero {
+  position: relative;
+}
+.index__hero-video {
+  position: relative;
+  opacity: 70%;
+}
+.index__hero-content {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  text-align: center;
+}
+.index__hero-content h1 {
+  color: rgb(49, 54, 63);
+  font-size: 3rem;
+  font-weight: 900;
+}
+.index__hero-content a {
+  background-color: rgb(243, 248, 246);
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: rgb(31, 52, 74);
+  font-size: 1.1rem;
+}
 .gallery__title {
   margin-top: 0.1rem;
   background-color: rgb(182, 187, 196);

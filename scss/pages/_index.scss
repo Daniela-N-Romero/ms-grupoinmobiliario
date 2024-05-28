@@ -1,0 +1,35 @@
+.index__hero{
+position: relative;
+    &-video{
+        position: relative;
+        opacity: 70%;
+    }
+    &-content{
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        text-align: center;
+        z-index: 10;
+        h1{
+            color: $gray-blue;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        a{
+            background-color: $secondary-color-light-gray;
+            padding: 7px 12px;
+            border-radius: 5px;
+            color: $logo-blue;
+            font-size: 1.1rem;
+            &:hover{
+                @extend %btn-dark ;
+            }
+
+        }
+
+    }
+}
+
+.index__intro{
+
+}
