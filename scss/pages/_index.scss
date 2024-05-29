@@ -1,29 +1,36 @@
 .index__hero{
 position: relative;
+padding: 0%;
     &-video{
         position: relative;
         opacity: 70%;
+        overflow: hidden;
+        height: 100%;
     }
     &-content{
+        width: 100%;
         position: absolute;
         bottom: 10%;
-        left: 10%;
         text-align: center;
-        z-index: 10;
+        z-index: 10;        
         h1{
             color: $gray-blue;
-            font-size: 3rem;
-            font-weight: 900;
+            @extend %big_title;
+            @include min-width(992px){
+            margin-bottom: 5%;
+            }
         }
         a{
-            background-color: $secondary-color-light-gray;
-            padding: 7px 12px;
-            border-radius: 5px;
-            color: $logo-blue;
-            font-size: 1.1rem;
-            &:hover{
-                @extend %btn-dark ;
-            }
+            // @extend %btn-light ;
+            // background-color: $primary-color-dark-blue;
+            // padding: 7px 12px;
+            // font-size: 1rem;
+            // &:hover{
+            //     background-color: $primary-color-gray ;
+            //     color: $logo-blue;
+            //     padding: 7px 25px;
+            //     transition: all .5s; 
+            // }
 
         }
 
@@ -31,5 +38,74 @@ position: relative;
 }
 
 .index__intro{
+    background-color: $primary-color-light-blue;
+    @extend %section;
+    &--title{
+        @extend %section_title;
+    }
+    &--text{
+        padding-bottom: 1rem;
+    }
+    &--btn{
+        @extend %btn-dark ;
+        border: 1px solid $secondary-color-purple;
+        padding: 7px 12px;
+        font-size: 1rem;
+        &:hover{
+            background-color: $primary-color-light-blue ;
+            color: $logo-blue;
+            padding: 7px 25px;
+            transition: all .5s; 
+        }
+    }
+}
 
+.index__servicios{
+    @extend %section;
+    &--title{
+        @extend %section_title;
+    }
+    .servicios{
+         @include flex();
+         align-items: center;
+        &__text{
+            min-width:50%;
+            margin: 0% 1.5rem;
+            font-size: 1.5rem;
+
+        }
+        &__img{
+            max-width: 35%;
+
+        }
+    }
+}
+
+.index__obras{
+    @extend %section;
+    background-color: $primary-color-blue ;
+    @include flex-column();
+    align-items: center;
+    @include min-width(768px){
+        @include flex();
+    }
+    &--img{
+        max-width: 80%;
+    }
+    &--content{
+        width: 80%;
+        color: $primary-color-gray
+    }
+    &--title{
+        @extend %section_title;
+    }
+    &--text{
+        a{
+            font-weight: 900;
+            padding: 0px 10px;
+            color: $baby-light-blue;
+        }
+        &:hover{
+        }
+    }
 }

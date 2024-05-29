@@ -19,7 +19,6 @@ ul {
 }
 
 .footer {
-  margin-top: 10px;
   background-color: rgb(22, 26, 48);
   box-shadow: 0px -3px 5px rgb(156, 160, 160);
   position: relative;
@@ -164,11 +163,12 @@ ul {
     transition: all 0.5s;
   }
 }
-section.index_hero {
-  width: 100vw;
+.index__obras, .index__servicios, .index__intro {
+  text-align: center;
+  padding: 2rem 3rem;
 }
 
-.footer__div--li a, .navbar a {
+.index__intro--btn, .footer__div--li a, .navbar a {
   color: rgb(22, 26, 48);
   font-weight: 700;
   padding: 0.3rem;
@@ -195,8 +195,107 @@ section.index_hero {
   transition: all 0.5s;
 }
 
-section.index_hero {
-  width: 100vw;
+.btn-basic {
+  position: relative;
+  border: none;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 23px 33px;
+  border: 3px solid transparent;
+}
+.btn-basic:active {
+  transform: translateY(3px);
+}
+.btn-basic::after, .btn-basic::before {
+  border-radius: 3px;
+}
+
+.shrink-border {
+  background-color: transparent;
+  color: #1b1b20;
+}
+.shrink-border:hover {
+  background-color: transparent;
+  box-shadow: none;
+  color: #e6e6e6;
+}
+.shrink-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #1b1b20;
+  transition: opacity 0.3s, border 0.3s;
+}
+.shrink-border:hover::before {
+  opacity: 0;
+}
+.shrink-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 3px solid #e6e6e6;
+  opacity: 0;
+  z-index: -1;
+  transform: scaleX(1.1) scaleY(1.3);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.shrink-border:hover::after {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+.material-bubble {
+  background-color: transparent;
+  color: #1b1b20;
+  border: none;
+  overflow: hidden;
+  box-shadow: none;
+}
+.material-bubble:hover {
+  color: #e6e6e6;
+}
+.material-bubble::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #1b1b20;
+  transition: opacity 0.3s, border 0.3s;
+}
+.material-bubble:hover::before {
+  opacity: 0;
+}
+.material-bubble::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #494958;
+  border-color: transparent;
+  border-radius: 50%;
+  transform: translate(-10px, -70px) scale(0.1);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.material-bubble:hover::after {
+  opacity: 1;
+  transform-origin: 100px 100px;
+  transform: scale(1) translate(-10px, -70px);
 }
 
 .logo {
@@ -204,30 +303,102 @@ section.index_hero {
   margin-left: 1rem;
 }
 
+.index__obras--title, .index__servicios--title, .index__intro--title {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.index__hero-content h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
 .index__hero {
   position: relative;
+  padding: 0%;
 }
 .index__hero-video {
   position: relative;
   opacity: 70%;
+  overflow: hidden;
+  height: 100%;
 }
 .index__hero-content {
+  width: 100%;
   position: absolute;
   bottom: 10%;
-  left: 10%;
   text-align: center;
+  z-index: 10;
 }
 .index__hero-content h1 {
   color: rgb(49, 54, 63);
-  font-size: 3rem;
-  font-weight: 900;
 }
-.index__hero-content a {
-  background-color: rgb(243, 248, 246);
+@media screen and (min-width: 992px) {
+  .index__hero-content h1 {
+    margin-bottom: 5%;
+  }
+}
+.index__intro {
+  background-color: rgb(182, 187, 196);
+}
+.index__intro--text {
+  padding-bottom: 1rem;
+}
+.index__intro--btn {
+  border: 1px solid rgb(67, 65, 124);
   padding: 7px 12px;
-  border-radius: 5px;
+  font-size: 1rem;
+}
+.index__intro--btn:hover {
+  background-color: rgb(182, 187, 196);
   color: rgb(31, 52, 74);
-  font-size: 1.1rem;
+  padding: 7px 25px;
+  transition: all 0.5s;
+}
+
+.index__servicios .servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.index__servicios .servicios__text {
+  min-width: 50%;
+  margin: 0% 1.5rem;
+  font-size: 1.5rem;
+}
+.index__servicios .servicios__img {
+  max-width: 35%;
+}
+
+.index__obras {
+  background-color: rgb(49, 48, 77);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .index__obras {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.index__obras--img {
+  max-width: 80%;
+}
+.index__obras--content {
+  width: 80%;
+  color: rgb(240, 236, 229);
+}
+.index__obras--text a {
+  font-weight: 900;
+  padding: 0px 10px;
+  color: rgb(118, 171, 174);
 }
 .gallery__title {
   margin-top: 0.1rem;
