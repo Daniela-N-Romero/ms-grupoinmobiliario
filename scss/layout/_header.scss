@@ -1,10 +1,16 @@
     .header {
     background-color: $logo-blue;
     background: linear-gradient(180deg,$logo-blue, $logo-blue, $secondary-color-dark-purple 90%);
-    box-shadow: 5px 5px 150px 1px;
     display: flex;
     position: relative;
-    z-index: 20;
+    z-index: 200;
+    transition: all 300ms ease-in-out;
+    @include min-width(768px) {
+        position: fixed;
+        width: 100%;
+        height: 7rem;
+        top: 0px;
+    }
     }
 
     .navbar {
@@ -77,3 +83,11 @@
         }
     }
     }
+
+.scroll-down header {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-down header {
+    filter: drop-shadow(0 -10px 20px black);
+}

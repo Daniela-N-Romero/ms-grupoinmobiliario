@@ -1,6 +1,6 @@
 .footer{
 
-    background-color: $primary-color-dark-blue;
+    background-color: $logo-blue;
     box-shadow: 0px -3px 5px $secondary-color-dark-gray;
     position: relative;
     
@@ -17,19 +17,41 @@
         }
         &--li{
             color: $secondary-color-light-blue;
-            margin-bottom: .6rem;
+            margin-bottom: .2rem;
             i{
-                padding-right: .5rem;
-            }
-            a{
-                @extend %btn-light;
-                &:hover{
-                    @extend %btn-hover-dark-blue;
+                font-size: 1.2rem;
+                border-radius: 20px;
+                padding: 10px;
+                color: #fff;
+                margin: 0 5px;
+                transition: 200ms;
+                &.bi-telephone:hover{
+                    background-color: $whatsapp;
+
                 }
+                &.bi-geo-alt:hover{
+                    background-color: $location;
+                }
+                &.bi-envelope:hover{
+                    background-color: $email;
+                }
+                &.bi-instagram:hover{
+                    background-color: $instagram;
+                }
+                
+            }
+            p{
+                color: $primary-color-gray;
+                display: none;
+                @include min-width(768px){
+                    display: inline-block;
+                }
+
             }
         }
         &--breadcrumbs {
             margin-bottom: 0;
+            font-size: 1.2rem;
             li{
             display: inline-block;
             margin-top: .5rem;            
@@ -38,6 +60,9 @@
             }
             .footer__div--link{
                 color: $secondary-color-light-blue;
+                p{
+                    margin-bottom: 0;
+                }
             }
             .footer__div--current-link{
                 color: $secondary-color-light-blue;
@@ -45,26 +70,22 @@
             }
         }
         &--contacto{
-            margin-bottom: 0;
-            @include min-width(992px){
-                width: 100%;
+            margin-bottom: 10px;
+            width: 100%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 
                     li{
                         display: inline-block;
                         
                     }
-            }
-            
+                    
         }
         &__datos{
-            @include min-width(1024px){
                 min-width: 80%;
                 
-            }
         }
     }
 }

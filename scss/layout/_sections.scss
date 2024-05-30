@@ -2,3 +2,9 @@
     text-align: center;
     padding: 2rem 3rem;
 }
+
+main.container{
+    @include min-width(768PX){
+        padding-top: 7rem;
+    }
+}
