@@ -1,7 +1,5 @@
     .header {
-    background-color: $logo-blue;
-    background: linear-gradient(180deg,$logo-blue, $logo-blue, $secondary-color-dark-purple 90%);
-    display: flex;
+    background: #fff;
     position: relative;
     z-index: 200;
     transition: all 300ms ease-in-out;
@@ -15,7 +13,6 @@
 
     .navbar {
     @include flex(space-between);
-    //align-items: end;
     @include min-width(768px) {
         .navbar.navbar-expand-md {
         @include flex(space-around);
@@ -23,25 +20,35 @@
     }
     a {
         font-size: 1rem;
-        @extend %btn-light;
+        color: $logo-color;
     }
 
     &-toggler {
-        background-color: white;
+        background-color: #fff;
         margin-right: 1rem;
     }
     }
 
-    .navbar-collapse {
+    .navbar-collapse.show {
     flex-grow: 0;
+    // height: calc(80vh - 7rem);
+    // transition: height 200ms ease-in-out;
+    // justify-content: start;
+    // ul {    
+    //     height: 100%;
+    //     .nav-item{
+    //         margin-top: 1rem;
+    //     }
+    // }
     }
 
     .navbar-nav .dropdown-menu {
-    background-color: $primary-color-gray;
+    background-color: $secondary-color-dark-gray;
+
         a {
-            color: $primary-color-blue;
-            &:hover {
-            background-color: $primary-color-light-blue-transparent;
+            color: #fff;
+            &:hover {  
+                background-color: transparent;
             }
         }
     }
@@ -49,37 +56,22 @@
     .nav-link.nav-link-block {
     &.show {
         color: $primary-color-light-blue;
+    
     }
-    &:hover {
-        @extend %btn-hover-light-border;
-        color: $primary-color-gray;
-    }
-    }
-
-    .nav-link.nav-link-inlineblock:hover{
-        color: white;
     }
 
     .nav-link.dropdown-toggle {
         font-size: 1rem;
-        color: $primary-color-gray;
+        color: $logo-color;
     &.show {
         color: $secondary-color-dark-gray;
     }
     }
     @include min-width(768px) {
     .nav-item.dropdown {
-        &hover {
-        color: white;
-        }
-
         margin-right: 0.2rem;
         margin-left: 1rem;
         &:hover {
-        color: white;
-        background-color: transparent;
-        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
-        transition: all 0.5s;
         }
     }
     }

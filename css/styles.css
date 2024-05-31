@@ -19,9 +19,10 @@ ul {
 }
 
 .footer {
-  background-color: rgb(31, 52, 74);
+  background-color: rgb(243, 248, 246);
   box-shadow: 0px -3px 5px rgb(156, 160, 160);
   position: relative;
+  padding-top: 1rem;
 }
 .footer__div {
   display: flex;
@@ -32,39 +33,40 @@ ul {
   text-align: center;
   width: auto;
 }
-.footer__div__logo {
-  margin-bottom: 1rem;
-}
-.footer__div__logo img {
-  margin-top: 1rem;
-}
 .footer__div--li {
-  color: rgb(188, 208, 244);
+  color: #1e334c;
   margin-bottom: 0.2rem;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding-right: 1rem;
 }
 .footer__div--li i {
   font-size: 1.2rem;
   border-radius: 20px;
   padding: 10px;
-  color: #fff;
+  color: #1e334c;
   margin: 0 5px;
   transition: 200ms;
 }
-.footer__div--li i.bi-telephone:hover {
-  background-color: #34a853;
-}
-.footer__div--li i.bi-geo-alt:hover {
-  background-color: #4a80f5;
-}
-.footer__div--li i.bi-envelope:hover {
-  background-color: #ea4335;
-}
-.footer__div--li i.bi-instagram:hover {
-  background-color: #c32aa3;
+@media screen and (max-width: 768px) {
+  .footer__div--li i.bi-telephone:hover {
+    background-color: #34a853;
+  }
+  .footer__div--li i.bi-geo-alt:hover {
+    background-color: #4a80f5;
+  }
+  .footer__div--li i.bi-envelope:hover {
+    background-color: #ea4335;
+  }
+  .footer__div--li i.bi-instagram:hover {
+    background-color: #c32aa3;
+  }
 }
 .footer__div--li p {
-  color: rgb(240, 236, 229);
+  color: #1e334c;
   display: none;
+  margin: 0;
+  padding: 10 px;
 }
 @media screen and (min-width: 768px) {
   .footer__div--li p {
@@ -85,7 +87,7 @@ ul {
   }
 }
 .footer__div--breadcrumbs li .footer__div--link {
-  color: rgb(188, 208, 244);
+  color: #1e334c;
 }
 .footer__div--breadcrumbs li .footer__div--link p {
   margin-bottom: 0;
@@ -104,14 +106,27 @@ ul {
 .footer__div--contacto li {
   display: inline-block;
 }
+@media screen and (min-width: 768px) {
+  .footer__div--contacto li:nth-child(1):hover {
+    border: 1px solid #34a853;
+  }
+  .footer__div--contacto li:nth-child(2):hover {
+    border: 1px solid #4a80f5;
+  }
+  .footer__div--contacto li:nth-child(3):hover {
+    border: 1px solid #ea4335;
+  }
+  .footer__div--contacto li:nth-child(4):hover {
+    border: 1px solid #c32aa3;
+  }
+}
 .footer__div__datos {
-  min-width: 80%;
+  min-width: 50%;
+  max-width: 70%;
 }
 
 .header {
-  background-color: rgb(31, 52, 74);
-  background: linear-gradient(180deg, rgb(31, 52, 74), rgb(31, 52, 74), rgb(50, 59, 110) 90%);
-  display: flex;
+  background: #fff;
   position: relative;
   z-index: 200;
   transition: all 300ms ease-in-out;
@@ -141,40 +156,34 @@ ul {
 }
 .navbar a {
   font-size: 1rem;
+  color: #1e334c;
 }
 .navbar-toggler {
-  background-color: white;
+  background-color: #fff;
   margin-right: 1rem;
 }
 
-.navbar-collapse {
+.navbar-collapse.show {
   flex-grow: 0;
 }
 
 .navbar-nav .dropdown-menu {
-  background-color: rgb(240, 236, 229);
+  background-color: rgb(156, 160, 160);
 }
 .navbar-nav .dropdown-menu a {
-  color: rgb(49, 48, 77);
+  color: #fff;
 }
 .navbar-nav .dropdown-menu a:hover {
-  background-color: rgba(182, 187, 196, 0.315);
+  background-color: transparent;
 }
 
 .nav-link.nav-link-block.show {
   color: rgb(182, 187, 196);
 }
-.nav-link.nav-link-block:hover {
-  color: rgb(240, 236, 229);
-}
-
-.nav-link.nav-link-inlineblock:hover {
-  color: white;
-}
 
 .nav-link.dropdown-toggle {
   font-size: 1rem;
-  color: rgb(240, 236, 229);
+  color: #1e334c;
 }
 .nav-link.dropdown-toggle.show {
   color: rgb(156, 160, 160);
@@ -185,15 +194,6 @@ ul {
     margin-right: 0.2rem;
     margin-left: 1rem;
   }
-  .nav-item.dropdownhover {
-    color: white;
-  }
-  .nav-item.dropdown:hover {
-    color: white;
-    background-color: transparent;
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
-    transition: all 0.5s;
-  }
 }
 .scroll-down header {
   transform: translate3d(0, -100%, 0);
@@ -203,9 +203,11 @@ ul {
   filter: drop-shadow(0 -10px 20px black);
 }
 
-.index__obras, .index__servicios, .index__intro {
+.index__obras, .index__servicios .servicios, .index__intro {
   text-align: center;
   padding: 2rem 3rem;
+  margin: 1rem 0;
+  box-shadow: 5px 5px 10px rgba(177, 180, 180, 0.667);
 }
 
 @media screen and (min-width: 768PX) {
@@ -214,7 +216,7 @@ ul {
   }
 }
 
-.index__intro--btn, .index__hero-content a, .navbar a {
+.index__intro--btn, .index__hero-content a {
   color: rgb(22, 26, 48);
   font-weight: 700;
   padding: 0.3rem;
@@ -222,15 +224,8 @@ ul {
   border: 1px solid transparent;
 }
 
-.index__hero-content a, .navbar a {
+.index__hero-content a {
   color: rgb(240, 236, 229);
-}
-
-.nav-link.nav-link-block:hover {
-  color: white;
-  background-color: transparent;
-  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.24);
-  transition: all 0.5s;
 }
 
 ::after, ::before {
@@ -267,6 +262,11 @@ ul {
   max-height: 70vh;
   object-fit: cover;
 }
+@media screen and (min-width: 768px) {
+  .index__hero-video {
+    margin-top: 7rem;
+  }
+}
 .index__hero-content {
   width: 100%;
   position: absolute;
@@ -297,9 +297,14 @@ ul {
 
 .index__intro {
   background-color: rgb(182, 187, 196);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .index__intro--text {
   padding-bottom: 1rem;
+  max-width: 700px;
 }
 .index__intro--btn {
   border: 1px solid rgb(67, 65, 124);
@@ -313,6 +318,9 @@ ul {
   transition: all 0.5s;
 }
 
+.index__servicios {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .index__servicios {
     display: flex;
@@ -326,16 +334,27 @@ ul {
   width: 100%;
 }
 .index__servicios .servicios {
+  border-radius: 10px;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  align-items: center;
+  align-items: end;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+  overflow: hidden;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .index__servicios .servicios {
+    justify-content: end;
+    align-items: center;
     flex-direction: column;
     width: 50%;
+    height: 400px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -343,33 +362,42 @@ ul {
     width: 30%;
   }
 }
+.index__servicios .servicios:nth-child(2) {
+  background-image: url(../../assets/frente.jpeg);
+}
+.index__servicios .servicios:nth-child(3) {
+  background-image: url(../../assets/render.jpg);
+}
+.index__servicios .servicios:nth-child(4) {
+  background-image: url(../../assets/gallery.jpg);
+}
+.index__servicios .servicios::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.369);
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+}
+.index__servicios .servicios:hover {
+  transform: scale(1.01);
+  transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
 .index__servicios .servicios__text {
-  min-width: 50%;
-  margin: 0% 1.5rem;
   font-size: 1.5rem;
   font-weight: 900;
+  z-index: 20;
 }
 .index__servicios .servicios__text a {
-  color: rgb(49, 48, 77);
-}
-.index__servicios .servicios__img {
-  --size: 10em ;
-  width: var(--size);
-  height: var(--size);
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0.7rem 0;
-  border: 5px solid rgb(22, 26, 48);
-}
-@media screen and (min-width: 576px) {
-  .index__servicios .servicios__img {
-    width: calc(var(--size) * 1.2);
-    height: calc(var(--size) * 1.2);
-  }
+  color: rgb(240, 236, 229);
 }
 
 .index__obras {
-  background-color: rgb(49, 48, 77);
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,11 +418,16 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .index__obras--img {
-    max-width: 50%;
+    max-width: 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .index__obras--img {
+    max-width: 30%;
   }
 }
 .index__obras--content {
-  color: rgb(240, 236, 229);
+  color: rgb(50, 59, 110);
 }
 @media screen and (min-width: 768px) {
   .index__obras--content {
@@ -402,10 +435,13 @@ ul {
     margin-left: 5%;
   }
 }
+.index__obras--text {
+  text-align: justify;
+}
 .index__obras--text a {
   font-weight: 900;
   padding: 0px 10px;
-  color: rgb(118, 171, 174);
+  color: rgb(50, 59, 110);
 }
 .gallery__title {
   margin-top: 0.1rem;

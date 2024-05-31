@@ -20,14 +20,14 @@
         
             <nav class="container navbar navbar-expand-md d-md-flex" aria-label="Barra de navegacion">
 
-                    <a href="/index.html" aria-label="Logo a página de inicio"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
+                    <a href="/index.html" aria-label="Logo a página de inicio"><img src="./assets/logo-constructora.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Botón de Barra de navegación">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto align-items-center">  
+                        <ul class="navbar-nav ms-auto align-items-center">  
 
                             <li class="nav-item"><a class="nav-link nav-link-block" aria-current="page" href="/index.html" role="button" tabindex="0" aria-label="Ir al inicio">Inicio</a></li>
                             <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="./pages/nosotros.html" role="button" tabindex="0" aria-label="Informacion acerca de nosotros">Nosotros</a>
@@ -39,7 +39,6 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
                                     
                                 <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="./pages/obras.html" role="button"  tabindex="0" aria-label="Ver nuestras obras">Nuestras Obras</a>
                                     <a class="nav-link dropdown-toggle d-inline-block" role="button"  tabindex="0" aria-label="Ver más acerca de nuestras obras" data-bs-toggle="dropdown" aria-expanded="false"></a>
@@ -52,7 +51,6 @@
                                     </ul>
                                 </li>
                             
-                            </li>
                             <li class="nav-item"><a class="nav-link nav-link-block" href="/pages/contacto.html" role="button" tabindex="0" aria-label="Contactanos">Contactanos</a></li>
                         </ul>
                     </div>
@@ -60,15 +58,16 @@
             </nav>
     </header>
 
-    <main class="container">
+    <section class="col-12 index__hero">
+        <video class="index__hero-video" autoplay muted loop id="index__hero-video" src="./assets/10.mp4" type="video/mp4"></video>
+        <div class="index__hero-content">
+            <h1  class="index__hero-title">Creando Espacios,<br> Construyendo Vidas</h1>
+            <a  class="index__hero-link" href="./pages/contacto.html">Pedi tu presupuesto</a>
+        </div>
+    </section>
+
+    <main class="container pt-0">
         <div class="row">
-            <section class="col-12 index__hero">
-                <video class="index__hero-video" autoplay muted loop id="index__hero-video" src="./assets/10.mp4" type="video/mp4"></video>
-                <div class="index__hero-content">
-                    <h1  class="index__hero-title">Creando Espacios,<br> Construyendo Vidas</h1>
-                    <a  class="index__hero-link" href="./pages/contacto.html">Pedi tu presupuesto</a>
-                </div>
-            </section>
             <section class="col-12 index__intro">
                 <h2 class="index__intro--title">Introduccion</h2>
                 <p class="index__intro--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia cumque in, similique itaque quas, dolor sed quia facilis mollitia enim, quaerat quisquam assumenda molestias tenetur praesentium doloremque vero hic?</p>
@@ -78,15 +77,12 @@
             <section class="col-12 index__servicios">
                 <h2 class="index__servicios--title">Nuestros servicios</h2>
                 <div class="servicios">
-                    <a href="./pages/obras/viviendas.html"><img src="./assets/frente.jpeg" class="servicios__img " alt=""></a>
                     <p class="servicios__text"><a href="./pages/obras/viviendas.html" class="servicios__link">Viviendas <br> personalizadas</a></p>
                 </div>
                 <div class="servicios">
-                    <a href="./pages/obras/modelos.html"><img src="./assets/render.jpg" class="servicios__img "  alt=""></a>
                     <p class="servicios__text"><a href="./pages/obras/modelos.html" class="servicios__link">Llave en mano</a></p>
                 </div>
                 <div class="servicios">
-                    <a href="./pages/obras/galerias.html"><img src="./assets/gallery.jpg" class="servicios__img "  alt=""></a>
                     <p class="servicios__text"><a href="./pages/obras/galerias.html" class="servicios__link">Galerias</a></p>
                 </div>
 
@@ -105,7 +101,7 @@
 
         <div class="container-fluid container-lg">
             <div class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between">
-                <a class="footer__div footer__div__logo footer__div--link" href="/index.html" aria-label="Logo a página de inicio"><img src="./assets/3.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
+                <a class="footer__div footer__div__logo footer__div--link" href="/index.html" aria-label="Logo a página de inicio"><img src="./assets/logo-constructora.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
                 <div class="footer__div footer__div__datos ">
                     <ul class="footer__div--breadcrumbs">
                         <li class="footer__div--li">
