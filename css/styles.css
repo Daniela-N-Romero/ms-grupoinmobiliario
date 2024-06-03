@@ -269,57 +269,52 @@ body.light-bg {
 .hero__content--text h1 {
   margin: 4vh 0;
   font-family: "adelia";
-  line-height: 2.3em;
-  font-size: 1.3em;
+  line-height: 2.3rem;
+  font-size: 1.6rem;
   text-shadow: 1px 1px black;
 }
 @media screen and (min-width: 596px) {
   .hero__content--text h1 {
-    font-size: 1.7em;
+    font-size: 1.9rem;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__content--text h1 {
-    font-size: 1.9em;
+    font-size: 1.9rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .hero__content--text h1 {
-    font-size: 2.3em;
+    font-size: 2.3rem;
   }
 }
 .hero__content--text h2 {
   max-width: 60%;
-  font-size: 0.8em;
+  font-size: 1rem;
   margin: 1.5rem 0;
-}
-@media screen and (min-width: 596px) {
-  .hero__content--text h2 {
-    font-size: 1em;
-  }
 }
 @media screen and (min-width: 768px) {
   .hero__content--text h2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 .hero__content--text h3 {
-  font-size: 0.6rem;
+  font-size: 1rem;
   border: 1px solid #2F69B1;
   border-radius: 5px;
   padding: 5px 24px;
   background-color: #2F69B1;
-  margin: 1vh 0.3em;
+  margin: 1vh 0.3rem;
   box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2352941176);
 }
 @media screen and (min-width: 596px) {
   .hero__content--text h3 {
-    font-size: 0.9em;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__content--text h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
 .hero__content--text h3 a {
@@ -442,6 +437,7 @@ body.light-bg {
 
 .services__container {
   position: relative;
+  background-image: url(../../assets/images/landing-page/6.png);
 }
 
 .services__container::before {
@@ -452,25 +448,6 @@ body.light-bg {
   z-index: 20;
 }
 
-.services {
-  padding-top: 25%;
-}
-.services__item {
-  border-radius: 20px;
-  box-shadow: 1px 1px 20px 1px #A5CCFB;
-  margin: 20px 1px;
-  padding: 15px;
-}
-.services__title {
-  padding-top: 15px;
-  font-weight: bold;
-  font-size: 1.8rem;
-}
-.services__description {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
 .services__container::after {
   content: "";
   position: absolute;
@@ -479,55 +456,86 @@ body.light-bg {
   z-index: 10;
 }
 
+.services {
+  padding-top: 25%;
+}
+.services__item {
+  max-width: 350px;
+  border-radius: 20px;
+  margin: 20px 15px;
+  padding: 15px;
+}
+.services__title {
+  padding-top: 15px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "antipastoExtraBold";
+}
+.services__description {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
 .features {
-  background-color: #A5CCFB;
-  margin-top: 30vh;
+  background-image: url(../../assets/images/landing-page/darkPoolHouse.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30vh;
   padding-bottom: 10vh;
   position: relative;
+  z-index: 0;
 }
 .features__content {
   padding: auto 20px;
+  text-align: center;
 }
 .features__title {
-  text-align: center;
+  font-family: "antipastoExtraBold";
+  text-transform: uppercase;
   margin-top: 1rem;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .features__description {
-  font-size: 1.7rem;
+  font-size: 0.9rem;
 }
 
 .features::before {
   content: "";
+  background-image: url(../../assets/images/landing-page/waveNegativeWhite.svg);
   position: absolute;
-  inset: -20vh 0 100% 0;
-  background-image: url(../../assets/images/landing-page/wavesNegativeLight.svg);
+  inset: 0 0 75% 0;
   z-index: 20;
-}
-
-.features::after {
-  content: "";
-  position: absolute;
-  inset: -17vh 0 100% 0;
-  background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
-  z-index: 20;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features__div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
   justify-content: center;
-  margin-top: 6rem;
+  margin: 2rem 0;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px 1px rgba(177, 180, 180, 0.667);
+}
+@media screen and (min-width: 768px) {
+  .features__div {
+    max-width: 600px;
+  }
 }
 
 .features__div .div-svg {
-  min-width: 200px;
-  min-height: 200px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 20px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -552,22 +560,45 @@ body.light-bg {
     order: 1;
   }
 }
+.more-information {
+  position: relative;
+  padding: 10% 0;
+}
+.more-information__title {
+  text-align: center;
+  font-family: "antipastoExtraBold";
+}
+
+.more-information::before {
+  content: "";
+  position: absolute;
+  inset: -30% 0 99% 0;
+  z-index: 200;
+  background: url(../../assets/images/landing-page/wave-haikei.svg);
+  transform: scaleY(-1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #2F69B1;
+  color: rgb(243, 248, 246);
   cursor: pointer;
   padding: 18px;
+  margin: 2px 0;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  position: relative;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
+  color: #2F69B1;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -587,9 +618,9 @@ body.light-bg {
 }
 
 .accordion:after {
-  content: "➕"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
+  content: "➕";
+  font-size: 23px;
+  color: #194a03;
   float: right;
   margin-left: 5px;
 }
@@ -598,30 +629,9 @@ body.light-bg {
   content: "➖"; /* Unicode character for "minus" sign (-) */
 }
 
-.more-information {
-  position: relative;
-  padding-top: 10%;
-}
-
-.more-information::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 90% 0;
-  background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
-  z-index: 20;
-}
-
-.more-information::after {
-  content: "";
-  position: absolute;
-  inset: 0 0 85% 0;
-  background-image: url(../../assets/images/landing-page/wavesLight.svg);
-  z-index: 10;
-}
-
 .calltoaction {
   position: relative;
-  height: 100vh;
+  height: 60vh;
   margin-top: 10vh;
   padding-top: 10vh;
   background-color: #2F69B1;
@@ -658,7 +668,7 @@ body.light-bg {
 .calltoaction::before {
   content: "";
   position: absolute;
-  inset: -10vh 0 100vh 0;
+  inset: -10% 0 100% 0;
   background-image: url(../../assets/images/landing-page/wavesNegativeLight.svg);
   z-index: 100;
 }
@@ -667,7 +677,7 @@ body.light-bg {
   content: "";
   position: absolute;
   opacity: 1;
-  inset: -7vh 0 100vh 0;
+  inset: -7% 0 100% 0;
   background-image: url(../../assets/images/landing-page/wavesNegative.svg);
   z-index: 100;
 }

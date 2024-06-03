@@ -27,43 +27,40 @@
             h1{
                 margin: 4vh 0;
                 font-family: 'adelia';
-                line-height: 2.3em;
-                font-size: 1.3em;
+                line-height: 2.3rem;
+                font-size: 1.6rem;
                 text-shadow: 1px 1px black;
                 @include min-width(596px){
-                    font-size: 1.7em;;
+                    font-size: 1.9rem;;
                 }
                 @include min-width(768px){
-                    font-size: 1.9em;;
+                    font-size: 1.9rem;;
                 }
                 @include min-width(1024px){
-                    font-size: 2.3em;
+                    font-size: 2.3rem;
                 }
             }
             h2{
                 max-width: 60%;
-                font-size: .8em;
+                font-size: 1rem;
                 margin: 1.5rem 0;
-                @include min-width(596px){
-                    font-size: 1em;;
-                }
                 @include min-width(768px){
-                    font-size: 1.2em;;
+                    font-size: 1.2rem;;
                 }
             }
             h3{
-                font-size: .6rem;
+                font-size: 1rem;
                 border: 1px solid $dark-waves;
                 border-radius: 5px;
                 padding: 5px 24px;
                 background-color: $dark-waves;
-                margin: 1vh .3em;
+                margin: 1vh .3rem;
                 box-shadow: 2px 2px 5px #ffffff3c;
                 @include min-width(596px){
-                    font-size: .9em;;
+                    font-size: 1.2rem;;
                 }
                 @include min-width(768px){
-                    font-size: 1.1rem;;
+                    font-size: 1.5rem;
                 }
                 a{
                     color: $primary-color-gray;
