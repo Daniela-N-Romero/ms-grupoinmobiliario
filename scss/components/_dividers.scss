@@ -1,0 +1,41 @@
+.white-wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.white-wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 192px;
+    transform: rotateY(180deg);
+}
+
+.white-wave-divider .shape-fill {
+    fill: #FFFFFF;
+}
+
+.blue-wave-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.blue-wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 245px;
+}
+
+.blue-wave-divider .shape-fill {
+    fill: $dark-waves;
+}

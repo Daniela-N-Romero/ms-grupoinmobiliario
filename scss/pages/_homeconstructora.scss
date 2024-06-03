@@ -11,7 +11,7 @@ padding: 0%;
         max-height: 70vh;
         object-fit: cover;
         @include min-width(768px){
-            margin-top: 7rem;
+            margin-top: $header-height;
         }
     }
     &-content{
@@ -21,11 +21,13 @@ padding: 0%;
         text-align: center;
         z-index: 10;        
         h1{
-            color: $gray-blue;
+            color: $secondary-color-light-gray;
+            font-family: 'loverine',cursive;
+            text-shadow:1px 1px 2px $primary-color-blue;
             @extend %big_title;
             @include min-width(992px){
                 font-size: 3em;
-                margin-bottom: 5%;
+                margin-bottom: 3%;
             }
         }
         a{
@@ -54,6 +56,7 @@ padding: 0%;
     align-items: center;
     &--title{
         @extend %section_title;
+
     }
     &--text{
         padding-bottom: 1rem;

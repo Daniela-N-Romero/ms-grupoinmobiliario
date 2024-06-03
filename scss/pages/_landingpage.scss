@@ -1,0 +1,228 @@
+.services__container{
+    position: relative;
+}
+.services__container::before{
+    content: '';
+    position: absolute;
+    inset: 0 0 80% 0;
+    background-image: url(../../assets/images/landing-page/waves.svg);
+    z-index: 20;
+}
+.services{
+        padding-top: 25%;
+    &__item{
+
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px 1px $light-waves;
+        margin: 20px 1px;
+        padding: 15px;
+    }
+    &__title{
+        padding-top: 15px;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    &__description{
+        margin: 0;
+        font-size: 1.2rem;
+    }
+}
+
+.services__container::after{
+    content: '';
+    position: absolute;
+    inset: 0% 0% 75% 0%;
+    background-image: url(../../assets/images/landing-page/waveslightOther.svg);
+    z-index: 10;
+}
+
+
+
+.features{
+    background-color: $light-waves;
+    margin-top: 30vh;
+    padding-bottom: 10vh;
+    position: relative;
+    &__content{
+        padding: auto 20px;
+
+    }
+    &__title{
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    &__description{
+        font-size: 1.7rem;
+    }
+}
+
+.features::before{
+    content: '';
+    position: absolute;
+    inset: -20vh 0 100% 0;
+    background-image: url(../../assets/images/landing-page/wavesNegativeLight.svg);
+    z-index: 20;
+}
+.features::after{
+    content: '';
+    position: absolute;
+    inset: -17vh 0 100% 0;
+    background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
+    z-index: 20;
+}
+
+
+.features__div{
+    @include flex-column;
+    justify-content: center;
+    margin-top: 6rem;
+
+    
+}
+
+
+.features__div .div-svg{
+    min-width: 200px;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.features__div:first-child .div-svg{
+    background-image: url(../../assets/images/landing-page/architect-svgrepo-com.svg);
+}
+.features__div:nth-child(2) .div-svg{
+    background-image: url(../../assets/images/landing-page/construction-crane-svgrepo-com\ \(1\).svg);
+}
+.features__div:nth-child(3) .div-svg{
+    background-image: url(../../assets/images/landing-page/checklist-svgrepo-com.svg);
+}
+
+.features__div:nth-child(4) .div-svg{
+    background-image: url(../../assets/images/landing-page/house-svgrepo-com.svg);
+}
+
+@include min-width(768px){
+    .svg-o1{
+        order: 1;
+    }
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.more-information{
+    position: relative;
+    padding-top: 10%;
+}
+
+.more-information::before{
+    content: '';
+    position: absolute;
+    inset:0 0 90% 0;
+    background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
+    z-index: 20;
+}
+
+.more-information::after{
+    content: '';
+    position: absolute;
+    inset:0 0 85% 0;
+    background-image: url(../../assets/images/landing-page/wavesLight.svg);
+    z-index: 10;
+}
+
+.calltoaction{
+    position: relative;
+    height:100vh;
+    margin-top: 10vh;
+    padding-top: 10vh;
+    background-color: $dark-waves;
+    &__slogan{
+        margin-top: 7rem;
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'antipastoExtraBold';
+        color: #fff;
+    }
+    &__btn{
+        font-size: .6rem;
+        border: 1px solid $light-waves;
+        border-radius: 5px;
+        padding: 5px 24px;
+        background-color: $dark-waves;
+        margin: 1vh .3em;
+        @include min-width(596px){
+            font-size: .9em;;
+        }
+        @include min-width(768px){
+            font-size: 1.1rem;;
+        }
+        a{
+            color: $light-waves;
+        }
+    }
+
+}
+.calltoaction::before{
+    content: '';
+    position: absolute;
+    inset:-10vh 0 100vh 0;
+    background-image: url(../../assets/images/landing-page/wavesNegativeLight.svg);
+    z-index: 100;
+}
+.calltoaction::after{
+    content: '';
+    position: absolute;
+    opacity: 1;
+    inset:-7vh 0 100vh 0;
+    background-image: url(../../assets/images/landing-page/wavesNegative.svg);
+    z-index: 100;
+}

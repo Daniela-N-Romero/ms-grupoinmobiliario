@@ -1,12 +1,14 @@
-*, {
+*, *::before, *::after  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Serif', serif;
+    font-family:'antipastoExtraLight', Helvetica, sans-serif;
 }
+
 body{
     background-color: rgba(226, 226, 226, 0.687);
 }
+
 a {
     text-decoration: none;
 }
@@ -16,3 +18,7 @@ ul {
     padding: 0%;
 }
 
+
+body.light-bg{
+    background-color: white;
+}

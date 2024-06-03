@@ -1,20 +1,25 @@
+@import "./utils/colors";
 @import "./utils/variables";
+@import "./utils/fonts";
 @import "./utils/mixins";
 
 @import "./base/reset";
 
 @import "./layout/footer.scss";
 @import "./layout/header.scss";
+@import "./layout/hero.scss";
 @import "./layout/navbar.scss";
 @import "./layout/sections.scss";
 
+@import "./components/dividers.scss";
 @import "./components/buttons.scss";
 @import "./components/input.scss";
 @import "./components/logo.scss";
 @import "./components/map.scss";
 @import "./components/titles.scss";
 
-@import "./pages/index";
+@import "./pages/landingpage";
+@import "./pages/homeconstructora";
 @import "./pages/contacto";
 @import "./pages/nosotros";
 @import "./pages/galeriasfotograficas";

@@ -1,0 +1,101 @@
+
+
+.hero{
+    position: relative;
+    overflow: hidden;        
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    background-color: black;
+    @include min-width(768px){
+        margin-top: $header-height;
+    }
+    &__content{        
+        background-color: rgba(0, 0, 0, 0.523);
+        justify-content: center;
+        height: 100vh;
+        &--text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 80vh;
+            font-family: antipastoRegular;
+            color: $primary-color-gray;
+            h1{
+                margin: 4vh 0;
+                font-family: 'adelia';
+                line-height: 2.3em;
+                font-size: 1.3em;
+                text-shadow: 1px 1px black;
+                @include min-width(596px){
+                    font-size: 1.7em;;
+                }
+                @include min-width(768px){
+                    font-size: 1.9em;;
+                }
+                @include min-width(1024px){
+                    font-size: 2.3em;
+                }
+            }
+            h2{
+                max-width: 60%;
+                font-size: .8em;
+                margin: 1.5rem 0;
+                @include min-width(596px){
+                    font-size: 1em;;
+                }
+                @include min-width(768px){
+                    font-size: 1.2em;;
+                }
+            }
+            h3{
+                font-size: .6rem;
+                border: 1px solid $dark-waves;
+                border-radius: 5px;
+                padding: 5px 24px;
+                background-color: $dark-waves;
+                margin: 1vh .3em;
+                box-shadow: 2px 2px 5px #ffffff3c;
+                @include min-width(596px){
+                    font-size: .9em;;
+                }
+                @include min-width(768px){
+                    font-size: 1.1rem;;
+                }
+                a{
+                    color: $primary-color-gray;
+                }
+            }
+        }
+    }
+    }
+.hero::before{
+    content: '';
+    top: 80vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../../assets/images/landing-page/wavesNegative.svg);
+    position: absolute;
+    background-size: cover;
+    z-index: 50;
+}    
+.hero::after{
+    content: '';
+    width: 100vw;
+    bottom: 0;
+    right:0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(../../assets/images/landing-page/3.png);
+    background-repeat: no-repeat;
+    background-position: 25% 0%;
+    z-index: -50;
+    background-size: cover;
+
+}    
+
