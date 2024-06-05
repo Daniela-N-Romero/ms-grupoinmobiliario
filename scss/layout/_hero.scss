@@ -49,18 +49,9 @@
                 }
             }
             h3{
-                font-size: 1rem;
-                border: 1px solid $dark-waves;
-                border-radius: 5px;
-                padding: 5px 24px;
-                background-color: $dark-waves;
                 margin: 1vh .3rem;
-                box-shadow: 2px 2px 5px #ffffff3c;
                 @include min-width(596px){
-                    font-size: 1.2rem;;
-                }
-                @include min-width(768px){
-                    font-size: 1.5rem;
+                    font-size: 1rem;;
                 }
                 a{
                     color: $primary-color-gray;

@@ -1,3 +1,4 @@
+
 %btn-dark {
     color: $primary-color-dark-blue;
     font-weight: 700;
@@ -27,11 +28,68 @@
     
 }
 
-$offwhite: darken(white, 10%);
-$darkblue: rgb(50,50,60);
-
-::after, ::before{
-  overflow: hidden;
-  box-sizing: border-box;
+.btn-animated-blue{
+  background-color: $dark-waves;
+  a{
+      color: $primary-color-gray;
+  }
 }
-  
+
+.btn-small, .btn-medium, .btn-big{
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  padding: 5px;
+  font-size: 20px;
+}
+.btn-medium{
+  padding: 5px 12px;
+}
+.btn-big{
+  padding: 5px 24px;
+}
+
+.btn-animated-border-box{
+  background-color: $darkblue;
+  display: inline-block;
+  position: relative;
+  height:auto;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.btn-animated-border-box::before{
+  content: '';
+  position: absolute;
+  inset: -200px;
+  background: linear-gradient(0deg, #d400d4, #00ccff);
+  z-index: 50;
+  animation: animatedborder 2s ease infinite;
+  transition: all 1s;
+}
+
+@keyframes animatedborder {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);} 
+}
+
+.btn-animated-border-box::after{
+  content: '';
+  position: absolute;
+  inset: 1px 1px 1px 1px;
+  border-radius: 5px;
+  background: $darkblue;
+  transition: 0.5s;
+  z-index: 100;
+}
+
+.btn-animated-border-content{
+  position: relative;
+  z-index: 150;
+}
+
+.btn-animated-border-box:hover::after{
+  background: $dark-waves;
+  transition: .3s;
+}

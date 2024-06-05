@@ -1,3 +1,5 @@
+//SERVICES SECTION
+
 .services__container{
     position: relative;
     background-image: url(../../assets/images/landing-page/6.png);
@@ -5,19 +7,19 @@
 .services__container::before{
     content: '';
     position: absolute;
-    inset: 0 0 80% 0;
+    inset: 0 0 90% 0;
     background-image: url(../../assets/images/landing-page/waves.svg);
     z-index: 20;
 }
 .services__container::after{
     content: '';
     position: absolute;
-    inset: 0% 0% 75% 0%;
+    inset: 0% 0% 85% 0%;
     background-image: url(../../assets/images/landing-page/waveslightOther.svg);
     z-index: 10;
 }
 .services{
-        padding-top: 25%;
+        padding-top: 15%;
     &__item{
         max-width: 350px;
         border-radius: 20px;
@@ -38,6 +40,8 @@
 
 
 
+//FEATURES SECTION
+
 
 
 .features{
@@ -46,7 +50,7 @@
     background-size: cover;
     background-position: center;
     padding-top: 30vh;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
     position: relative;
     z-index: 0;
     &__content{
@@ -82,7 +86,7 @@
     margin: 2rem 0;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 2px 5px 10px 1px $secondary-color-gray;
+    box-shadow: 2px 3px 10px 1px $secondary-color-gray;
     @include min-width(768px){
         max-width: 600px;
     }
@@ -93,11 +97,11 @@
 .features__div .div-svg{
     min-width: 100px;
     min-height: 100px;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     margin: 0 20px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -122,6 +126,8 @@
 }
 
 
+//MORE INFORMATION SECTION
+
 
 
 .more-information{
@@ -145,6 +151,9 @@
 
 }
 
+//MORE INFORMATION ACCORDIONS
+
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: $dark-waves;
@@ -158,46 +167,48 @@
     outline: none;
     transition: 0.4s;
     position: relative;
-  }
-  
+}
+
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+.active, .accordion:hover {
     background-color: #ccc;
     color: $dark-waves;
-  }
-  
+}
+
   /* Style the accordion panel. Note: hidden by default */
-  .panel {
+.panel {
     padding: 0 18px;
     background-color: white;
     display: none;
     overflow: hidden;
-  }
+}
 
-  .panel {
+.panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
 
-  .accordion:after {
+.accordion::after {
     content: '\02795'; 
     font-size: 23px;
     color: #194a03;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active::after {
     content: '\2796'; /* Unicode character for "minus" sign (-) */
-  }
+}
+
+//CALL TO ACTION SECTION
 
 
 .calltoaction{
     position: relative;
-    height:60vh;
+    height:80vh;
     margin-top: 10vh;
     padding-top: 10vh;
     background-color: $dark-waves;
@@ -209,20 +220,15 @@
         color: #fff;
     }
     &__btn{
-        font-size: .6rem;
-        border: 1px solid $light-waves;
-        border-radius: 5px;
-        padding: 5px 24px;
-        background-color: $dark-waves;
         margin: 1vh .3em;
-        @include min-width(596px){
-            font-size: .9em;;
-        }
-        @include min-width(768px){
-            font-size: 1.1rem;;
-        }
         a{
             color: $light-waves;
+        }
+        a:hover{
+            color: $primary-color-dark-blue;
+            font-weight: 900;
+            background: $primary-color-gray;
+            transition: .5s;
         }
     }
 
