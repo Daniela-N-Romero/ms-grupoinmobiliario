@@ -63,7 +63,7 @@
   content: '';
   position: absolute;
   inset: -200px;
-  background: linear-gradient(0deg, #d400d4, #00ccff);
+  background: linear-gradient(0deg, $bright-pink, $bright-light-blue);
   z-index: 50;
   animation: animatedborder 2s ease infinite;
   transition: all 1s;
