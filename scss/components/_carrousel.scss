@@ -3,6 +3,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
     //margin-top: -$header-height;  --> only if I make the header translucido
 }
 
@@ -11,12 +12,12 @@
     inset: 0 0 0 0;
     overflow: hidden;
     
-    &--img{
+    .img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    &--content{
+    .content{
         position: absolute;
         top: 20%;
         width: 1140px;
@@ -25,33 +26,30 @@
         transform: translateX(-50%);
         padding-right: 30%;
         color: $primary-color-gray;
-        text-shadow:  0 5px 10px #0004;
+        text-shadow:  0 5px 10px #0008;
         @include max-width(576px){
             padding: 0;
          }
     }
 
-    &--title{
+    .title{
         font-weight: bold;
         letter-spacing: 10px;
-        font-size: 4em;
+        font-size: 3em;
         list-style: 1em;
+        backdrop-filter: blur(2px);
          @include max-width(768px){
             font-size: 2.8em;
          }
     }
     
-    &--topic{
+    .topic{
         color: $logo-blue;
     }
-    &--description{
-        font-size: 1.5em;
-        @include max-width(576px){
-            font-size: 1.3em;
-         }
-
+    .description{
+        font-size: 1.2em;
     }
-    &--buttons{
+    .buttons{
         display: grid;
         grid-template-columns: repeat(2, 130px);
         grid-template-rows: 40px;
@@ -101,7 +99,7 @@
         }
         &__title{
             font-weight: bold;
-            font-size: 1.3em;
+            font-size: 1em;
             color: #fff;
         }
     }
@@ -128,7 +126,7 @@
         font-family: monospace;
         font-weight: bold;
         font-size: large;
-        transition: .5s;
+        transition: .7s;
         &:hover{
             color:#555;
             background-color: #eee;
@@ -139,43 +137,44 @@
 
 //BLUR EFFECT ON MAIN CONTENT
 
-.carrousel__list:nth-child(1) .carrousel__item--title,
-.carrousel__list:nth-child(1) .carrousel__item--description,
-.carrousel__list:nth-child(1) .carrousel__item--buttons{
+.carrousel__list:nth-child(1) .title,
+.carrousel__list:nth-child(1) .description,
+.carrousel__list:nth-child(1) .buttons{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent 0.5s 1s linear forwards;
+    animation: showContent .7s 1s linear forwards;        backdrop-filter: blur(0);
 }
 @keyframes showContent{
     to{
         opacity: 1;
         filter: blur(0);
         transform: translateY(0);
+        backdrop-filter: blur(1px);
     }
 }
 
-.carrousel__list:nth-child(1) .carrousel__item--title{
+.carrousel__list .carrousel__item:nth-child(1) .title{
     animation-delay: 1.2s;
 
 }
-.carrousel__list:nth-child(1) .carrousel__item--description{
+.carrousel__list .carrousel__item:nth-child(1) .description{
     animation-delay: 1.4s;
 }
-.carrousel__list:nth-child(1) .carrousel__item--buttons{
+.carrousel__list .carrousel__item:nth-child(1) .buttons{
     animation-delay: 1.6s;
 }
 
 //EFFECT NEXT CLICK
 
-.carrousel.next .carrousel__list:first-child .carrousel__item--img{
+.carrousel.next .carrousel__list:first-child .img{
     width: 150px;
     height: 150px;
     position: absolute;
     left: 50%;
     bottom: 50px;
     border-radius: 20px;
-    animation: showImage 0.5s linear 1 forwards;
+    animation: showImage .7s linear 1 forwards;
 }
 @keyframes showImage{
     to{
@@ -190,11 +189,94 @@
 .carrousel.next .thumbnails .thumbnail:nth-last-child(1){
     width: 0;
     overflow: hidden;
-    animation: showThumbnail .6s linear 1 forwards;
+    animation: showThumbnail .7s linear 1 forwards;
 }
 
 @keyframes showThumbnail{
     to {
         width: 150px;
+    }
+}
+
+.carrousel.next .thumbnails{
+    transform: translateX(150px);
+    animation: transformThumbnails .7s linear 1 forwards;
+}
+@keyframes transformThumbnails{
+    to{
+        transform: translateX(0);
+    }
+}
+
+//EFFECT PREEV CLICK
+
+.carrousel.prev .carrousel__list .carrousel__item:nth-child(2){
+    z-index: 20;
+}
+
+.carrousel.prev .carrousel__list .carrousel__item:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage .7s linear 1 forwards;
+}
+
+@keyframes outImage{
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+
+.carrousel.prev .thumbnails .thumbnail:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.7s linear forwards;
+}
+
+.carrousel__list .carrousel__item:nth-child(2) .title,
+.carrousel__list .carrousel__item:nth-child(2) .description,
+.carrousel__list .carrousel__item:nth-child(2) .buttons{
+    animation: contentOut .7s 1s linear forwards;
+}
+@keyframes contentOut{
+    to{
+        
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.carrousel.next .arrows button,
+.carrousel.prev .arrows button{
+    pointer-events: none;
+}
+
+//TIME BAR
+
+.time{
+    width: 100%;
+    height: 3px;
+    background-color: $logo-blue;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carrousel.next .time,
+.carrousel.prev .time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning{
+    to {
+        width: 0;
     }
 }

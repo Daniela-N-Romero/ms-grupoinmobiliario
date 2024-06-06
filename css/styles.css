@@ -446,6 +446,7 @@ body.light-bg {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .carrousel__item {
@@ -453,12 +454,12 @@ body.light-bg {
   inset: 0 0 0 0;
   overflow: hidden;
 }
-.carrousel__item--img {
+.carrousel__item .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.carrousel__item--content {
+.carrousel__item .content {
   position: absolute;
   top: 20%;
   width: 1140px;
@@ -467,50 +468,46 @@ body.light-bg {
   transform: translateX(-50%);
   padding-right: 30%;
   color: rgb(240, 236, 229);
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2666666667);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5333333333);
 }
 @media screen and (max-width: 576px) {
-  .carrousel__item--content {
+  .carrousel__item .content {
     padding: 0;
   }
 }
-.carrousel__item--title {
+.carrousel__item .title {
   font-weight: bold;
   letter-spacing: 10px;
-  font-size: 4em;
+  font-size: 3em;
   list-style: 1em;
+  backdrop-filter: blur(2px);
 }
 @media screen and (max-width: 768px) {
-  .carrousel__item--title {
+  .carrousel__item .title {
     font-size: 2.8em;
   }
 }
-.carrousel__item--topic {
+.carrousel__item .topic {
   color: rgb(31, 52, 74);
 }
-.carrousel__item--description {
-  font-size: 1.5em;
+.carrousel__item .description {
+  font-size: 1.2em;
 }
-@media screen and (max-width: 576px) {
-  .carrousel__item--description {
-    font-size: 1.3em;
-  }
-}
-.carrousel__item--buttons {
+.carrousel__item .buttons {
   display: grid;
   grid-template-columns: repeat(2, 130px);
   grid-template-rows: 40px;
   gap: 5px;
   margin-top: 20px;
 }
-.carrousel__item--buttons button {
+.carrousel__item .buttons button {
   border: none;
   background-color: #eee;
   letter-spacing: 3px;
   font-family: "poppinsRegular";
   font-weight: 500;
 }
-.carrousel__item--buttons button:nth-child(2) {
+.carrousel__item .buttons button:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.4);
   border-color: #eee;
   color: #eee;
@@ -545,7 +542,7 @@ body.light-bg {
 }
 .thumbnails .thumbnail__title {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1em;
   color: #fff;
 }
 
@@ -568,20 +565,21 @@ body.light-bg {
   font-family: monospace;
   font-weight: bold;
   font-size: large;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 .arrows button:hover {
   color: #555;
   background-color: #eee;
 }
 
-.carrousel__list:nth-child(1) .carrousel__item--title,
-.carrousel__list:nth-child(1) .carrousel__item--description,
-.carrousel__list:nth-child(1) .carrousel__item--buttons {
+.carrousel__list:nth-child(1) .title,
+.carrousel__list:nth-child(1) .description,
+.carrousel__list:nth-child(1) .buttons {
   transform: translateY(50px);
   filter: blur(20px);
   opacity: 0;
-  animation: showContent 0.5s 1s linear forwards;
+  animation: showContent 0.7s 1s linear forwards;
+  backdrop-filter: blur(0);
 }
 
 @keyframes showContent {
@@ -589,28 +587,29 @@ body.light-bg {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
+    backdrop-filter: blur(1px);
   }
 }
-.carrousel__list:nth-child(1) .carrousel__item--title {
+.carrousel__list .carrousel__item:nth-child(1) .title {
   animation-delay: 1.2s;
 }
 
-.carrousel__list:nth-child(1) .carrousel__item--description {
+.carrousel__list .carrousel__item:nth-child(1) .description {
   animation-delay: 1.4s;
 }
 
-.carrousel__list:nth-child(1) .carrousel__item--buttons {
+.carrousel__list .carrousel__item:nth-child(1) .buttons {
   animation-delay: 1.6s;
 }
 
-.carrousel.next .carrousel__list:first-child .carrousel__item--img {
+.carrousel.next .carrousel__list:first-child .img {
   width: 150px;
   height: 150px;
   position: absolute;
   left: 50%;
   bottom: 50px;
   border-radius: 20px;
-  animation: showImage 0.5s linear 1 forwards;
+  animation: showImage 0.7s linear 1 forwards;
 }
 
 @keyframes showImage {
@@ -625,12 +624,88 @@ body.light-bg {
 .carrousel.next .thumbnails .thumbnail:nth-last-child(1) {
   width: 0;
   overflow: hidden;
-  animation: showThumbnail 0.6s linear 1 forwards;
+  animation: showThumbnail 0.7s linear 1 forwards;
 }
 
 @keyframes showThumbnail {
   to {
     width: 150px;
+  }
+}
+.carrousel.next .thumbnails {
+  transform: translateX(150px);
+  animation: transformThumbnails 0.7s linear 1 forwards;
+}
+
+@keyframes transformThumbnails {
+  to {
+    transform: translateX(0);
+  }
+}
+.carrousel.prev .carrousel__list .carrousel__item:nth-child(2) {
+  z-index: 20;
+}
+
+.carrousel.prev .carrousel__list .carrousel__item:nth-child(2) img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: outImage 0.7s linear 1 forwards;
+}
+
+@keyframes outImage {
+  to {
+    width: 150px;
+    height: 220px;
+    border-radius: 20px;
+    left: 50%;
+    bottom: 50px;
+  }
+}
+.carrousel.prev .thumbnails .thumbnail:nth-child(1) {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.7s linear forwards;
+}
+
+.carrousel__list .carrousel__item:nth-child(2) .title,
+.carrousel__list .carrousel__item:nth-child(2) .description,
+.carrousel__list .carrousel__item:nth-child(2) .buttons {
+  animation: contentOut 0.7s 1s linear forwards;
+}
+
+@keyframes contentOut {
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+.carrousel.next .arrows button,
+.carrousel.prev .arrows button {
+  pointer-events: none;
+}
+
+.time {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(31, 52, 74);
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carrousel.next .time,
+.carrousel.prev .time {
+  width: 100%;
+  animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+  to {
+    width: 0;
   }
 }
 .index__intro--btn {

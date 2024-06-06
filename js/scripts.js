@@ -1,6 +1,6 @@
 
 
-// Scroll and header 
+// Scroll and header
 
 const body = document.body;
 let lastScroll = 0;
@@ -53,3 +53,27 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//carrousel
+debugger
+
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
+let carrouselDom = document.getElementsByClassName('carrousel');
+let carrouselList = document.getElementsByClassName('carrousel__list');
+let thumnailsDivDom = document.getElementsByClassName('thumbnails');
+
+
+function showSlider(type){
+  let itemSlider = document.querySelectorAll('.carrousel__item')
+  let itemThumbnail = document.querySelectorAll('.thumbnail');
+  if (type ==='next'){
+    console.log(itemSlider)
+    // carrouselList.appendChild(itemSlider[0]);
+    // thumnailsDivDom.appendChild(itemThumbnail[0]);
+    // carrouselDom.classList.add("next");
+  }
+
+}
+
+nextDom.addEventListener("click", showSlider('next'))
