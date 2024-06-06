@@ -1,8 +1,20 @@
+//HERO SECTION
+
 .index__hero{
 position: relative;
 padding: 0%;
+overflow: hidden;
+          &::before{
+        content: '';
+        inset: 0 0 0 0;
+        background-color: black;
+        position: absolute;
+        z-index: -10000;
+      }  
+
     &-video{
         position: relative;
+        top: 2px;
         opacity: 70%;
         max-width: 100%;
         min-width: 100%;
@@ -30,22 +42,36 @@ padding: 0%;
                 margin-bottom: 3%;
             }
         }
-        a{
-            @extend %btn-light ;
-            background-color: $primary-color-dark-blue;
-            padding: 7px 12px;
-            font-size: 1rem;
-            &:hover{
-                background-color: $primary-color-gray ;
-                color: $logo-blue;
-                padding: 7px 25px;
-                transition: all .5s; 
-            }
 
-        }
+        .btn-animated-border-box{
+            background-color: transparent;
+          }
+          
+          .btn-animated-border-box::before{
+            content: '';
+            background: linear-gradient(0deg, #d400d4, #00ccff);
+          }
+          
+          .btn-animated-border-box::after{
+            background: $secondary-color-purple;
+          }
+          .btn-animated-border-content{
+            color: $primary-color-gray;
+          }
+          
+          .btn-animated-border-box:hover::after{
+            background: $dark-waves;
+            transition: .3s;
+          }
+
+
+        
 
     }
 }
+
+//INTRO SECTION
+
 
 .index__intro{
     background-color: $primary-color-light-blue;
@@ -77,6 +103,10 @@ padding: 0%;
     }
 }
 
+//SERVICES SECTION
+
+
+
 .index__servicios{
     text-align: center;
 
@@ -89,10 +119,10 @@ padding: 0%;
         width: 100%;
 
     }
-    .servicios{
+    .servicio{
         @extend %section;
         border-radius: 10px;
-        padding: 1rem;
+        padding: 0;
         @include flex();
         align-items: end;
         height: 250px;
@@ -100,7 +130,7 @@ padding: 0%;
         background-position: center;
         margin: .5rem;
         overflow: hidden;
-        position: relative;
+        position: relative;            
 
         @include min-width(768px){        
             justify-content: end;
@@ -114,16 +144,16 @@ padding: 0%;
         }
 
         &:nth-child(2){
-            background-image: url(../../assets/frente.jpeg);
+            background-image: url(../../assets/images/constructora-home/frente.jpeg);
         }
         &:nth-child(3){
-            background-image: url(../../assets/render.jpg);
+            background-image: url(../../assets/images/constructora-home/render.jpg);
         }
         &:nth-child(4){
-            background-image: url(../../assets/gallery.jpg);
+            background-image: url(../../assets/images/constructora-home/gallery.jpg);
         }
 
-        &::after{
+        &::before{
             content: '';
             width: 100%;
             height: 100%;
@@ -132,23 +162,40 @@ padding: 0%;
             top: 0%;
             left: 0%;
             z-index: 10;
+            pointer-events: none;
+
         }
         &:hover{
                     transform: scale(1.01);
                     transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
             }
-        &__text{
-            font-size: 1.5rem;
-            font-weight: 900;
-            z-index: 20;
-            a{
+        &__link{
                 color: $primary-color-gray;
-            }
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                div{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    p{                
+                        position: relative;
+                        font-size: 1.7rem;
+                        font-family: 'antipastoRegular';
+                        z-index: 25;
+                    }
+                }
+        }
 
             
-        }
+        
+        
     }
 }
+
+//GALLERY SECTION
 
 .index__obras{
     @extend %section;
@@ -194,3 +241,4 @@ padding: 0%;
     }
 
 }
+

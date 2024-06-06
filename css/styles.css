@@ -27,11 +27,15 @@
   font-family: "southland";
   src: url(../../assets/fonts/southland.ttf) format(truetype);
 }
+@font-face {
+  font-family: "poppinsRegular";
+  src: url(../../assets/fonts/Poppins-Regular.ttf) format(truetype);
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "antipastoExtraLight", Helvetica, sans-serif;
+  font-family: "popinsRegular", Helvetica, sans-serif;
 }
 
 body {
@@ -190,7 +194,7 @@ body.light-bg {
   }
 }
 .navbar a {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #1e334c;
 }
 .navbar-toggler {
@@ -217,7 +221,7 @@ body.light-bg {
 }
 
 .nav-link.dropdown-toggle {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #1e334c;
 }
 .nav-link.dropdown-toggle.show {
@@ -227,7 +231,7 @@ body.light-bg {
 @media screen and (min-width: 768px) {
   .nav-item.dropdown {
     margin-right: 0.2rem;
-    margin-left: 1rem;
+    margin-left: 15px;
   }
 }
 .scroll-down header {
@@ -238,6 +242,10 @@ body.light-bg {
   filter: drop-shadow(0 -10px 20px black);
 }
 
+.navbar-nav {
+  margin: 0 0 0 auto;
+  justify-content: baseline;
+}
 .navbar-nav .nav-item {
   position: relative;
 }
@@ -378,7 +386,7 @@ body.light-bg {
   background-size: cover;
 }
 
-.index__obras, .index__servicios .servicios, .index__intro {
+.index__obras, .index__servicios .servicio, .index__intro {
   text-align: center;
   padding: 2rem 3rem;
   margin: 1rem 0;
@@ -433,16 +441,204 @@ body.light-bg {
   fill: #2F69B1;
 }
 
-.index__intro--btn, .index__hero-content a {
+.carrousel {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carrousel__item {
+  position: absolute;
+  inset: 0 0 0 0;
+  overflow: hidden;
+}
+.carrousel__item--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carrousel__item--content {
+  position: absolute;
+  top: 20%;
+  width: 1140px;
+  max-width: 80%;
+  left: 45%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  color: rgb(240, 236, 229);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2666666667);
+}
+@media screen and (max-width: 576px) {
+  .carrousel__item--content {
+    padding: 0;
+  }
+}
+.carrousel__item--title {
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 4em;
+  list-style: 1em;
+}
+@media screen and (max-width: 768px) {
+  .carrousel__item--title {
+    font-size: 2.8em;
+  }
+}
+.carrousel__item--topic {
+  color: rgb(31, 52, 74);
+}
+.carrousel__item--description {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 576px) {
+  .carrousel__item--description {
+    font-size: 1.3em;
+  }
+}
+.carrousel__item--buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+}
+.carrousel__item--buttons button {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: "poppinsRegular";
+  font-weight: 500;
+}
+.carrousel__item--buttons button:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: #eee;
+  color: #eee;
+}
+
+.thumbnails {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+}
+.thumbnails .thumbnail {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
+.thumbnails .thumbnail__img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.thumbnails .thumbnail__content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.6rem;
+}
+.thumbnails .thumbnail__title {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.arrows {
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  width: 130px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  z-index: 110;
+}
+.arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(238, 238, 238, 0.2666666667);
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: large;
+  transition: 0.5s;
+}
+.arrows button:hover {
+  color: #555;
+  background-color: #eee;
+}
+
+.carrousel__list:nth-child(1) .carrousel__item--title,
+.carrousel__list:nth-child(1) .carrousel__item--description,
+.carrousel__list:nth-child(1) .carrousel__item--buttons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear forwards;
+}
+
+@keyframes showContent {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+.carrousel__list:nth-child(1) .carrousel__item--title {
+  animation-delay: 1.2s;
+}
+
+.carrousel__list:nth-child(1) .carrousel__item--description {
+  animation-delay: 1.4s;
+}
+
+.carrousel__list:nth-child(1) .carrousel__item--buttons {
+  animation-delay: 1.6s;
+}
+
+.carrousel.next .carrousel__list:first-child .carrousel__item--img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  border-radius: 20px;
+  animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage {
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+}
+.carrousel.next .thumbnails .thumbnail:nth-last-child(1) {
+  width: 0;
+  overflow: hidden;
+  animation: showThumbnail 0.6s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+  to {
+    width: 150px;
+  }
+}
+.index__intro--btn {
   color: rgb(22, 26, 48);
   font-weight: 700;
   padding: 0.3rem;
   border-radius: 5px;
   border: 1px solid transparent;
-}
-
-.index__hero-content a {
-  color: rgb(240, 236, 229);
 }
 
 .btn-animated-blue {
@@ -524,6 +720,7 @@ body.light-bg {
 .index__obras--title, .index__servicios--title, .index__intro--title {
   font-size: 1.8rem;
   font-weight: 900;
+  font-family: "antipastoExtraBold";
 }
 
 .index__hero-content h1 {
@@ -692,7 +889,7 @@ body.light-bg {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active-active, .accordion:hover {
   background-color: #ccc;
   color: #2F69B1;
 }
@@ -721,7 +918,7 @@ body.light-bg {
   margin-left: 5px;
 }
 
-.active::after {
+.active-accordion::after {
   content: "➖"; /* Unicode character for "minus" sign (-) */
 }
 
@@ -772,9 +969,18 @@ body.light-bg {
 .index__hero {
   position: relative;
   padding: 0%;
+  overflow: hidden;
+}
+.index__hero::before {
+  content: "";
+  inset: 0 0 0 0;
+  background-color: black;
+  position: absolute;
+  z-index: -10000;
 }
 .index__hero-video {
   position: relative;
+  top: 2px;
   opacity: 70%;
   max-width: 100%;
   min-width: 100%;
@@ -806,16 +1012,22 @@ body.light-bg {
     margin-bottom: 3%;
   }
 }
-.index__hero-content a {
-  background-color: rgb(22, 26, 48);
-  padding: 7px 12px;
-  font-size: 1rem;
+.index__hero-content .btn-animated-border-box {
+  background-color: transparent;
 }
-.index__hero-content a:hover {
-  background-color: rgb(240, 236, 229);
-  color: rgb(31, 52, 74);
-  padding: 7px 25px;
-  transition: all 0.5s;
+.index__hero-content .btn-animated-border-box::before {
+  content: "";
+  background: linear-gradient(0deg, #d400d4, #00ccff);
+}
+.index__hero-content .btn-animated-border-box::after {
+  background: rgb(67, 65, 124);
+}
+.index__hero-content .btn-animated-border-content {
+  color: rgb(240, 236, 229);
+}
+.index__hero-content .btn-animated-border-box:hover::after {
+  background: #2F69B1;
+  transition: 0.3s;
 }
 
 .index__intro {
@@ -856,9 +1068,9 @@ body.light-bg {
 .index__servicios--title {
   width: 100%;
 }
-.index__servicios .servicios {
+.index__servicios .servicio {
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -872,7 +1084,7 @@ body.light-bg {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .index__servicios .servicios {
+  .index__servicios .servicio {
     justify-content: end;
     align-items: center;
     flex-direction: column;
@@ -881,20 +1093,20 @@ body.light-bg {
   }
 }
 @media screen and (min-width: 992px) {
-  .index__servicios .servicios {
+  .index__servicios .servicio {
     width: 30%;
   }
 }
-.index__servicios .servicios:nth-child(2) {
-  background-image: url(../../assets/frente.jpeg);
+.index__servicios .servicio:nth-child(2) {
+  background-image: url(../../assets/images/constructora-home/frente.jpeg);
 }
-.index__servicios .servicios:nth-child(3) {
-  background-image: url(../../assets/render.jpg);
+.index__servicios .servicio:nth-child(3) {
+  background-image: url(../../assets/images/constructora-home/render.jpg);
 }
-.index__servicios .servicios:nth-child(4) {
-  background-image: url(../../assets/gallery.jpg);
+.index__servicios .servicio:nth-child(4) {
+  background-image: url(../../assets/images/constructora-home/gallery.jpg);
 }
-.index__servicios .servicios::after {
+.index__servicios .servicio::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -903,18 +1115,29 @@ body.light-bg {
   top: 0%;
   left: 0%;
   z-index: 10;
+  pointer-events: none;
 }
-.index__servicios .servicios:hover {
+.index__servicios .servicio:hover {
   transform: scale(1.01);
   transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
-.index__servicios .servicios__text {
-  font-size: 1.5rem;
-  font-weight: 900;
-  z-index: 20;
-}
-.index__servicios .servicios__text a {
+.index__servicios .servicio__link {
   color: rgb(240, 236, 229);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index__servicios .servicio__link div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.index__servicios .servicio__link div p {
+  position: relative;
+  font-size: 1.7rem;
+  font-family: "antipastoRegular";
+  z-index: 25;
 }
 
 .index__obras {

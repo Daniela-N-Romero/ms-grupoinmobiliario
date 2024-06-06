@@ -21,7 +21,7 @@
         }
     }
     a {
-        font-size: 1rem;
+        font-size: .7rem;
         color: $logo-color;
     }
 
@@ -63,7 +63,7 @@
     }
 
     .nav-link.dropdown-toggle {
-        font-size: 1rem;
+        font-size: .7rem;
         color: $logo-color;
     &.show {
         color: $secondary-color-dark-gray;
@@ -72,7 +72,7 @@
     @include min-width(768px) {
     .nav-item.dropdown {
         margin-right: 0.2rem;
-        margin-left: 1rem;
+        margin-left: 15px;
         &:hover {
         }
     }
@@ -87,6 +87,8 @@
 }
 
 .navbar-nav{
+    margin: 0 0 0 auto;
+    justify-content: baseline;
     .nav-item{
         position: relative;
         .nav-link-bold{
