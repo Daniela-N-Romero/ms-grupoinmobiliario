@@ -100,7 +100,7 @@ body.light-bg {
   }
 }
 .footer__div--li p {
-  color: #1e334c;
+  color: #2F69B1;
   display: none;
   margin: 0;
   padding: 10 px;
@@ -112,7 +112,8 @@ body.light-bg {
 }
 .footer__div--breadcrumbs {
   margin-bottom: 0;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
+  font-family: "poppinsRegular";
 }
 .footer__div--breadcrumbs li {
   display: inline-block;
@@ -124,13 +125,13 @@ body.light-bg {
   }
 }
 .footer__div--breadcrumbs li .footer__div--link {
-  color: #1e334c;
+  color: #2F69B1;
 }
 .footer__div--breadcrumbs li .footer__div--link p {
   margin-bottom: 0;
 }
 .footer__div--breadcrumbs li .footer__div--current-link {
-  color: rgb(188, 208, 244);
+  color: #1e334c;
 }
 .footer__div--contacto {
   margin-bottom: 10px;
@@ -139,9 +140,13 @@ body.light-bg {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  font-size: 0.7rem;
 }
 .footer__div--contacto li {
   display: inline-block;
+}
+.footer__div--contacto li p {
+  font-family: "poppinsRegular";
 }
 @media screen and (min-width: 768px) {
   .footer__div--contacto li:nth-child(1):hover {
@@ -318,23 +323,13 @@ body.light-bg {
 .hero__content--text h1 {
   margin: 4vh 0;
   font-family: "adelia";
-  line-height: 2.3rem;
+  line-height: 4rem;
   font-size: 1.6rem;
   text-shadow: 1px 1px black;
 }
 @media screen and (min-width: 596px) {
   .hero__content--text h1 {
-    font-size: 1.9rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__content--text h1 {
-    font-size: 1.9rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .hero__content--text h1 {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
   }
 }
 .hero__content--text h2 {
@@ -348,7 +343,7 @@ body.light-bg {
   }
 }
 .hero__content--text h3 {
-  margin: 1vh 0.3rem;
+  margin: 1vh 0.5rem;
 }
 @media screen and (min-width: 596px) {
   .hero__content--text h3 {
@@ -356,7 +351,8 @@ body.light-bg {
   }
 }
 .hero__content--text h3 a {
-  color: rgb(240, 236, 229);
+  color: rgb(31, 52, 74);
+  font-weight: bold;
 }
 
 .hero::before {
@@ -468,7 +464,7 @@ body.light-bg {
   transform: translateX(-50%);
   padding-right: 30%;
   color: rgb(240, 236, 229);
-  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5333333333);
+  text-shadow: 5px 5px 15px #000;
 }
 @media screen and (max-width: 768px) {
   .carousel__item .content {
@@ -480,7 +476,7 @@ body.light-bg {
   content: "";
   position: absolute;
   inset: -3000px;
-  background-color: rgba(0, 0, 0, 0.3333333333);
+  background-color: rgba(0, 0, 0, 0.2666666667);
 }
 .carousel__item .title {
   font-weight: bold;
@@ -495,9 +491,14 @@ body.light-bg {
 }
 .carousel__item .topic {
   color: #4a80f5;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.carousel__item .topic.long-topic {
+  letter-spacing: 4.5px;
 }
 .carousel__item .description {
   font-size: 1.2em;
+  text-shadow: 0px 5px 15px #000;
 }
 .carousel__item .buttons {
   display: grid;
@@ -505,6 +506,7 @@ body.light-bg {
   grid-template-rows: 40px;
   gap: 5px;
   margin-top: 20px;
+  overflow: hidden;
 }
 .carousel__item .buttons .button {
   display: block;
@@ -512,7 +514,7 @@ body.light-bg {
   background-color: #eee;
   letter-spacing: 3px;
   font-family: "poppinsRegular";
-  font-weight: 500;
+  text-align: center;
 }
 .carousel__item .buttons .button:nth-child(2) {
   background-color: transparent;
@@ -521,6 +523,12 @@ body.light-bg {
   color: #fff;
   border-radius: 5px;
   flex-grow: 1;
+}
+.carousel__item .buttons .button-blue {
+  color: rgb(31, 52, 74);
+  display: inline-block;
+  width: 100%;
+  padding-block: 8px;
 }
 
 .thumbnails {
@@ -548,18 +556,21 @@ body.light-bg {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  font-size: 0.6rem;
+  font-size: 10.5px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black, 0 0 1em #2F69B1, 0 0 1em rgb(22, 26, 48);
 }
 .thumbnails .thumbnail__title {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 15px;
   color: #fff;
+  text-shadow: 1px 1px 1px #020000;
 }
 
 .arrows {
   position: absolute;
   top: 80%;
-  right: 52%;
+  left: 10%;
   width: 130px;
   max-width: 30%;
   display: flex;
@@ -570,7 +581,7 @@ body.light-bg {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(238, 238, 238, 0.2666666667);
+  background-color: rgba(238, 238, 238, 0.4666666667);
   border: none;
   font-family: monospace;
   font-weight: bold;
@@ -595,7 +606,6 @@ body.light-bg {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
-    backdrop-filter: blur(1px);
   }
 }
 .carousel__list .carousel__item:nth-child(1) .title {
@@ -617,7 +627,7 @@ body.light-bg {
   left: 50%;
   bottom: 50px;
   border-radius: 20px;
-  animation: showImage 0.5s linear 1 forwards;
+  animation: showImage 0.48s linear 1 forwards;
 }
 
 @keyframes showImage {
@@ -626,7 +636,7 @@ body.light-bg {
     height: 100%;
     left: 0;
     bottom: 0;
-    border-radius: 0;
+    border-radius: 0px;
   }
 }
 .carousel.next .thumbnails .thumbnail:nth-last-child(1) {
@@ -780,7 +790,7 @@ body.light-bg {
   position: absolute;
   inset: 1px 1px 1px 1px;
   border-radius: 5px;
-  background: rgb(50, 50, 60);
+  background: rgb(240, 236, 229);
   transition: 0.5s;
   z-index: 100;
 }
@@ -811,9 +821,54 @@ body.light-bg {
   font-weight: 900;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+  gap: 20px;
+}
+.gallery a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gallery .small-pic, .gallery .big-pic {
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2666666667);
+  filter: saturate(100%);
+  transition: 0.4s;
+}
+.gallery .small-pic:hover, .gallery .small-pic:focus, .gallery .big-pic:hover, .gallery .big-pic:focus {
+  transform: scale(1.01);
+  filter: saturate(150%);
+}
+.gallery .small-pic {
+  width: 300px;
+  height: 266.6px;
+}
+@media screen and (min-width: 576px) {
+  .gallery .small-pic {
+    max-width: 200px;
+  }
+}
+.gallery .big-pic {
+  width: 300px;
+  height: 266.6px;
+}
+@media screen and (min-width: 576px) {
+  .gallery .big-pic {
+    width: 420px;
+    height: 266.6px;
+  }
+}
+
 .services__container {
   position: relative;
-  background-image: url(../../assets/images/landing-page/6.png);
 }
 
 .services__container::before {
@@ -1053,6 +1108,7 @@ body.light-bg {
   position: relative;
   padding: 0%;
   overflow: hidden;
+  height: 95vh;
 }
 .index__hero::before {
   content: "";
@@ -1069,7 +1125,6 @@ body.light-bg {
   min-width: 100%;
   overflow: hidden;
   height: 100%;
-  max-height: 70vh;
   object-fit: cover;
 }
 @media screen and (min-width: 768px) {
@@ -1271,74 +1326,6 @@ body.light-bg {
   font-weight: 900;
   padding: 0px 10px;
   color: rgb(50, 59, 110);
-}
-.gallery__title {
-  margin-top: 0.1rem;
-  background-color: rgb(182, 187, 196);
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0px 0px 0px -10px rgb(243, 248, 246), 2px 5px 10px 1px rgb(243, 248, 246);
-  margin-bottom: 1rem;
-  position: relative;
-  z-index: 10;
-}
-.gallery__title--h1 {
-  color: rgb(31, 52, 74);
-  font-weight: 900;
-}
-
-.gallery__section {
-  margin-bottom: 1.5rem;
-  box-shadow: 0px 0px 90px 30px rgb(243, 248, 246), 2px 5px 10px 1px;
-  position: relative;
-}
-.gallery__section--title {
-  position: absolute;
-  display: inline-block;
-  z-index: 10;
-  padding: 0.2rem 1.5rem;
-  font-size: 1.3rem;
-  box-shadow: 0px 0px 90px 30px rgb(182, 187, 196), 2px 5px 5px 1px;
-  background-color: rgb(182, 187, 196);
-  border-radius: 20px;
-  text-align: center;
-  max-width: 60%;
-  bottom: 10%;
-  left: 20%;
-  right: 20%;
-}
-.gallery__section--titlelink {
-  color: rgb(31, 52, 74);
-  font-weight: 900;
-}
-.gallery__section--title:hover {
-  background-color: rgb(22, 26, 48);
-  transition: background-color linear 1s;
-}
-.gallery__section--title:hover a {
-  color: rgb(243, 248, 246);
-}
-
-.carousel-inner img {
-  width: 100%;
-  backdrop-filter: sepia(90%);
-  overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-  .carousel-inner img {
-    min-height: 25vh;
-    max-height: 25vh;
-    object-fit: cover;
-    overflow: hidden;
-  }
-}
-@media screen and (min-width: 990px) {
-  .carousel-inner img {
-    min-height: 80vh;
-    max-height: 80vh;
-    object-fit: cover;
-    overflow: hidden;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

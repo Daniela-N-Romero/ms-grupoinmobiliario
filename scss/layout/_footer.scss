@@ -42,7 +42,7 @@
                 
             }
             p{
-                color: $logo-color;
+                color: $dark-waves;
                 display: none;
                 margin: 0;
                 padding: 10 px;
@@ -54,7 +54,9 @@
         }
         &--breadcrumbs {
             margin-bottom: 0;
-            font-size: 1.2rem;
+            font-size: .6rem;
+            font-family: 'poppinsRegular';
+
             li{
             display: inline-block;
             margin-top: .5rem;            
@@ -62,13 +64,13 @@
                 margin-bottom: 1rem;
             }
             .footer__div--link{
-                color: $logo-color;
+                color: $dark-waves;
                 p{
                     margin-bottom: 0;
                 }
             }
             .footer__div--current-link{
-                color: $secondary-color-light-blue;
+                color: $logo-color;
             }
             }
         }
@@ -79,8 +81,10 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            font-size: .7rem;
                 
             li{
+                p{font-family: 'poppinsRegular'};
                 display: inline-block;
                 @include min-width(768px){
                     &:nth-child(1):hover{

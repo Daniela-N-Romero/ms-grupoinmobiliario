@@ -27,17 +27,11 @@
             h1{
                 margin: 4vh 0;
                 font-family: 'adelia';
-                line-height: 2.3rem;
+                line-height: 4rem;
                 font-size: 1.6rem;
                 text-shadow: 1px 1px black;
                 @include min-width(596px){
-                    font-size: 1.9rem;;
-                }
-                @include min-width(768px){
-                    font-size: 1.9rem;;
-                }
-                @include min-width(1024px){
-                    font-size: 2.3rem;
+                    font-size: 2.7rem;
                 }
             }
             h2{
@@ -49,16 +43,20 @@
                 }
             }
             h3{
-                margin: 1vh .3rem;
+                margin: 1vh .5rem;
                 @include min-width(596px){
                     font-size: 1rem;;
                 }
                 a{
-                    color: $primary-color-gray;
+                    color: $logo-blue;
+                    font-weight: bold;
                 }
             }
+
         }
+
     }
+
     }
 .hero::before{
     content: '';
