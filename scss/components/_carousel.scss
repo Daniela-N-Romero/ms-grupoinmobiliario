@@ -36,7 +36,7 @@
         content: '';
         position: absolute;
         inset: -3000px ;
-        background-color: #0004;
+        background-color: #0005;
     }
     }
 
@@ -52,7 +52,7 @@
     
     .topic{
         color: $location;        
-        text-shadow:  0px 5px 10px #0006;
+        text-shadow:  1px 2px 10px #000;
     }
     .topic.long-topic{
         letter-spacing: 4.5px;
@@ -132,6 +132,11 @@
             font-size: 15px;
             color: #fff;
             text-shadow: 1px 1px 1px #020000;
+        }
+        &:hover, &:focus{
+            transform: scale(1.01);
+            filter: saturate(200%);
+            transition: .5s;
         }
     }
 }

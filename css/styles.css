@@ -476,7 +476,7 @@ body.light-bg {
   content: "";
   position: absolute;
   inset: -3000px;
-  background-color: rgba(0, 0, 0, 0.2666666667);
+  background-color: rgba(0, 0, 0, 0.3333333333);
 }
 .carousel__item .title {
   font-weight: bold;
@@ -491,7 +491,7 @@ body.light-bg {
 }
 .carousel__item .topic {
   color: #4a80f5;
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 2px 10px #000;
 }
 .carousel__item .topic.long-topic {
   letter-spacing: 4.5px;
@@ -565,6 +565,11 @@ body.light-bg {
   font-size: 15px;
   color: #fff;
   text-shadow: 1px 1px 1px #020000;
+}
+.thumbnails .thumbnail:hover, .thumbnails .thumbnail:focus {
+  transform: scale(1.01);
+  filter: saturate(200%);
+  transition: 0.5s;
 }
 
 .arrows {

@@ -1,5 +1,5 @@
 
-const  gallery = document.getElementById("gallery");
+
 
 function loadPictures(array){
     let contenido = ``;
@@ -11,8 +11,7 @@ function loadPictures(array){
     }
 }
 
-
+const  gallery = document.getElementById("bathroomgallery");
 if (gallery){
-    console.log(gallery)
-    loadPictures(pictures)
+    loadPictures(bathroomPictures)
 }
