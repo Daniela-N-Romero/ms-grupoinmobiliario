@@ -1,21 +1,56 @@
+//content for bathroom gallery
+
 const baniosPath = "/assets/images/banios/";
 
 const bathroomPictures = [
-    {class:"big-pic", img:`${baniosPath}parrilla-1.jpeg`, title:"Esta es una parrilla"},
-    {class:"small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"big-pic", img:`${baniosPath}parrilla-4.jpeg`, title:"Esta es una parrilla"},
-    {class:"big-pic", img:`${baniosPath}parrilla-2.jpeg`, title:"Esta es una parrilla"},
-    {class:"big-pic", img:`${baniosPath}parrilla-4.jpeg`, title:"Esta es una parrilla"},
-    {class:"small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"small-pic", img:`${baniosPath}banio-3.jpeg`, title:"Este es un baño"},
-    {class:"small-pic", img:`${baniosPath}banio-3.jpeg`, title:"Este es un perro"},
-    {class:"big-pic", img:`${baniosPath}parrilla-4.jpeg`, title:"Esta es una parrilla"},
-    {class:"small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"small-pic", img:`${baniosPath}banio-3.jpeg`, title:"Este es un perro"},
-    {class:"big-pic", img:`${baniosPath}cocina-1.jpeg`, title:"Este es un baño"}
+    {class:"div-img med-pic", img:`${baniosPath}banio-11.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-2.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-4.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-8.jpg`, title:"Este es un baño"},
+    {class:"div-img big-pic", img:`${baniosPath}banio-6.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img med-pic", img:`${baniosPath}banio-12.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-3.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-2.jpg`, title:"Este es un perro"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-13.jpg`, title:"Este es un perro"},
+    {class:"div-img med-pic", img:`${baniosPath}banio-15.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-14.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img med-pic", img:`${baniosPath}banio-6.jpg`, title:"Este es un baño"}
 ];
+
+//content for bathroom gallery
+
+const unaPlantaPath = "/assets/images/banios/";
+
+const unaPlantaPictures = [
+    {class:"div-img med-pic", img:`${baniosPath}banio-11.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-2.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-4.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-8.jpg`, title:"Este es un baño"},
+    {class:"div-img big-pic", img:`${baniosPath}banio-6.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img med-pic", img:`${baniosPath}banio-12.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-3.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-2.jpg`, title:"Este es un perro"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-13.jpg`, title:"Este es un perro"},
+    {class:"div-img med-pic", img:`${baniosPath}banio-15.jpg`, title:"Esta es una parrilla"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-14.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${baniosPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img med-pic", img:`${baniosPath}banio-6.jpg`, title:"Este es un baño"}
+];
+
+
+
+
+
+//content for houses carousely
 
 const viviendasPath = "/assets/images/obras/";
 
