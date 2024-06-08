@@ -1,7 +1,5 @@
 
-
-
-function loadPictures(array){
+function loadPictures(array,gallery){
     let contenido = ``;
     if (array.length > 0){
         array.forEach(picture => {
@@ -11,7 +9,8 @@ function loadPictures(array){
     }
 }
 
-const  gallery = document.getElementById("bathroomgallery");
-if (gallery){
-    loadPictures(bathroomPictures)
+const  bathroomgallery = document.getElementById("bathroomgallery");
+
+if (bathroomgallery){
+    loadPictures(bathroomPictures,bathroomgallery)
 }
