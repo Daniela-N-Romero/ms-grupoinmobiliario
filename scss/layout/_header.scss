@@ -91,44 +91,6 @@
     justify-content: baseline;
     .nav-item{
         position: relative;
-        .nav-link-bold{
-            font-family: 'antipastoExtraBold';
-            &::before{
-                content: '';
-                position: absolute;
-                top: 0;
-                left:-10px;
-                right: -10px;
-                background-color: transparent;
-                height: 1px;
-                transition: .3s;
-                z-index: 1000;
-            }
-            &::after{
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: -10px;
-                right: -10px;
-                background-color: transparent;
-                height: 1px;
-                transition: .3s;
-            }
-            &:hover{
-                &::before{
-                    background-color: $dark-waves;
-                    left: 0;
-                    right: 0;
-                    transform: translateY(5px);
-                }
-                &::after{
-                    background-color: $dark-waves; 
-                    left: 0;
-                    right: 0;
-                    transform: translateY(-5px);
 
-                }
-            }
-        }
     }
 }

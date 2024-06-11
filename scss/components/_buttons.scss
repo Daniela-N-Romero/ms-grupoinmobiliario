@@ -77,7 +77,7 @@
 .btn-animated-border-box::after{
   content: '';
   position: absolute;
-  inset: 1px 1px 1px 1px;
+  inset: 2px 2.5px 2px 2.5px;
   border-radius: 5px;
   background: $primary-color-gray;
   transition: 0.5s;
@@ -90,7 +90,48 @@
 }
 
 .btn-animated-border-box:hover::after{
-  background: $dark-waves;
-  transition: .3s;
+  background: transparent;
+  transition: .4s;
 }
 
+// LIKN WITH TRANSITIONING BORDERS AND BOLD FONT
+
+.link-bold-borders{
+  font-family: 'antipastoExtraBold';
+  &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left:-10px;
+      right: -10px;
+      background-color: transparent;
+      height: 1px;
+      transition: .3s;
+      z-index: 1000;
+  }
+  &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      right: -10px;
+      background-color: transparent;
+      height: 1px;
+      transition: .3s;
+  }
+  &:hover{
+      &::before{
+          background-color: $dark-waves;
+          left: 0;
+          right: 0;
+          transform: translateY(5px);
+      }
+      &::after{
+          background-color: $dark-waves; 
+          left: 0;
+          right: 0;
+          transform: translateY(-5px);
+
+      }
+  }
+}
