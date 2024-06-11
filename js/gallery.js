@@ -10,7 +10,37 @@ function loadPictures(array,gallery){
 }
 
 const  bathroomgallery = document.getElementById("bathroomgallery");
+const  kitchengallery = document.getElementById("kitchengallery");
+const  onestorygallery = document.getElementById("onestorygallery");
+const  twostorygallery = document.getElementById("twostorygallery");
+const  poolgallery = document.getElementById("poolgallery");
+const  grillgallery = document.getElementById("grillgallery");
+const  pergolagallery = document.getElementById("pergolagallery");
+
+
 
 if (bathroomgallery){
     loadPictures(bathroomPictures,bathroomgallery)
+}
+
+if (kitchengallery){
+    loadPictures(kitchenPictures,kitchengallery)
+}
+
+if (onestorygallery){
+    loadPictures(onestoryPictures,onestorygallery)
+}
+
+if (twostorygallery){
+    loadPictures(twostoryPictures,twostorygallery)
+}
+
+if (poolgallery){
+    loadPictures(poolPictures,poolgallery)
+}
+if (grillgallery){
+    loadPictures(grillPictures,grillgallery)
+}
+if (pergolagallery){
+    loadPictures(pergolaPictures,pergolagallery)
 }

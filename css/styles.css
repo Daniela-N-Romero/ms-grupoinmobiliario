@@ -826,19 +826,16 @@ body.light-bg {
   font-weight: 900;
 }
 
-.main-banios {
-  background-color: rgba(54, 105, 167, 0.2509803922);
-}
 @media screen and (min-width: 768px) {
-  .main-banios {
+  .main-gallery {
     padding-top: 5rem;
   }
 }
-.main-banios .gallery__text {
+.main-gallery .gallery__text {
   text-align: center;
   background-color: rgba(210, 210, 210, 0.4901960784);
 }
-.main-banios .gallery__text .gallery__title {
+.main-gallery .gallery__text .gallery__title {
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-family: "adelia", Helvetica, sans-serif;
@@ -848,7 +845,7 @@ body.light-bg {
   letter-spacing: 10px;
   text-shadow: 3px 3px 2px #FFF;
 }
-.main-banios .gallery__text .gallery__description {
+.main-gallery .gallery__text .gallery__description {
   padding-block: 1rem;
   margin: auto;
   font-family: "poppinsRegular";

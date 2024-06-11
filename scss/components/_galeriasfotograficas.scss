@@ -1,7 +1,7 @@
 
-.main-banios{
+.main-gallery{
     @include min-width(768px){padding-top: $header-height;};
-    background-color: #3669a740;
+    // background-color: #3669a740;
 
     .gallery__text{
         text-align: center;
