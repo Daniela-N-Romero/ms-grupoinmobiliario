@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Dinámico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tabs div {
+            cursor: pointer;
+            padding: 10px;
+        }
+        .tabs .active {
+            border-bottom: 2px solid #fff;
+        }
+        .form-container {
+            display: none;
+        }
+        .form-container.active {
+            display: block;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container form input {
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        .form-container form button {
+            padding: 10px;
+            border: none;
+            background: #555;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="tabs">
+        <div id="find-tab" class="active">Find a Home</div>
+        <div id="sell-tab">Sell My Home</div>
+    </div>
+    <div id="find-form" class="form-container active">
+        <form>
+            <input type="text" placeholder="Find a Place">
+            <button>Contact Us</button>
+        </form>
+    </div>
+    <div id="sell-form" class="form-container">
+        <form>
+            <input type="text" placeholder="Address, City, Zip">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phone Number">
+            <button>Get a Consultation</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('find-tab').addEventListener('click', function() {
+        document.getElementById('find-tab').classList.add('active');
+        document.getElementById('sell-tab').classList.remove('active');
+        document.getElementById('find-form').classList.add('active');
+        document.getElementById('sell-form').classList.remove('active');
+    });
+
+    document.getElementById('sell-tab').addEventListener('click', function() {
+        document.getElementById('sell-tab').classList.add('active');
+        document.getElementById('find-tab').classList.remove('active');
+        document.getElementById('sell-form').classList.add('active');
+        document.getElementById('find-form').classList.remove('active');
+    });
+</script>
+
+</body>
+</html>
