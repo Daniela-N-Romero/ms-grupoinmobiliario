@@ -94,3 +94,15 @@
 
     }
 }
+
+//EDITING JUST LANDING PAGE LINKS
+
+.nav-link.link-bold-borders.link-homepages{
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: .3rem;
+    color: #fff;
+    &:hover{
+        color:$logo-blue;
+    }
+}

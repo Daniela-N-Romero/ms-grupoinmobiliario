@@ -1,0 +1,187 @@
+//MODELS INTRO
+
+.models__intro{        
+    background:url(../../../assets/images/obras/2.jpg)no-repeat center/cover;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        inset: 0 0 0 0 ;
+        background-color: #0000007f;
+        z-index: 0;
+    }
+
+    &-content{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        color: #fff;
+        z-index: 10;
+        text-align: center;            
+        @include min-width(768px){
+                left: 20%;
+                right: 20%;
+            }
+
+        h2{
+            font-family: 'PoppinsRegular';
+            font-weight: bold;
+            margin-bottom: 2rem;
+            animation: moveup 1s linear forwards;
+            opacity: 0;
+            @keyframes moveup {
+                to{
+                    opacity:1;
+                    transform: translateY(-150px);
+                }
+                
+            }
+
+
+        }
+        p{
+            padding-inline: 1rem;
+            animation: appear 1s linear forwards;
+                
+        }
+    }
+}
+
+
+
+
+// <div class="models__intro">
+// <img src="../../../assets/images/obras/2.jpg" alt="" class="models__intro-img">
+// <article class="models__intro-content">
+//     <h2>Esta es la intro</h2>
+//     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita aperiam omnis ad esse, fugit obcaecati fuga atque nisi necessitatibus sequi tenetur architecto quos ullam dolorum minus, tempora error eaque!</p>
+// </article>
+// </div>
+
+//BACKGROUND
+
+.main-gallery.models{
+    background-color: $logo-blue;
+}
+.container.models{
+    padding-block: 4rem;
+}
+
+//MODAL CARD
+
+.model{    
+    margin: 1rem;    
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px 1px #676565;
+    max-width: 300px;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+
+        @include min-width(768px){
+            
+        }
+    }
+
+    &__img{
+        border-radius: 50%;
+        margin: auto;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../assets/images/obras/2.jpg);
+    }
+    &__text{
+        font-family: 'PoppinsRegular';
+        h2{
+            font-size: 1.7rem;
+            margin-block: 2rem;
+            text-align: center;
+            font-family: 'adelia';
+            text-shadow: 2px 2px 2px #69abd4;
+            font-weight: bold;
+        }
+        .model__features{
+            margin: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2,40%);
+            justify-content: space-around;
+            font-family: 'PoppinsRegular';
+        }
+        h3{
+            font-size: .7rem;
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: end;
+        position: relative;
+        button{
+            position: relative;
+            margin: auto;
+            font-size: .9rem;
+
+
+        }
+
+    }
+}
+
+//OPEN MODAL DESIGN
+
+.modal-header{
+    border: none;        
+    padding-bottom: 0;
+    .modal-title{
+        padding-inline: 4rem;
+        font-size: 1.5rem;
+        font-family: 'PoppinsRegular'; 
+        font-weight: bold;
+
+    }
+
+}
+
+.modal-body{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0px 15px;
+        box-shadow: 5px 5px 5px #0000003d;
+    }
+    .model__description{
+        padding-top: 1rem;
+        font-family: 'PoppinsRegular'; 
+        font-size: 13px;
+        line-height: 18px;
+        text-align: justify;
+        padding-inline: 10px;
+    }
+    .model__features{
+        grid-column: span 2;
+    }
+    .model__feature{
+        font-family: 'PoppinsRegular'; 
+        font-size: .7rem;
+        margin: 5px;
+
+    }
+}
+
+.modal-footer{
+    justify-content: center;
+}

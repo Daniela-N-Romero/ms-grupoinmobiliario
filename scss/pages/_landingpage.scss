@@ -219,16 +219,11 @@
         color: #fff;
     }
     &__btn{
+        font-family: 'PoppinsRegular';
+        text-transform: uppercase;
+        font-weight: 900;
         margin: 1vh .3em;
-        a{
-            color: $light-waves;
-        }
-        a:hover{
-            color: $primary-color-dark-blue;
-            font-weight: 900;
-            background: $primary-color-gray;
-            transition: .5s;
-        }
+
     }
 
 }

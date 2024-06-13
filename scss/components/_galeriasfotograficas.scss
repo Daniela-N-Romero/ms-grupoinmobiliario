@@ -6,20 +6,9 @@
 
     .gallery__text{
         text-align: center;
-        background-color: #d2d2d27d;
+        background-color: #dfdfdf;
 
         
-        .gallery__title{
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-            font-family: "adelia", Helvetica, sans-serif;
-            font-weight: bold;
-            color: $logo-blue;
-            font-size: 3rem;
-            letter-spacing: 10px;
-            text-shadow: 3px 3px 2px #FFF;
-            
-        }
         .gallery__description{
             padding-block: 1rem;
             margin: auto;
@@ -28,6 +17,8 @@
             line-height: .8rem;
             font-size: .7rem;
         }
+
+
     }
     .gallery__back{
         display: inline-block;
@@ -150,4 +141,5 @@
         font-size:  .9rem;
     }
 }
+
 

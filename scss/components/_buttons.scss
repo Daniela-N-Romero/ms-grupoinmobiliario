@@ -49,14 +49,20 @@
   padding: 5px 24px;
 }
 
+//animated border
+
 .btn-animated-border-box{
-  background-color: $darkblue;
+  background-color: transparent;
   display: inline-block;
   position: relative;
   height:auto;
   text-align: center;
   overflow: hidden;
   padding: 0;
+  &:hover{
+    transform: scale(1.01);
+  }
+
 }
 
 .btn-animated-border-box::before{
@@ -67,6 +73,7 @@
   z-index: 50;
   animation: animatedborder 2s ease infinite;
   transition: all 1s;
+
 }
 
 @keyframes animatedborder {
@@ -79,59 +86,80 @@
   position: absolute;
   inset: 2px 2.5px 2px 2.5px;
   border-radius: 5px;
-  background: $primary-color-gray;
+  background: transparent;
   transition: 0.5s;
   z-index: 100;
 }
 
 .btn-animated-border-content{
   position: relative;
-  z-index: 150;
+  z-index: 150;  
+  color: #ffffff;
+  &:hover{
+    color: #fff;
+  }
 }
 
 .btn-animated-border-box:hover::after{
-  background: transparent;
+  background: #d6d6d638;
   transition: .4s;
+  inset: 2px 2.5px 2px 2.5px;
 }
 
 // LIKN WITH TRANSITIONING BORDERS AND BOLD FONT
 
 .link-bold-borders{
-  font-family: 'antipastoExtraBold';
+  position: relative;
+  font-family: 'antipastoRegular';
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 10;
+  background-color: $logo-blue;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  padding: 6px 20px;
+  transition: .4s;
+
+  &:hover,&:active{
+    background-color: transparent;
+    color: $logo-blue;
+    letter-spacing: 2.5px;
+  }
   &::before{
       content: '';
       position: absolute;
-      top: 0;
-      left:-10px;
-      right: -10px;
-      background-color: transparent;
-      height: 1px;
-      transition: .3s;
-      z-index: 1000;
+      inset: -10px;
+      transition: .5s;
+      z-index:-20;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+
+
   }
   &::after{
       content: '';
       position: absolute;
-      bottom: 0;
-      left: -10px;
-      right: -10px;
-      background-color: transparent;
-      height: 1px;
-      transition: .3s;
+      inset: 70% ;
+      background-color: #eae8e8;
+      transition: .5s;
   }
-  &:hover{
+  &:hover,&:active{
       &::before{
-          background-color: $dark-waves;
-          left: 0;
-          right: 0;
-          transform: translateY(5px);
+          inset: 0 0;
+          border-top: 1.5px solid $logo-blue;
+          border-bottom: 1.5px solid $logo-blue;
+          z-index: 10;
       }
       &::after{
-          background-color: $dark-waves; 
-          left: 0;
-          right: 0;
-          transform: translateY(-5px);
+          inset: -1px -1px;
+          z-index: -10;
 
       }
   }
+  &:focus{
+    border: none;
+  }
 }
+
