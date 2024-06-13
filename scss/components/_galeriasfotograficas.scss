@@ -3,6 +3,9 @@
     @include min-width(768px){padding-top: $header-height;};
     // background-color: #3669a740;
     @include flex-column;
+    &models{
+        background-color: #fff;
+    }
 
     .gallery__text{
         text-align: center;
