@@ -104,24 +104,19 @@
     &__text{
         font-family: 'PoppinsRegular';
         h2{
+            font-family: 'antipastoLight';
+            text-transform: capitalize;
+            letter-spacing: 3px;
             font-size: 1.7rem;
-            margin-block: 2rem;
+            margin-top: 1rem;
             text-align: center;
-            font-family: 'adelia';
-            text-shadow: 2px 2px 2px #69abd4;
             font-weight: bold;
         }
-        .model__features{
-            margin: 1rem;
-            display: grid;
-            grid-template-columns: repeat(2,40%);
-            justify-content: space-around;
-            font-family: 'PoppinsRegular';
         }
         h3{
             font-size: .7rem;
         }
-    }
+    
     &__button{
         display: flex;
         justify-content: end;
@@ -133,9 +128,9 @@
 
 
         }
-
     }
 }
+
 
 //OPEN MODAL DESIGN
 
@@ -184,4 +179,11 @@
 
 .modal-footer{
     justify-content: center;
+}
+.model__features{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    justify-content: space-around;
+    font-family: 'PoppinsRegular';
 }

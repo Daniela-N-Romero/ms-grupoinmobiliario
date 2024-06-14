@@ -18,7 +18,7 @@
 
 <body>
     <header class="header">
-        
+
         <nav class="container navbar navbar-expand-md d-md-flex" aria-label="Barra de navegacion">
 
                 <a href="../homeconstructora.html" aria-label="Logo a página de inicio"><img src="../../assets/images/logos/logo-constructora.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
@@ -28,10 +28,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto align-items-center">  
+                    <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item"><a class="nav-link nav-link-block"  href="../homeconstructora.html" role="button" tabindex="0" aria-label="Ir al inicio">Inicio</a></li>
-                            <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="./obras.html" role="button"  tabindex="0" aria-label="Ver nuestras obras" aria-current="page">Nuestras Obras</a>
-                                <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="./nosotros.html" role="button" tabindex="0" aria-label="Informacion acerca de nosotros" >Nosotros</a>
+                        <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="./nosotros.html" role="button" tabindex="0" aria-label="Informacion acerca de nosotros" aria-current="page">Nosotros</a>
                             <a class="nav-link dropdown-toggle d-inline-block" role="button"  tabindex="0" aria-label="Más informacion acerca de nosotros" data-bs-toggle="dropdown" aria-expanded="false"></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./nosotros.html"  role="button" tabindex="0" aria-label="Quienes somos">Quienes somos</a></li>
@@ -40,7 +39,8 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                                
+                            
+                            <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="./obras.html" role="button"  tabindex="0" aria-label="Ver nuestras obras" >Nuestras Obras</a>
                                 <a class="nav-link dropdown-toggle d-inline-block" role="button"  tabindex="0" aria-label="Ver más acerca de nuestras obras" data-bs-toggle="dropdown" aria-expanded="false"></a>
                                 <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="./obras/viviendas.html"  role="button" tabindex="0" alt="Ver viviendas personalizadas">Viviendas <br><br/>personalizadas</a></li>
@@ -50,23 +50,107 @@
                                         <li><a class="dropdown-item" href="./obras/modelos.html"  role="button" tabindex="0" aria-label="Ver modelos estándar">Modelos estándar</a></li>
                                 </ul>
                             </li>
-                        
+
                         </li>
                         <li class="nav-item"><a class="nav-link nav-link-block" href="./contacto.html" role="button" tabindex="0" aria-label="Contactanos">Contactanos</a></li>
                     </ul>
-                </div>  
+                </div>
 
         </nav>
-    
+
 </header>
 
     <main class="main">
-        <div class="us-section">
-            <h1 class="gallery__title poppins">Nosotros</h1>
-            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+        <section class="us-section__intro">
+            <h1 class="gallery__title poppins">Quienes somos</h1>
+            <img src="../../assets/images/landing-page/1.png" alt="">
+            <p class="gallery__description">Nos especializamos en la creación de proyectos y nos encargamos de la gestoría. A su vez, realizamos la dirección de obra, hacemos el calculo estructural y brindamos la mano de obra.</p>
+        </section>
 
-        <section></section>
+        
+        <section class="us-section__vision">
+            <h2 class="poppins__title">Nuestra visión</h2>
+            <p>Buscamos ser reconocidos por nuestra calidez, fidelización y por trabajar con dedicación para cumplir las metas de nuestros clientes trascendiendo a la operación que realicen.</p>
+        </section>
+
+     
+        
+        <section class="us-section__timeline">
+            <h2 class="poppins__title">Servicios</h2>
+            <ul class="timeline">
+                <li>
+                    <h3 class="service">El anteproyecto
+                    </h3>
+                    <p class="descr">Mediante entrevistas, nuestro equipo se encarga de empezar a bosquejar sus ideas en una maqueta digital 3D. Aquí es donde el proyecto comienza a tomar forma.</p>
+                </li>
+                <li>
+                    <h3 class="service">El proyecto  </h3>
+                    <p class="descr">Una vez tomadas las decisiones más importantes acerca del proyecto a realizar, los planos de obra se desarrollan y se pacta un presupuesto. Ya casi es momento de empezar a hacer la obra realidad. </p>
+                </li>
+                <li>
+                    <h3 class="service">Gestoria
+                    </h3>
+                    <p class="descr">Para comenzar a construir ya solo falta gestionar los permisos municipales necesarios para la iniciación de la obra. Nuestro equipo se encarga de tramitarlos.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="service">Dirección de obra
+                    </h3>
+                    <p class="descr">Gestionamos la mano de obra necesaria para comenzar con la construcción de tu hogar.
+                    </p>
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="us-section__gallery houses">
+            <h3 class="poppins__title">Construcción de viviendas unifamiliares personalizadas.</h3>
+            <div class="us-section__gallery-pictures houses">
+                <div><img src="../../assets/images/viviendas-page/twostoryhouses/dosplantas-1.jpg" alt=""></div>
+                <div><img src="../../assets/images/viviendas-page/twostoryhouses/dosplantas-8.jpg" alt=""></div>
+                <div><img src="../../assets/images/viviendas-page/twostoryhouses/dosplantas-7.jpg" alt=""></div>
+            </div>
+        </section>   
+        
+        <section class="us-section__reasons">
+            <h2 class="poppins__title">Por qué elegirnos</h2>
+            <div class="reasons">
+                <article>
+                    <h4>NUESTRO EQUIPO</h4>
+                    <p>Creemos en el trabajo en equipo: fomentamos la participación para lograr un objetivo común, compartiendo información y conocimiento.
+                    </p>
+                </article>
+                <article>
+                    <h4>NUESTROS VALORES</h4>
+                    <p>Centramos nuestro esfuerzo en la satisfacción del cliente, aportando soluciones e ideas para lograr las metas deseadas. 
+                    </p>
+                </article>
+                <article>
+                    <h4>NUESTROS APORTES</h4>
+                    <p>Promovemos mejoras continuas e innovación para alcanzar la máxima calidad en nuestro servicio.
+                    </p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="us-section__gallery pools">
+            <h3 class="poppins__title">También nos encargamos de la construcción de piscinas.</h3>
+            <div class="us-section__gallery-pictures pools">
+                <div><img src="../../assets/images/galerias-page/pools/piscina-3.jpg" alt=""></div>
+                <div><img src="../../assets/images/galerias-page/pools/piscina-2.jpg" alt=""></div>
+                <div><img src="../../assets/images/galerias-page/pools/piscina-3.jpg" alt=""></div>            
+            </div>
+                
+
+        </section>
+
+
+
+
+
+
+
+
 
     </main>
 
@@ -96,11 +180,11 @@
                         <li class="footer__div--li">
                             <a class="footer__div--link" href="https://www.instagram.com/msconstructor/" target="_blank" role="button" tabindex="0" aria-label="Ir al Instagram de MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-instagram"></i><p class="footer__div--text">@msconstructor</p></a>
                         </li>
-                    </ul>                       
+                    </ul>
                 </div>
             </div>
         </div>
-    
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -88,12 +88,12 @@
   border-radius: 5px;
   background: transparent;
   transition: 0.5s;
-  z-index: 100;
+  z-index: 80;
 }
 
 .btn-animated-border-content{
   position: relative;
-  z-index: 150;  
+  z-index: 120;  
   color: #ffffff;
   &:hover{
     color: #fff;
