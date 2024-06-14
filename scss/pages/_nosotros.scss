@@ -1,0 +1,28 @@
+.us-section{
+        height: 60vh;
+        background: url(../../assets/images/landing-page/1.png) center/cover;
+        position: relative;
+        margin: auto;
+        display: grid;
+        padding-inline:10%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,20%);
+        gap: 0 10%;
+        color: #fff;
+        align-content: center;
+        &::before{
+            content: '';
+            position: absolute;
+            inset: 0 0 0 0;
+            background-color: #7c7c7ca7;
+        }
+        h1,p{
+            position: relative;
+        }
+        h1{
+            grid-column-start:span 4;
+        }
+        p{
+            grid-column:2/5;
+        }
+}

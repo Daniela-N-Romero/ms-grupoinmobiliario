@@ -339,7 +339,7 @@ body.light-bg {
 
 .hero::before {
   content: "";
-  top: 80vh;
+  top: 90vh;
   left: 0;
   right: 0;
   bottom: 0;
@@ -347,6 +347,11 @@ body.light-bg {
   position: absolute;
   background-size: cover;
   z-index: 50;
+}
+@media screen and (min-width: 992px) {
+  .hero::before {
+    inset: 85vh 0 0 0;
+  }
 }
 
 .hero::after {
@@ -916,6 +921,9 @@ body.light-bg {
     padding-top: 5rem;
   }
 }
+.main-gallerymodels {
+  background-color: #fff;
+}
 .main-gallery .gallery__text {
   text-align: center;
   background-color: #dfdfdf;
@@ -1027,17 +1035,27 @@ body.light-bg {
 .services__container::before {
   content: "";
   position: absolute;
-  inset: 0 0 90% 0;
+  inset: 0 0 92% 0;
   background-image: url(../../assets/images/landing-page/waves.svg);
   z-index: 20;
+}
+@media screen and (min-width: 992px) {
+  .services__container::before {
+    inset: 0 0 85% 0;
+  }
 }
 
 .services__container::after {
   content: "";
   position: absolute;
-  inset: 0% 0% 85% 0%;
+  inset: 0% 0% 90% 0%;
   background-image: url(../../assets/images/landing-page/waveslightOther.svg);
   z-index: 10;
+}
+@media screen and (min-width: 992px) {
+  .services__container::after {
+    inset: 0 0 75% 0;
+  }
 }
 
 .services {
@@ -1061,7 +1079,7 @@ body.light-bg {
 }
 
 .features {
-  background-image: url(../../assets/images/landing-page/darkPoolHouse.png);
+  background-image: url(../../assets/images/landing-page/4.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1074,12 +1092,13 @@ body.light-bg {
   padding: auto 20px;
   text-align: center;
 }
-.features__title {
+.features__title a {
   font-family: "antipastoExtraBold";
   text-transform: uppercase;
   margin-top: 1rem;
   font-weight: 900;
   font-size: 1.2rem;
+  color: rgb(31, 52, 74);
 }
 .features__description {
   font-size: 0.9rem;
@@ -1101,19 +1120,24 @@ body.light-bg {
   justify-content: center;
   align-content: center;
   justify-content: center;
+  align-items: center;
   margin: 2rem 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6352941176);
   border-radius: 20px;
-  box-shadow: 2px 3px 10px 1px rgba(177, 180, 180, 0.667);
+  box-shadow: 2px 3px 5px 1px #646464;
+  max-width: 75%;
 }
 @media screen and (min-width: 768px) {
   .features__div {
-    max-width: 600px;
+    max-width: 400px;
   }
+}
+.features__div:hover {
+  transform: scale(1.05);
 }
 
 .features__div .div-svg {
-  min-width: 100px;
+  min-width: 70px;
   min-height: 100px;
   max-width: 150px;
   max-height: 150px;
@@ -1474,6 +1498,35 @@ body.light-bg {
   padding: 0px 10px;
   color: rgb(50, 59, 110);
 }
+.us-section {
+  height: 60vh;
+  background: url(../../assets/images/landing-page/1.png) center/cover;
+  position: relative;
+  margin: auto;
+  display: grid;
+  padding-inline: 10%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 20%);
+  gap: 0 10%;
+  color: #fff;
+  align-content: center;
+}
+.us-section::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: rgba(124, 124, 124, 0.6549019608);
+}
+.us-section h1, .us-section p {
+  position: relative;
+}
+.us-section h1 {
+  grid-column-start: span 4;
+}
+.us-section p {
+  grid-column: 2/5;
+}
+
 .models__intro {
   background: url(../../../assets/images/obras/2.jpg) no-repeat center/cover;
   height: 80vh;

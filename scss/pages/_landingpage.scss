@@ -6,16 +6,22 @@
 .services__container::before{
     content: '';
     position: absolute;
-    inset: 0 0 90% 0;
+    inset: 0 0 92% 0;
     background-image: url(../../assets/images/landing-page/waves.svg);
     z-index: 20;
+    @include min-width(992px){
+        inset: 0 0 85% 0;
+    }
 }
 .services__container::after{
     content: '';
     position: absolute;
-    inset: 0% 0% 85% 0%;
+    inset: 0% 0% 90% 0%;
     background-image: url(../../assets/images/landing-page/waveslightOther.svg);
     z-index: 10;
+    @include min-width(992px){
+        inset: 0 0 75% 0;
+    }
 }
 .services{
         padding-top: 15%;
@@ -44,7 +50,7 @@
 
 
 .features{
-    background-image: url(../../assets/images/landing-page/darkPoolHouse.png);
+    background-image: url(../../assets/images/landing-page/4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,11 +64,14 @@
 
     }
     &__title{
-        font-family: 'antipastoExtraBold';
-        text-transform: uppercase;
-        margin-top: 1rem;
-        font-weight: 900;
-        font-size: 1.2rem;
+        a{
+            font-family: 'antipastoExtraBold';
+            text-transform: uppercase;
+            margin-top: 1rem;
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: $logo-blue;
+        }
     }
     &__description{
         font-size: .9rem;
@@ -82,19 +91,23 @@
 .features__div{
     @include flex;
     justify-content: center;
+    align-items: center;
     margin: 2rem 0;
-    background-color: #fff;
+    background-color: #ffffffa2;
     border-radius: 20px;
-    box-shadow: 2px 3px 10px 1px $secondary-color-gray;
+    box-shadow: 2px 3px 5px 1px #646464;
+    max-width: 75%;
     @include min-width(768px){
-        max-width: 600px;
+        max-width: 400px;
     }
-    
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 
 .features__div .div-svg{
-    min-width: 100px;
+    min-width: 70px;
     min-height: 100px;
     max-width: 150px;
     max-height: 150px;
