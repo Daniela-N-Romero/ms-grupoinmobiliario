@@ -1663,42 +1663,77 @@ body.light-bg {
   padding: 0px 10px;
   color: rgb(50, 59, 110);
 }
-.us-section__intro {
+body.white {
   background-color: #fff;
-  position: relative;
-  margin: auto;
-  display: grid;
-  gap: 0 10%;
-  text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .us-section__intro {
-    padding-top: 5rem;
+
+.us__title {
+  margin-top: 5rem;
+  text-align: center;
+  transition: 0.7s;
+  animation: bigger 1s ease-in forwards;
+}
+
+@keyframes bigger {
+  to {
+    transform: translateY(10px);
+    transform: scaleX(0.9);
   }
 }
-.us-section__intro p,
-.us-section__intro img {
-  padding-bottom: 4vh;
-  width: 70%;
-  max-height: 55vh;
+.us-section__intro article {
   margin: auto;
-  object-fit: cover;
-  object-position: center;
-}
-.us-section__vision h2 {
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  color: rgb(31, 52, 74);
-}
-.us-section__vision img, .us-section__vision p {
-  display: block;
-  margin: auto;
-  width: 90%;
-}
-.us-section__vision p {
-  padding-bottom: 2rem;
   text-align: center;
+  padding-inline: 30px;
+  background-color: #A5CCFB;
+  padding-top: 20%;
+  padding-bottom: 15%;
 }
+.us-section__intro article:nth-child(odd) {
+  background-color: #fff;
+  position: relative;
+  font-weight: bold;
+}
+.us-section__intro article:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  inset: 100% 0 -20% 0;
+  background-color: red;
+  background: url(../../assets/images/landing-page/wavesWhite.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  z-index: 20;
+}
+.us-section__intro article:nth-child(even) {
+  position: relative;
+}
+.us-section__intro article:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  inset: 95% 0 -10% 0;
+  background-color: red;
+  background: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  transform: rotate(180deg);
+  z-index: 20;
+}
+@media screen and (min-width: 768px) {
+  .us-section__intro article:nth-child(even) {
+    display: flex;
+    padding-block: 15% rem;
+  }
+}
+.us-section__intro article p {
+  font-family: "PoppinsRegular";
+  line-height: 1.5rem;
+}
+.us-section__intro article img {
+  width: 100%;
+  max-width: 500px;
+}
+
 .us-section__video {
   background-color: rgb(156, 160, 160);
   padding-block: 3rem;
@@ -1714,15 +1749,13 @@ body.light-bg {
     max-width: 720px;
   }
 }
-.us-section__timeline {
-  background-color: #fff;
-}
+
 .us-section__timeline .poppins__title {
   color: #2F69B1;
 }
+
 .us-section__reasons {
-  padding-block: 3rem;
-  background-color: #fff;
+  padding-block: 100px;
 }
 .us-section__reasons h2 {
   color: #2F69B1;
@@ -1745,6 +1778,7 @@ body.light-bg {
   padding: 30px;
   border-radius: 20px;
   max-width: 300px;
+  box-shadow: 5px 5px 10px rgba(114, 137, 159, 0.409);
 }
 .us-section__reasons .reasons article h4 {
   text-align: center;
@@ -1752,16 +1786,14 @@ body.light-bg {
   font-weight: bold;
   text-shadow: 2px 2px rgb(31, 52, 74);
 }
+
 .us-section__gallery {
   padding: 2rem;
   margin: auto;
 }
 .us-section__gallery .poppins__title {
-  text-transform: capitalize;
-  font-size: 1rem;
-}
-.us-section__gallery.pools .poppins__title {
-  color: rgb(31, 52, 74);
+  text-transform: uppercase;
+  font-size: 1.6rem;
 }
 .us-section__gallery-pictures {
   display: grid;
@@ -1788,13 +1820,125 @@ body.light-bg {
   height: 100%;
   box-shadow: 2px 2px 10px rgba(81, 81, 81, 0.408);
 }
+.us-section__gallery.pools {
+  background-color: rgba(226, 226, 226, 0.687);
+  position: relative;
+  margin-top: 100px;
+}
+.us-section__gallery.pools .poppins__title {
+  color: rgb(31, 52, 74);
+}
+.us-section__gallery.pools::before {
+  position: absolute;
+  content: "";
+  inset: -100px 0 100% 0;
+  background-image: url(../../assets/images/landing-page/waveGray.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .us-section__gallery.houses {
   background-color: #2F69B1;
+  margin-block: 100px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .us-section__gallery.houses {
+    margin-block: 200px;
+  }
+}
+.us-section__gallery.houses::before {
+  position: absolute;
+  content: "";
+  inset: -100px 0 100% 0;
+  background-image: url(../../assets/images/landing-page/waveShort.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .us-section__gallery.houses::before {
+    top: -200px;
+  }
+}
+.us-section__gallery.houses::after {
+  position: absolute;
+  content: "";
+  inset: 100% 0 -100px 0;
+  background-image: url(../../assets/images/landing-page/waveShortNegative.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .us-section__gallery.houses::after {
+    bottom: -200px;
+  }
 }
 @media screen and (min-width: 768px) {
   .us-section__gallery {
     padding-inline: 15%;
   }
+}
+
+.us-section__vision {
+  max-width: 75%;
+  margin: auto;
+  position: relative;
+}
+.us-section__vision h2 {
+  text-transform: capitalize;
+  font-family: "adelia";
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  color: rgb(31, 52, 74);
+}
+.us-section__vision::before {
+  content: "";
+  position: absolute;
+  inset: -50% 0 100% 0;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.us-section__vision img,
+.us-section__vision p {
+  line-height: 1.7rem;
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+.us-section__vision p {
+  font-family: "antipastoRegular";
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.scroll-up section h2 {
+  font-size: 1.8rem;
+  transition: 0.9s;
+}
+
+.scroll-down section h2 {
+  transition: 0.4s;
+  font-size: 2.2rem;
+}
+
+.scroll-up .us-section__vision h2 {
+  transition: 0.5s;
+  font-size: 1.7rem;
+}
+.scroll-up .us-section__vision::before {
+  transition: 0.5s;
+  border: 1px solid transparent;
+  inset: 0 0 0 0;
+}
+
+.scroll-down .us-section__vision h2 {
+  transition: 0.5s;
+  font-size: 2rem;
+}
+.scroll-down .us-section__vision::before {
+  transition: 0.5s;
+  border: 1px solid rgb(31, 52, 74);
+  inset: 0 0 0 0;
 }
 
 .models__intro {
