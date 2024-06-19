@@ -2,13 +2,15 @@ body.white {
   background-color: #fff;
 }
 
-
+// h1 title format
 .us__title{
-	margin-top: $header-height;
 	text-align: center;
 	transition: .7s;
 	animation: bigger 1s ease-in forwards;
+  @include min-width(768px){
+    margin-top: $header-height;
   }
+}
 
   @keyframes bigger {
 	to{
@@ -17,63 +19,148 @@ body.white {
 	}
 	}
 
+//intro articles
+
 .us-section__intro {
+
+
 	article{
-		margin: auto;
 		text-align: center;
-		padding-inline: 30px;
-		background-color: $light-waves;
-		padding-top: 20%;
-		padding-bottom: 15%;
-	&:nth-child(odd){
-		background-color: #fff;
-		position: relative;
-		font-weight: bold;
-
-		&::before{
-			content: '';
-			position: absolute;
-			inset: 100% 0 -20% 0;
-			background-color: red;
-			background: url(../../assets/images/landing-page/wavesWhite.svg);
-			background-repeat:no-repeat;
-		 	background-size: cover;
-		 	background-position: left;
-			z-index: 20;
-		}
-
-
-	}
-	&:nth-child(even){
-		position: relative;
-
-		&::after{
-			content: '';
-			position: absolute;
-			inset: 95% 0 -10% 0;
-			background-color: red;
-			background: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
-			background-repeat:no-repeat;
-		 	background-size: cover;
-		 	background-position: left;
-		 	transform: rotate(180deg);
-			z-index: 20;
-		}
-		@include min-width(768px){
-			display: flex;
-			padding-block: 15%rem;
-
-		}
-	}
-
-			p{
+    overflow: hidden;  
+    
+    p{
 			font-family: 'PoppinsRegular';
 			line-height: 1.5rem;
-		}
-		img{
-			width: 100%;
-			max-width: 500px;
-		}
+      width: 90%;
+      margin: auto;
+		  }
+    .us__box{
+          img{
+          width: 80%;
+          height: 200px;
+          object-fit: cover;
+          margin: auto;
+          border-radius: 10px;
+      }
+		  }	
+    
+      //article #1
+
+      &:nth-child(1){       
+        --header-height: 80px;
+        height: calc(100vh - var(--header-height));
+        position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          inset: 0 0 0 0;
+          background-image: url(../../assets/images/us/white-waves.svg);
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: 100%;
+          z-index: -20;
+          @include min-width(768px){
+            background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
+          }
+        }
+
+        .us__box{
+          margin: auto;
+          margin-block: 5vh;
+          max-width: 75%;
+        }
+
+        @include min-width(768px){
+          .us__content{
+            height: 100%;
+            display: flex;
+
+            align-items: center;
+            .us__maintext{
+              max-width: 50%;
+              h1{
+                margin-top: 0;
+              }
+            }
+            .us__box{
+              width: 50%;
+            }
+          }
+        }
+
+      }
+
+      //article #2 and #4
+
+      &:nth-child(2), &:nth-child(4){        
+        height: 90vh;
+        background-color: $light-waves;
+        background-image: url(../../assets/images/us/lightblue-waves2.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        .us__box{
+          margin-block: 30px;
+          
+          img{
+            border-radius: 10px;
+          }
+
+        }
+
+        @include min-width(576px){
+          height: 50vh;
+          position: relative;
+          z-index: 10;
+          background-color: #fff;
+          background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
+          background-size: center 100%;
+          background-position: top;
+          .us__content{
+            display: flex;
+            max-width: 70%;
+            margin: auto;
+
+            p{
+              width: 50%;
+              padding: 10px;
+            }
+            .us__box{
+              width: 50%;
+              img{
+                height: auto;
+              }
+            }
+          }
+
+        }
+        @include min-width(768px){
+          height: 30vh;
+          }
+      }
+          
+      //article #3
+
+      &:nth-child(3){        
+        height: 60vh;
+        background-image: url(../../assets/images/us/white-waves.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        p{
+          margin: 3rem auto;
+          padding-inline: 10%;
+        }
+      
+        @include min-width(768px){
+          padding-top: 8rem;
+       
+        }
+        
+      }
+      
+      
+
 	}
 }
 
@@ -196,7 +283,10 @@ body.white {
   }
 
   &.houses {
-    background-color: $dark-waves;
+    .poppins__title {
+      color: $logo-blue;
+    }
+    background-color: $light-waves;
     margin-block: 100px;
     position: relative;
 
@@ -208,7 +298,7 @@ body.white {
       position: absolute;
       content: "";
       inset: -100px 0 100% 0;
-      background-image: url(../../assets/images/landing-page/waveShort.svg);
+      background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
       background-size: cover;
       background-repeat: no-repeat;
 
@@ -221,7 +311,7 @@ body.white {
       position: absolute;
       content: "";
       inset: 100% 0 -100px 0;
-      background-image: url(../../assets/images/landing-page/waveShortNegative.svg);
+      background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
       background-size: cover;
       background-repeat: no-repeat;
 

@@ -1668,10 +1668,14 @@ body.white {
 }
 
 .us__title {
-  margin-top: 5rem;
   text-align: center;
   transition: 0.7s;
   animation: bigger 1s ease-in forwards;
+}
+@media screen and (min-width: 768px) {
+  .us__title {
+    margin-top: 5rem;
+  }
 }
 
 @keyframes bigger {
@@ -1681,57 +1685,123 @@ body.white {
   }
 }
 .us-section__intro article {
-  margin: auto;
   text-align: center;
-  padding-inline: 30px;
-  background-color: #A5CCFB;
-  padding-top: 20%;
-  padding-bottom: 15%;
-}
-.us-section__intro article:nth-child(odd) {
-  background-color: #fff;
-  position: relative;
-  font-weight: bold;
-}
-.us-section__intro article:nth-child(odd)::before {
-  content: "";
-  position: absolute;
-  inset: 100% 0 -20% 0;
-  background-color: red;
-  background: url(../../assets/images/landing-page/wavesWhite.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  z-index: 20;
-}
-.us-section__intro article:nth-child(even) {
-  position: relative;
-}
-.us-section__intro article:nth-child(even)::after {
-  content: "";
-  position: absolute;
-  inset: 95% 0 -10% 0;
-  background-color: red;
-  background: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  transform: rotate(180deg);
-  z-index: 20;
-}
-@media screen and (min-width: 768px) {
-  .us-section__intro article:nth-child(even) {
-    display: flex;
-    padding-block: 15% rem;
-  }
+  overflow: hidden;
 }
 .us-section__intro article p {
   font-family: "PoppinsRegular";
   line-height: 1.5rem;
+  width: 90%;
+  margin: auto;
 }
-.us-section__intro article img {
-  width: 100%;
-  max-width: 500px;
+.us-section__intro article .us__box img {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+.us-section__intro article:nth-child(1) {
+  --header-height: 80px;
+  height: calc(100vh - var(--header-height));
+  position: relative;
+}
+.us-section__intro article:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background-image: url(../../assets/images/us/white-waves.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  z-index: -20;
+}
+@media screen and (min-width: 768px) {
+  .us-section__intro article:nth-child(1)::before {
+    background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
+  }
+}
+.us-section__intro article:nth-child(1) .us__box {
+  margin: auto;
+  margin-block: 5vh;
+  max-width: 75%;
+}
+@media screen and (min-width: 768px) {
+  .us-section__intro article:nth-child(1) .us__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .us-section__intro article:nth-child(1) .us__content .us__maintext {
+    max-width: 50%;
+  }
+  .us-section__intro article:nth-child(1) .us__content .us__maintext h1 {
+    margin-top: 0;
+  }
+  .us-section__intro article:nth-child(1) .us__content .us__box {
+    width: 50%;
+  }
+}
+.us-section__intro article:nth-child(2), .us-section__intro article:nth-child(4) {
+  height: 90vh;
+  background-color: #A5CCFB;
+  background-image: url(../../assets/images/us/lightblue-waves2.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+.us-section__intro article:nth-child(2) .us__box, .us-section__intro article:nth-child(4) .us__box {
+  margin-block: 30px;
+}
+.us-section__intro article:nth-child(2) .us__box img, .us-section__intro article:nth-child(4) .us__box img {
+  border-radius: 10px;
+}
+@media screen and (min-width: 576px) {
+  .us-section__intro article:nth-child(2), .us-section__intro article:nth-child(4) {
+    height: 50vh;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
+    background-size: center 100%;
+    background-position: top;
+  }
+  .us-section__intro article:nth-child(2) .us__content, .us-section__intro article:nth-child(4) .us__content {
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+  }
+  .us-section__intro article:nth-child(2) .us__content p, .us-section__intro article:nth-child(4) .us__content p {
+    width: 50%;
+    padding: 10px;
+  }
+  .us-section__intro article:nth-child(2) .us__content .us__box, .us-section__intro article:nth-child(4) .us__content .us__box {
+    width: 50%;
+  }
+  .us-section__intro article:nth-child(2) .us__content .us__box img, .us-section__intro article:nth-child(4) .us__content .us__box img {
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .us-section__intro article:nth-child(2), .us-section__intro article:nth-child(4) {
+    height: 30vh;
+  }
+}
+.us-section__intro article:nth-child(3) {
+  height: 60vh;
+  background-image: url(../../assets/images/us/white-waves.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+.us-section__intro article:nth-child(3) p {
+  margin: 3rem auto;
+  padding-inline: 10%;
+}
+@media screen and (min-width: 768px) {
+  .us-section__intro article:nth-child(3) {
+    padding-top: 8rem;
+  }
 }
 
 .us-section__video {
@@ -1838,9 +1908,12 @@ body.white {
   background-position: center;
 }
 .us-section__gallery.houses {
-  background-color: #2F69B1;
+  background-color: #A5CCFB;
   margin-block: 100px;
   position: relative;
+}
+.us-section__gallery.houses .poppins__title {
+  color: rgb(31, 52, 74);
 }
 @media screen and (min-width: 768px) {
   .us-section__gallery.houses {
@@ -1851,7 +1924,7 @@ body.white {
   position: absolute;
   content: "";
   inset: -100px 0 100% 0;
-  background-image: url(../../assets/images/landing-page/waveShort.svg);
+  background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1864,7 +1937,7 @@ body.white {
   position: absolute;
   content: "";
   inset: 100% 0 -100px 0;
-  background-image: url(../../assets/images/landing-page/waveShortNegative.svg);
+  background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
