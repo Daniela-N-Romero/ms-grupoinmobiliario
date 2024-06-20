@@ -46,7 +46,7 @@ body.white {
     
       //article #1
 
-      &:nth-child(1){       
+      &:nth-child(1), &:nth-child(3){       
         --header-height: 80px;
         height: calc(100vh - var(--header-height));
         position: relative;
@@ -54,13 +54,13 @@ body.white {
           content: '';
           position: absolute;
           inset: 0 0 0 0;
-          background-image: url(../../assets/images/us/white-waves.svg);
+          background-image: url(../../assets/dividers/bottom-light-waves5.svg);
           background-repeat: no-repeat;
           background-position: bottom;
-          background-size: 100%;
+          background-size: 100% ;
           z-index: -20;
           @include min-width(768px){
-            background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
+            background-image: url(../../assets/dividers/bottom-light-waves2.svg);            
           }
         }
 
@@ -93,15 +93,16 @@ body.white {
       //article #2 and #4
 
       &:nth-child(2), &:nth-child(4){        
-        height: 90vh;
+        height: 70vh;
         background-color: $light-waves;
-        background-image: url(../../assets/images/us/lightblue-waves2.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: bottom;
         .us__box{
-          margin-block: 30px;
-          
+          margin: 10%;
+          width: 80%;
+          height: 300px;
+          background-image: url(../../assets/images/landing-page/1.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
           img{
             border-radius: 10px;
           }
@@ -109,16 +110,12 @@ body.white {
         }
 
         @include min-width(576px){
-          height: 50vh;
-          position: relative;
-          z-index: 10;
-          background-color: #fff;
-          background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
-          background-size: center 100%;
-          background-position: top;
-          .us__content{
+          display: flex;
+          margin: auto;
+           .us__content{
+            height: 80%;
+            max-width: 80%;
             display: flex;
-            max-width: 70%;
             margin: auto;
 
             p{
@@ -126,59 +123,86 @@ body.white {
               padding: 10px;
             }
             .us__box{
-              width: 50%;
-              img{
-                height: auto;
-              }
+              margin: auto;
+              width: 70%;
+              height: 100%;
+
             }
           }
 
         }
-        @include min-width(768px){
-          height: 30vh;
-          }
       }
           
-      //article #3
+      //top of article #3
 
-      &:nth-child(3){        
-        height: 60vh;
-        background-image: url(../../assets/images/us/white-waves.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: bottom;
+      &:nth-child(3){
+        height: 100vh;        
+        display: flex;
+        align-items: center;
+
         p{
           margin: 3rem auto;
           padding-inline: 10%;
+          position: relative;
+          z-index: 20;
         }
       
         @include min-width(768px){
           padding-top: 8rem;
        
         }
-        
+        &::after{
+          content: '';
+          position: absolute;
+          inset: 0 0 40% 0;
+          background-image: url(../../assets/dividers/top-light-waves4.svg);
+          background-repeat: no-repeat;
+          background-position: top;
+          background-size: 100%;
+          z-index: 0;
+
+        }
+
       }
       
-      
+      //ending of article #4
+
+      &:nth-child(4){
+        height: 90vh;
+        position: relative;
+        .us__content{
+          height: 50%;
+        }
+        &::after{
+          position: absolute;
+          content: '';
+          inset: 70% 0 0 0;
+          background-color: red;
+          background-image: url(../../assets/dividers/top-light-waves2.svg);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: top;
+        }
+      }
 
 	}
 }
 
-.us-section__video {
-  background-color: $secondary-color-dark-gray;
-  padding-block: 3rem;
+// .us-section__video {
+//   background-color: $secondary-color-dark-gray;
+//   padding-block: 3rem;
 
-  video {
-    margin-inline: 1rem;
-    display: block;
-    width: 95%;
-    margin: auto;
+//   video {
+//     margin-inline: 1rem;
+//     display: block;
+//     width: 95%;
+//     margin: auto;
 
-    @include min-width(768px) {
-      max-width: 720px;
-    }
-  }
-}
+//     @include min-width(768px) {
+//       max-width: 720px;
+//     }
+//   }
+// }
 
 
 

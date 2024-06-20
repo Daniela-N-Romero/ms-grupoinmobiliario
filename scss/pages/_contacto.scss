@@ -1,0 +1,176 @@
+// <aside class="aside-map">
+// <h3>Nuestra oficina se encuentra en Hudson, Berazategui</h3>
+// <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.1155370577767!2d-58.167235000000005!3d-34.80303500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a327c8175855cb%3A0x38aef29b60aa690b!2sGuillermo%20e%2C%20Av.%20Guti%C3%A9rrez%20-%20Hudson%204840%2C%20Guillermo%20Enrique%20Hudson%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1718892798727!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+// </aside>
+
+//contacto head
+
+.contacto{
+    @include min-width(768px){padding-top: $header-height;}
+    h1,p{text-align: center;}
+    p{
+        background-color: $secondary-color-dark-purple;
+        color: #fff;
+        padding: 3px;
+    }
+}
+
+//contacto layout mobile
+
+.contacto-page{
+    overflow: hidden;
+
+    //STYLYNG ASIDE
+
+
+    .aside-map{
+        margin-block: 1rem;
+        padding-block: 2.5rem;
+        background-color: $offwhite;
+        border-radius: 5px;
+
+        h3{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            text-align: center;
+            color: $dark-waves;
+        }
+        
+        iframe{
+            height: 40vh;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+
+    //STYLYNG FORM
+    
+    .section-form{
+        //titles
+        h2,p{text-align: center; margin-top: 2rem;font-family: 'PoppinsRegular';}
+        h2{font-size: 2rem;}
+        p{font-size: 14px;margin-bottom: 2rem;}
+        background-color: $logo-blue;
+        border-radius: 5px;
+        color: #fff;
+
+        //general styles 
+        fieldset{
+            margin-block: 15px;
+            display: flex;
+            align-items: center;
+            font-family: 'PoppinsRegular';
+            label{
+                min-width: 20%;
+                margin-inline-end: 1rem;
+            }
+            textarea, input, select{
+                flex-grow: 1;
+                outline:  none;
+                border-radius: 8px;
+                padding: 5px;
+            }
+            select{
+                text-align: center;
+            }
+
+        }
+
+        //radio input style
+        .lote-field {
+            justify-content: space-between;
+            .legend-label{
+                flex-grow: 0;
+            }
+            input[type="radio"]{
+                margin-inline: 0;
+                flex-grow: 0;
+            }
+            div{
+                width: 40%;
+            }
+        }
+        
+        //textarea style
+        .description-field{
+            flex-direction: column;
+            align-items: start;
+            textarea{
+                margin: 5px 0 ;
+                width: 100%;
+            }
+        }
+
+        //submit style
+        button{
+            //alignment
+            display: block;
+            margin: auto;            
+            margin-bottom: 2rem;
+            padding: 6px 24px;
+            
+            //style
+            border: none;
+            color: #fff;   
+            font-weight: bold;         
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            box-shadow: 3px 3px 2px $secondary-color-purple;
+            transition: .4s;
+            animation: color-shadow 6s ease-in-out infinite;
+            background-color: $dark-waves;
+            
+            //ANIMATION
+                @keyframes color-shadow {
+                    0%{
+                        box-shadow: 3px 3px 2px $secondary-color-purple;
+                    }
+
+                    50%{
+                        box-shadow: 2px 2px 2px $light-waves;
+                    }
+
+                    100%{
+                        box-shadow: 3px 3px 2px $secondary-color-purple;
+                    }
+                }
+            //HOVER STYLE
+            &:hover{
+                background-color: $light-waves;
+                animation: none;
+                color: $logo-blue;
+                transform: scale(1.01);
+                                    
+            }
+
+
+        }
+    }
+
+}
+
+//responsive layout
+
+@include min-width(992px){
+    .contacto-page .row{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 30px;
+        .aside-map{
+            order: -1;
+            margin-bottom: 3rem;
+            iframe{
+                height: 90%;
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+        .section-form{
+            padding-inline: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+}

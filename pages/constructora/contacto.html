@@ -82,56 +82,145 @@
 
     </header>
 
-    <main class="container">
-        <h1>soy el contacto</h1>
-        <a href="../index.html">Volver</a>
+    <main class="container-fluid">
+
+        <div class="gallery__text contacto">
+            <h1 class="gallery__title poppins">Contactanos</h1>
+            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="container contacto-page">
+            <div class="row">
+                <section class="section-form">
+                    <h2>¿Querés una entrevista?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <form action="" id="contact-form">
+                        <fieldset form="contact-form" class="name-field">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </fieldset>
+                        
         
-        <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
+                        <fieldset form="contact-form" class="surname-field">
+                            <label for="apellido">Apellido</label>
+                            <input type="text">
+                        </fieldset>
+                        
+                        <fieldset form="contact-form" class="age-field">
+                            <label for="edad">Edad</label>
+                            <select name="edad" id="edad">
+                                <option value="menos de 25 años">Menos de 25 años</option>
+                                <option value="entre 25 y 38 años">Entre 25 y 38 años</option>
+                                <option value="entre 39 y 50 años">Entre 39 y 50 años</option>
+                                <option value="51 años o más">51 años o más</option>
+                            </select>
+                        </fieldset>
+                        
+                        <fieldset form="contact-form"  class="email-field">                
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </fieldset>                
+                        
+                        <fieldset form="contact-form"  class="phone-field">
+                            <label for="telefono">Teléfono</label>
+                            <input type="number" name="telefono" id="telefono">
+                        </fieldset>                
+                        
+                        <fieldset form="contact-form"  class="place-field">
+                            <label for="localidad">¿Cuál es la localidad de la construcción?</label>
+                            <input type="text" name="localidad" id="localidad">
+                        </fieldset>
+                        
+                        <fieldset form="contact-form"  class="lote-field">
+                            <label class="legend-label">¿Ya contas con lote?</label>
+                            <div>
+                                <label class="radio-label" for="loteSi">Si</label>
+                                <input type="radio" name="lote" id="loteSi" value="si">
+                                <label class="radio-label" for="loteNo">No</label>
+                                <input type="radio" name="lote" id="loteNo" value="no">
+                            </div>
+                        </fieldset>
+                        
+                        
+                        <fieldset form="contact-form"  class="traffic-field">
+                            <label for="source">¿Dónde nos conociste</label>
+                            <input type="text" name="source" id="source">
+                        </fieldset>                
+                        
+                        <fieldset form="contact-form"  class="description-field">
+                            <label for="descripcion">Contanos mas acerca de tu proyecto</label>
+                            <textarea type="text" name="descripcion" id="descripcion" placeholder="Escribe aquí"></textarea>
+                        </fieldset>
+                        
+                        <button class="btn-submit" type="submit">Solicitar entrevista</button>
+                        
+                    </form>
+                    
+                </section>
+
+                <aside class="aside-map">
+                    <h3>Nuestra oficina se encuentra en Hudson, Berazategui</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.1155370577767!2d-58.167235000000005!3d-34.80303500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a327c8175855cb%3A0x38aef29b60aa690b!2sGuillermo%20e%2C%20Av.%20Guti%C3%A9rrez%20-%20Hudson%204840%2C%20Guillermo%20Enrique%20Hudson%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1718892798727!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+                
             </div>
-        </div> -->
+        </div>
+        
+
     </main>
 
     <footer class="footer">
 
         <div class="container-fluid container-lg">
-            <div class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between">
-                <a class="footer__div footer__div__logo footer__div--link" href="../index.html" aria-label="Logo a página de inicio"><img src="../assets/3.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
+            <div
+                class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between">
+                <a class="footer__div footer__div__logo footer__div--link" href="../homeconstructora.html"
+                    aria-label="Logo a página de inicio"><img src="../../assets/images/logos/logo-constructora.png"
+                        alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
                 <div class="footer__div footer__div__datos ">
                     <ul class="footer__div--breadcrumbs">
                         <li class="footer__div--li">
-                            <a class="footer__div--link" href="../index.html" role="button" tabindex="0" aria-label="Ir a página de inicio">> Inicio</a>
-                            <a class="footer__div--link footer__div--current-link" href="./contacto.html" role="button" tabindex="0" aria-label="Página actual: Contacto" aria-current="page">> Contacto</a>
+                            <a class="footer__div--link" href="../homeconstructora.html" role="button" tabindex="0"
+                                aria-label="Ir a página de inicio">> Inicio</a>
+                            <a class="footer__div--link footer__div--current-link" href="./contacto.html" role="button"
+                                tabindex="0" aria-label="Página actual: Nosotros" aria-current="page">> Contacto</a>
                         </li>
                     </ul>
                     <ul class="footer__div--contacto">
                         <li class="footer__div--li">
-                            <a class="footer__div--link" href="tel:+5491164773427" role="button" tabindex="0" aria-label="Llamar a MS Construcción" target="_blank" rel="noopener">
-                            <i class="footer__div--icon bi bi-telephone"></i>+54 9 11-6477-3427</a>
+                            <a class="footer__div--link" href="tel:+5491164773427" role="button" tabindex="0"
+                                aria-label="Llamar a MS Construcción" target="_blank" rel="noopener">
+                                <i class="footer__div--icon bi bi-telephone"></i>
+                                <p class="footer__div--text">+54 9 11-6477-3427</p>
+                            </a>
                         </li>
                         <li class="footer__div--li">
-                            <a class="footer__div--link" href="https://maps.app.goo.gl/usi6L6zmYAmDoGAv8" target="_blank" role="button" tabindex="0" aria-label="Ver la ubicación de MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-geo-alt"></i>G. E. Hudson, Berazategui</a>
+                            <a class="footer__div--link" href="https://maps.app.goo.gl/usi6L6zmYAmDoGAv8"
+                                target="_blank" role="button" tabindex="0"
+                                aria-label="Ver la ubicación de MS Construcción" rel="noopener"><i
+                                    class="footer__div--icon bi bi-geo-alt"></i>
+                                <p class="footer__div--text">G. E. Hudson, Berazategui</p>
+                            </a>
                         </li>
                         <li class="footer__div--li">
-                            <a class="footer__div--link" href="mailto:info@msconstruccion.net" role="button" tabindex="0" aria-label="Enviar un correo electronico a MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-envelope"></i>info@msconstruccion.net</a>
+                            <a class="footer__div--link" href="mailto:info@msconstruccion.net" role="button"
+                                tabindex="0" aria-label="Enviar un correo electronico a MS Construcción"
+                                rel="noopener"><i class="footer__div--icon bi bi-envelope"></i>
+                                <p class="footer__div--text">info@msconstruccion.net</p>
+                            </a>
                         </li>
                         <li class="footer__div--li">
-                            <a class="footer__div--link" href="https://www.instagram.com/msconstructor/" target="_blank" role="button" tabindex="0" aria-label="Ir al Instagram de MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-instagram"></i>@msconstructor</a>
+                            <a class="footer__div--link" href="https://www.instagram.com/msconstructor/" target="_blank"
+                                role="button" tabindex="0" aria-label="Ir al Instagram de MS Construcción"
+                                rel="noopener"><i class="footer__div--icon bi bi-instagram"></i>
+                                <p class="footer__div--text">@msconstructor</p>
+                            </a>
                         </li>
-                    </ul>                        
+                    </ul>
                 </div>
             </div>
         </div>
-    
+
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
