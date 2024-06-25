@@ -908,7 +908,7 @@ body.light-bg {
   margin-inline: calc(var(--inlineP) * -1);
   margin-bottom: 0;
   text-align: center;
-  background-color: #2F69B1;
+  background-color: rgb(31, 52, 74);
   color: white;
   font-size: 1.25rem;
   font-weight: 700;
@@ -1894,13 +1894,11 @@ body.white {
   margin: 10%;
   width: 80%;
   height: 300px;
-  background-image: url(../../assets/images/landing-page/1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .us-section__intro article:nth-child(2) .us__box img, .us-section__intro article:nth-child(4) .us__box img {
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media screen and (min-width: 576px) {
   .us-section__intro article:nth-child(2), .us-section__intro article:nth-child(4) {
@@ -1919,8 +1917,6 @@ body.white {
   }
   .us-section__intro article:nth-child(2) .us__content .us__box, .us-section__intro article:nth-child(4) .us__content .us__box {
     margin: auto;
-    width: 70%;
-    height: 100%;
   }
 }
 .us-section__intro article:nth-child(3) {
@@ -1965,6 +1961,11 @@ body.white {
   background-repeat: no-repeat;
   background-position: top;
 }
+@media screen and (min-width: 576px) {
+  .us-section__intro article:nth-child(4)::after {
+    inset: 60% 0 0 0;
+  }
+}
 
 .us-section__timeline .poppins__title {
   color: #2F69B1;
@@ -1974,7 +1975,7 @@ body.white {
   padding-block: 100px;
 }
 .us-section__reasons h2 {
-  color: #2F69B1;
+  color: rgb(31, 52, 74);
 }
 .us-section__reasons .reasons {
   display: flex;
@@ -1989,7 +1990,7 @@ body.white {
   }
 }
 .us-section__reasons .reasons article {
-  background-color: #2F69B1;
+  background-color: rgb(31, 52, 74);
   color: #fff;
   padding: 30px;
   border-radius: 20px;
@@ -2006,6 +2007,7 @@ body.white {
 .us-section__gallery {
   padding: 2rem;
   margin: auto;
+  padding-bottom: 4rem;
 }
 .us-section__gallery .poppins__title {
   text-transform: uppercase;
@@ -2071,7 +2073,7 @@ body.white {
   content: "";
   inset: -100px 0 100% 0;
   background-image: url(../../assets/images/landing-page/wavesExtraLightNegative.svg);
-  background-size: cover;
+  background-size: 200%;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
@@ -2084,7 +2086,7 @@ body.white {
   content: "";
   inset: 100% 0 -100px 0;
   background-image: url(../../assets/images/landing-page/wavesExtraLight.svg);
-  background-size: cover;
+  background-size: 150%;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
@@ -2108,14 +2110,7 @@ body.white {
   font-family: "adelia";
   padding-bottom: 1rem;
   padding-top: 2rem;
-  color: rgb(31, 52, 74);
-}
-.us-section__vision::before {
-  content: "";
-  position: absolute;
-  inset: -50% 0 100% 0;
-  border: 1px solid transparent;
-  border-radius: 20px;
+  color: #2F69B1;
 }
 .us-section__vision img,
 .us-section__vision p {
@@ -2123,6 +2118,7 @@ body.white {
   display: block;
   margin: auto;
   width: 90%;
+  color: #2F69B1;
 }
 .us-section__vision p {
   font-family: "antipastoRegular";
