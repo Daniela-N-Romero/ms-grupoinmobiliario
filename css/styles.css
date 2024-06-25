@@ -1062,7 +1062,7 @@ body.light-bg {
   text-shadow: 3px 3px 2px #FFF;
 }
 .gallery__title.poppins {
-  font-family: "Poppins-Regular";
+  font-family: "Poppins";
 }
 
 .poppins__title {
@@ -1888,7 +1888,6 @@ body.white {
   }
 }
 .us-section__intro article:nth-child(2), .us-section__intro article:nth-child(4) {
-  height: 70vh;
   background-color: #A5CCFB;
 }
 .us-section__intro article:nth-child(2) .us__box, .us-section__intro article:nth-child(4) .us__box {
@@ -1925,7 +1924,6 @@ body.white {
   }
 }
 .us-section__intro article:nth-child(3) {
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -1951,19 +1949,19 @@ body.white {
   z-index: 0;
 }
 .us-section__intro article:nth-child(4) {
-  height: 90vh;
+  height: auto;
   position: relative;
-}
-.us-section__intro article:nth-child(4) .us__content {
-  height: 50%;
+  padding-bottom: 30%;
+  z-index: 100;
 }
 .us-section__intro article:nth-child(4)::after {
   position: absolute;
   content: "";
-  inset: 70% 0 0 0;
-  background-color: red;
+  inset: 80% 0 0 0;
+  z-index: 300;
+  background-color: black;
   background-image: url(../../assets/dividers/top-light-waves2.svg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -2146,20 +2144,10 @@ body.white {
   transition: 0.5s;
   font-size: 1.7rem;
 }
-.scroll-up .us-section__vision::before {
-  transition: 0.5s;
-  border: 1px solid transparent;
-  inset: 0 0 0 0;
-}
 
 .scroll-down .us-section__vision h2 {
   transition: 0.5s;
-  font-size: 2rem;
-}
-.scroll-down .us-section__vision::before {
-  transition: 0.5s;
-  border: 1px solid rgb(31, 52, 74);
-  inset: 0 0 0 0;
+  font-size: 1.9rem;
 }
 
 .models__intro {

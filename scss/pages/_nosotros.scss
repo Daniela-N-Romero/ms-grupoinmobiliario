@@ -93,7 +93,7 @@ body.white {
       //article #2 and #4
 
       &:nth-child(2), &:nth-child(4){        
-        height: 70vh;
+        //height: 70vh;
         background-color: $light-waves;
         .us__box{
           margin: 10%;
@@ -135,8 +135,7 @@ body.white {
           
       //top of article #3
 
-      &:nth-child(3){
-        height: 100vh;        
+      &:nth-child(3){      
         display: flex;
         align-items: center;
 
@@ -168,18 +167,18 @@ body.white {
       //ending of article #4
 
       &:nth-child(4){
-        height: 90vh;
+        height: auto;
         position: relative;
-        .us__content{
-          height: 50%;
-        }
+        padding-bottom: 30%;
+        z-index: 100;
         &::after{
           position: absolute;
           content: '';
-          inset: 70% 0 0 0;
-          background-color: red;
+          inset: 80% 0 0 0;
+          z-index: 300;
+          background-color: black;
           background-image: url(../../assets/dividers/top-light-waves2.svg);
-          background-size: 100%;
+          background-size:  cover;
           background-repeat: no-repeat;
           background-position: top;
         }
@@ -205,6 +204,9 @@ body.white {
 // }
 
 
+
+
+//timeline 
 
 .us-section__timeline {
   .poppins__title {
@@ -247,6 +249,9 @@ body.white {
     }
   }
 }
+
+
+//photos galleries
 
 .us-section__gallery {
   padding: 2rem;
@@ -350,6 +355,8 @@ body.white {
   }
 }
 
+//our vision
+
 .us-section__vision {
   max-width: 75%;
   margin: auto;
@@ -403,22 +410,22 @@ body.white {
 	  transition: 0.5s;
 	  font-size: 1.7rem;
 	}
-	&::before {
-	  transition: 0.5s;
-	  border: 1px solid transparent;
-	  inset: 0 0 0 0;
-	}
+	// &::before {
+	//   transition: 0.5s;
+	//   border: 1px solid transparent;
+	//   inset: 0 0 0 0;
+	// }
   }
 
 
 .scroll-down .us-section__vision {
   h2 {
 	transition: 0.5s;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
-  &::before {
-	transition: 0.5s;
-    border: 1px solid $logo-blue;
-    inset: 0 0 0 0;
-  }
+  // &::before {
+	// transition: 0.5s;
+  //   border: 1px solid $logo-blue;
+  //   inset: 0 0 0 0;
+  // }
 }
