@@ -75,12 +75,13 @@ height: 95vh;
 
 
 .index__intro{
-    background-color: $primary-color-light-blue;
-    border-radius: 10px;
-    @extend %section;
+    text-align: center;
+    box-shadow: none;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     &--title{
         @extend %section_title;
 
@@ -199,7 +200,9 @@ height: 95vh;
 //GALLERY SECTION
 
 .index__obras{
-    @extend %section;
+    text-align: center;
+    box-shadow: none;
+    height: 80vh;
     margin-bottom: 1rem;
     background-color: #fff;
     border-radius: 10px 0;

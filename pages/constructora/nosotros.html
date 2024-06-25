@@ -40,13 +40,9 @@
                             aria-label="Más informacion acerca de nosotros" data-bs-toggle="dropdown"
                             aria-expanded="false"></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./nosotros.html" role="button" tabindex="0"
-                                    aria-label="Quienes somos">Quienes somos</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="./nosotros.html" role="button" tabindex="0"
-                                    aria-label="Preguntas frecuentes">Preguntas frecuentes</a></li>
+                            <li><a class="dropdown-item" href="./nosotros.html#us_section"  role="button" tabindex="0" aria-label="Nuestros servicios">Nuestros servicios</a></li>
+                            <li><hr class="dropdown-divider"/></li>
+                            <li><a class="dropdown-item" href="./nosotros.html#faqs_section"  role="button" tabindex="0" aria-label="Preguntas frecuentes">Preguntas frecuentes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -135,7 +131,7 @@
         También podes concretar una entrevista con nuestro equipo y empezar a hacer realidad tus sueños. -->
 
 
-        <section class="us-section__timeline">
+        <section class="us-section__timeline" id="us_section">
             <h2 class="poppins__title">Servicios</h2>
             <ul class="timeline">
                 <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
@@ -224,6 +220,47 @@
 
         </section>
 
+        <section class="more-information container-fluid" id="faqs_section">
+            <div class="container">
+                <div class="row">
+                    <h3 class="more-information__title">¿Tenes alguna duda?</h3>
+                    <ul class="more-information__faqs">
+                        <li class="more__information__faq" data-aos="zoom-in-up" >
+                            <button class="accordion">¿Dónde se encuentran?</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere saepe mollitia commodi. Necessitatibus voluptatem atque rerum adipisci ipsum aliquid nisi. Neque, inventore rerum! Facilis et obcaecati commodi voluptatem, nemo dicta.</p>
+                            </div>
+                        </li>
+                        <li class="more__information__faq" data-aos="zoom-in-up" >
+                            <button class="accordion">¿Cuales son los medios de pago que aceptan?</button>
+                            <div class="panel">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </li>
+                        <li class="more__information__faq" data-aos="zoom-in-up" >
+                            <button class="accordion">¿Cómo concuerdo una entrevista?</button>
+                            <div class="panel">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </li>
+                        <li class="more__information__faq" data-aos="zoom-in-up" >
+                            <button class="accordion">¿Qué tipos de materiales utilizan?</button>
+                            <div class="panel">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </li>
+                        <li class="more__information__faq" data-aos="zoom-in-up" >
+                            <button class="accordion">¿En qué zona se encuentran las propiedades en venta?</button>
+                            <div class="panel">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+        </section> 
 
 
 
@@ -296,6 +333,7 @@
         AOS.init();
     </script>
     <script src="../../js/header.js"></script>
+    <script src="../../js/accordion.js"></script>
     <script src="../../js/variables.js"></script>
     <script src="../../js/templates.js"></script>
     <script src="../../js/carousel.js"></script>

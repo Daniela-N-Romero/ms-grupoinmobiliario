@@ -39,13 +39,9 @@
                             aria-label="Más informacion acerca de nosotros" data-bs-toggle="dropdown"
                             aria-expanded="false"></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./nosotros.html" role="button" tabindex="0"
-                                    aria-label="Quienes somos">Quienes somos</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="./nosotros.html" role="button" tabindex="0"
-                                    aria-label="Preguntas frecuentes">Preguntas frecuentes</a></li>
+                            <li><a class="dropdown-item" href="./nosotros.html#us_section"  role="button" tabindex="0" aria-label="Nuestros servicios">Nuestros servicios</a></li>
+                            <li><hr class="dropdown-divider"/></li>
+                            <li><a class="dropdown-item" href="./nosotros.html#faqs_section"  role="button" tabindex="0" aria-label="Preguntas frecuentes">Preguntas frecuentes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -97,18 +93,18 @@
                     <form action="" id="contact-form">
                         <fieldset form="contact-form" class="name-field">
                             <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre">
+                            <input type="text" name="nombre" id="nombre" required>
                         </fieldset>
                         
         
                         <fieldset form="contact-form" class="surname-field">
                             <label for="apellido">Apellido</label>
-                            <input type="text">
+                            <input type="text" required>
                         </fieldset>
                         
                         <fieldset form="contact-form" class="age-field">
                             <label for="edad">Edad</label>
-                            <select name="edad" id="edad">
+                            <select name="edad" id="edad" required>
                                 <option value="menos de 25 años">Menos de 25 años</option>
                                 <option value="entre 25 y 38 años">Entre 25 y 38 años</option>
                                 <option value="entre 39 y 50 años">Entre 39 y 50 años</option>
@@ -118,33 +114,39 @@
                         
                         <fieldset form="contact-form"  class="email-field">                
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </fieldset>                
                         
                         <fieldset form="contact-form"  class="phone-field">
                             <label for="telefono">Teléfono</label>
-                            <input type="number" name="telefono" id="telefono">
+                            <input type="number" name="telefono" id="telefono" required>
                         </fieldset>                
                         
                         <fieldset form="contact-form"  class="place-field">
                             <label for="localidad">¿Cuál es la localidad de la construcción?</label>
-                            <input type="text" name="localidad" id="localidad">
+                            <input type="text" name="localidad" id="localidad" required>
                         </fieldset>
                         
                         <fieldset form="contact-form"  class="lote-field">
                             <label class="legend-label">¿Ya contas con lote?</label>
                             <div>
-                                <label class="radio-label" for="loteSi">Si</label>
-                                <input type="radio" name="lote" id="loteSi" value="si">
+                                <label class="radio-label" for="loteSi" >Si</label>
+                                <input type="radio" name="lote" id="loteSi" value="si" required>
                                 <label class="radio-label" for="loteNo">No</label>
-                                <input type="radio" name="lote" id="loteNo" value="no">
+                                <input type="radio" name="lote" id="loteNo" value="no" required>
                             </div>
                         </fieldset>
                         
                         
                         <fieldset form="contact-form"  class="traffic-field">
                             <label for="source">¿Dónde nos conociste</label>
-                            <input type="text" name="source" id="source">
+                            <select name="source" id="source" required>
+                                <option value="instagram">Instagram</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="google">Google</option>
+                                <option value="conocidos">Un conocido</option>
+                                <option value="cartel">Carteles/Folletos</option>
+                            </select>
                         </fieldset>                
                         
                         <fieldset form="contact-form"  class="description-field">
