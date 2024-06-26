@@ -854,6 +854,97 @@ body.light-bg {
   border: none;
 }
 
+.fixed-btn {
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer;
+  z-index: 150;
+  right: 15px;
+}
+.fixed-btn:hover {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.wsp-btn {
+  bottom: 30px;
+  background-color: #0df053;
+  color: #fff;
+}
+.wsp-btn .bi-whatsapp::before {
+  line-height: 55px;
+}
+.wsp-btn:hover {
+  color: #0df053;
+  background-color: #fff;
+}
+
+.redirect-btn {
+  width: auto;
+  height: 25px;
+  padding-inline: 1rem;
+  line-height: 25px;
+  font-size: 16px;
+  font-family: "poppinsRegular";
+  border-radius: 15px;
+  top: calc(5rem + 5px);
+  right: -10px;
+  background-color: rgb(31, 52, 74);
+  color: #fff;
+}
+.redirect-btn:nth-child(5) {
+  top: calc(5rem + 35px);
+}
+.redirect-btn:hover {
+  background-color: #fff;
+  color: rgb(31, 52, 74);
+  padding-inline-end: 2rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.fixed-btn.btn-redirect {
+  bottom: 100px;
+  background-color: red;
+  background-image: url(../../assets/images/logos/logo-wpp-fondo.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.fixed-btn.btn-redirect.btn-redirect::before {
+  position: absolute;
+  content: "";
+  inset: 0 0 0 0;
+  background-color: transparent;
+  color: transparent;
+  padding-inline: 1rem;
+  line-height: 25px;
+  font-size: 16px;
+  font-family: "poppinsRegular";
+  border-radius: 20px 50px 50px 20px;
+}
+.fixed-btn.btn-redirect.btn-redirect:hover::before {
+  background-color: rgb(31, 52, 74);
+  color: #fff;
+  font-weight: bold;
+  inset: 0 0px 0 -100px;
+  transition: 0.3s;
+}
+.fixed-btn.btn-redirect.btn-redirect-inmo::before {
+  content: "MS PROPIEDADES";
+}
+.fixed-btn.btn-redirect.btn-redirect-group {
+  bottom: 160px;
+}
+.fixed-btn.btn-redirect.btn-redirect-group::before {
+  content: "GRUPO INMOBILIARIO";
+}
+
 .logo {
   height: 5rem;
   margin-left: 1rem;

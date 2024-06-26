@@ -163,3 +163,106 @@
   }
 }
 
+
+// FIXED BUTTONS 
+
+.fixed-btn{
+  position: fixed;  
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  cursor: pointer;
+  z-index: 150;  
+  right: 15px;  
+  &:hover{
+    text-decoration: none;
+    transition: .3s;
+  }
+
+}
+
+.wsp-btn{
+  bottom: 30px;
+  background-color: #0df053;
+  color: #fff;
+
+  .bi-whatsapp::before{
+    line-height: 55px;
+  }
+  &:hover{
+    color: #0df053;
+    background-color: #fff;
+  }
+}
+
+.redirect-btn{
+  width: auto;
+  height: 25px;
+  padding-inline: 1rem;
+  line-height: 25px;
+  font-size: 16px;  
+  font-family: 'poppinsRegular';
+  border-radius: 15px;
+  top: calc($header-height + 5px);
+  right: -10px;
+  background-color: rgb(31,52,74);
+  color: #fff;
+  &:nth-child(5){
+    top: calc($header-height + 35px);
+  }
+  &:hover{
+    background-color: #fff;
+    color: $logo-blue;
+    padding-inline-end: 2rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+  }
+}
+
+.fixed-btn.btn-redirect{
+  bottom: 100px;
+  background-color: red;
+  background-image: url(../../assets/images/logos/logo-wpp-fondo.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  //expanding text
+  &.btn-redirect::before{
+    position: absolute;
+    content: '';    
+    inset: 0 0 0 0;
+    background-color: transparent;
+    color: transparent;
+    padding-inline: 1rem;
+    line-height: 25px;
+    font-size: 16px;  
+    font-family: 'poppinsRegular';
+    border-radius:  20px 50px 50px 20px;
+  } 
+  &.btn-redirect:hover::before{
+    background-color: $logo-blue;
+    color: #fff;
+    font-weight: bold;
+    inset: 0 0px 0 -100px;
+    transition: 0.3s;
+  }
+
+  //"MS Propiedades" button
+  &.btn-redirect-inmo::before{
+    content: 'MS PROPIEDADES';    
+  } 
+
+  //changes for "grupo inmobiliario" button
+  &.btn-redirect-group{
+    bottom: 160px;
+  }
+  &.btn-redirect-group::before{
+    content: 'GRUPO INMOBILIARIO';    
+  } 
+
+  
+}
