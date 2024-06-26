@@ -1,172 +1,376 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css" />
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<title>MS Construcción.</title>
+		<!-- averiguar que keywords incluir en el meta description que matcheen en search intent y que sean menos de 120 caracteres -->
+		<meta name="description" content="" />
+		<meta
+			name="title"
+			content="MS Construcción - Construcción de casas en Berazategui, Buenos Aires"
+		/>
+	</head>
 
-    <title>MS Construcción.</title>
-    <!-- averiguar que keywords incluir en el meta description que matcheen en search intent y que sean menos de 120 caracteres -->
-    <meta name="description" content="" />
-    <meta name="title" content="MS Construcción - Construcción de casas en Berazategui, Buenos Aires" />
-</head>
+	<body>
+		<header class="header">
+			<nav
+				class="container navbar navbar-expand-md d-md-flex"
+				aria-label="Barra de navegacion"
+			>
+				<a
+					href="../pages/homeconstructora.html"
+					aria-label="Logo a página de inicio"
+					><img
+						src="../assets/images/logos/logo-constructora.png"
+						alt="Logo a página de inicio"
+						class="logo"
+						role="button"
+						tabindex="0"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Botón de Barra de navegación"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto align-items-center">
+						<li class="nav-item">
+							<a
+								class="nav-link nav-link-block"
+								aria-current="page"
+								href="../pages/homeconstructora.html"
+								role="button"
+								tabindex="0"
+								aria-label="Ir al inicio"
+								>Inicio</a
+							>
+						</li>
+						<li class="nav-item dropdown dropdown-header text-center">
+							<a
+								class="nav-link d-inline-block nav-link-inlineblock"
+								href="../pages/constructora/nosotros.html"
+								role="button"
+								tabindex="0"
+								aria-label="Informacion acerca de nosotros"
+								>Nosotros</a
+							>
+							<a
+								class="nav-link dropdown-toggle d-inline-block"
+								role="button"
+								tabindex="0"
+								aria-label="Más informacion acerca de nosotros"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a
+										class="dropdown-item"
+										href="../pages/constructora/nosotros.html#us_section"
+										role="button"
+										tabindex="0"
+										aria-label="Nuestros servicios"
+										>Nuestros servicios</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="../pages/constructora/nosotros.html#faqs_section"
+										role="button"
+										tabindex="0"
+										aria-label="Preguntas frecuentes"
+										>Preguntas frecuentes</a
+									>
+								</li>
+							</ul>
+						</li>
 
-<body>
-    <header class="header">
-        
-        <nav class="container navbar navbar-expand-md d-md-flex" aria-label="Barra de navegacion">
+						<li class="nav-item dropdown dropdown-header text-center">
+							<a
+								class="nav-link d-inline-block nav-link-inlineblock"
+								href="../pages/constructora/obras.html"
+								role="button"
+								tabindex="0"
+								aria-label="Ver nuestras obras"
+								>Nuestras Obras</a
+							>
+							<a
+								class="nav-link dropdown-toggle d-inline-block"
+								role="button"
+								tabindex="0"
+								aria-label="Ver más acerca de nuestras obras"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a
+										class="dropdown-item"
+										href="../pages/constructora/obras/viviendas.html"
+										role="button"
+										tabindex="0"
+										alt="Ver viviendas personalizadas"
+										>Viviendas personalizadas</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="../pages/constructora/obras/galerias.html"
+										role="button"
+										tabindex="0"
+										aria-label="Ver galerias y exteriores"
+										>Galerias y exteriores</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="../pages/constructora/obras/modelos.html"
+										role="button"
+										tabindex="0"
+										aria-label="Ver modelos estándar"
+										>Modelos estándar</a
+									>
+								</li>
+							</ul>
+						</li>
 
-                <a href="../pages/homeconstructora.html" aria-label="Logo a página de inicio"><img src="../assets/images/logos/logo-constructora.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Botón de Barra de navegación">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto align-items-center">  
+						<li class="nav-item">
+							<a
+								class="nav-link nav-link-block"
+								href="../pages/constructora/contacto.html"
+								role="button"
+								tabindex="0"
+								aria-label="Contactanos"
+								>Contactanos</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-                        <li class="nav-item"><a class="nav-link nav-link-block" aria-current="page" href="../pages/homeconstructora.html" role="button" tabindex="0" aria-label="Ir al inicio">Inicio</a></li>
-                        <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="../pages/constructora/nosotros.html" role="button" tabindex="0" aria-label="Informacion acerca de nosotros">Nosotros</a>
-                            <a class="nav-link dropdown-toggle d-inline-block" role="button"  tabindex="0" aria-label="Más informacion acerca de nosotros" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/constructora/nosotros.html#us_section"  role="button" tabindex="0" aria-label="Nuestros servicios">Nuestros servicios</a></li>
-                                <li><hr class="dropdown-divider"/></li>
-                                <li><a class="dropdown-item" href="../pages/constructora/nosotros.html#faqs_section"  role="button" tabindex="0" aria-label="Preguntas frecuentes">Preguntas frecuentes</a></li>
-                            </ul>
-                        </li>
+		<section class="index__hero">
+			<video
+				class="index__hero-video"
+				autoplay
+				muted
+				loop
+				id="index__hero-video"
+				src="../assets/images/constructora-home/10.mp4"
+				type="video/mp4"
+			></video>
+			<div class="index__hero-content">
+				<h1 class="index__hero-title">
+					Creando Espacios,<br />
+					Construyendo Vidas
+				</h1>
+				<p class="btn btn-animated-border-box">
+					<a
+						class="btn btn-animated-border-content"
+						href="../pages/constructora/contacto.html"
+						>Pedi tu presupuesto</a
+					>
+				</p>
+			</div>
+		</section>
 
-                                
-                            <li class="nav-item dropdown dropdown-header text-center"><a class="nav-link d-inline-block nav-link-inlineblock" href="../pages/constructora/obras.html" role="button"  tabindex="0" aria-label="Ver nuestras obras">Nuestras Obras</a>
-                                <a class="nav-link dropdown-toggle d-inline-block" role="button"  tabindex="0" aria-label="Ver más acerca de nuestras obras" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                                <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../pages/constructora/obras/viviendas.html"  role="button" tabindex="0" alt="Ver viviendas personalizadas">Viviendas personalizadas</a></li>
-                                        <li><hr class="dropdown-divider"/></li>
-                                        <li><a class="dropdown-item" href="../pages/constructora/obras/galerias.html"  role="button" tabindex="0" aria-label="Ver galerias y exteriores">Galerias y exteriores</a></li>
-                                        <li><hr class="dropdown-divider"/></li>
-                                        <li><a class="dropdown-item" href="../pages/constructora/obras/modelos.html"  role="button" tabindex="0" aria-label="Ver modelos estándar">Modelos estándar</a></li>
-                                </ul>
-                            </li>
-                        
-                        <li class="nav-item"><a class="nav-link nav-link-block" href="../pages/constructora/contacto.html" role="button" tabindex="0" aria-label="Contactanos">Contactanos</a></li>
-                    </ul>
-                </div>
+		<main class="main-home">
+			<section class="index__intro container">
+				<h2 class="index__intro--title">Introducción</h2>
+				<p class="index__intro--text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+					officia cumque in, similique itaque quas, dolor sed quia facilis
+					mollitia enim, quaerat quisquam assumenda molestias tenetur
+					praesentium doloremque vero hic?
+				</p>
+				<a class="index__intro--btn" href="../pages/constructora/nosotros.html"
+					>Quienes somos</a
+				>
+			</section>
+			<section class="index__servicios container">
+				<h2 class="index__servicios--title">Nuestros servicios</h2>
 
-        </nav>
-</header>
+				<article class="servicio">
+					<a
+						href="../pages/constructora/obras/viviendas.html"
+						class="servicio__link"
+					>
+						<div class="servicio__card">
+							<p class="servicio__name">Viviendas personalizadas</p>
+						</div>
+					</a>
+				</article>
 
-    <section class="index__hero">
-        <video class="index__hero-video" autoplay muted loop id="index__hero-video" src="../assets/images/constructora-home/10.mp4" type="video/mp4"></video>
-        <div class="index__hero-content">
-            <h1  class="index__hero-title">Creando Espacios,<br> Construyendo Vidas</h1>
-            <p class=" btn btn-animated-border-box"><a  class="btn btn-animated-border-content" href="../pages/constructora/contacto.html">Pedi tu presupuesto</a></p>
-        </div>
-    </section>
+				<article class="servicio">
+					<a
+						href="../pages/constructora/obras/modelos.html"
+						class="servicio__link"
+					>
+						<div class="servicio__card">
+							<p class="servicio__name">Llave en mano</p>
+						</div>
+					</a>
+				</article>
 
-    <main class="main-home">
-        <div class="container">
-            <section class="index__intro">
-                <h2 class="index__intro--title">Introducción</h2>
-                <p class="index__intro--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia cumque in, similique itaque quas, dolor sed quia facilis mollitia enim, quaerat quisquam assumenda molestias tenetur praesentium doloremque vero hic?</p>
-                <a class="index__intro--btn" href="../pages/constructora/nosotros.html">Quienes somos</a>
+				<article class="servicio">
+					<a
+						href="../pages/constructora/obras/galerias.html"
+						class="servicio__link"
+					>
+						<div class="servicio__card">
+							<p class="servicio__name">Galerias y exteriores</p>
+						</div>
+					</a>
+				</article>
+			</section>
+			<section class="index__obras container">
+				<img
+					src="../assets/images/constructora-home/frente.jpeg"
+					class="index__obras--img order-1 order-md-0"
+					alt=""
+				/>
+				<div class="index__obras--content d-flex flex-column">
+					<h2 class="index__obras--title">Trabajos realizados</h2>
+					<p class="index__obras--text">
+						lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Provident, iste vitae? Quia nam ex nostrum repudiandae et cupiditate
+						voluptatibus ipsam iste modi, cum totam officia explicabo rem
+						obcaecati nulla dignissimos. Mira
+						<a href="../pages/constructora/obras.html">nuestros trabajos</a>.
+					</p>
+				</div>
+			</section>
 
-            </section>
-            <section class="index__servicios">
-                <h2 class="index__servicios--title">Nuestros servicios</h2>
+			<!-- js buttons -->
+			<div id="constructorabtns"></div>
+		</main>
 
-                <article class="servicio">
-                    <a href="../pages/constructora/obras/viviendas.html" class="servicio__link">
-                        <div class="servicio__card">
-                            <p class="servicio__name">Viviendas personalizadas</p>
-                        </div>
-                    </a>
-                </article>
+		<footer class="footer">
+			<div class="container-fluid container-lg">
+				<div
+					class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between"
+				>
+					<a
+						class="footer__div footer__div__logo footer__div--link"
+						href="../pages/homeconstructora.html"
+						aria-label="Logo a página de inicio"
+						><img
+							src="../assets/images/logos/logo-constructora.png"
+							alt="Logo a página de inicio"
+							class="logo"
+							role="button"
+							tabindex="0"
+					/></a>
+					<div class="footer__div footer__div__datos">
+						<ul class="footer__div--breadcrumbs">
+							<li class="footer__div--li">
+								<a
+									class="footer__div--link"
+									href="../pages/homeconstructora.html"
+									role="button"
+									tabindex="0"
+									aria-label="Página actual: Inicio"
+									aria-current="page"
+									>> Inicio</a
+								>
+							</li>
+						</ul>
+						<ul class="footer__div--contacto">
+							<li class="footer__div--li">
+								<a
+									class="footer__div--link"
+									href="tel:+5491164773427"
+									role="button"
+									tabindex="0"
+									aria-label="Llamar a MS Construcción"
+									target="_blank"
+									rel="noopener"
+								>
+									<i class="footer__div--icon bi bi-telephone"></i>
+									<p class="footer__div--text">+54 9 11-6477-3427</p></a
+								>
+							</li>
+							<li class="footer__div--li">
+								<a
+									class="footer__div--link"
+									href="https://maps.app.goo.gl/usi6L6zmYAmDoGAv8"
+									target="_blank"
+									role="button"
+									tabindex="0"
+									aria-label="Ver la ubicación de MS Construcción"
+									rel="noopener"
+									><i class="footer__div--icon bi bi-geo-alt"></i>
+									<p class="footer__div--text">G. E. Hudson, Berazategui</p></a
+								>
+							</li>
+							<li class="footer__div--li">
+								<a
+									class="footer__div--link"
+									href="mailto:info@msconstruccion.net"
+									role="button"
+									tabindex="0"
+									aria-label="Enviar un correo electronico a MS Construcción"
+									rel="noopener"
+									><i class="footer__div--icon bi bi-envelope"></i>
+									<p class="footer__div--text">info@msconstruccion.net</p></a
+								>
+							</li>
+							<li class="footer__div--li">
+								<a
+									class="footer__div--link"
+									href="https://www.instagram.com/msconstructor/"
+									target="_blank"
+									role="button"
+									tabindex="0"
+									aria-label="Ir al Instagram de MS Construcción"
+									rel="noopener"
+									><i class="footer__div--icon bi bi-instagram"></i>
+									<p class="footer__div--text">@msconstructor</p></a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 
-                <article class="servicio">
-                    <a href="../pages/constructora/obras/modelos.html" class="servicio__link">
-                        <div class="servicio__card">
-                            <p class="servicio__name">Llave en mano</p>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="servicio">
-                    <a href="../pages/constructora/obras/galerias.html" class="servicio__link">
-                        <div class="servicio__card">
-                            <p class="servicio__name">Galerias y exteriores</p>
-                        </div>
-                    </a>
-                </article>
-
-            </section>
-            <section class="index__obras">
-                <img src="../assets/images/constructora-home/frente.jpeg" class="index__obras--img order-1 order-md-0" alt="">
-                <div class="index__obras--content d-flex flex-column">
-                    <h2 class="index__obras--title">Trabajos realizados</h2>
-                    <p class="index__obras--text">lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iste vitae? Quia nam ex nostrum repudiandae et cupiditate voluptatibus ipsam iste modi, cum totam officia explicabo rem obcaecati nulla dignissimos. Mira <a href="../pages/constructora/obras.html">nuestros trabajos</a>.</p>
-                </div>
-            </section>
-        </div>
-
-        <a href="../index.html" class="fixed-btn btn-redirect btn-redirect-group" target="_blank"></a>
-
-        <a href="../pages/homeimboliaria.html" class="fixed-btn btn-redirect btn-redirect-inmo" target="_blank"></a>
-        
-        <a href="../pages/homeimboliaria.html" class="fixed-btn redirect-btn" target="_blank">Grupo inmobiliario</a>
-
-        <a href="../index.html" class="fixed-btn redirect-btn" target="_blank">Ms Propiedades</a>
-
-        <a href="https://api.whatsapp.com/send?phone=5491164773427" class="fixed-btn wsp-btn" target="_blank">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-    </main>
-
-    <footer class="footer">
-
-        <div class="container-fluid container-lg">
-            <div class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between">
-                <a class="footer__div footer__div__logo footer__div--link" href="../pages/homeconstructora.html" aria-label="Logo a página de inicio"><img src="../assets/images/logos/logo-constructora.png" alt="Logo a página de inicio" class="logo" role="button" tabindex="0"></a>
-                <div class="footer__div footer__div__datos ">
-                    <ul class="footer__div--breadcrumbs">
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="../pages/homeconstructora.html" role="button" tabindex="0" aria-label="Página actual: Inicio" aria-current="page">> Inicio</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__div--contacto">
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="tel:+5491164773427" role="button" tabindex="0" aria-label="Llamar a MS Construcción" target="_blank" rel="noopener">
-                            <i class="footer__div--icon bi bi-telephone"></i><p class="footer__div--text">+54 9 11-6477-3427</p></a>
-                        </li>
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="https://maps.app.goo.gl/usi6L6zmYAmDoGAv8" target="_blank" role="button" tabindex="0" aria-label="Ver la ubicación de MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-geo-alt"></i><p class="footer__div--text">G. E. Hudson, Berazategui</p></a>
-                        </li>
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="mailto:info@msconstruccion.net" role="button" tabindex="0" aria-label="Enviar un correo electronico a MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-envelope"></i><p class="footer__div--text">info@msconstruccion.net</p></a>
-                        </li>
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="https://www.instagram.com/msconstructor/" target="_blank" role="button" tabindex="0" aria-label="Ir al Instagram de MS Construcción" rel="noopener"><i class="footer__div--icon bi bi-instagram"></i><p class="footer__div--text">@msconstructor</p></a>
-                        </li>
-                    </ul>                        
-                </div>
-            </div>
-        </div>
-    
-    </footer>
-
-
-
-</body>
-
-<script src="../js/variables.js" ></script>
-<script src="../js/templates.js" ></script>
-<script src="../js/header.js" ></script>
-
-
+	<script src="../js/variables.js"></script>
+	<script src="../js/templates.js"></script>
+	<script src="../js/header.js"></script>
+	<script src="../../js/fixed-btns.js"></script>
 </html>
-

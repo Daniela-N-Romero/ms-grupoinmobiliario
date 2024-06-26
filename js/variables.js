@@ -173,6 +173,17 @@ const pergolaPictures = [
     {class:"div-img med-pic", img:`.${pergolaPath}galeria-1.jpg`, title:"Este es una vivienda de dos plantas"}
 ];
 
+//gallery buttons 
+
+const galleryBtns= [
+    {id: "banios", link:"/pages/constructora/obras/viviendas/banios.html", name:"Baños"},
+    {id: "cocinas", link:"/pages/constructora/obras/viviendas/cocinas.html", name:"Cocinas"},
+    {id: "unaplanta", link:"/pages/constructora/obras/viviendas/unaplanta.html", name:"Una planta"},
+    {id: "dosplantas", link:"/pages/constructora/obras/viviendas/dosplantas.html", name:"Dos plantas"},
+    {id: "parrillas", link:"/pages/constructora/obras/exteriores/parrillas.html", name:"Parrillas"},
+    {id: "piscinas", link:"/pages/constructora/obras/exteriores/piscinas.html", name:"Piscinas"},
+    {id: "pergolas", link:"/pages/constructora/obras/exteriores/pergolas.html", name:"Pergolas"}
+];
 
 //content for houses carousel
 

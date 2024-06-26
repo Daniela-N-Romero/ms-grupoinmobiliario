@@ -39,14 +39,9 @@
         }
 
     } 
-    .gallery__back.btn-animated-border-box::before{
-        inset: -50px;
-        background: linear-gradient(0deg,#94f497c6, $bright-light-blue);
 
-
-    }
     .gallery__back.btn-animated-border-box::after{
-        background: transparent;
+        background: $dark-waves;
     }
 
 
@@ -140,8 +135,11 @@
 }
 
 .morelinks{
-    .other-link h2{
-        font-size:  .9rem;
+    .link-bold-borders{
+        background-color: rgb(31, 52, 74,0.8);
+    }
+    .other-link a h2{
+        font-size:  12px;
     }
 }
 
