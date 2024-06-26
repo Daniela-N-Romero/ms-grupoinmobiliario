@@ -1534,22 +1534,22 @@ body.light-bg {
 .index__hero {
   position: relative;
   padding: 0%;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
-  height: 95vh;
 }
 .index__hero::before {
   content: "";
   inset: 0 0 0 0;
   background-color: black;
   position: absolute;
-  z-index: -10000;
+  z-index: -100;
 }
 .index__hero-video {
   position: relative;
-  top: 2px;
+  inset: 2px 0 0 0;
   opacity: 70%;
-  max-width: 100%;
-  min-width: 100%;
+  width: 100%;
   overflow: hidden;
   height: 100%;
   object-fit: cover;
@@ -1564,7 +1564,7 @@ body.light-bg {
   position: absolute;
   bottom: 10%;
   text-align: center;
-  z-index: 10;
+  z-index: 100;
 }
 .index__hero-content h1 {
   color: rgb(243, 248, 246);
@@ -1577,22 +1577,62 @@ body.light-bg {
     margin-bottom: 3%;
   }
 }
-.index__hero-content .btn-animated-border-box {
-  background-color: transparent;
-}
-.index__hero-content .btn-animated-border-box::before {
-  content: "";
-  background: linear-gradient(0deg, #d400d4, #00ccff);
-}
 .index__hero-content .btn-animated-border-box::after {
   background: rgb(67, 65, 124);
-}
-.index__hero-content .btn-animated-border-content {
-  color: rgb(240, 236, 229);
 }
 .index__hero-content .btn-animated-border-box:hover::after {
   background: #2F69B1;
   transition: 0.3s;
+}
+
+.main-home {
+  position: relative;
+}
+.main-home::before {
+  content: "";
+  inset: -10% 0 99% 0;
+  background-image: url(../../assets/images/landing-page/waveShort.svg);
+  position: absolute;
+  z-index: 110;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+@media screen and (min-width: 580px) {
+  .main-home::before {
+    background-size: 120%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-home::before {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-home::before {
+    inset: -10% 0 97% 0;
+    background-size: 100%;
+  }
+}
+.main-home::after {
+  content: "";
+  inset: -1% 0 90% 0;
+  background-image: url(../../assets/images/landing-page/waveShortNegative.svg);
+  position: absolute;
+  z-index: 110;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+@media screen and (min-width: 580px) {
+  .main-home::after {
+    background-size: 120%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-home::after {
+    background-size: 100%;
+  }
 }
 
 .index__intro {
@@ -1603,6 +1643,7 @@ body.light-bg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .index__intro--text {
   padding-bottom: 1rem;
