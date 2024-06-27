@@ -1,25 +1,27 @@
+
+
 //content for bathroom gallery
 
 const bathroomsPath = "/assets/images/viviendas-page/bathrooms/";
 
 const bathroomPictures = [
-    {class:"div-img med-pic", img:`${bathroomsPath}banio-11.jpg`, title:"Esta es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-4.jpg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-8.jpg`, title:"Este es un baño"},
-    {class:"div-img big-pic", img:`${bathroomsPath}banio-6.jpg`, title:"Esta es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"div-img med-pic", img:`${bathroomsPath}banio-12.jpg`, title:"Esta es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-3.jpeg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-13.jpg`, title:"Este es un baño"},
-    {class:"div-img med-pic", img:`${bathroomsPath}banio-15.jpg`, title:"Esta es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-14.jpg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"div-img med-pic", img:`${bathroomsPath}banio-6.jpg`, title:"Este es un baño"}
+{class:"div-img med-pic", img:`${bathroomsPath}banio-11.jpg`, title:"Esta es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-4.jpg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-8.jpg`, title:"Este es un baño"},
+{class:"div-img big-pic", img:`${bathroomsPath}banio-6.jpg`, title:"Esta es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+{class:"div-img med-pic", img:`${bathroomsPath}banio-12.jpg`, title:"Esta es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-3.jpeg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-13.jpg`, title:"Este es un baño"},
+{class:"div-img med-pic", img:`${bathroomsPath}banio-15.jpg`, title:"Esta es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-14.jpg`, title:"Este es un baño"},
+{class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+{class:"div-img med-pic", img:`${bathroomsPath}banio-6.jpg`, title:"Este es un baño"}
 ];
 
 
@@ -192,4 +194,18 @@ const galleryBtns= [
 // const obrasPictures = [
 //     {title:"Galerias y exteriores", img:`${viviendasPath}1.jpeg`, descr:"¿Estas buscando con una exterior soñado para tu hogar? Mira lo que tenemos para ofrecerte"},
 // ];
+
+//home gallery
+
+
+const homePictures = [
+    {class:"div-img med-pic", img:`${bathroomsPath}banio-11.jpg`, title:"Esta es un baño"},
+    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${bathroomsPath}banio-4.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${bathroomsPath}banio-8.jpg`, title:"Este es un baño"},
+    {class:"div-img big-pic", img:`${bathroomsPath}banio-6.jpg`, title:"Esta es un baño"},
+    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"}
+];
 

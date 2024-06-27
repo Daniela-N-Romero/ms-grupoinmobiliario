@@ -7,6 +7,7 @@ const  twostorygallery = document.getElementById("twostorygallery");
 const  poolgallery = document.getElementById("poolgallery");
 const  grillgallery = document.getElementById("grillgallery");
 const  pergolagallery = document.getElementById("pergolagallery");
+const  homegallery = document.getElementById("homegallery");
 
 function loadPictures(array,gallery){
     let contenido = ``;
@@ -42,6 +43,10 @@ if (grillgallery){
 }
 if (pergolagallery){
     loadPictures(pergolaPictures,pergolagallery)
+}
+
+if (homegallery){
+    loadPictures(homePictures,homegallery)
 }
 
 //LOADING BUTTONS

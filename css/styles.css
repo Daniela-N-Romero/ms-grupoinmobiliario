@@ -1105,10 +1105,10 @@ body.light-bg {
     border-radius: 0 calc(var(--serviceH) / 2) calc(var(--serviceH) / 2) 0;
   }
 }
-.index__obras--title, .index__servicios--title, .index__intro--title {
+.index__obras article .article--title, .index__servicios--title, .index__intro--title {
   font-size: 1.8rem;
-  font-weight: 900;
   font-family: "antipastoExtraBold";
+  text-transform: uppercase;
 }
 
 .index__hero-content h1 {
@@ -1543,6 +1543,26 @@ body.light-bg {
   position: absolute;
   z-index: -100;
 }
+.index__hero::after {
+  content: "";
+  inset: 0 0 -5px 0;
+  background-image: url(../../assets/images/landing-page/waveShort.svg);
+  position: absolute;
+  z-index: 110;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (min-width: 790px) {
+  .index__hero::after {
+    inset: 0 0 -40px 0;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .index__hero::after {
+    inset: 0 0 -80px 0;
+  }
+}
 .index__hero-video {
   position: relative;
   inset: 2px 0 0 0;
@@ -1584,64 +1604,23 @@ body.light-bg {
 }
 
 .main-home {
-  position: relative;
-}
-.main-home::before {
-  content: "";
-  inset: -10% 0 99% 0;
-  background-image: url(../../assets/images/landing-page/waveShort.svg);
-  position: absolute;
-  z-index: 110;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 150%;
-}
-@media screen and (min-width: 580px) {
-  .main-home::before {
-    background-size: 120%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .main-home::before {
-    background-size: 100%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main-home::before {
-    inset: -10% 0 97% 0;
-    background-size: 100%;
-  }
-}
-.main-home::after {
-  content: "";
-  inset: -1% 0 90% 0;
-  background-image: url(../../assets/images/landing-page/waveShortNegative.svg);
-  position: absolute;
-  z-index: 110;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 150%;
-}
-@media screen and (min-width: 580px) {
-  .main-home::after {
-    background-size: 120%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .main-home::after {
-    background-size: 100%;
-  }
+  background: no-repeat top/100% url(../../assets/images/landing-page/waveShortNegative.svg);
 }
 
 .index__intro {
   text-align: center;
   box-shadow: none;
-  height: 80vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.index__intro div {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
 }
 .index__intro--text {
   padding-bottom: 1rem;
@@ -1658,12 +1637,37 @@ body.light-bg {
   padding: 7px 25px;
   transition: all 0.5s;
 }
+.index__intro::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -1px 0;
+  z-index: -50;
+  background: no-repeat bottom/100% url(../../assets/dividers/bottom-light-waves2.svg);
+}
+@media screen and (min-width: 1200px) {
+  .index__intro::before {
+    inset: 0 0 -50px 0;
+  }
+}
 
 .index__servicios {
+  padding-top: 20vh;
+  padding-bottom: 40vh;
+  background: linear-gradient(180deg, #A5CCFB 0%, #fff 100%, #fff 95%);
+  position: relative;
+}
+.index__servicios::before {
+  content: "";
+  inset: -2px 0;
+  position: absolute;
+  z-index: 20;
+  background: no-repeat bottom/100% url(../../assets/images/landing-page/wave-outline.svg);
+}
+.index__servicios div.container {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .index__servicios {
+  .index__servicios div.container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1733,13 +1737,13 @@ body.light-bg {
   width: 100%;
   height: 100%;
 }
-.index__servicios .servicio__link div {
+.index__servicios .servicio__link .servicio__card {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
 }
-.index__servicios .servicio__link div p {
+.index__servicios .servicio__link .servicio__card p {
   position: relative;
   font-size: 1.7rem;
   font-family: "antipastoRegular";
@@ -1747,12 +1751,14 @@ body.light-bg {
 }
 
 .index__obras {
+  padding-block: 10vh;
+  background: linear-gradient(0deg, #A5CCFB 0%, #fff);
+}
+
+.index__obras article {
   text-align: center;
   box-shadow: none;
-  height: 80vh;
-  margin-bottom: 1rem;
-  background-color: #fff;
-  border-radius: 10px 0;
+  padding-block: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1760,44 +1766,64 @@ body.light-bg {
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .index__obras {
+  .index__obras article {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
   }
 }
-.index__obras--img {
-  max-width: 100%;
-  border-radius: 0 20px;
+.index__obras article .article--img {
+  max-width: 80%;
+  border-radius: 20px;
 }
 @media screen and (min-width: 768px) {
-  .index__obras--img {
+  .index__obras article .article--img {
     max-width: 45%;
   }
 }
 @media screen and (min-width: 992px) {
-  .index__obras--img {
+  .index__obras article .article--img {
     max-width: 30%;
   }
 }
-.index__obras--content {
+.index__obras article .article--content {
   color: rgb(50, 59, 110);
 }
 @media screen and (min-width: 768px) {
-  .index__obras--content {
+  .index__obras article .article--content {
     max-width: 45%;
     margin-left: 5%;
   }
 }
-.index__obras--text {
-  text-align: justify;
+@media screen and (min-width: 768px) {
+  .index__obras article .article--content.reverse {
+    margin-inline: 0 5%;
+  }
 }
-.index__obras--text a {
+.index__obras article .article--text {
+  text-align: center;
+}
+.index__obras article .article--text a {
   font-weight: 900;
   padding: 0px 10px;
   color: rgb(50, 59, 110);
 }
+.index__obras article .article--text:hover {
+  color: rgb(31, 52, 74);
+}
+
+.homegallery {
+  position: relative;
+}
+.homegallery::before {
+  position: absolute;
+  content: "";
+  inset: 0 0 70% 0;
+  z-index: -10;
+  background: no-repeat top/100% url(../../assets/dividers/top-light-waves1.svg);
+}
+
 @media screen and (min-width: 768px) {
   .contacto {
     padding-top: 5rem;
