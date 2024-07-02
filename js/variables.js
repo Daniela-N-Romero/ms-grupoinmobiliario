@@ -1,9 +1,9 @@
+//GALLERIES
+
 
 
 //content for bathroom gallery
-
 const bathroomsPath = "/assets/images/viviendas-page/bathrooms/";
-
 const bathroomPictures = [
 {class:"div-img med-pic", img:`${bathroomsPath}banio-11.jpg`, title:"Esta es un baño"},
 {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
@@ -28,10 +28,7 @@ const bathroomPictures = [
 
 
 //content for kitchen gallery
-
 const kitchensPath = "/assets/images/viviendas-page/kitchens/";
-
-
 const kitchenPictures = [
     {class:"div-img med-pic", img:`${kitchensPath}cocina-0.jpeg`, title:"Esta es una cocina"},
     {class:"div-img small-pic", img:`${kitchensPath}cocina-1.jpeg`, title:"Este es una cocina"},
@@ -53,10 +50,9 @@ const kitchenPictures = [
 ];
 
 
+
 //content for one story houses gallery
-
 const onestoryPath = "/assets/images/viviendas-page/onestoryhouses/";
-
 const onestoryPictures = [
     {class:"div-img med-pic", img:`${onestoryPath}unaplanta-0.jpg`, title:"Esta es una vivienda de una planta"},
     {class:"div-img small-pic", img:`${onestoryPath}unaplanta-1.jpeg`, title:"Este es una vivienda de una planta"},
@@ -79,9 +75,7 @@ const onestoryPictures = [
 
 
 //content for two story houses gallery
-
 const twostoryPath = "/assets/images/viviendas-page/twostoryhouses/";
-
 const twostoryPictures = [
     {class:"div-img med-pic", img:`${twostoryPath}dosplantas1.png`, title:"Esta es una vivienda de dos plantas"},
     {class:"div-img small-pic", img:`${twostoryPath}dosplantas-2.jpeg`, title:"Este es una vivienda de dos plantas"},
@@ -102,10 +96,9 @@ const twostoryPictures = [
     {class:"div-img med-pic", img:`${twostoryPath}dosplantas-3.jpeg`, title:"Este es una vivienda de dos plantas"}
 ];
 
+
 //content for grill gallery
-
 const grillPath = "/assets/images/galerias-page/grills/";
-
 const grillPictures = [
     {class:"div-img med-pic", img:`${grillPath}parrilla-0.jpg`, title:"Esta es una vivienda de dos plantas"},
     {class:"div-img small-pic", img:`${grillPath}parrilla-2.jpeg`, title:"Este es una vivienda de dos plantas"},
@@ -128,9 +121,7 @@ const grillPictures = [
 
 
 //content for pool gallery
-
 const poolPath = "/assets/images/galerias-page/pools/";
-
 const poolPictures = [
     {class:"div-img med-pic", img:`${poolPath}piscina-1.jpg`, title:"Esta es una vivienda de dos plantas"},
     {class:"div-img small-pic", img:`${poolPath}piscina-2.jpg`, title:"Este es una vivienda de dos plantas"},
@@ -152,9 +143,7 @@ const poolPictures = [
 ];
 
 //content for pergola gallery
-
 const pergolaPath = "/assets/images/galerias-page/pergolas/";
-
 const pergolaPictures = [
     {class:"div-img med-pic", img:`.${pergolaPath}galeria-1.jpg`, title:"Esta es una vivienda de dos plantas"},
     {class:"div-img small-pic", img:`.${pergolaPath}galeria-0.jpeg`, title:"Este es una vivienda de dos plantas"},
@@ -176,7 +165,6 @@ const pergolaPictures = [
 ];
 
 //gallery buttons 
-
 const galleryBtns= [
     {id: "banios", link:"/pages/constructora/obras/viviendas/banios.html", name:"Baños"},
     {id: "cocinas", link:"/pages/constructora/obras/viviendas/cocinas.html", name:"Cocinas"},
@@ -187,6 +175,31 @@ const galleryBtns= [
     {id: "pergolas", link:"/pages/constructora/obras/exteriores/pergolas.html", name:"Pergolas"}
 ];
 
+
+//constructora home gallery
+const homePictures = [
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-11.jpg`, title:"Esta es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-4.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-8.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-6.jpg`, title:"Esta es un baño"}
+];
+
+
+//inmobiliaria home gallery
+const homeInmoPictures = [
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-11.jpg`, title:"Esta es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-4.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-8.jpg`, title:"Este es un baño"},
+    {class:"div-img small-pic gray", img:`${bathroomsPath}banio-6.jpg`, title:"Esta es un baño"}
+];
+
+
+
+
 //content for houses carousel
 
 // const viviendasPath = "/assets/images/obras/";
@@ -194,18 +207,3 @@ const galleryBtns= [
 // const obrasPictures = [
 //     {title:"Galerias y exteriores", img:`${viviendasPath}1.jpeg`, descr:"¿Estas buscando con una exterior soñado para tu hogar? Mira lo que tenemos para ofrecerte"},
 // ];
-
-//home gallery
-
-
-const homePictures = [
-    {class:"div-img med-pic", img:`${bathroomsPath}banio-11.jpg`, title:"Esta es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-2.jpg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-4.jpg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-8.jpg`, title:"Este es un baño"},
-    {class:"div-img big-pic", img:`${bathroomsPath}banio-6.jpg`, title:"Esta es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"},
-    {class:"div-img small-pic", img:`${bathroomsPath}banio-1.jpeg`, title:"Este es un baño"}
-];
-

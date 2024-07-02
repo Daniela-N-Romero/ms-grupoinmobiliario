@@ -49,7 +49,7 @@
 		position: absolute;
 		bottom: 10%;
 		text-align: center;
-		z-index: 100;
+		z-index: 150;
 		h1 {
 			color: $secondary-color-light-gray;
 			font-family: "loverine", cursive; 
@@ -249,12 +249,14 @@
 	}
 	.article--img {
 		max-width: 80%;
+		height: 300px;
+		object-fit: cover;
 		border-radius: 20px;
 		@include min-width(768px) {
 			max-width: 45%;
 		}
 		@include min-width(992px) {
-			max-width: 30%;
+			max-width: 450px;
 		}
 	}
 	.article--content {
@@ -299,4 +301,10 @@ position: relative;
 	z-index: -10;
 	background: no-repeat top/100% url(../../assets/dividers/top-light-waves1.svg);
 }
+}
+.homegallery-inmo{
+	&::before{
+		inset: 70% 0 0 0;
+		background: no-repeat top/100% url(../../assets/dividers/bottom-light-waves5.svg);
+	}
 }

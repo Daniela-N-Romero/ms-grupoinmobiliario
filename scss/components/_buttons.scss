@@ -225,7 +225,6 @@
 
 .fixed-btn.btn-redirect{
   bottom: 100px;
-  background-color: red;
   background-image: url(../../assets/images/logos/logo-wpp-fondo.jpeg);
   background-position: center;
   background-size: cover;
@@ -233,7 +232,7 @@
   //expanding text
   &.btn-redirect::before{
     position: absolute;
-    content: '';    
+    content: 'MS PROPIEDADES';    
     inset: 0 0 0 0;
     background-color: transparent;
     color: transparent;
@@ -253,16 +252,20 @@
 
   //"MS Propiedades" button
   &.btn-redirect-inmo::before{
-    content: 'MS PROPIEDADES';    
+    content: 'MS CONSTRUCTORA';    
   } 
+  &.btn-redirect-inmo:hover::before{
+    background-color: $secondary-color-light-gray;
+    color: $logo-blue;
+  }
 
   //changes for "grupo inmobiliario" button
   &.btn-redirect-group{
     bottom: 160px;
   }
-  &.btn-redirect-group::before{
-    content: 'GRUPO INMOBILIARIO';    
-  } 
+  // &.btn-redirect-group::before{
+  //   content: 'GRUPO INMOBILIARIO';    
+  // } 
 
   
 }

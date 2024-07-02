@@ -73,8 +73,14 @@
         box-shadow: 5px 5px 10px #0008;
 
         transition: .4s;
+
+        &.gray{
+            filter: saturate(10%);
+        }
+        
         @include min-width(992px){
                     filter: saturate(70%);
+
         }
         &:hover, &:focus{
             transform: scale(1.01);

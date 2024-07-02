@@ -10,6 +10,25 @@
         top: 0px;
         text-transform: uppercase;
     }
+    &.header-blue{
+        background: $logo-blue;
+        .navbar-toggler{
+            background: $logo-blue;
+            &-icon{
+                color: #fff;
+            }
+        }
+        a{
+            color: #fff;
+        }
+        .navbar-nav .dropdown-menu{
+            a{
+                color: $logo-blue;
+                font-weight: bold;
+            }
+
+        }
+    }
     }
 
     .navbar {
@@ -49,8 +68,8 @@
 
         a {
             color: #fff;
-            &:hover {  
-                background-color: transparent;
+            &:hover, &:focus {  
+                background-color: #ebebeb2d;
             }
         }
     }
