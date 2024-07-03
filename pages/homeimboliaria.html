@@ -11,15 +11,14 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 	<link rel="stylesheet" href="../css/styles.css" />
 	<link rel="stylesheet" href="../css/lightbox.css" />
-
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 
-	<title>MS Construcción.</title>
+	<title>MS Propiedades</title>
 	<!-- averiguar que keywords incluir en el meta description que matcheen en search intent y que sean menos de 120 caracteres -->
 	<meta name="description" content="" />
-	<meta name="title" content="MS Construcción - Construcción de casas en Berazategui, Buenos Aires" />
+	<meta name="title" content="MS Propiedades - Venta y alquiler de casas, terrenos, departamentos y mas en Berazategui, Buenos Aires" />
 </head>
 
 <body id="propertieshome">
@@ -28,10 +27,10 @@
 			<a href="../pages/homeimboliaria.html" aria-label="Logo a página de inicio"><img
 					src="../assets/images/logos/logo-grupo-inmobiliario.png" alt="Logo a página de inicio" class="logo"
 					role="button" tabindex="0" /></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Botón de Barra de navegación">
-				<span class="navbar-toggler-icon "></span>
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto align-items-center">
@@ -52,22 +51,61 @@
 							aria-label="Contactanos">Contactanos</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 		</nav>
 	</header>
 
 	<section class="inmo-search">
 		<div class="index__hero-slider" id="index__hero-slider"></div>
-		<h1 class="inmo-title">Nuestro sitio se encuentra en construcción</h1>
+		<h1 class="inmo-title">Slogan</h1>
 	</section>
+
+	<div id="carouselIndicators" class="carousel slide container carrousel-inmo">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="../assets/images/obras/2.jpg" class="carrousel-img" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="../assets/images/obras/3.jpg" class="carrousel-img" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="../assets/images/obras/1.jpeg" class="carrousel-img" alt="...">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
 
 	<main class="main">
 
-		<!-- for rent / sale properties gallery -->
-		<div id="propertiesgallery" class="houses-gallery"></div>
 
-		<section class="homegallery homegallery-inmo">
-			<h2>Propiedades destacadas</h2>
+		<!-- for rent / sale properties gallery -->
+		<section class="mt-5">
+			<h2 class="inmo-title">Propiedades</h2>
+			<div id="propertiesgallery" class="houses-gallery">
+				
+			</div>
+		</section>
+
+		
+
+		<!-- more properties -->
+		<section class="homegallery-inmo">
+			<h2 class="inmo-title">Propiedades destacadas</h2>
 			<div class="container">
 				<section id="inmogallery" class="gallery">
 
@@ -128,15 +166,17 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<script src="../js/variables.js"></script>
+	<script src="../js/templates.js"></script>
+	<script src="../js/header.js"></script>
+	<script src="../js/propertiesgallery.js"></script>
+	<script src="../js/gallery.js"></script>
+	<script src="../js/lightbox-plus-jquery.js"></script>
+	<script src="../js/fixed-btns.js"></script>
+
+
 </body>
-
-<script src="../js/variables.js"></script>
-<script src="../js/templates.js"></script>
-<script src="../js/header.js"></script>
-<script src="../js/propertiesgallery.js"></script>
-<script src="../js/gallery.js"></script>
-<script src="../js/lightbox-plus-jquery.js"></script>
-<script src="../js/fixed-btns.js"></script>
-
 
 </html>

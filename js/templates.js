@@ -71,7 +71,8 @@ function returnPropertyModal(property){
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="link-bold-borders">Consultar</button>
+                            <a href="https://api.whatsapp.com/send?phone=5491164773427" class="link-bold-borders" target="_blank">
+                                Consultar  <i class="bi bi-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
