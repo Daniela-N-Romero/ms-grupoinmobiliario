@@ -1327,6 +1327,10 @@ body.light-bg {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow: hidden;
+}
+.houses-gallery .house--button {
+  border: none;
 }
 .houses-gallery--article {
   max-width: 266.6px;
@@ -1334,12 +1338,12 @@ body.light-bg {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5333333333);
-  overflow: hidden;
-  transition: 0.4s;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5333333333);
+  transition: 0.2s;
 }
-.houses-gallery:hover, .houses-gallery:focus {
+.houses-gallery--article:hover, .houses-gallery--article:focus {
   transform: scale(1.01);
+  filter: saturate(150%);
 }
 
 .house--content {
@@ -1366,15 +1370,39 @@ body.light-bg {
   box-shadow: 1px 1px 10px rgb(161, 170, 169);
 }
 .house--content .content--row:nth-child(1) h3.alquiler {
+  left: -10px;
   background-color: rgb(31, 52, 74);
   color: #fff;
   border-radius: 0 3px 3px 0;
 }
+.house--content .content--row:nth-child(1) h3.alquiler::before {
+  content: "";
+  inset: 0 0 0 0;
+  aspect-ratio: 1;
+  background: #A5CCFB;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+  clip-path: polygon(0 0, 10px 0, 10px 10px);
+  z-index: -20;
+}
 .house--content .content--row:nth-child(1) h3.venta {
   background-color: #2F69B1;
   color: #fff;
-  right: 0;
+  right: -10px;
   border-radius: 3px 0 0 3px;
+}
+.house--content .content--row:nth-child(1) h3.venta::before {
+  content: "";
+  width: 10px;
+  aspect-ratio: 1;
+  background: #83a5d3;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  clip-path: polygon(0 0, 10px 0, 0 10px);
+  z-index: -20;
 }
 .house--content .content--row:nth-child(2) {
   padding-top: 7px;
@@ -1385,6 +1413,7 @@ body.light-bg {
   grid-template-rows: repeat(3, auto);
   align-items: end;
   background-color: rgba(52, 61, 71, 0.4392156863);
+  border-radius: 0 0 10px 10px;
 }
 @media screen and (max-width: 420px) {
   .house--content .content--row:nth-child(2) {

@@ -10,6 +10,7 @@ const  pergolagallery = document.getElementById("pergolagallery");
 const  homegallery = document.getElementById("homegallery");
 const  inmogallery = document.getElementById("inmogallery");
 
+
 function loadPictures(array,gallery){
     let contenido = ``;
     if (array.length > 0){

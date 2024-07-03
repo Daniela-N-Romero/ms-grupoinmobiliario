@@ -22,7 +22,7 @@
 	<meta name="title" content="MS Construcción - Construcción de casas en Berazategui, Buenos Aires" />
 </head>
 
-<body>
+<body id="propertieshome">
 	<header class="header header-blue">
 		<nav class="container navbar navbar-expand-md d-md-flex navbar-dark" aria-label="Barra de navegacion">
 			<a href="../pages/homeimboliaria.html" aria-label="Logo a página de inicio"><img
@@ -63,85 +63,16 @@
 
 	<main class="main">
 
-		<!-- <div class="${picture.class}" style="background-image: url(${picture.img});"><a href="${picture.img}" data-lightbox="models" data-title="${picture.title}"></a></div> -->
-
-		<div class="houses-gallery">
-			<!-- Button trigger modal -->
-			<a class="house--button" href="../assets/images/landing-page/5.png" data-bs-toggle="modal"
-			data-bs-target="#exampleModal">
-			<article class="houses-gallery--article" style="background-image:url(../assets/images/landing-page/5.png);">
-			<div class="house--content">
-						<div class="content--row">
-							<h3 class="alquiler">Alquiler</h3>
-						</div>
-						<div class="content--row">
-							<h2 class="house-title">Casa en Hudson, Berazategui</h2>
-							<p class="house-currency">USD</p>
-							<p class="house-address">Mitre 599</p>
-							<p class="house-price">2.500</p>
-							<h3 class="house-features">3 ambientes | 2 baños</h3>
-						</div>
-					</div>
-				</article>
-				</a>
-
-				<a class="house--button" href="../assets/images/landing-page/5.png" data-bs-toggle="modal"
-				data-bs-target="#exampleModal">
-				<article class="houses-gallery--article" style="background-image:url(../assets/images/landing-page/5.png);">
-				<div class="house--content">
-							<div class="content--row">
-								<h3 class="venta">venta</h3>
-							</div>
-							<div class="content--row">
-								<h2 class="house-title">Casa en Hudson, Berazategui</h2>
-								<p class="house-currency">USD</p>
-								<p class="house-address">Mitre 599</p>
-								<p class="house-price">2.500</p>
-								<h3 class="house-features">3 ambientes | 2 baños</h3>
-							</div>
-						</div>
-					</article>
-					</a>
-		</div>
-
-
-
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<img src="../assets/images/landing-page/5.png" alt="">
-						<div>
-							h
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eaque neque laudantium
-								commodi eum vero officia perspiciatis eos rem deserunt assumenda fuga eligendi modi hic
-								aut iste cupiditate, reiciendis quo!</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- for rent / sale properties gallery -->
+		<div id="propertiesgallery" class="houses-gallery"></div>
 
 		<section class="homegallery homegallery-inmo">
-
-
-
 			<h2>Propiedades destacadas</h2>
 			<div class="container">
 				<section id="inmogallery" class="gallery">
 
 				</section>
 			</div>
-
-
 		</section>
 
 		<!-- js buttons -->
@@ -202,8 +133,10 @@
 <script src="../js/variables.js"></script>
 <script src="../js/templates.js"></script>
 <script src="../js/header.js"></script>
+<script src="../js/propertiesgallery.js"></script>
 <script src="../js/gallery.js"></script>
 <script src="../js/lightbox-plus-jquery.js"></script>
 <script src="../js/fixed-btns.js"></script>
+
 
 </html>
