@@ -99,7 +99,7 @@
         border-radius: 10px;
         background-size: cover;
         background-position: center;
-        background-image: url(../../assets/images/obras/2.jpg);
+
     }
     &__text{
         font-family: 'PoppinsRegular';
@@ -131,6 +131,23 @@
     }
 }
 
+.model{
+    &:nth-child(1){
+            .model__img{
+                background-image: url(../../assets/images/models/ms-monoambiente1-vistafrontal.png);
+            }
+        }
+    &:nth-child(2){
+        .model__img{
+            background-image: url(../../assets/images/obras/2.jpg);
+        }
+    }
+    &:nth-child(3){
+        .model__img{
+            background-image: url(../../assets/images/obras/2.jpg);
+        }
+    }
+}
 
 //OPEN MODAL DESIGN
 

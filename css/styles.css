@@ -1420,10 +1420,10 @@ body.light-bg {
     grid-template-columns: repeat(1, 1fr);
   }
   .house--content .content--row:nth-child(2) .house-address,
-.house--content .content--row:nth-child(2) .house-price,
-.house--content .content--row:nth-child(2) .house-currency,
-.house--content .content--row:nth-child(2) .house-features,
-.house--content .content--row:nth-child(2) .house-title {
+  .house--content .content--row:nth-child(2) .house-price,
+  .house--content .content--row:nth-child(2) .house-currency,
+  .house--content .content--row:nth-child(2) .house-features,
+  .house--content .content--row:nth-child(2) .house-title {
     grid-column: 1/2;
   }
   .house--content .content--row:nth-child(2) .house-currency, .house--content .content--row:nth-child(2) .house-price, .house--content .content--row:nth-child(2) .house-features {
@@ -2004,7 +2004,7 @@ body.light-bg {
 
 .inmo-search {
   height: 70vh;
-  background-color: #A5CCFB;
+  background-color: #FFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2642,7 +2642,6 @@ body.white {
   border-radius: 10px;
   background-size: cover;
   background-position: center;
-  background-image: url(../../assets/images/obras/2.jpg);
 }
 .model__text {
   font-family: "PoppinsRegular";
@@ -2668,6 +2667,16 @@ body.white {
   position: relative;
   margin: auto;
   font-size: 0.9rem;
+}
+
+.model:nth-child(1) .model__img {
+  background-image: url(../../assets/images/models/ms-monoambiente1-vistafrontal.png);
+}
+.model:nth-child(2) .model__img {
+  background-image: url(../../assets/images/obras/2.jpg);
+}
+.model:nth-child(3) .model__img {
+  background-image: url(../../assets/images/obras/2.jpg);
 }
 
 .modal-header {
