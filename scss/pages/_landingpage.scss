@@ -25,13 +25,15 @@
 }
 .services{
         padding-top: 15%;
+        text-align: justify;
     &__item{
-        max-width: 350px;
+        max-width: 370px;
         border-radius: 20px;
         margin: 20px 15px;
         padding: 15px;
     }
     &__title{
+        text-align: center;
         padding-top: 15px;
         font-size: 1.8rem;
         text-transform: uppercase;
@@ -206,9 +208,8 @@
 .accordion::after {
     content: '\02795'; 
     font-size: 23px;
-    color: #194a03;
     float: right;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .active-accordion::after {
@@ -230,6 +231,7 @@
         text-align: center;
         font-family: 'antipastoExtraBold';
         color: #fff;
+        text-transform: uppercase;
     }
     &__btn{
         font-family: 'PoppinsRegular';

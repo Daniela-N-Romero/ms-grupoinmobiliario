@@ -1485,14 +1485,16 @@ body.light-bg {
 
 .services {
   padding-top: 15%;
+  text-align: justify;
 }
 .services__item {
-  max-width: 350px;
+  max-width: 370px;
   border-radius: 20px;
   margin: 20px 15px;
   padding: 15px;
 }
 .services__title {
+  text-align: center;
   padding-top: 15px;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -1653,9 +1655,8 @@ body.light-bg {
 .accordion::after {
   content: "➕";
   font-size: 23px;
-  color: #194a03;
   float: right;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .active-accordion::after {
@@ -1675,6 +1676,7 @@ body.light-bg {
   text-align: center;
   font-family: "antipastoExtraBold";
   color: #fff;
+  text-transform: uppercase;
 }
 .calltoaction__btn {
   font-family: "PoppinsRegular";
