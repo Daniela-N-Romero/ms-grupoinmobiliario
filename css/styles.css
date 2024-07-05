@@ -74,7 +74,7 @@ body.light-bg {
   padding-top: 1rem;
 }
 .footer.footer-dark {
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
 }
 .footer.footer-dark .footer__div--li {
   color: #fff;
@@ -214,10 +214,10 @@ body.light-bg {
   }
 }
 .header.header-blue {
-  background: rgb(31, 52, 74);
+  background: #1f344a;
 }
 .header.header-blue .navbar-toggler {
-  background: rgb(31, 52, 74);
+  background: #1f344a;
 }
 .header.header-blue .navbar-toggler-icon {
   color: #fff;
@@ -226,7 +226,7 @@ body.light-bg {
   color: #fff;
 }
 .header.header-blue .navbar-nav .dropdown-menu a {
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   font-weight: bold;
 }
 
@@ -309,7 +309,7 @@ body.light-bg {
   color: #fff;
 }
 .nav-link.link-bold-borders.link-homepages:hover {
-  color: rgb(31, 52, 74);
+  color: #1f344a;
 }
 
 .hero {
@@ -547,7 +547,7 @@ body.light-bg {
   flex-grow: 1;
 }
 .carousel__item .buttons .button-blue {
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   display: inline-block;
   width: 100%;
   padding-block: 8px;
@@ -735,7 +735,7 @@ body.light-bg {
 .time {
   width: 100%;
   height: 3px;
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
   z-index: 200;
   position: absolute;
   top: 0;
@@ -847,7 +847,7 @@ body.light-bg {
   text-transform: uppercase;
   letter-spacing: 2px;
   z-index: 10;
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
   color: #fff;
   border-radius: 2px;
   border: none;
@@ -856,7 +856,7 @@ body.light-bg {
 }
 .link-bold-borders:hover, .link-bold-borders:active {
   background-color: transparent;
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   letter-spacing: 2.5px;
 }
 .link-bold-borders::before {
@@ -877,8 +877,8 @@ body.light-bg {
 }
 .link-bold-borders:hover::before, .link-bold-borders:active::before {
   inset: 0 0;
-  border-top: 1.5px solid rgb(31, 52, 74);
-  border-bottom: 1.5px solid rgb(31, 52, 74);
+  border-top: 1.5px solid #1f344a;
+  border-bottom: 1.5px solid #1f344a;
   z-index: 10;
 }
 .link-bold-borders:hover::after, .link-bold-borders:active::after {
@@ -938,7 +938,7 @@ body.light-bg {
 }
 .redirect-btn:hover {
   background-color: #fff;
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   padding-inline-end: 2rem;
   letter-spacing: 1px;
   transition: 0.3s;
@@ -963,7 +963,7 @@ body.light-bg {
   border-radius: 20px 50px 50px 20px;
 }
 .fixed-btn.btn-redirect.btn-redirect:hover::before {
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
   color: #fff;
   font-weight: bold;
   inset: 0 0px 0 -100px;
@@ -974,7 +974,7 @@ body.light-bg {
 }
 .fixed-btn.btn-redirect.btn-redirect-inmo:hover::before {
   background-color: rgb(243, 248, 246);
-  color: rgb(31, 52, 74);
+  color: #1f344a;
 }
 .fixed-btn.btn-redirect.btn-redirect-group {
   bottom: 160px;
@@ -1034,7 +1034,7 @@ body.light-bg {
   margin-inline: calc(var(--inlineP) * -1);
   margin-bottom: 0;
   text-align: center;
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
   color: white;
   font-size: 1.25rem;
   font-weight: 700;
@@ -1182,7 +1182,7 @@ body.light-bg {
   padding-bottom: 1rem;
   font-family: "adelia", Helvetica, sans-serif;
   font-weight: bold;
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   font-size: 3rem;
   letter-spacing: 10px;
   text-shadow: 3px 3px 2px #FFF;
@@ -1326,7 +1326,7 @@ body.light-bg {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   overflow: hidden;
 }
 .houses-gallery .house--button {
@@ -1371,7 +1371,7 @@ body.light-bg {
 }
 .house--content .content--row:nth-child(1) h3.alquiler {
   left: -10px;
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
   color: #fff;
   border-radius: 0 3px 3px 0;
 }
@@ -1525,7 +1525,7 @@ body.light-bg {
   margin-top: 1rem;
   font-weight: 900;
   font-size: 1.2rem;
-  color: rgb(31, 52, 74);
+  color: #1f344a;
 }
 .features__description {
   font-size: 0.9rem;
@@ -1806,7 +1806,7 @@ body.light-bg {
 }
 .index__intro--btn:hover {
   background-color: rgb(182, 187, 196);
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   padding: 7px 25px;
   transition: all 0.5s;
 }
@@ -1985,7 +1985,7 @@ body.light-bg {
   color: rgb(50, 59, 110);
 }
 .index__obras article .article--text:hover {
-  color: rgb(31, 52, 74);
+  color: #1f344a;
 }
 
 .homegallery {
@@ -2005,8 +2005,8 @@ body.light-bg {
 }
 
 .inmo-search {
-  height: 70vh;
-  background-color: #FFF;
+  height: 100vh;
+  background-color: #34e1e4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2019,7 +2019,7 @@ body.light-bg {
 
 .inmo-title {
   text-align: center;
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   font-family: "loverine", cursive;
   text-shadow: 1px 1px 2px rgb(49, 48, 77);
 }
@@ -2027,12 +2027,15 @@ body.light-bg {
 .carrousel-inmo {
   height: 40vh;
   margin-top: 10vh;
+  background-color: #1f344a;
 }
-.carrousel-inmo .carrousel-img {
+.carrousel-inmo picture, .carrousel-inmo source, .carrousel-inmo img {
   width: 100%;
   height: 40vh;
-  object-fit: cover;
-  display: block;
+  object-fit: contain;
+}
+.carrousel-inmo picture {
+  margin-block: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -2070,7 +2073,7 @@ body.light-bg {
   border-radius: 5px;
 }
 .contacto-page .section-form {
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
   border-radius: 5px;
   color: #fff;
 }
@@ -2156,7 +2159,7 @@ body.light-bg {
 .contacto-page .section-form button:hover {
   background-color: #A5CCFB;
   animation: none;
-  color: rgb(31, 52, 74);
+  color: #1f344a;
   transform: scale(1.01);
 }
 
@@ -2319,7 +2322,7 @@ body.white {
   }
   .us-section__intro article:nth-child(2) .us__box, .us-section__intro article:nth-child(4) .us__box {
     position: relative;
-    box-shadow: 2px 2px 10px rgb(31, 52, 74);
+    box-shadow: 2px 2px 10px #1f344a;
     width: 500px;
     height: 400px;
     object-fit: cover;
@@ -2391,7 +2394,7 @@ body.white {
   padding-block: 100px;
 }
 .us-section__reasons h2 {
-  color: rgb(31, 52, 74);
+  color: #1f344a;
 }
 .us-section__reasons .reasons {
   display: flex;
@@ -2406,7 +2409,7 @@ body.white {
   }
 }
 .us-section__reasons .reasons article {
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
   color: #fff;
   padding: 30px;
   border-radius: 20px;
@@ -2422,7 +2425,7 @@ body.white {
   text-align: center;
   padding-block: 0.8rem;
   font-weight: bold;
-  text-shadow: 2px 2px rgb(31, 52, 74);
+  text-shadow: 2px 2px #1f344a;
 }
 
 .us-section__gallery {
@@ -2465,7 +2468,7 @@ body.white {
   margin-top: 100px;
 }
 .us-section__gallery.pools .poppins__title {
-  color: rgb(31, 52, 74);
+  color: #1f344a;
 }
 .us-section__gallery.pools::before {
   position: absolute;
@@ -2482,7 +2485,7 @@ body.white {
   position: relative;
 }
 .us-section__gallery.houses .poppins__title {
-  color: rgb(31, 52, 74);
+  color: #1f344a;
 }
 @media screen and (min-width: 768px) {
   .us-section__gallery.houses {
@@ -2614,7 +2617,7 @@ body.white {
 }
 
 .main-gallery.models {
-  background-color: rgb(31, 52, 74);
+  background-color: #1f344a;
 }
 
 .container.models {

@@ -1,6 +1,6 @@
 .inmo-search{
-    height: 70vh;
-    background-color: #FFF;
+    height: 100vh;
+    background-color: #34e1e4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,13 @@
 .carrousel-inmo{
     height: 40vh;
     margin-top: 10vh;
-    .carrousel-img{
-        width: 100%;
-        height: 40vh;
-        object-fit: cover;
-        display: block;
+    background-color: $logo-blue;
+    picture, source, img {
+            width: 100%;
+            height: 40vh;
+            object-fit: contain;
+    }
+    picture{
+        margin-block: 2rem;
     }
 }

@@ -191,10 +191,7 @@ const homePictures = [
 const homeInmoPictures = [
     { class: "div-img small-pic gray", img: `${bathroomsPath}banio-11.jpg`, title: "Esta es un baño" },
     { class: "div-img small-pic gray", img: `${bathroomsPath}banio-1.jpeg`, title: "Este es un baño" },
-    { class: "div-img small-pic gray", img: `${bathroomsPath}banio-2.jpg`, title: "Este es un baño" },
-    { class: "div-img small-pic gray", img: `${bathroomsPath}banio-4.jpg`, title: "Este es un baño" },
-    { class: "div-img small-pic gray", img: `${bathroomsPath}banio-8.jpg`, title: "Este es un baño" },
-    { class: "div-img small-pic gray", img: `${bathroomsPath}banio-6.jpg`, title: "Esta es un baño" }
+    { class: "div-img small-pic gray", img: `${bathroomsPath}banio-2.jpg`, title: "Este es un baño" }
 ];
 
 
@@ -238,6 +235,30 @@ properties = [
             garage: "🚘 Cochera"
         }],
         description:"lorem lorem lorem",
+        index:""
+    },
+    {
+        id: "20001",
+        img: `${propertiesPath}render.jpg`,
+        operation: "venta",
+        type: "Departamento",
+        location: "Gutierrez, Berazategui",
+        currency: "USD",
+        address: "Cno. Gral. Belgrano 1520",
+        value: "2.800",
+        rooms: "5",
+        bathrooms: "2",
+        features: [{
+            sqrmeters: "🏠 262 m2 cubiertos",
+            gallerysqrmeters: "🏡 10 m2 semicubiertos",
+            bedrooms: "🛏️ 5 dormitorios",
+            bathrooms: "🚽 2 baños",
+            livingroom: "🛋️ Cocina, comedor y sala de estar, integrados",
+            study: "📚Estudio",
+            grill: "👩‍🍳Galeria y parrilla",
+            garage: "🚘 Cochera"
+        }],
+        description:"lorem lorem lorem lorem lorem",
         index:""
     },
 
