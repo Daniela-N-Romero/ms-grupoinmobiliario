@@ -1420,10 +1420,10 @@ body.light-bg {
     grid-template-columns: repeat(1, 1fr);
   }
   .house--content .content--row:nth-child(2) .house-address,
-  .house--content .content--row:nth-child(2) .house-price,
-  .house--content .content--row:nth-child(2) .house-currency,
-  .house--content .content--row:nth-child(2) .house-features,
-  .house--content .content--row:nth-child(2) .house-title {
+.house--content .content--row:nth-child(2) .house-price,
+.house--content .content--row:nth-child(2) .house-currency,
+.house--content .content--row:nth-child(2) .house-features,
+.house--content .content--row:nth-child(2) .house-title {
     grid-column: 1/2;
   }
   .house--content .content--row:nth-child(2) .house-currency, .house--content .content--row:nth-child(2) .house-price, .house--content .content--row:nth-child(2) .house-features {
@@ -2675,13 +2675,14 @@ body.white {
 }
 
 .model:nth-child(1) .model__img {
-  background-image: url(../../assets/images/models/ms-monoambiente1-vistafrontal.png);
+  background-position: cover;
+  background-image: url(../../assets/images/modelos/ms-monoambiente1-vistatrasera.png);
 }
 .model:nth-child(2) .model__img {
   background-image: url(../../assets/images/obras/2.jpg);
 }
 .model:nth-child(3) .model__img {
-  background-image: url(../../assets/images/obras/2.jpg);
+  background-image: url(../../assets/images/obras/3.jpg);
 }
 
 .modal-header {
