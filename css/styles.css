@@ -1420,10 +1420,10 @@ body.light-bg {
     grid-template-columns: repeat(1, 1fr);
   }
   .house--content .content--row:nth-child(2) .house-address,
-.house--content .content--row:nth-child(2) .house-price,
-.house--content .content--row:nth-child(2) .house-currency,
-.house--content .content--row:nth-child(2) .house-features,
-.house--content .content--row:nth-child(2) .house-title {
+  .house--content .content--row:nth-child(2) .house-price,
+  .house--content .content--row:nth-child(2) .house-currency,
+  .house--content .content--row:nth-child(2) .house-features,
+  .house--content .content--row:nth-child(2) .house-title {
     grid-column: 1/2;
   }
   .house--content .content--row:nth-child(2) .house-currency, .house--content .content--row:nth-child(2) .house-price, .house--content .content--row:nth-child(2) .house-features {

@@ -65,10 +65,29 @@ function returnPropertyModal(property){
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="${property.img}" alt="${property.type} en ${property.operation} en ${property.location}",">
-                            <p class="model__description">${property.description}</p>
-                            <div class="model__features">${features}
+                            <div id="propertycarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img src="${property.img}" alt="${property.type} en ${property.operation} en ${property.location}",">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img src="${property.img}" alt="${property.type} en ${property.operation} en ${property.location}",">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img src="${property.img}" alt="${property.type} en ${property.operation} en ${property.location}",">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#propertycarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#propertycarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
+                            <div> <p class="model__description">${property.description}</p></div>
+                            <div class="model__features">${features}</div>
                         </div>
                         <div class="modal-footer">
                             <a href="https://api.whatsapp.com/send?phone=5491164773427" class="link-bold-borders" target="_blank">

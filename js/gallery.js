@@ -6,7 +6,7 @@ const  onestorygallery = document.getElementById("onestorygallery");
 const  twostorygallery = document.getElementById("twostorygallery");
 const  poolgallery = document.getElementById("poolgallery");
 const  grillgallery = document.getElementById("grillgallery");
-const  pergolagallery = document.getElementById("pergolagallery");
+const  quinchogallery = document.getElementById("quinchogallery");
 const  homegallery = document.getElementById("homegallery");
 const  inmogallery = document.getElementById("inmogallery");
 
@@ -43,8 +43,8 @@ if (poolgallery){
 if (grillgallery){
     loadPictures(grillPictures,grillgallery)
 }
-if (pergolagallery){
-    loadPictures(pergolaPictures,pergolagallery)
+if (quinchogallery){
+    loadPictures(quinchoPictures,quinchogallery)
 }
 
 if (homegallery){

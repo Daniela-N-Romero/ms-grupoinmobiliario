@@ -143,25 +143,25 @@ const poolPictures = [
 ];
 
 //content for pergola gallery
-const pergolaPath = "/assets/images/galerias-page/pergolas/";
-const pergolaPictures = [
-    { class: "div-img med-pic", img: `.${pergolaPath}galeria-1.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-3.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `.${pergolaPath}galeria-1.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `.${pergolaPath}galeria-3.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-1.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `.${pergolaPath}galeria-2.jpeg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-3.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `.${pergolaPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `.${pergolaPath}galeria-1.jpg`, title: "Este es una vivienda de dos plantas" }
+const quinchoPath = "/assets/images/galerias-page/pergolas/";
+const quinchoPictures = [
+    { class: "div-img med-pic", img: `.${quinchoPath}galeria-1.jpg`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-2.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-3.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img big-pic", img: `.${quinchoPath}galeria-1.jpg`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-2.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `.${quinchoPath}galeria-3.jpg`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-1.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `.${quinchoPath}galeria-2.jpeg`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-3.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `.${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `.${quinchoPath}galeria-1.jpg`, title: "Este es una vivienda de dos plantas" }
 ];
 
 //gallery buttons 
