@@ -1429,6 +1429,9 @@ body.light-bg {
   .house--content .content--row:nth-child(2) .house-currency, .house--content .content--row:nth-child(2) .house-price, .house--content .content--row:nth-child(2) .house-features {
     order: 1;
   }
+  .house--content .content--row:nth-child(2) .house-title {
+    padding-inline: 20px;
+  }
 }
 .house--content .content--row:nth-child(2) .house-title, .house--content .content--row:nth-child(2) .house-price {
   font-size: 16px;
@@ -2696,10 +2699,6 @@ body.white {
   font-weight: bold;
 }
 
-.modal-body {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-}
 .modal-body img {
   width: 100%;
   height: 200px;
@@ -2735,6 +2734,10 @@ body.white {
   grid-template-columns: repeat(2, 40%);
   justify-content: space-around;
   font-family: "PoppinsRegular";
+}
+
+.carousel.propertycarousel {
+  height: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -213,7 +213,12 @@ const propertiesPath = "/assets/images/inmob-home/";
 properties = [
     {
         id: "10001",
-        img: `${propertiesPath}frente.jpeg`,
+        cover: `${propertiesPath}render.jpg`,
+        images: [
+            { img1: `${propertiesPath}render.jpg`, alt: "text about image1" },
+            { img2: `${propertiesPath}gallery.jpg`, alt: "text about image2" },
+            { img3: `${propertiesPath}frente.jpeg`, alt: "text about image3" }
+        ],
         operation: "alquiler",
         type: "Casa",
         location: "Hudson, Berazategui",
@@ -239,7 +244,12 @@ properties = [
     },
     {
         id: "20001",
-        img: `${propertiesPath}render.jpg`,
+        cover: `${propertiesPath}render.jpg`,
+        images: [
+            { img1: `${propertiesPath}render.jpg`, alt: "text about image1" },
+            { img2: `${propertiesPath}gallery.jpg`, alt: "text about image2" },
+            { img3: `${propertiesPath}frente.jpeg`, alt: "text about image3" }
+        ],
         operation: "venta",
         type: "Departamento",
         location: "Gutierrez, Berazategui",
@@ -264,7 +274,12 @@ properties = [
 
     {
         id: "10002",
-        img: `${propertiesPath}gallery.jpg`,
+        cover: `${propertiesPath}render.jpg`,
+        images: [
+            { img1: `${propertiesPath}render.jpg`, alt: "text about image1" },
+            { img2: `${propertiesPath}gallery.jpg`, alt: "text about image2" },
+            { img3: `${propertiesPath}frente.jpeg`, alt: "text about image3" }
+        ],
         operation: "alquiler",
         type: "Departamento",
         location: "Platanos, Berazategui",
@@ -287,7 +302,12 @@ properties = [
     },
     {
         id: "20001",
-        img: `${propertiesPath}render.jpg`,
+        cover: `${propertiesPath}render.jpg`,
+        images: [
+            { img1: `${propertiesPath}render.jpg`, alt: "text about image1" },
+            { img2: `${propertiesPath}gallery.jpg`, alt: "text about image2" },
+            { img3: `${propertiesPath}frente.jpeg`, alt: "text about image3" }
+        ],
         operation: "venta",
         type: "Departamento",
         location: "Gutierrez, Berazategui",

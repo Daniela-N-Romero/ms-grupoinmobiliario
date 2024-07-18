@@ -177,8 +177,6 @@
 }
 
 .modal-body {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
 
     img {
         width: 100%;
@@ -220,4 +218,8 @@
     grid-template-columns: repeat(2, 40%);
     justify-content: space-around;
     font-family: 'PoppinsRegular';
+}
+
+.carousel.propertycarousel{
+    height: 200px;
 }
