@@ -18,7 +18,7 @@ buttonsConstructora =  `<a href="/pages/homeimboliaria.html" class="fixed-btn bt
 buttonsInmobiliaria =  `<a href="/pages/homeconstructora.html" class="fixed-btn btn-redirect btn-redirect-inmo" target="_blank"></a>                        
                         <a href="https://api.whatsapp.com/send?phone=5491164773427" class="fixed-btn wsp-btn" target="_blank"><i class="bi bi-whatsapp"></i></a>`;
 
-buttonsGrupo =  `<a href="https://api.whatsapp.com/send?phone=5491164773427" class="fixed-btn wsp-btn" target="_blank"><i class="bi bi-whatsapp"></i></a>`;
+buttonsGrupo =  `<a href="https://api.whatsapp.com/send?phone=5491136358302" class="fixed-btn wsp-btn" target="_blank"><i class="bi bi-whatsapp"></i></a>`;
                 
 
 //functions to load properties for sale /rent (inmobiliaria)

@@ -213,11 +213,11 @@ const propertiesPath = "/assets/images/inmob-home/";
 properties = [
     {
         id: "10001",
-        cover: `${propertiesPath}render.jpg`,
+        cover: `/assets/images/properties/_3170363.jpg`,
         images: [
-            { img1: `${propertiesPath}render.jpg`, alt: "text about image1" },
-            { img2: `${propertiesPath}gallery.jpg`, alt: "text about image2" },
-            { img3: `${propertiesPath}frente.jpeg`, alt: "text about image3" }
+            { img1: `/assets/images/properties/_3170186.jpg`, alt: "text about image1" },
+            { img2: `/assets/images/properties/_3170213.jpg`, alt: "text about image2" },
+            { img3: `/assets/images/properties/_3170146.jpg`, alt: "text about image3" }
         ],
         operation: "alquiler",
         type: "Casa",
@@ -239,7 +239,7 @@ properties = [
             pool: "🏊Piscina",
             garage: "🚘 Cochera"
         }],
-        description:"lorem lorem lorem",
+        description:"lorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem lorem",
         index:""
     },
     {

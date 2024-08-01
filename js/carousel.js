@@ -22,16 +22,18 @@ function showSlider(type){
   let itemThumbnail = document.querySelectorAll(".thumbnail");
   if (type ==="next"){
       carouselList.appendChild(itemSlider[0]);
-      thumnailsDivDom.appendChild(itemThumbnail[0]);
+      if (thumnailsDivDom){
+      thumnailsDivDom.appendChild(itemThumbnail[0]);        
+      }
       carouselDom.classList.add("next");
   }else{
       let positionLastItem = itemSlider.length - 1;
       carouselList.prepend(itemSlider[positionLastItem]);
-      thumnailsDivDom.prepend(itemThumbnail[positionLastItem])
+      if (thumnailsDivDom){
+        thumnailsDivDom.prepend(itemThumbnail[positionLastItem])
+      }
       carouselDom.classList.add("prev");
   }
-
-
 
       clearTimeout(runTimeOut);
       runTimeOut = setTimeout(()=>{
