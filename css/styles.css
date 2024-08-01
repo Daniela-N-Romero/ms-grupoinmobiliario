@@ -2028,7 +2028,7 @@ body.light-bg {
 }
 
 .carrousel-inmo {
-  height: 40vh;
+  height: 80vh;
   margin-top: 10vh;
   background-color: #1f344a;
 }
@@ -2039,6 +2039,14 @@ body.light-bg {
 }
 .carrousel-inmo picture {
   margin-block: 2rem;
+}
+
+.carousel-item-content {
+  margin: 20px 10%;
+  color: rgb(240, 236, 229);
+}
+.carousel-item-content img {
+  width: 150px;
 }
 
 @media screen and (min-width: 768px) {
