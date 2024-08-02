@@ -51,13 +51,17 @@ function showSlider(type){
 
 //click next
 
-nextDom.addEventListener("click", function(type){
-  showSlider("next");
-})
+if (nextDom){
+  nextDom.addEventListener("click", function(type){
+    showSlider("next");
+  })
+}
 
 
 //click prev
 
-prevDom.addEventListener("click", function(type){
-  showSlider("prev");
-})
+if (prevDom){
+    prevDom.addEventListener("click", function(type){
+    showSlider("prev");
+  })
+}

@@ -2040,13 +2040,54 @@ body.light-bg {
 .carrousel-inmo picture {
   margin-block: 2rem;
 }
+.carrousel-inmo .carousel-item {
+  height: 75vh;
+}
 
 .carousel-item-content {
   margin: 20px 10%;
+  text-align: center;
   color: rgb(240, 236, 229);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .carousel-item-content img {
-  width: 150px;
+  height: 120px;
+}
+.carousel-item-content h2, .carousel-item-content .topic {
+  color: #A5CCFB;
+  text-shadow: none;
+}
+.carousel-item-content div.team-description {
+  margin-block: 20px;
+  padding: 10px;
+  background-color: rgb(240, 236, 229);
+  color: black;
+  position: relative;
+  border-radius: 0.4em;
+}
+.carousel-item-content div.team-description h3 {
+  font-size: 1rem;
+}
+.carousel-item-content div.team-description p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+.carousel-item-content div.team-description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 62%;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-bottom-color: rgb(240, 236, 229);
+  border-top: 0;
+  border-left: 20px;
+  margin-left: -12.5px;
+  margin-top: -25px;
 }
 
 @media screen and (min-width: 768px) {
