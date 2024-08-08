@@ -84,6 +84,7 @@ function returnPropertyFeatures(property){
     });
     return features;
 }
+
 function returnPropertyModal(property){
     images = returnPropertyPictures(property)
     features = returnPropertyFeatures(property)

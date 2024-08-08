@@ -3,16 +3,16 @@ const  propertieshome = document.getElementById("propertieshome");
 
 async function loadProperties(array,gallery,body){
     try{
-        let buttons = ``;
-        let modals = ``;
-        let i = 0;
+        let buttons = ``
+        let modals = ``
+        let i = 0
         if (array.length > 0){
             for (property of array) {
-                i +=1 ;
+                i +=1 
                 property.index = i;
-                buttons+=  returnPropertyBtn(property);
-                modals+= returnPropertyModal(property);            
-            };
+                buttons+=  returnPropertyBtn(property)
+                modals+= returnPropertyModal(property)            
+            }
             gallery.innerHTML += buttons;
             body.innerHTML += modals;
         }
