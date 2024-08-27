@@ -6,7 +6,7 @@ function returnPicture(picture){
 
 //function to return gallery buttons
 
-function returnBtn(btn){
+function returnBtn(btn){ 
     return  `<li id="${btn.id}" class="other-link d-inline-block p-2 position-relative"><a href="${btn.link}"><h2 class="link-bold-borders">${btn.name}</h2></a></li>`
 }
 
