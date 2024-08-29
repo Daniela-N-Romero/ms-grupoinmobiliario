@@ -54,46 +54,39 @@ const kitchenPictures = [
 //content for one story houses gallery
 const onestoryPath = "/assets/images/viviendas-page/onestoryhouses/";
 const onestoryPictures = [
-    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-0.jpg`, title: "Esta es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.jpeg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-0.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-2.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.jpeg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img big-pic", img: `${onestoryPath}unaplanta-0.jpg`, title: "Esta es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.jpeg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-0.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-1.jpeg`, title: "Esta es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-2.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.jpeg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-0.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-0.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-2.jpg`, title: "Esta es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.jpeg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-0.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-1.jpeg`, title: "Este es una vivienda de una planta" }
+    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-2.png`, title: "Esta es una vivienda de una planta" },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.png`, title: "Este es una vivienda de una planta" },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-3.png`, title: "Este es una vivienda de una planta" },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-4.png`, title: "Este es una vivienda de una planta" },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-5.jpg`, title: "Este es una vivienda de una planta" },
+    { class: "div-img big-pic", img: `${onestoryPath}unaplanta-6.jpeg`, title: "Esta es una vivienda de una planta" },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-7.jpg`, title: "Este es una vivienda de una planta" },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-8.jpg`, title: "Este es una vivienda de una planta" },
+    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-9.jpg`, title: "Esta es una vivienda de una planta" },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-10.jpg`, title: "Este es una vivienda de una planta" }
 ];
 
 
 //content for two story houses gallery
 const twostoryPath = "/assets/images/viviendas-page/twostoryhouses/";
 const twostoryPictures = [
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas1.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-3.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-6.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `${twostoryPath}dosplantas-1.jpeg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-5.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-1.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-5.jpeg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-1.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-3.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-7.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-1.jpeg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-8.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-6.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-3.jpeg`, title: "Este es una vivienda de dos plantas" }
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-30.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-29.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-28.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-10.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-26.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-23.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img big-pic", img: `${twostoryPath}dosplantas-22.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-25.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-19.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-18.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-17.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-16.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-15.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-14.jpeg`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-7.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-6.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-3.png`, title: "Este es una vivienda de dos plantas" }
 ];
 
 
