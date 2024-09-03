@@ -9,19 +9,15 @@ const bathroomPictures = [
     { class: "div-img small-pic", img: `${bathroomsPath}banio-1.jpeg`, title: "Este es un baño" },
     { class: "div-img small-pic", img: `${bathroomsPath}banio-2.jpg`, title: "Este es un baño" },
     { class: "div-img small-pic", img: `${bathroomsPath}banio-4.jpg`, title: "Este es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-8.jpg`, title: "Este es un baño" },
+    { class: "div-img small-pic", img: `${bathroomsPath}banio-3.png`, title: "Este es un baño" },
     { class: "div-img big-pic", img: `${bathroomsPath}banio-6.jpg`, title: "Esta es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-1.jpeg`, title: "Este es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-1.jpeg`, title: "Este es un baño" },
-    { class: "div-img med-pic", img: `${bathroomsPath}banio-12.jpg`, title: "Esta es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-1.jpeg`, title: "Este es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-3.jpeg`, title: "Este es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-2.jpg`, title: "Este es un baño" },
+    { class: "div-img small-pic", img: `${bathroomsPath}banio-9.jpg`, title: "Este es un baño" },
+    { class: "div-img small-pic", img: `${bathroomsPath}banio-10.jpg`, title: "Este es un baño" },
+    { class: "div-img small-pic", img: `${bathroomsPath}banio-14.jpg`, title: "Esta es un baño" },
     { class: "div-img small-pic", img: `${bathroomsPath}banio-13.jpg`, title: "Este es un baño" },
-    { class: "div-img med-pic", img: `${bathroomsPath}banio-15.jpg`, title: "Esta es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-14.jpg`, title: "Este es un baño" },
-    { class: "div-img small-pic", img: `${bathroomsPath}banio-1.jpeg`, title: "Este es un baño" },
-    { class: "div-img med-pic", img: `${bathroomsPath}banio-6.jpg`, title: "Este es un baño" }
+    { class: "div-img small-pic", img: `${bathroomsPath}banio-15.png`, title: "Esta es un baño" },
+    { class: "div-img small-pic", img: `${bathroomsPath}banio-16.png`, title: "Este es un baño" },
+    { class: "div-img med-pic", img: `${bathroomsPath}banio-14.png`, title: "Este es un baño" }
 ];
 
 
@@ -32,21 +28,17 @@ const kitchensPath = "/assets/images/viviendas-page/kitchens/";
 const kitchenPictures = [
     { class: "div-img med-pic", img: `${kitchensPath}cocina-0.jpeg`, title: "Esta es una cocina" },
     { class: "div-img small-pic", img: `${kitchensPath}cocina-1.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-2.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-3.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-1.jpeg`, title: "Este es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-14.jpg`, title: "Este es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-8.png`, title: "Este es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-7.png`, title: "Este es una cocina" },
     { class: "div-img big-pic", img: `${kitchensPath}cocina-3.jpeg`, title: "Esta es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-2.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-1.jpeg`, title: "Este es una cocina" },
-    { class: "div-img med-pic", img: `${kitchensPath}cocina-0.jpeg`, title: "Esta es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-1.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-2.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-3.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-0.jpeg`, title: "Este es una cocina" },
-    { class: "div-img med-pic", img: `${kitchensPath}cocina-1.jpeg`, title: "Esta es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-2.jpeg`, title: "Este es una cocina" },
-    { class: "div-img small-pic", img: `${kitchensPath}cocina-3.jpeg`, title: "Este es una cocina" },
-    { class: "div-img med-pic", img: `${kitchensPath}cocina-0.jpeg`, title: "Este es una cocina" }
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-10.jpg`, title: "Este es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-17.jpg`, title: "Este es una cocina" },
+    { class: "div-img med-pic", img: `${kitchensPath}cocina-20.jpg`, title: "Esta es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-11.jpg`, title: "Este es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-4.png`, title: "Este es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-16.jpg`, title: "Este es una cocina" },
+    { class: "div-img small-pic", img: `${kitchensPath}cocina-18.jpg`, title: "Este es una cocina" }
 ];
 
 
@@ -75,15 +67,15 @@ const twostoryPictures = [
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-28.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-10.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-26.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-23.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-23.jpg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img big-pic", img: `${twostoryPath}dosplantas-22.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-25.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-19.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-25.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-19.jpg`, title: "Esta es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-18.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-17.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-16.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-15.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-14.jpeg`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-14.jpg`, title: "Esta es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-7.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-6.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img med-pic", img: `${twostoryPath}dosplantas-3.png`, title: "Este es una vivienda de dos plantas" }
@@ -97,12 +89,18 @@ const grillPictures = [
     { class: "div-img small-pic", img: `${grillPath}parrilla-2.jpeg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-1.jpeg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-3.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-4.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `${grillPath}parrilla-5.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-6.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-5.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img big-pic", img: `${grillPath}parrilla-9.jpg`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-8.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-10.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla-12.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-7.jpg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${grillPath}parrilla-7.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-8.jpg`, title: "Este es una vivienda de dos plantas" }
+    { class: "div-img med-pic", img: `${grillPath}parrilla-11.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla-13.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-14.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-15.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla.png`, title: "Esta es una vivienda de dos plantas" }
 ];
 
 
@@ -127,23 +125,19 @@ const poolPictures = [
 //content for pergola gallery
 const quinchoPath = "/assets/images/galerias-page/quinchos/";
 const quinchoPictures = [
-    { class: "div-img med-pic", img: `${quinchoPath}galeria-1.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${quinchoPath}galeria-13.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-6.png`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${quinchoPath}galeria-2.jpeg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${quinchoPath}galeria-3.jpg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${quinchoPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img big-pic", img: `${quinchoPath}galeria-1.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${quinchoPath}galeria-3.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-1.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${quinchoPath}galeria-2.jpeg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-3.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-0.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${quinchoPath}galeria-1.jpg`, title: "Este es una vivienda de dos plantas" }
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-8.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-9.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${quinchoPath}galeria-10.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-7.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-5.jpg`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img big-pic", img: `${quinchoPath}galeria-11.png`, title: "Esta es una vivienda de dos plantas" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-12.png`, title: "Este es una vivienda de dos plantas" }
 ];
 
 //gallery buttons 
@@ -154,7 +148,7 @@ const galleryBtns = [
     { id: "dosplantas", link: "/pages/constructora/obras/viviendas/dosplantas.html", name: "Dos plantas" },
     { id: "parrillas", link: "/pages/constructora/obras/exteriores/parrillas.html", name: "Parrillas" },
     { id: "piscinas", link: "/pages/constructora/obras/exteriores/piscinas.html", name: "Piscinas" },
-    { id: "pergolas", link: "/pages/constructora/obras/exteriores/pergolas.html", name: "Pergolas" }
+    { id: "quinchos", link: "/pages/constructora/obras/exteriores/quinchos.html", name: "Quinchos" }
 ];
 
 
