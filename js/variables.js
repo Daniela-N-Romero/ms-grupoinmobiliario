@@ -46,34 +46,43 @@ const kitchenPictures = [
 //content for one story houses gallery
 const onestoryPath = "/assets/images/viviendas-page/onestoryhouses/";
 const onestoryPictures = [
-    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-2.png`, title: "Esta es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.png`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-3.png`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-4.png`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-5.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img big-pic", img: `${onestoryPath}unaplanta-6.jpeg`, title: "Esta es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-7.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-8.jpg`, title: "Este es una vivienda de una planta" },
-    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-9.jpg`, title: "Esta es una vivienda de una planta" },
-    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-10.jpg`, title: "Este es una vivienda de una planta" }
+    { class: "div-img med-pic", img: `${onestoryPath}unaplanta-13.jpg`, title: "Casa de una planta con hormigón visto y revestimiento plástico, complementado con piso de porcelanato rústico." },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-1.png`, title: "Espacio único con tabique de hormigón visto moldeado con tablas de machimbre." },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-11.jpg`, title: "Inspiración para tu próxima casa en Berazategui: diseño de una planta con jardín." },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-4.png`, title: "Mampostería de ladrillo Retak que ofrece una apariencia elegante y una excelente eficiencia térmica." },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-5.jpg`, title: "Innovador diseño con ventana en esquina que maximiza la luz natural y un techo de chapa discretamente escondido para una estética limpia y funcional. " },
+    { class: "div-img big-pic", img: `${onestoryPath}unaplanta-14.png`, title: "Casa de una planta en Berazategui con un hermoso jardín. Espacios exteriores e interiores diseñados para el máximo confort y estilo." },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-7.jpg`, title: "Construcción a medida en Buenos Aires: Casa de una planta con revestimiento plastico y aberturas que brindan gran luminosidad." },
+    { class: "div-img small-pic", img: `${onestoryPath}unaplanta-8.png`, title: "Vigas de hormigón visto que aportan un toque industrial y robusto a tu hogar." }
 ];
 
+// Pisos de porcelanato: "Elegante interior con pisos de porcelanato, combinando durabilidad y estilo moderno en cada rincón."
+
+// Cielo raso de yeso y luces spot embutidas: "Ambiente sofisticado con cielo raso de yeso y luces spot embutidas, creando una iluminación suave y contemporánea."
+
+// Recubrimiento de hormigón armado con tablas machimbradas: "Fusión de recubrimiento de hormigón armado con tablas machimbradas, ofreciendo un diseño robusto y cálido."
+
+// Ventanas en doble altura: "Ventanas en doble altura que maximizan la luz natural y ofrecen una vista impresionante en el diseño de tu hogar."
+
+// Fachada moderna en L: "Fachada moderna en forma de L, destacando líneas limpias y una estructura innovadora para un impacto visual único."
+
+// Fachada moderna en C: "Fachada moderna en forma de C, combinando elegancia y funcionalidad en una propuesta arquitectónica distintiva."
 
 //content for two story houses gallery
 const twostoryPath = "/assets/images/viviendas-page/twostoryhouses/";
 const twostoryPictures = [
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-30.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-29.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-28.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-10.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-26.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-23.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `${twostoryPath}dosplantas-22.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-25.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-19.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-18.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-17.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-16.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-30.png`, title: "Amamos construir una casa de dos plantas con una estructura funcional que tambien  exprese tu estética." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-29.jpeg`, title: "Interior de casas de dos plantas con cielo raso de yeso y luces spot embutidas, creando un ambiente sofisticado y luminoso." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-28.png`, title: "Casas de dos plantas con ventanas en doble altura, ideales para quienes buscan maximiza la luz natural y la sensación de espacio." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-10.png`, title: "Vivienda con fachada moderna en L que ofrece un diseño distintivo que brinda gran elegancia." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-26.png`, title: "Ventana en doble altura que maximiza la luz natural y aporta una sensación de amplitud y modernidad." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-23.jpg`, title: "Tenemos las mejores ideas para integrar una piscina en el diseño del jardín y exterior de tu hogar." },
+    { class: "div-img big-pic", img: `${twostoryPath}dosplantas-22.png`, title: "Tenemos los mejores diseños de casas modernas con fachada de piedra natural y detalles que impactan." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-25.jpg`, title: "Sabemos cómo integrar la entrada peatonal en el diseño del jardín para que cada paso sea memorable." },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-19.jpg`, title: "Diseño de casa de dos plantas moderna, destacando líneas limpias y un enfoque contemporáneo que define los últimos estilos arquitectónicos." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-18.png`, title: " Fachada moderna con piedra natural y entrada vehicular. La entrada peatonal escalonada se integra perfectamente brindando un gran impacto visual." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-17.png`, title: "Area de descanso que nos enamora. Desde el revestimiento exterior extra duradero, hasta los grandes ventanales, y las luces para iluminar el patio trasero." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-16.png`, title: "Casa con entrada peatonal escalonada que complementa el diseño moderno y se adapta perfectamente a la decoración con plantas alrededor, permitiendo personalizar el espacio exterior." },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-15.jpg`, title: "Este es una vivienda de dos plantas" },
     { class: "div-img med-pic", img: `${twostoryPath}dosplantas-14.jpg`, title: "Esta es una vivienda de dos plantas" },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-7.png`, title: "Este es una vivienda de dos plantas" },
