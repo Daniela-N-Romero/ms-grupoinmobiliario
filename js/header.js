@@ -27,7 +27,7 @@ let footer = document.querySelectorAll("footer")
 
 // Scroll and header
 
-const body = document.body;
+const body = document.body; 
 let lastScroll = 0;
 
 window.addEventListener("scroll", ()=>{

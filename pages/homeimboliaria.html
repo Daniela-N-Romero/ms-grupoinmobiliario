@@ -26,7 +26,7 @@
 			<a href="../pages/homeimboliaria.html" aria-label="Logo a página de inicio"><img
 					src="../assets/images/logos/3 (2).png" alt="Logo a página de inicio" class="logo"
 					role="button" tabindex="0" /></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Botón de Barra de navegación">
 				<span class="navbar-toggler-icon"></span>
@@ -50,16 +50,17 @@
 							aria-label="Contactanos">Contactanos</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 		</nav>
 	</header>
 
 	<section class="inmo-search">
 		<div class="index__hero-slider" id="index__hero-slider"></div>
-		<h1 class="inmo-title">Slogan</h1>
+		<h1 class="inmo-title inmo-title-white">La inmobiliaria que resuelve</h1>
 	</section>
 
 	<div id="carouselIndicators" class="carousel slide container carrousel-inmo">
+
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
 				aria-current="true" aria-label="Slide 1"></button>
@@ -68,27 +69,47 @@
 			<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
 				aria-label="Slide 3"></button>
 		</div>
+
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<picture>
-					<source class="carrousel-img"alt="" media="(min-width: 992px)" srcset="../assets/images/inmob-home/extralongbanner1.png">
-					<source class="carrousel-img"alt="" media="(min-width: 768px)" srcset="../assets/images/inmob-home/longbanner1.png">
-					<img class="carrousel-img" src="../assets/images/inmob-home/banner1.png" alt="">
-				  </picture>
+				<div class="carousel-item-content">
+					<h2>¿Quiénes somos?</h2>
+					<p>Somos una <strong class="topic">agencia inmobiliaria</strong> especializada en venta y alquiler de viviendas en la zona de <strong class="topic">Hudson, Berazategui</strong>.</p>
+					<img src="../assets/images/inmob-home/banner-img5.png" alt="">
+					<p>Nos adaptamos y resolvemos tus necesidades con precisión para encontrar lo que buscás.</p>
+					<p class="topic">Nuestros clientes nos eligen por nuestras políticas flexibles y por nuestro alto compromiso.</p>
+				</div>
 			</div>
 			<div class="carousel-item">
-				<picture>
-					<source class="carrousel-img" alt="" media="(min-width: 992px)" srcset="../assets/images/inmob-home/extralongbanner2.png">
-					<source class="carrousel-img" alt="" media="(min-width: 768px)" srcset="../assets/images/inmob-home/longbanner2.png">
-					<img class="carrousel-img" src="../assets/images/inmob-home/banner2.png" alt="">
-				  </picture>
+				<div class="carousel-item-content">
+					<div>
+						<h2>¿Qué servicios ofrecemos?</h2>
+						<p>Nuestros servicios están adaptados según tu tipo de necesidad, tu búsqueda y tu potencial de inversión.</p>
+					</div>
+					<div>
+						<img src="../assets/images/inmob-home/banner-img6.png" alt="">
+						<p>Ofrecemos <strong class="topic">tasaciones</strong> precisas y <strong class="topic">venta/alquiler de viviendas residenciales</strong>, industriales y lotes. También disponemos de opciones de financiamiento para venta de viviendas estandarizadas.</p>
+					</div>					
+				</div>
 			</div>
-			<div class="carousel-item">
-				<picture>
-					<source class="carrousel-img" alt="" media="(min-width: 992px)" srcset="../assets/images/inmob-home/extralongbanner3.png">
-					<source class="carrousel-img" alt="" media="(min-width: 768px)" srcset="../assets/images/inmob-home/longbanner3.png">
-					<img class="carrousel-img" src="../assets/images/inmob-home/banner3.png" alt="">
-				  </picture>
+			<div class="carousel-item">				
+				<div class="carousel-item-content team">
+					<h2>Nuestro equipo</h2>
+					<div class="team-member">
+						<img class="member-picture" src="../assets/images/inmob-home/banner-img3.png" alt="">
+						<div class="member-description">
+							<h3>Matias Settecerze - Martillero público</h3>
+							<p>“Cuento con más de 10 años de trayectoria en el rubro inmobiliario. Hacer negocios conmigo es saber que contás con completa disponibilidad y atención para que adquirir tu próxima propiedad sea la mejor experiencia.”</p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="member-description">
+							<h3>Mariana Carrizo - Martillera pública</h3>
+							<p>“Estudié en la universidad Nacional de Lomas de Zamora. Mi amplia experiencia en el área de la construcción me llevó a querer incursionar en el mundo de los bienes raíces. Mi objetivo es encontrar el negocio más favorable para vos.”</p>
+						</div>
+						<img class="member-picture" src="../assets/images/inmob-home/banner-img4.png" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
@@ -111,7 +132,6 @@
 				
 			</div>
 		</section>
-
 		
 
 		<!-- more properties -->
@@ -189,5 +209,3 @@
 
 
 </body>
-
-</html>

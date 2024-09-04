@@ -39,7 +39,6 @@
         grid-template-rows: 55% auto;
     }
 
-
     //SELL / RENT 
     .content--row:nth-child(1){
         position: relative;
@@ -104,6 +103,9 @@
             }
             .house-currency,.house-price, .house-features{
                 order: 1;
+            }
+            .house-title{
+               padding-inline: 20px;
             }
         }
 

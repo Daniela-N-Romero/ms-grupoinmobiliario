@@ -1,24 +1,45 @@
 .inmo-search{
     height: 100vh;
-    background-color: #34e1e4;
+    background-image: url(../../assets/images/properties/_3170148.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     @include min-width(768px){
         margin-top: $header-height;
     }
+    &::after{
+        content: '';
+        inset: 0 0 0 0;
+
+        background-color: rgba(0, 0, 0, 0.367);
+        position: absolute;
+    }
 }
+
 .inmo-title{
     text-align: center;
     color: $logo-blue;
     font-family: "loverine", cursive;
     text-shadow: 1px 1px 2px rgb(49, 48, 77);
+    font-size: 3rem;
 }
 
+.inmo-title-white{
+    position: relative;
+    z-index: 100;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(84, 84, 86);
+}
+
+//HOME CAROUSEL
+
 .carrousel-inmo{
-    height: 40vh;
     margin-top: 10vh;
     background-color: $logo-blue;
+    border: 3px solid $dark-waves;
+    border-radius: 7px;
     picture, source, img {
             width: 100%;
             height: 40vh;
@@ -28,3 +49,77 @@
         margin-block: 2rem;
     }
 }
+
+.carousel-item{
+    height: 80vh;
+    @include min-width(768px){
+        height:75vh;
+    }
+}
+
+.carousel-item-content{
+    height: 100%;
+    margin: 20px 10%;
+    text-align: center;
+    color: $primary-color-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    img{
+        height: 120px;
+    }
+    h2, .topic{
+        color: $light-waves;
+        text-shadow: none;
+    }
+
+}
+
+.carousel-item-content.team{
+    div.team-member{
+        display: flex;
+        justify-content: center;
+    }
+    img.member-picture{
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+    img.member-picture:nth-child(2){
+        margin-right: 0;
+        margin-left: 15PX;
+    }
+    div.member-description{
+    margin-block: 20px;
+    padding: 10px;
+    background-color: $primary-color-gray;
+    color: black;
+    // position: relative;
+    border-radius: .4em;
+    h3{
+        font-size: 1rem;
+        color: $dark-waves;
+        font-weight: bold;
+    }
+    p{
+        font-size: .8rem;
+        margin: 0;
+    }
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 62%;
+    //     width: 0;
+    //     height: 0;
+    //     border: 25px solid transparent;
+    //     border-bottom-color:$primary-color-gray;
+    //     border-top: 0;
+    //     border-left: 20px;
+    //     margin-left: -12.5px;
+    //     margin-top: -25px;
+    // }
+
+}
+}
+
