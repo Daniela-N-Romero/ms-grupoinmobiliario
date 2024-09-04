@@ -80,73 +80,73 @@ const twostoryPictures = [
     { class: "div-img big-pic", img: `${twostoryPath}dosplantas-22.png`, title: "Tenemos los mejores diseños de casas modernas con fachada de piedra natural y detalles que impactan." },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-25.jpg`, title: "Sabemos cómo integrar la entrada peatonal en el diseño del jardín para que cada paso sea memorable." },
     { class: "div-img med-pic", img: `${twostoryPath}dosplantas-19.jpg`, title: "Diseño de casa de dos plantas moderna, destacando líneas limpias y un enfoque contemporáneo que define los últimos estilos arquitectónicos." },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-18.png`, title: " Fachada moderna con piedra natural y entrada vehicular. La entrada peatonal escalonada se integra perfectamente brindando un gran impacto visual." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-18.png`, title: "Fachada moderna con piedra natural y entrada vehicular. La entrada peatonal escalonada se integra perfectamente brindando un gran impacto visual." },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-17.png`, title: "Area de descanso que nos enamora. Desde el revestimiento exterior extra duradero, hasta los grandes ventanales, y las luces para iluminar el patio trasero." },
     { class: "div-img small-pic", img: `${twostoryPath}dosplantas-16.png`, title: "Casa con entrada peatonal escalonada que complementa el diseño moderno y se adapta perfectamente a la decoración con plantas alrededor, permitiendo personalizar el espacio exterior." },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-15.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-14.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-7.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-6.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-3.png`, title: "Este es una vivienda de dos plantas" }
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-15.png`, title: "Vivienda de dos plantas con detalles en piedra natural y luces que resuelven cómo iluminar la fachada de una casa por la noche de la forma mas moderna." },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-14.jpg`, title: "Fachada clásica con elegantes molduras que realzan el carácter arquitectónico de la casa. La entrada vehicular adoquinada añade un toque de sofisticación." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-7.png`, title: "Escalera de acceso a planta alta decorada con una pared de piedra San Juan colocada de manera artesanal." },
+    { class: "div-img small-pic", img: `${twostoryPath}dosplantas-6.png`, title: "Sabemos cómo planificar la distribución de una casa de dos pisos haciendo que hasta los espacios de esparcimiento como esta galeria sean funcionales y exuden elegancia." },
+    { class: "div-img med-pic", img: `${twostoryPath}dosplantas-3.png`, title: "El diseño arquitectónico de esta casa se realza con molduras decorativas que crean un atractivo visual sofisticado y clásico." }
 ];
 
 
 //content for grill gallery
 const grillPath = "/assets/images/galerias-page/grills/";
 const grillPictures = [
-    { class: "div-img med-pic", img: `${grillPath}parrilla-0.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-1.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-3.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-5.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `${grillPath}parrilla-9.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-8.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-10.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${grillPath}parrilla-12.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-7.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${grillPath}parrilla-11.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${grillPath}parrilla-13.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-14.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-15.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${grillPath}parrilla.png`, title: "Esta es una vivienda de dos plantas" }
+    { class: "div-img med-pic", img: `${grillPath}parrilla-0.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-18.png`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-1.jpeg`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-3.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-5.jpg`, title: "" },
+    { class: "div-img big-pic", img: `${grillPath}parrilla-9.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-8.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-10.png`, title: "" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla-12.png`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-7.jpg`, title: "" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla-17.png`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-2.jpeg`, title: "" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla-13.png`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-14.png`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-16.jpeg`, title: "" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla.png`, title: "" }
 ];
 
 
 //content for pool gallery
 const poolPath = "/assets/images/galerias-page/pools/";
 const poolPictures = [
-    { class: "div-img med-pic", img: `${poolPath}piscina-2.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-1.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-6.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-8.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-12.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `${poolPath}piscina-9.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-3.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-11.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${poolPath}piscina-10.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-4.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-7.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-5.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${poolPath}piscina-13.png`, title: "Este es una vivienda de dos plantas" },
+    { class: "div-img med-pic", img: `${poolPath}piscina-2.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-1.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-6.png`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-8.png`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-12.png`, title: "" },
+    { class: "div-img big-pic", img: `${poolPath}piscina-9.png`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-3.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-11.png`, title: "" },
+    { class: "div-img med-pic", img: `${poolPath}piscina-10.png`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-4.png`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-7.png`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-5.png`, title: "" },
+    { class: "div-img small-pic", img: `${poolPath}piscina-13.png`, title: "" },
 ];
 
 //content for pergola gallery
 const quinchoPath = "/assets/images/galerias-page/quinchos/";
 const quinchoPictures = [
-    { class: "div-img med-pic", img: `${quinchoPath}galeria-13.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-6.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-2.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-3.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-4.jpeg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `${quinchoPath}galeria-1.jpg`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-8.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-9.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img med-pic", img: `${quinchoPath}galeria-10.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-7.png`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-5.jpg`, title: "Este es una vivienda de dos plantas" },
-    { class: "div-img big-pic", img: `${quinchoPath}galeria-11.png`, title: "Esta es una vivienda de dos plantas" },
-    { class: "div-img small-pic", img: `${quinchoPath}galeria-12.png`, title: "Este es una vivienda de dos plantas" }
+    { class: "div-img med-pic", img: `${quinchoPath}galeria-13.png`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-6.png`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-2.jpeg`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-3.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-4.jpeg`, title: "" },
+    { class: "div-img big-pic", img: `${quinchoPath}galeria-1.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-8.png`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-9.png`, title: "" },
+    { class: "div-img med-pic", img: `${quinchoPath}galeria-10.png`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-7.png`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-5.jpg`, title: "" },
+    { class: "div-img big-pic", img: `${quinchoPath}galeria-11.png`, title: "" },
+    { class: "div-img small-pic", img: `${quinchoPath}galeria-12.png`, title: "" }
 ];
 
 //gallery buttons 
