@@ -1289,6 +1289,22 @@ body.light-bg {
     filter: saturate(150%);
   }
 }
+.gallery .tosmall-pic {
+  grid-column-start: span 2;
+}
+@media screen and (min-width: 768px) {
+  .gallery .tosmall-pic {
+    grid-column-start: span 1;
+  }
+}
+.gallery .tobig-pic {
+  grid-column-start: span 1;
+}
+@media screen and (min-width: 768px) {
+  .gallery .tobig-pic {
+    grid-column-start: span 2;
+  }
+}
 .gallery .med-pic {
   grid-column-start: span 2;
 }

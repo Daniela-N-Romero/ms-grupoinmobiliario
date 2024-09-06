@@ -90,6 +90,20 @@
         }
     }
 
+    .tosmall-pic{
+        grid-column-start: span 2;
+        @include min-width(768px){
+            grid-column-start: span 1;
+        }
+    }
+
+    .tobig-pic{
+        grid-column-start: span 1;
+        @include min-width(768px){
+            grid-column-start: span 2;
+        }
+    }
+    
     .med-pic { 
         // width: 300px;
         // height: 266.6px;    
@@ -121,6 +135,7 @@
         grid-column-start: span all;
 
     }
+    
 
     @include max-width(768px){
         grid-template-columns: repeat(2,1fr);

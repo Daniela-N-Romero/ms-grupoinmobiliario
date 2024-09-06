@@ -94,8 +94,8 @@ const twostoryPictures = [
 //content for grill gallery
 const grillPath = "/assets/images/galerias-page/grills/";
 const grillPictures = [
-    { class: "div-img med-pic", img: `${grillPath}parrilla-0.jpg`, title: "" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-18.png`, title: "" },
+    { class: "div-img med-pic", img: `${grillPath}parrilla-0.jpg`, title: "Descubrí con nosotros cómo elegir la mejor parrilla para tu patio trasero. Esta es una parrilla de acero inoxidable con paredes con revestimiento plástico." },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-18.png`, title: "Parrilla de acero inoxidable combinada perfectamente con paredes con revestimiento beige. Una opción elegante para quienes buscan hacer los mejores asados." },
     { class: "div-img small-pic", img: `${grillPath}parrilla-1.jpeg`, title: "" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-3.jpg`, title: "" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-5.jpg`, title: "" },
@@ -103,9 +103,9 @@ const grillPictures = [
     { class: "div-img small-pic", img: `${grillPath}parrilla-8.jpg`, title: "" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-10.png`, title: "" },
     { class: "div-img med-pic", img: `${grillPath}parrilla-12.png`, title: "" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-7.jpg`, title: "" },
-    { class: "div-img med-pic", img: `${grillPath}parrilla-17.png`, title: "" },
-    { class: "div-img small-pic", img: `${grillPath}parrilla-2.jpeg`, title: "" },
+    { class: "div-img tosmall-pic", img: `${grillPath}parrilla-7.jpg`, title: "" },
+    { class: "div-img small-pic", img: `${grillPath}parrilla-17.png`, title: "" },
+    { class: "div-img tobig-pic", img: `${grillPath}parrilla-2.jpeg`, title: "" },
     { class: "div-img med-pic", img: `${grillPath}parrilla-13.png`, title: "" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-14.png`, title: "" },
     { class: "div-img small-pic", img: `${grillPath}parrilla-16.jpeg`, title: "" },
