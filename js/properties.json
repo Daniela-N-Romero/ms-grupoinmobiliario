@@ -2,6 +2,7 @@
     {
         "id": "casa-gaboto5-hudson",
         "detailsPage": "/casa-gaboto5-hudson.html",
+        "folder": "/assets/images/properties/berazategui/sebastiangaboto/5/",
         "cover": "/assets/images/properties/berazategui/sebastiangaboto/5/gaboto5-1.webp",
         "images": [
             {
@@ -122,6 +123,7 @@
     {
         "id": "loteo-laflorida-fciovarela",
         "detailsPage": "/loteo-laflorida-fciovarela.html",
+        "folder": "/assets/images/properties/florenciovarela/laflorida",
         "cover": "/assets/images/properties/florenciovarela/laflorida/laflorida1.webp",
         "images": [
             {
@@ -194,6 +196,7 @@
     {
         "id": "loteo-aromas-laplata",
         "detailsPage": "/loteo-aromas-laplata.html",
+        "folder": "/assets/images/properties/laplata/aromas/",
         "cover": "/assets/images/properties/laplata/aromas/aromas-1.webp",
         "images": [
             {
@@ -234,6 +237,7 @@
     {
         "id": "loteo-elangel-laplata",
         "detailsPage": "/loteo-elangel-laplata.html",
+        "folder": "/assets/images/properties/laplata/elangel/",
         "cover": "/assets/images/properties/laplata/elangel/elangel-1.webp",
         "images": [
             {
@@ -441,6 +445,7 @@
     {
         "id": "loteo-nuevohorizone-laplata",
         "detailsPage": "/loteo-nuevohorizone-laplata.html",
+        "folder": "/assets/images/properties/laplata/nuevohorizonte/",
         "cover": "/assets/images/properties/laplata/nuevohorizonte/nuevohorizonte-1.webp",
         "images": [
             {
@@ -481,6 +486,7 @@
     {
         "id": "loteo-santateresita-laplata",
         "detailsPage": "/loteo-santateresita-laplata.html",
+        "folder": "/assets/images/properties/laplata/santateresita",
         "cover": "/assets/images/properties/laplata/santateresita/santateresita-1.webp",
         "images": [
             {
@@ -521,6 +527,7 @@
     {
         "id": "casa-reta-tresarroyos",
         "detailsPage": "/casa-reta-tresarroyos.html",
+        "folder": "/assets/images/properties/tresarroyos/cabanareta/",
         "cover": "/assets/images/properties/tresarroyos/cabanareta/cabanareta-1.webp",
         "images": [
             {
@@ -658,6 +665,7 @@
     {
         "id": "lotes-corderas-sanluis",
         "detailsPage": "/lotes-corderas-sanluis.html",
+        "folder": "/assets/images/properties/sanluis/corderas/",
         "cover": "/assets/images/properties/sanluis/corderas/corderas-1.webp",
         "images": [
             {
@@ -785,5 +793,59 @@
             }
         ],
         "description": "Terrenos en venta en el valle de Cortaderas, con superficies de 990 a 1000 m² y hermosas vistas a la sierra. Ubicados a solo 20 cuadras de la Ruta 1 (Km 22) y a 15 minutos de la Villa de Merlo, con acceso rápido y seguro.\r\n\r\nA solo 10 cuadras se encuentra el Arroyo Benítez, uno de los principales atractivos turísticos junto al Dique Piscu Yaco.\r\n\r\nServicios de luz y agua disponibles\r\nLotes listos para escriturar\r\nNo es barrio privado ni country, no abonan expensas ni cuotas de mantenimiento\r\nDisponibilidad – Manzana 11:\r\n\r\nLote 1: 991 m². Medidas: 16.51m x 43.96m – U$D 8000\r\nLote 12: 1000 m². Medidas: 20.75m x 48.20m – U$D 8000\r\nConsultar para más información.\r\n\r\nTodas las medidas enunciadas son meramente orientativas, las medidas exactas serán las que se expresan en el respectivo título de propiedad de cada inmueble.\r\n\r\nMatias Settecerze CMYCP. 1219"
+    },
+    {
+        "id": "casa-venta-las-acacias",
+        "detailsPage": "/casa-venta-las-acacias.html",
+        "folder": "/assets/images/properties/berazategui/el_pato/las_acacias_U5/",
+        "cover": "/assets/images/properties/berazategui/el_pato/las_acacias_U5/las_acacias_U5_1-1024.webp",
+        "images": [
+            {
+                "img1": "/assets/images/properties/berazategui/elpato/las_acacias_U5/las_acacias_U5_1.webp",
+                "alt": "Casa en venta en Barrio Cerrado Las Acacias"
+            },            {
+                "img2": "/assets/images/properties/berazategui/elpato/las_acacias_U5/las_acacias_U5_2.webp",
+                "alt": "Casa en venta en Barrio Cerrado Las Acacias"
+            },            {
+                "img3": "/assets/images/properties/berazategui/elpato/las_acacias_U5/las_acacias_U5_3.webp",
+                "alt": "Casa en venta en Barrio Cerrado Las Acacias"
+            },            {
+                "img4": "/assets/images/properties/berazategui/elpato/las_acacias_U5/las_acacias_U5_4.webp",
+                "alt": "Casa en venta en Barrio Cerrado Las Acacias"
+            },            {
+                "img5": "/assets/images/properties/berazategui/elpato/las_acacias_U5/las_acacias_U5_5.webp",
+                "alt": "Casa en venta en Barrio Cerrado Las Acacias"
+            },            {
+                "img6": "/assets/images/properties/berazategui/elpato/las_acacias_U5/las_acacias_U5_6.webp",
+                "alt": "Casa en venta en Barrio Cerrado Las Acacias"
+            }
+        ],
+        "operation": "venta",
+        "type": "Casa",
+        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1574.699881346684!2d-58.175552709271074!3d-34.88028292737519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d9ac6824eb15%3A0x65a407b05300e937!2sBarrio%20Las%20Acacias!5e0!3m2!1ses-419!2sar!4v1746032203480!5m2!1ses-419!2sar\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "location": "El Pato, Berazategui",
+        "currency": "USD",
+        "address": "Calle 517 y Autovia 2",
+        "value": 55000,
+        "rooms": 3,
+        "bathrooms": 1,
+        "features": [
+            {
+                "sqrmeters": "🏠 92 m2 cubiertos"
+            },
+            {
+                "bedrooms": "🛏️ 3 dormitorios"
+            },
+            {
+                "bathrooms": "🚽 1 baño"
+            },
+            {
+                "livingroom": "🛋️ Cocina"
+            },
+            {
+                "garage": "🚘 Cochera"
+            }
+        ],
+        "description": "Ubicada en un entorno tranquilo y organizado, esta propiedad cuenta con todo lo necesario para mudarse ya. Ideal para familias que buscan seguridad, comodidad y una excelente relación precio-calidad. Características principales:\r\n-3 dormitorios\r\n-Gran living-comedor\r\n-Cocina independiente\r\n-Hall de entrada\r\n-Baño completo\r\n-Lavadero\r\n-Patio trasero\r\n-Espacio para vehículo\r\n\r\nEntorno y servicios:\r\n-Barrio cerrado con portón eléctrico\r\n-Alarma vecinal\r\n-Cámaras de seguridad\r\n-Expensas muy bajas: menos de $5.000 por mes (incluyen corte de pasto de espacios comunes, uso de plaza interna y servicio de agua para el barrio)\r\n-Plaza interna de uso común, ideal para niños o para disfrutar al aire libre.\r\n\r\nAccesos rápidos a la autopista y cercanía a comercios.\r\n\r\nDocumentación al día – lista para escriturar."
     }
 ]

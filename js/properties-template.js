@@ -3,17 +3,18 @@
 
 // Función que genera el HTML para las imágenes de la propiedad en un carrusel
 function returnPropertyPictures(property) {
-    let slides = ''; // Variable para los slides
+    let slides = ``; // Variable para los slides
 
     // Recorremos todas las imágenes de la propiedad
     for (const image of property.images) {
         let imgSrc, imgAlt; // Variables para almacenar la fuente y el texto alternativo de cada imagen
-        
+
         // Recorremos las claves del objeto 'image' para obtener la fuente y el texto alternativo
         for (let key in image) {
             if (image.hasOwnProperty(key)) { // Aseguramos que la propiedad sea propia del objeto, no heredada
                 if (key.startsWith('img')) { // Si la clave comienza con 'img', la usamos para la fuente de la imagen
                     imgSrc = image[key];
+                    console.log(image[key])
                 } else if (key === 'alt') { // Si la clave es 'alt', la usamos para el texto alternativo de la imagen
                     imgAlt = image[key];
                 }
@@ -37,6 +38,8 @@ function returnPropertyPictures(property) {
             ${imgNameWithoutExt}-1440.jpg 1440w
         `;
 
+
+
         slides += `
             <div class="swiper-slide">
                 <picture>
@@ -45,6 +48,7 @@ function returnPropertyPictures(property) {
                 </picture>
             </div>`;
     }
+    console.log(slides)
 
     return `
         <div class="swiper">
@@ -142,7 +146,7 @@ const params = new URLSearchParams(window.location.search);
 const propertyId = params.get("id");
 
 // Cargar el archivo JSON de propiedades y buscar la propiedad con el ID correspondiente
-fetch("../../js/properties.json")
+fetch("/js/properties.json")
 	.then((response) => response.json()) // Convertimos la respuesta en JSON
 	.then((properties) => {
 		// Buscamos la propiedad con el ID que obtenemos de la URL

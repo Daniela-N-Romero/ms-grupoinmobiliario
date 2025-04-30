@@ -18,10 +18,12 @@ function parseData(cellValue) {
         return obj;
     });
 }
+
 function convertExcelToJson() {
+
     try {
         console.log('🟢 Ejecutando conversión...');
-        const workbook = xlsx.readFile('../assets/ddbb/properties.xlsx');
+        const workbook = xlsx.readFile('./assets/ddbb/properties.xlsx'); // ✅ leer cada vez
         const sheetName = workbook.SheetNames[0];
         const data = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]);
 
@@ -31,15 +33,18 @@ function convertExcelToJson() {
             features: parseData(row.features),
             cover: row.cover ? row.cover.trim() : ''
         }));
-
-        fs.writeFileSync('properties.json', JSON.stringify(processedData, null, 4));
-        console.log('✅ JSON actualizado');
+        try{
+            fs.writeFileSync('./js/properties.json', JSON.stringify(processedData, null, 4));
+            console.log('✅ JSON actualizado');
+        }catch (error){
+            console.error('Error al modificar el JSON:', error);
+        }
     } catch (error) {
         console.error('Error al procesar el archivo:', error);
     }
 }
 
-const watcher = chokidar.watch('../assets/ddbb/properties.xlsx', { persistent: true, usePolling:true, interval:500 });
+const watcher = chokidar.watch('./assets/ddbb/properties.xlsx', { persistent: true, usePolling:true, interval:500 });
 
 
 watcher.on('all', (event, path) => {
