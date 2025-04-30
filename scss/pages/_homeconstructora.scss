@@ -214,8 +214,10 @@
 			display: block;
 			width: 100%;
 			height: 100%;
-
+			position: relative;
+			z-index: 50;
 			.servicio__card {
+				width: 100%;
 				height: 100%;
 				display: flex;
 				justify-content: center;

@@ -405,6 +405,39 @@ body.light-bg {
   background-size: cover;
 }
 
+.hero-inmo::before {
+  content: "";
+  top: 90vh;
+  left: 0;
+  right: 0;
+  bottom: -1vh;
+  background: url(../../assets/images/landing-page/wave-haikei.svg);
+  position: absolute;
+  background-size: cover;
+  z-index: 50;
+  transform: scaleY(-1);
+}
+@media screen and (min-width: 992px) {
+  .hero-inmo::before {
+    inset: 85vh 0 0 0;
+  }
+}
+
+.hero-inmo::after {
+  content: "";
+  width: 100vw;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-image: url(../../assets/images/inmob-home/gallery.jpg);
+  background-repeat: no-repeat;
+  background-position: 25% 0%;
+  z-index: -50;
+  background-size: cover;
+}
+
 .index__servicios .servicio {
   text-align: center;
   padding: 2rem 3rem;
@@ -903,7 +936,7 @@ body.light-bg {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   cursor: pointer;
-  z-index: 150;
+  z-index: 1500;
   right: 15px;
 }
 .fixed-btn:hover {
@@ -1631,7 +1664,6 @@ body.light-bg {
   content: "";
   position: absolute;
   inset: -30% 0 99% 0;
-  z-index: 200;
   background: url(../../assets/images/landing-page/wave-haikei.svg);
   transform: scaleY(-1);
   background-repeat: no-repeat;
@@ -1932,8 +1964,11 @@ body.light-bg {
   display: block;
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 50;
 }
 .index__servicios .servicio__link .servicio__card {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -2069,7 +2104,9 @@ body.light-bg {
   border: 3px solid #2F69B1;
   border-radius: 7px;
 }
-.carrousel-inmo picture, .carrousel-inmo source, .carrousel-inmo img {
+.carrousel-inmo picture,
+.carrousel-inmo source,
+.carrousel-inmo img {
   width: 100%;
   height: 40vh;
   object-fit: contain;
@@ -2088,50 +2125,118 @@ body.light-bg {
 }
 
 .carousel-item-content {
-  height: 100%;
-  margin: 20px 10%;
+  flex: 1;
+  margin: 0 10%;
   text-align: center;
   color: rgb(240, 236, 229);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  padding: 3rem 0 5rem 0;
+  min-height: 70vh;
 }
 .carousel-item-content img {
   height: 120px;
 }
-.carousel-item-content h2, .carousel-item-content .topic {
+.carousel-item-content h2,
+.carousel-item-content .topic {
   color: #A5CCFB;
   text-shadow: none;
 }
 
-.carousel-item-content.team div.team-member {
+.carousel-item-content.team {
+  padding: 3rem 0 5rem 0;
+}
+.carousel-item-content.team h2 {
+  margin-bottom: 2rem;
+}
+.carousel-item-content.team .team-member {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-.carousel-item-content.team img.member-picture {
-  margin-top: 20px;
-  margin-right: 15px;
+.carousel-item-content.team .team-member img.member-picture {
+  margin: 0;
+  max-height: 160px;
+  object-fit: contain;
 }
-.carousel-item-content.team img.member-picture:nth-child(2) {
-  margin-right: 0;
-  margin-left: 15PX;
-}
-.carousel-item-content.team div.member-description {
-  margin-block: 20px;
+.carousel-item-content.team .team-member .member-description {
   padding: 10px;
   background-color: rgb(240, 236, 229);
   color: black;
   border-radius: 0.4em;
+  max-width: 400px;
 }
-.carousel-item-content.team div.member-description h3 {
+.carousel-item-content.team .team-member .member-description h3 {
   font-size: 1rem;
   color: #2F69B1;
   font-weight: bold;
 }
-.carousel-item-content.team div.member-description p {
+.carousel-item-content.team .team-member .member-description p {
   font-size: 0.8rem;
   margin: 0;
+}
+
+/* Estilo para los puntos de la paginación */
+.swiper-pagination-bullet {
+  background-color: white; /* Color de los puntos inactivos */
+}
+
+/* Estilo para los puntos activos */
+.swiper-pagination-bullet-active {
+  background-color: #A5CCFB; /* O el color que prefieras para los puntos activos */
+}
+
+.homegallery-inmo {
+  margin-top: 5rem;
+}
+
+.properties-swiper {
+  padding: 4rem 0;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Limita el ancho del swiper y lo centra */
+.property-swiper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5rem; /* Espacio a los lados para que no tape flechas */
+  position: relative;
+  overflow: visible; /* Permite que las flechas se vean por fuera */
+}
+
+/* Ajustes generales para las tarjetas */
+.property-swiper-container .swiper-slide {
+  width: auto;
+  max-width: 300px; /* Ancho máximo por tarjeta */
+  flex-shrink: 0;
+}
+
+/* Flechas visibles, separadas del contenido */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Que no se corten en móviles */
+.swiper {
+  overflow: visible;
 }
 
 @media screen and (min-width: 768px) {
@@ -2154,7 +2259,7 @@ body.light-bg {
 .contacto-page .aside-map {
   padding-block: 2.5rem;
   background-color: rgb(156, 160, 160);
-  border-radius: 5px;
+  border-radius: 20px;
 }
 .contacto-page .aside-map h3 {
   margin-bottom: 1rem;
@@ -2170,7 +2275,7 @@ body.light-bg {
 }
 .contacto-page .section-form {
   background-color: #1f344a;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #fff;
 }
 .contacto-page .section-form h2, .contacto-page .section-form p {
@@ -2187,6 +2292,7 @@ body.light-bg {
 }
 .contacto-page .section-form fieldset {
   margin-block: 15px;
+  padding: 5px 15px;
   display: flex;
   align-items: center;
   font-family: "PoppinsRegular";
@@ -2198,8 +2304,9 @@ body.light-bg {
 .contacto-page .section-form fieldset textarea, .contacto-page .section-form fieldset input, .contacto-page .section-form fieldset select {
   flex-grow: 1;
   outline: none;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 5px;
+  font-size: 14px;
 }
 .contacto-page .section-form fieldset select {
   text-align: center;
@@ -2216,6 +2323,10 @@ body.light-bg {
 }
 .contacto-page .section-form .lote-field div {
   width: 40%;
+  display: flex;
+}
+.contacto-page .section-form .lote-field div label {
+  margin-inline-end: 5px;
 }
 .contacto-page .section-form .description-field {
   flex-direction: column;
@@ -2225,38 +2336,21 @@ body.light-bg {
   margin: 5px 0;
   width: 100%;
 }
+.contacto-page .section-form .footnote {
+  color: rgb(216, 213, 213);
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 15px;
+}
 .contacto-page .section-form button {
   display: block;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-block: 20px;
   padding: 6px 24px;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  box-shadow: 3px 3px 2px rgb(67, 65, 124);
-  transition: 0.4s;
-  animation: color-shadow 6s ease-in-out infinite;
-  background-color: #2F69B1;
 }
-@keyframes color-shadow {
-  0% {
-    box-shadow: 3px 3px 2px rgb(67, 65, 124);
-  }
-  50% {
-    box-shadow: 2px 2px 2px #A5CCFB;
-  }
-  100% {
-    box-shadow: 3px 3px 2px rgb(67, 65, 124);
-  }
-}
-.contacto-page .section-form button:hover {
-  background-color: #A5CCFB;
-  animation: none;
-  color: #1f344a;
-  transform: scale(1.01);
+
+.aside-map {
+  margin-block-start: 2rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -2264,10 +2358,11 @@ body.light-bg {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 30px;
+    margin-bottom: 3rem;
   }
   .contacto-page .row .aside-map {
     order: -1;
-    margin-bottom: 3rem;
+    margin-block-start: 0;
   }
   .contacto-page .row .aside-map iframe {
     height: 90%;
@@ -2276,7 +2371,8 @@ body.light-bg {
   }
   .contacto-page .row .section-form {
     padding-inline: 2rem;
-    margin-bottom: 3rem;
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 body.white {
@@ -2666,6 +2762,10 @@ body.white {
   font-size: 1.9rem;
 }
 
+.scroll-up section h2.noscroll, .scroll-down section h2.noscroll {
+  font-size: 1rem;
+}
+
 .models__intro {
   background: url(../../../assets/images/obras/2.jpg) no-repeat center/cover;
   height: 80vh;
@@ -2778,7 +2878,7 @@ body.white {
   background-image: url(../../assets/images/obras/2.jpg);
 }
 .model:nth-child(3) .model__img {
-  background-image: url(../../assets/images/obras/3.jpg);
+  background-image: url(../../assets/images/modelos/ms-monoambiente1-vistafrontal.png);
 }
 
 .modal-header {
@@ -2831,6 +2931,43 @@ body.white {
 
 .carousel.propertycarousel {
   height: 200px;
+  width: 50%;
+}
+
+.property-features {
+  font-size: 1rem;
+}
+
+.property-swiper {
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+}
+.property-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.property-swiper .property-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 1024px) {
+  .property-swiper {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .property-swiper {
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .property-swiper {
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

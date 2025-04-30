@@ -82,29 +82,29 @@
 
         <div class="gallery__text contacto">
             <h1 class="gallery__title poppins">Contactanos</h1>
-            <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="gallery__description">Contanos de tu proyecto y te decimos como hacerlo realidad.</p>
         </div>
 
         <div class="container contacto-page">
             <div class="row">
                 <section class="section-form">
                     <h2>¿Querés una entrevista?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <form action="" id="contact-form">
+                    <p>Dejanos tus datos y nos comunicaremos con vos.</p>
+                    <form action="https://formsubmit.co/info@msconstruccion.net" method="POST" id="contact-form">
                         <fieldset form="contact-form" class="name-field">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" required>
+                            <label for="Nombre">Nombre *</label>
+                            <input type="text" name="Nombre" id="nombre" required>
                         </fieldset>
                         
         
                         <fieldset form="contact-form" class="surname-field">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" required>
+                            <label for="Apellido">Apellido *</label>
+                            <input type="text" name="Apellido" id="apellido" required>
                         </fieldset>
                         
                         <fieldset form="contact-form" class="age-field">
-                            <label for="edad">Edad</label>
-                            <select name="edad" id="edad" required>
+                            <label for="Edad">Edad *</label>
+                            <select name="Edad" id="edad" required>
                                 <option value="menos de 25 años">Menos de 25 años</option>
                                 <option value="entre 25 y 38 años">Entre 25 y 38 años</option>
                                 <option value="entre 39 y 50 años">Entre 39 y 50 años</option>
@@ -113,48 +113,56 @@
                         </fieldset>
                         
                         <fieldset form="contact-form"  class="email-field">                
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required>
+                            <label for="Email">Email *</label>
+                            <input type="Email" name="email" id="email" required>
                         </fieldset>                
                         
                         <fieldset form="contact-form"  class="phone-field">
-                            <label for="telefono">Teléfono</label>
-                            <input type="number" name="telefono" id="telefono" required>
+                            <label for="Telefono">Teléfono *</label>
+                            <input type="number" name="Telefono" id="telefono" required>
                         </fieldset>                
                         
                         <fieldset form="contact-form"  class="place-field">
-                            <label for="localidad">¿Cuál es la localidad de la construcción?</label>
-                            <input type="text" name="localidad" id="localidad" required>
+                            <label for="Localidad">¿Cuál es la localidad de la construcción? *</label>
+                            <input type="text" name="Localidad" id="localidad" required>
                         </fieldset>
                         
                         <fieldset form="contact-form"  class="lote-field">
-                            <label class="legend-label">¿Ya contas con lote?</label>
+                            <label class="legend-label">¿Ya contas con lote? *</label>
                             <div>
-                                <label class="radio-label" for="loteSi" >Si</label>
-                                <input type="radio" name="lote" id="loteSi" value="si" required>
-                                <label class="radio-label" for="loteNo">No</label>
-                                <input type="radio" name="lote" id="loteNo" value="no" required>
+                                <div>
+                                    <label class="radio-label" for="loteSi" >Si</label>
+                                <input type="radio" name="Lote" id="loteSi" value="si" required>
+                                </div>
+                                <div>
+                                    <label class="radio-label" for="loteNo">No</label>
+                                <input type="radio" name="Lote" id="loteNo" value="no" required>
+                                </div>                             
                             </div>
                         </fieldset>
                         
                         
                         <fieldset form="contact-form"  class="traffic-field">
-                            <label for="source">¿Dónde nos conociste</label>
+                            <label for="source">¿Dónde nos conociste? *</label>
                             <select name="source" id="source" required>
-                                <option value="instagram">Instagram</option>
-                                <option value="facebook">Facebook</option>
-                                <option value="google">Google</option>
-                                <option value="conocidos">Un conocido</option>
-                                <option value="cartel">Carteles/Folletos</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="MercadoLibre">Mercado Libre</option>
+                                <option value="Google">Google</option>
+                                <option value="Conocidos">Un conocido</option>
+                                <option value="Cartel">Carteles/Folletos</option>
+                                <option value="Otro">Otro</option>
                             </select>
                         </fieldset>                
                         
                         <fieldset form="contact-form"  class="description-field">
-                            <label for="descripcion">Contanos mas acerca de tu proyecto</label>
-                            <textarea type="text" name="descripcion" id="descripcion" placeholder="Escribe aquí"></textarea>
+                            <label for="Descripcion">Contanos mas acerca de tu proyecto</label>
+                            <textarea type="text" name="Descripcion" id="descripcion" placeholder="Escribe aquí"></textarea>
                         </fieldset>
                         
-                        <button class="btn-submit" type="submit">Solicitar entrevista</button>
+                        <span class="footnote">Los datos con  *  son obligatorios.</span>
+
+                        <button class="btn-submit btn btn-animated-border-box" type="submit"><span class="btn btn-animated-border-content">Solicitar entrevista</span></button>
                         
                     </form>
                     
@@ -190,37 +198,37 @@
                                 tabindex="0" aria-label="Página actual: Nosotros" aria-current="page">> Contacto</a>
                         </li>
                     </ul>
-                    <ul class="footer__div--contacto">
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="tel:+5491164773427" role="button" tabindex="0"
-                                aria-label="Llamar a MS Construcción" target="_blank" rel="noopener">
-                                <i class="footer__div--icon bi bi-telephone"></i>
-                                <p class="footer__div--text">+54 9 11-6477-3427</p>
-                            </a>
-                        </li>
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="https://maps.app.goo.gl/usi6L6zmYAmDoGAv8"
-                                target="_blank" role="button" tabindex="0"
-                                aria-label="Ver la ubicación de MS Construcción" rel="noopener"><i
-                                    class="footer__div--icon bi bi-geo-alt"></i>
-                                <p class="footer__div--text">G. E. Hudson, Berazategui</p>
-                            </a>
-                        </li>
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="mailto:info@msconstruccion.net" role="button"
-                                tabindex="0" aria-label="Enviar un correo electronico a MS Construcción"
-                                rel="noopener"><i class="footer__div--icon bi bi-envelope"></i>
-                                <p class="footer__div--text">info@msconstruccion.net</p>
-                            </a>
-                        </li>
-                        <li class="footer__div--li">
-                            <a class="footer__div--link" href="https://www.instagram.com/msconstructor/" target="_blank"
-                                role="button" tabindex="0" aria-label="Ir al Instagram de MS Construcción"
-                                rel="noopener"><i class="footer__div--icon bi bi-instagram"></i>
-                                <p class="footer__div--text">@msconstructor</p>
-                            </a>
-                        </li>
-                    </ul>
+					<ul class="footer__div--contacto">
+						<li class="footer__div--li">
+							<a class="footer__div--link" href="tel:+5491164773427" role="button" tabindex="0"
+								aria-label="Llamar a MS Construcción" target="_blank" rel="noopener">
+								<i class="footer__div--icon bi bi-telephone"></i>
+								<p class="footer__div--text">+54 9 11-6477-3427</p>
+							</a>
+						</li>
+						<li class="footer__div--li">
+							<a class="footer__div--link" href="https://maps.app.goo.gl/ky4WNc6oxsfFvLor9"
+								target="_blank" role="button" tabindex="0"
+								aria-label="Ver la ubicación de MS Construcción" rel="noopener"><i
+									class="footer__div--icon bi bi-geo-alt"></i>
+								<p class="footer__div--text">El Pato, Berazategui</p>
+							</a>
+						</li>
+						<li class="footer__div--li">
+							<a class="footer__div--link" href="mailto:info@msconstruccion.net" role="button"
+								tabindex="0" aria-label="Enviar un correo electronico a MS Construcción"
+								rel="noopener"><i class="footer__div--icon bi bi-envelope"></i>
+								<p class="footer__div--text">info@msconstruccion.net</p>
+							</a>
+						</li>
+						<li class="footer__div--li">
+							<a class="footer__div--link" href="https://www.instagram.com/grupoms.constructora/" target="_blank"
+								role="button" tabindex="0" aria-label="Ir al Instagram de MS Construcción"
+								rel="noopener"><i class="footer__div--icon bi bi-instagram"></i>
+								<p class="footer__div--text">@grupoms.constructora</p>
+							</a>
+						</li>
+					</ul>
                 </div>
             </div>
         </div>

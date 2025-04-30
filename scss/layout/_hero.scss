@@ -84,3 +84,34 @@
 
 }    
 
+.hero-inmo::before{
+    content: '';
+    top: 90vh;
+    left: 0;
+    right: 0;
+    bottom: -1vh;
+    background: url(../../assets/images/landing-page/wave-haikei.svg);
+    position: absolute;
+    background-size: cover;
+    z-index: 50;
+    transform: scaleY(-1);
+    @include min-width(992px){
+        inset: 85vh 0 0 0;
+    }
+}    
+
+.hero-inmo::after{
+    content: '';
+    width: 100vw;
+    bottom: 0;
+    right:0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(../../assets/images/inmob-home/gallery.jpg);
+    background-repeat: no-repeat;
+    background-position: 25% 0%;
+    z-index: -50;
+    background-size: cover;
+
+}    

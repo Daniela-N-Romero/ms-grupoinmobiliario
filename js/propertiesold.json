@@ -1,0 +1,120 @@
+[
+    {
+        "id": "loteo-aromas-laplata",
+        "detailsPage": "/loteo-aromas-laplata.html",
+        "cover": "/assets/images/properties/aromas/aromas.png",
+        "images": [
+            { "img1": "/assets/images/properties/aromas/aromas.png", "alt": "text about image1" }
+        ],
+        "operation": "venta",
+        "type": "Lote en Barrio Abierto", 
+        "location": "Melchor Romero, La Plata",
+        "currency": "USD",
+        "address": "Calle 173 e/ 35 y 36",
+        "value": "8.000",
+        "rooms": "0",
+        "bathrooms": "0",
+        "features": [
+            {
+                "sqrmeters": "🏠 300m2",
+                "front": "📏 13x23m"
+            }
+        ],
+        "description": "¡Bienvenidos a Aromas, el lugar donde tus sueños se hacen realidad! Una oportunidad única para adquirir tu lote en un barrio abierto con excelente ubicación y servicios cercanos. Ubicación estratégica: sobre Calle 173, completamente asfaltada, y fácil acceso a Av. 520 y Av. 44. A pocos minutos del Hospital Alejandro Korn y cerca de la Escuela Primaria N°48. A solo 5 cuadras del Club Royal, ideal para actividades deportivas y recreación. Servicios disponibles en la zona (a 5 cuadras): cloacas, gas natural, y electricidad. Un entorno ideal:Un barrio diseñado para combinar comodidad, naturaleza y comunidad. Perfecto para construir tu hogar o invertir con una excelente proyección de valor.¡No pierdas esta oportunidad de ser parte de Las Palmeras! Contactanos para más información y asegurá tu lote.Matias Settecerze Mat. 1219",
+        "index": ""
+    },
+    {
+        "id": "loteo-laflorida-fciovarela",
+        "detailsPage": "/loteo-laflorida-fciovarela.html",
+        "cover": "/assets/images/inmob-home/render.jpg",
+        "images": [
+            { "img1": "/assets/images/inmob-home/render.jpg", "alt": "text about image1" },
+            { "img2": "/assets/images/inmob-home/gallery.jpg", "alt": "text about image2" },
+            { "img3": "/assets/images/inmob-home/frente.jpeg", "alt": "text about image3" }
+        ],
+        "operation": "venta",
+        "type": "Departamento",
+        "location": "Gutierrez, Berazategui",
+        "currency": "USD",
+        "address": "Cno. Gral. Belgrano 1520",
+        "value": "2.800",
+        "rooms": "5",
+        "bathrooms": "2",
+        "features": [
+            {
+                "sqrmeters": "🏠 262 m2 cubiertos",
+                "gallerysqrmeters": "🏡 10 m2 semicubiertos",
+                "bedrooms": "🛏️ 5 dormitorios",
+                "bathrooms": "🚽 2 baños",
+                "livingroom": "🛋️ Cocina, comedor y sala de estar, integrados",
+                "study": "📚Estudio",
+                "grill": "👩‍🍳Galeria y parrilla",
+                "garage": "🚘 Cochera"
+            }
+        ],
+        "description": "lorem lorem lorem lorem lorem",
+        "index": ""
+    },
+    {
+        "id": "loteo-camposdelsol-brandsen",
+        "detailsPage": "/loteo-camposdelsol-brandsen.html",
+        "cover": "/assets/images/inmob-home/render.jpg",
+        "images": [
+            { "img1": "/assets/images/inmob-home/render.jpg", "alt": "text about image1" },
+            { "img2": "/assets/images/inmob-home/gallery.jpg", "alt": "text about image2" },
+            { "img3": "/assets/images/inmob-home/frente.jpeg", "alt": "text about image3" }
+        ],
+        "operation": "alquiler",
+        "type": "Departamento",
+        "location": "Platanos, Berazategui",
+        "currency": "USD",
+        "address": "Sevilla 856",
+        "value": "2.300",
+        "rooms": "3",
+        "bathrooms": "1",
+        "features": [
+            {
+                "sqrmeters": "🏠 200 m2 cubiertos",
+                "gallerysqrmeters": "🏡 30 m2 semicubiertos",
+                "bedrooms": "🛏️ 3 dormitorios",
+                "bathrooms": "🚽 1 baños",
+                "laundryroom": "🚪Despensa y lavadero",
+                "livingroom": "🛋️ Cocina, comedor y sala de estar, integrados",
+                "garage": "🚘 Cochera"
+            }
+        ],
+        "description": "lorem lorem lorem ..........",
+        "index": ""
+    },
+    {
+        "id": "20001",
+        "cover": "/assets/images/inmob-home/render.jpg",
+        "images": [
+            { "img1": "/assets/images/inmob-home/render.jpg", "alt": "text about image1" },
+            { "img2": "/assets/images/inmob-home/gallery.jpg", "alt": "text about image2" },
+            { "img3": "/assets/images/inmob-home/frente.jpeg", "alt": "text about image3" }
+        ],
+        "operation": "venta",
+        "type": "Departamento",
+        "location": "Gutierrez, Berazategui",
+        "currency": "USD",
+        "address": "Cno. Gral. Belgrano 1520",
+        "value": "2.800",
+        "rooms": "5",
+        "bathrooms": "2",
+        "features": [
+            {
+                "sqrmeters": "🏠 262 m2 cubiertos",
+                "gallerysqrmeters": "🏡 10 m2 semicubiertos",
+                "bedrooms": "🛏️ 5 dormitorios",
+                "bathrooms": "🚽 2 baños",
+                "livingroom": "🛋️ Cocina, comedor y sala de estar, integrados",
+                "study": "📚Estudio",
+                "grill": "👩‍🍳Galeria y parrilla",
+                "garage": "🚘 Cochera"
+            }
+        ],
+        "description": "lorem lorem lorem lorem lorem",
+        "index": ""
+    }
+]
