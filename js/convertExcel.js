@@ -50,6 +50,3 @@ watcher.on('all', (event, path) => {
     }
 });
 
-
-console.log('HIzo algo?');
-

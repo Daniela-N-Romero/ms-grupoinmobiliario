@@ -64,7 +64,7 @@ fetch("../js/properties.json")
 			slide.id = property.id;
 			slide.classList.add("houses-gallery--article");
 			//imagen de fondo del botón
-			const coverImg = `${property.folder}/${property.nombre_base_images}_1-${res}.jpg`;
+			const coverImg = `${property.folder}/${property.nombre_base_images}_0.jpg`;
 			slide.style.backgroundImage = `url(${coverImg})`;
 			
 			slide.style.cursor = "pointer";

@@ -3,13 +3,16 @@
         "id": "casa-gaboto5-hudson",
         "detailsPage": "/casa-gaboto5-hudson.html",
         "folder": "/assets/images/properties/berazategui/sebastiangaboto/5/",
+        "nombre_base_images": "gaboto_5",
+        "cantidad_imagenes": 7,
+        "alt": "Casa en Venta en Barrio Cerrado Sebastian Gaboto Hudson Berazategui ",
         "operation": "venta",
         "type": "Casa",
         "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3277.44451423151!2d-58.1318611!3d-34.7695833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDQ2JzEwLjUiUyA1OMKwMDcnNTQuNyJX!5e0!3m2!1sen!2sar!4v1740169877943!5m2!1sen!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "location": "Pueblos del Plata, Berazategui",
         "currency": "USD",
         "address": "Gaboto 5",
-        "value": 220000,
+        "value": "250.000",
         "rooms": 3,
         "bathrooms": 2,
         "features": [
@@ -48,8 +51,10 @@
         "id": "loteo-laflorida-fciovarela",
         "detailsPage": "/loteo-laflorida-fciovarela.html",
         "folder": "/assets/images/properties/florenciovarela/laflorida",
+        "nombre_base_images": "la_florida",
+        "alt": "Lotes en Venta en Fcio. Varela",
         "operation": "venta",
-        "type": "Lotes en Barrio Abierto",
+        "type": "Lotes ",
         "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3275.2557002317585!2d-58.315628999999994!3d-34.824663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDQ5JzI4LjgiUyA1OMKwMTgnNTYuMyJX!5e0!3m2!1ses-419!2sar!4v1740171257906!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "location": "Florencio Varela",
         "currency": "USD",
@@ -75,80 +80,14 @@
                 "value": "- cercano a escuelas y colectivos"
             }
         ],
-        "description": "¡Hacé realidad tu proyecto en el exclusivo barrio abierto La Florida en Florencio Varela! Una propuesta única diseñada para combinar naturaleza, comodidad y desarrollo.\r\n\r\nCaracterísticas principales:\r\n\r\nTerrenos disponibles con posesión inmediata.\r\nSuperficies aproximadas de 300 m², ideales para uso residencial o comercial.\r\nEspacios verdes: Contará con plazas y áreas de recreación, perfectas para disfrutar en familia.\r\nUn barrio exclusivo, pensado para el contacto con la naturaleza.\r\n\r\nUbicación privilegiada:\r\n\r\nA 10 minutos del centro de Florencio Varela.\r\nFácil acceso por Av. San Martín, Av. Sarmiento, y salida a la Av. Monteverde.\r\nA pocos minutos de la Unidad de Pronta Atención de Florencio Varela.\r\nCercanía educativa: A 5 minutos de la Escuela Secundaria N°14 y el Colegio P. Mennel.\r\n\r\nServicios y beneficios:\r\n\r\nLíneas 500 y 503 pasan a pocas cuadras.\r\nPróximo al Centro Deportivo La Patriada, el principal centro municipal de la zona.\r\nLotes diseñados para uso comercial y residencial, adaptados a las necesidades de los habitantes.\r\n\r\nOpciones de financiación: ofrecemos planes de pago accesibles para que puedas adquirir tu lote sin complicaciones.\r\n\r\nNo pierdas esta oportunidad de vivir o invertir en un entorno que lo tiene todo. ¡Consultanos hoy mismo y reservá tu lote!\r\n\r\nMatias Settecerze CMYCP. 1219",
-        "pdf": "https://drive.google.com/file/d/1jYMc9cz51lf8qFK42Md0q4os02Ymblu6/view?usp=drive_link"
-    },
-    {
-        "id": "loteo-aromas-laplata",
-        "detailsPage": "/loteo-aromas-laplata.html",
-        "folder": "/assets/images/properties/laplata/aromas/",
-        "operation": "venta",
-        "type": "Lotes en Barrio Abierto",
-        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3266.9391173756894!2d-58.07474492424094!3d-35.03325297280341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDAxJzU5LjciUyA1OMKwMDQnMTkuOCJX!5e0!3m2!1ses-419!2sar!4v1740171330416!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-        "location": "La Plata",
-        "currency": "USD",
-        "address": "Calle 173 y 35",
-        "value": 8000,
-        "rooms": 0,
-        "bathrooms": 0,
-        "features": [
-            {
-                "key": "sqrmeters",
-                "value": "- 300 m2"
-            },
-            {
-                "key": "measurements",
-                "value": "- medidas 13x23m"
-            },
-            {
-                "key": "papers",
-                "value": "-escritura y posesión inmediata"
-            },
-            {
-                "key": "features",
-                "value": "- cercano a escuelas y colectivos"
-            }
-        ],
-        "description": "¡Bienvenidos a Aromas, el lugar donde tus sueños se hacen realidad! Una oportunidad única para adquirir tu lote en un barrio abierto con excelente ubicación y servicios cercanos.\r\nUbicación estratégica:\r\n\r\n- Sobre Calle 173, completamente asfaltada.\r\n- Fácil acceso a Av. 520 y Av. 44.\r\n- A pocos minutos del Hospital Alejandro Korn y - cerca de la Escuela Primaria N°48.\r\n- A solo 5 cuadras del Club Royal, ideal para actividades deportivas y recreación.\r\n\r\nInfraestructura y servicios:\r\nServicios disponibles en la zona (a 5 cuadras): cloacas, gas natural, y electricidad.\r\n\r\nUn entorno ideal:\r\nUn barrio diseñado para combinar comodidad, naturaleza y comunidad.\r\nPerfecto para construir tu hogar o invertir con una excelente proyección de valor.\r\n\r\n¡No pierdas esta oportunidad de ser parte de Las Palmeras! Contactanos para más información y asegurá tu lote.\r\n\r\nMatias Settecerze CMYCP 1219",
-        "pdf": "https://drive.google.com/file/d/1dAS5UNns9UX99WRzeMTZgDcLwcNGIG3z/view?usp=drive_link"
-    },
-    {
-        "id": "loteo-elangel-laplata",
-        "detailsPage": "/loteo-elangel-laplata.html",
-        "folder": "/assets/images/properties/laplata/elangel/",
-        "operation": "venta",
-        "type": "Lotes en Barrio Abierto",
-        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3268.473039602125!2d-58.06415092424266!3d-34.99486197281655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDU5JzQxLjUiUyA1OMKwMDMnNDEuNyJX!5e0!3m2!1ses-419!2sar!4v1740171395129!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-        "location": "La Plata",
-        "currency": "USD",
-        "address": "Calle 203 y 38",
-        "value": 12000,
-        "rooms": 0,
-        "bathrooms": 0,
-        "features": [
-            {
-                "key": "sqrmeters",
-                "value": "- 300 m2"
-            },
-            {
-                "key": "measurements",
-                "value": "- medidas"
-            },
-            {
-                "key": "papers",
-                "value": "-escritura indivisa"
-            },
-            {
-                "key": "features",
-                "value": "-  Fácil acceso a Av. 520 y Av. 44."
-            }
-        ],
-        "description": "¡Bienvenidos a Aromas, el lugar donde tus sueños se hacen realidad! Una oportunidad única para adquirir tu lote en un barrio abierto con excelente ubicación y servicios cercanos.\r\n\r\nUbicación estratégica:\r\n\r\n- Sobre Calle 173, completamente asfaltada.\r\n- Fácil acceso a Av. 520 y Av. 44.\r\n- A pocos minutos del Hospital Alejandro Korn y - cerca de la Escuela Primaria N°48.\r\n- A solo 5 cuadras del Club Royal, ideal para actividades deportivas y recreación.\r\n\r\nInfraestructura y servicios:\r\nServicios disponibles en la zona (a 5 cuadras): cloacas, gas natural, y electricidad.\r\n\r\nUn entorno ideal:\r\nUn barrio diseñado para combinar comodidad, naturaleza y comunidad.\r\nPerfecto para construir tu hogar o invertir con una excelente proyección de valor.\r\n\r\n¡No pierdas esta oportunidad de ser parte de Las Palmeras! Contactanos para más información y asegurá tu lote.\r\n\r\nMatias Settecerze CMYCP. 1219",
-        "pdf": "https://drive.google.com/file/d/1TTUdoRRzDyEri-U-tBw7ZUF5VmcjUN_g/view?usp=drive_link"
+        "description": "¡Hacé realidad tu proyecto en el exclusivo barrio abierto La Florida en Florencio Varela! Una propuesta única diseñada para combinar naturaleza, comodidad y desarrollo.\r\n\r\nCaracterísticas principales:\r\n\r\nTerrenos disponibles con posesión inmediata.\r\nSuperficies aproximadas de 300 m², ideales para uso residencial o comercial.\r\nEspacios verdes: Contará con plazas y áreas de recreación, perfectas para disfrutar en familia.\r\nUn barrio exclusivo, pensado para el contacto con la naturaleza.\r\n\r\nUbicación privilegiada:\r\n\r\nA 10 minutos del centro de Florencio Varela.\r\nFácil acceso por Av. San Martín, Av. Sarmiento, y salida a la Av. Monteverde.\r\nA pocos minutos de la Unidad de Pronta Atención de Florencio Varela.\r\nCercanía educativa: A 5 minutos de la Escuela Secundaria N°14 y el Colegio P. Mennel.\r\n\r\nServicios y beneficios:\r\n\r\nLíneas 500 y 503 pasan a pocas cuadras.\r\nPróximo al Centro Deportivo La Patriada, el principal centro municipal de la zona.\r\nLotes diseñados para uso comercial y residencial, adaptados a las necesidades de los habitantes.\r\n\r\nOpciones de financiación: ofrecemos planes de pago accesibles para que puedas adquirir tu lote sin complicaciones.\r\n\r\nNo pierdas esta oportunidad de vivir o invertir en un entorno que lo tiene todo. ¡Consultanos hoy mismo y reservá tu lote!\r\n\r\nMatias Settecerze CMYCP. 1219"
     },
     {
         "id": "loteo-bellavista-laplata",
         "detailsPage": "/loteo-bellavista-laplata.html",
+        "folder": "/assets/images/properties/laplata/bellavista/",
+        "nombre_base_images": "bella_vista",
+        "alt": "Lotes en Venta en Ruta 36",
         "operation": "venta",
         "type": "Lotes en Barrio Abierto",
         "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d52327.17067474021!2d-58.1088388!3d-34.9453743!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDU3JzExLjQiUyA1OMKwMDUnMzcuMyJX!5e0!3m2!1ses!2sar!4v1740171421802!5m2!1ses!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
@@ -176,12 +115,13 @@
                 "value": "- accesos pavimentados y alumbrado público"
             }
         ],
-        "description": "Hacé realidad tu sueño de construir en el barrio abierto El Ángel, un lugar que lo tiene todo! Ideal para familias y proyectos personales, con una ubicación estratégica y servicios de calidad.\r\n\r\nFácil acceso: Ubicado cerca de Av. 44 y Ruta 36.\r\nZona con múltiples servicios y comercios para tu comodidad.\r\nÚltimos lotes disponibles con escrituración y posesión inmediata.\r\nAccesos pavimentados y alumbrado público.\r\nSobre calle asfaltada 203.\r\nAl lado del Parque Recreativo Los Olmos, un espacio perfecto para disfrutar al aire libre.\r\nA solo 1 cuadra del Club Peñarol, ideal para actividades deportivas y recreativas.\r\n\r\nOpciones de financiación. Planes accesibles para que puedas adquirir tu lote sin complicaciones.\r\n\r\n¡No te quedes afuera! Contactanos para más información y reservá tu lugar en El Ángel, donde todo está pensado para tu bienestar.\r\n\r\nMatias Settecerze CMYCP. 1219",
-        "pdf": "https://drive.google.com/file/d/1q9kuPY7mAh3aTkQGNO2tCLvOSf3EnMf_/view?usp=drive_link"
+        "description": "Hacé realidad tu sueño de construir en el barrio abierto El Ángel, un lugar que lo tiene todo! Ideal para familias y proyectos personales, con una ubicación estratégica y servicios de calidad.\r\n\r\nFácil acceso: Ubicado cerca de Av. 44 y Ruta 36.\r\nZona con múltiples servicios y comercios para tu comodidad.\r\nÚltimos lotes disponibles con escrituración y posesión inmediata.\r\nAccesos pavimentados y alumbrado público.\r\nSobre calle asfaltada 203.\r\nAl lado del Parque Recreativo Los Olmos, un espacio perfecto para disfrutar al aire libre.\r\nA solo 1 cuadra del Club Peñarol, ideal para actividades deportivas y recreativas.\r\n\r\nOpciones de financiación. Planes accesibles para que puedas adquirir tu lote sin complicaciones.\r\n\r\n¡No te quedes afuera! Contactanos para más información y reservá tu lugar en El Ángel, donde todo está pensado para tu bienestar.\r\n\r\nMatias Settecerze CMYCP. 1219"
     },
     {
         "id": "loteo-eleden-laplata",
         "detailsPage": "/loteo-eleden-laplata.html",
+        "folder": "/assets/images/properties/laplata/eleden/",
+        "nombre_base_images": "el_eden",
         "operation": "venta",
         "type": "Lotes en Barrio Abierto",
         "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3266.9391173756894!2d-58.07474492424094!3d-35.03325297280341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDAxJzU5LjciUyA1OMKwMDQnMTkuOCJX!5e0!3m2!1ses-419!2sar!4v1740171448723!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
@@ -209,45 +149,13 @@
                 "value": "-servicio de luz disponible"
             }
         ],
-        "description": "¡No te pierdas esta oportunidad única! El barrio abierto El Edén en Etcheverry, La Plata, ofrece los últimos lotes disponibles con excelentes características para vivir o invertir.\r\n\r\nUbicación privilegiada:\r\n- A solo 1 cuadra de la Escuela N°61, que también incluye jardín y secundaria.\r\n- Próximo a la reconocida escuela La Sureña.\r\n- A pocos pasos de la plaza principal.\r\n- Cerca del Club Unión Vecinal A. Etcheverry.\r\n\r\nAcceso fácil y cómodo:\r\n- Ingreso pavimentado por Calle 52.\r\n- Parada final de los colectivos 11 y OE62 a pocos metros.\r\n\r\nInfraestructura y servicios:\r\n- Escritura indivisa: Tranquilidad legal garantizada.\r\n- Servicio de luz disponible en todos los terrenos.\r\n- Lotes amplios de 330 m² a 375 m².\r\n\r\nOpciones de financiación: ofrecemos planes de pago accesibles para que puedas adquirir tu lote sin complicaciones.\r\n\r\n¡Ideal para familias y proyectos personales! Contactanos para conocer más detalles y agendar una visita.\r\n\r\nMatias Settecerze CMYCP. 1219",
-        "pdf": "https://drive.google.com/file/d/1Nv3Wo__r0QIv_PMJFPH2CZ0ohgyevoGq/view?usp=drive_link"
-    },
-    {
-        "id": "loteo-laspalmeras-laplata",
-        "detailsPage": "/loteo-laspalmeras-laplata.html",
-        "operation": "venta",
-        "type": "Lotes en Barrio Abierto",
-        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2916.4843329912437!2d-58.023861100000005!3d-35.012777799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDAwJzQ2LjAiUyA1OMKwMDEnMjUuOSJX!5e1!3m2!1ses-419!2sar!4v1740171484410!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-        "location": "La Plata",
-        "currency": "USD",
-        "address": "Calle 197 y 68",
-        "value": 10000,
-        "rooms": 0,
-        "bathrooms": 0,
-        "features": [
-            {
-                "key": "sqrmeters",
-                "value": "- 325 m2"
-            },
-            {
-                "key": "measurements",
-                "value": "- medidas"
-            },
-            {
-                "key": "papers",
-                "value": "-escritura indivisa"
-            },
-            {
-                "key": "features",
-                "value": "- a pasos de Rutas 36 y 66"
-            }
-        ],
-        "description": "¡Hacé realidad tu sueño de tener tu propio terreno con precios accesibles y facilidades de pago! El barrio abierto Las Palmeras, en Lisandro Olmos, te ofrece una oportunidad única para invertir o construir.\r\n\r\nUbicación privilegiada:\r\n- A pasos de la Ruta 36 y 66.\r\n- A solo 3 minutos del centro de Olmos.\r\n- Cercano a escuelas, comisarías, y a la estación de servicio.\r\n- Próximo al parque infantil \"\"El Paraíso\"\", ideal para disfrutar en familia.\r\n\r\nPrecios de lanzamiento.\r\nAprovechá descuentos con pago al contado.\r\nOpciones de financiación flexibles: pagos mensuales y trimestrales hasta 18 cuotas.\r\n\r\n¡No dejes pasar esta oportunidad de adquirir tu lote en una ubicación estratégica con todo a tu alcance!\r\n\r\nContactanos para más información y asegurá tu lugar en Las Palmeras.\r\n\r\nMatias Settecerze CMYCP. 1219"
+        "description": "¡No te pierdas esta oportunidad única! El barrio abierto El Edén en Etcheverry, La Plata, ofrece los últimos lotes disponibles con excelentes características para vivir o invertir.\r\n\r\nUbicación privilegiada:\r\n- A solo 1 cuadra de la Escuela N°61, que también incluye jardín y secundaria.\r\n- Próximo a la reconocida escuela La Sureña.\r\n- A pocos pasos de la plaza principal.\r\n- Cerca del Club Unión Vecinal A. Etcheverry.\r\n\r\nAcceso fácil y cómodo:\r\n- Ingreso pavimentado por Calle 52.\r\n- Parada final de los colectivos 11 y OE62 a pocos metros.\r\n\r\nInfraestructura y servicios:\r\n- Escritura indivisa: Tranquilidad legal garantizada.\r\n- Servicio de luz disponible en todos los terrenos.\r\n- Lotes amplios de 330 m² a 375 m².\r\n\r\nOpciones de financiación: ofrecemos planes de pago accesibles para que puedas adquirir tu lote sin complicaciones.\r\n\r\n¡Ideal para familias y proyectos personales! Contactanos para conocer más detalles y agendar una visita.\r\n\r\nMatias Settecerze CMYCP. 1219"
     },
     {
         "id": "loteo-nuevohorizone-laplata",
         "detailsPage": "/loteo-nuevohorizone-laplata.html",
         "folder": "/assets/images/properties/laplata/nuevohorizonte/",
+        "nombre_base_images": "nuevos_horizonte",
         "operation": "venta",
         "type": "Lotes en Barrio Abierto",
         "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1907.06619699356!2d-58.084555599999995!3d-34.9872222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDU5JzE0LjAiUyA1OMKwMDUnMDQuNCJX!5e1!3m2!1ses-419!2sar!4v1740171510363!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
@@ -275,47 +183,13 @@
                 "value": "- acceso de asfalto, lote con servicios"
             }
         ],
-        "description": "Ubicación: Calle 520 y 208, Abasto. A solo 200 metros de Av. 520, con acceso asfaltado.\r\nSuperficie: 320 m² (12 metros de frente x 27 metros de fondo).\r\nServicios: Lote con electricidad y demás servicios.\r\nEscritura individual y financiación disponible.\r\nTransporte: Líneas de colectivo cercanas: Oeste 14, Oeste 86 y 215B.\r\nCercanías: A minutos del centro de salud (208 y 516 Bis) y del Jardín de Infantes N°930.\r\n\r\nPrecios desde USD 23,000 a USD 35,000. Consultanos para más información.\r\n\r\nMatias Settecerze CMYCP. 1219",
-        "pdf": "https://drive.google.com/file/d/1ULWwQmBzbxELyJxhtQhCp0aDf8gE3JqF/view?usp=drive_link"
-    },
-    {
-        "id": "loteo-santateresita-laplata",
-        "detailsPage": "/loteo-santateresita-laplata.html",
-        "folder": "/assets/images/properties/laplata/santateresita",
-        "operation": "venta",
-        "type": "Lotes en Barrio Abierto",
-        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3278.4201885616862!2d-58.042167!3d-34.958991999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDU3JzMyLjQiUyA1OMKwMDInMzEuOCJX!5e1!3m2!1ses-419!2sar!4v1740171532348!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-        "location": "La Plata",
-        "currency": "USD",
-        "address": "Calle 173 y 527",
-        "value": 11000,
-        "rooms": 0,
-        "bathrooms": 0,
-        "features": [
-            {
-                "key": "sqrmeters",
-                "value": "- 497 m2"
-            },
-            {
-                "key": "type",
-                "value": "- uso residencial o comecial"
-            },
-            {
-                "key": "papers",
-                "value": "-escritura y posesión inmediata"
-            },
-            {
-                "key": "features",
-                "value": "- cercano a escuelas y colectivos"
-            }
-        ],
-        "description": "¡Tu lote ideal te espera en el barrio abierto Santa Teresita! Ubicado estratégicamente en Calle 173 entre 527 y 528, este desarrollo combina comodidad, accesibilidad y servicios cercanos.\r\n\r\nTerrenos disponibles con posesión inmediata.\r\nEscritura indivisa: Seguridad legal garantizada.\r\nCuotas accesibles para que concretes tu proyecto sin complicaciones.\r\n\r\nUbicación estratégica:\r\n\r\n- A minutos de Av. 520 y Av. 44.\r\n- A solo 3 minutos del Hospital Alejandro Korn.\r\n- Cercano a instituciones educativas como:\r\n- Escuela Técnica N°4.\r\n- Escuela N°39.\r\n- Escuela Especial N°529.\r\n- Paradas de línea OESTE a pocos metros.\r\n\r\nServicios esenciales cercanos: farmacias, autoservicios, verdulerías, y gomerías.\r\n\r\nNo dejes pasar esta oportunidad de invertir en un lote con excelente ubicación y condiciones accesibles. ¡Contactanos para más información y asegurá tu lugar en Santa Teresita!\r\n\r\nMatias Settecerze CMYCP. 1219",
-        "pdf": "https://drive.google.com/file/d/1iRYGPjeJOB-v8kLsc8QwlXbeuGojpHKu/view?usp=drive_link"
+        "description": "Ubicación: Calle 520 y 208, Abasto. A solo 200 metros de Av. 520, con acceso asfaltado.\r\nSuperficie: 320 m² (12 metros de frente x 27 metros de fondo).\r\nServicios: Lote con electricidad y demás servicios.\r\nEscritura individual y financiación disponible.\r\nTransporte: Líneas de colectivo cercanas: Oeste 14, Oeste 86 y 215B.\r\nCercanías: A minutos del centro de salud (208 y 516 Bis) y del Jardín de Infantes N°930.\r\n\r\nPrecios desde USD 23,000 a USD 35,000. Consultanos para más información.\r\n\r\nMatias Settecerze CMYCP. 1219"
     },
     {
         "id": "casa-reta-tresarroyos",
         "detailsPage": "/casa-reta-tresarroyos.html",
         "folder": "/assets/images/properties/tresarroyos/cabanareta/",
+        "nombre_base_images": "cabana_reta",
         "operation": "venta",
         "type": "Casa",
         "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d777.7260877556857!2d-60.32582248619418!3d-38.8923687918754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s15%20y%2022%20reta%20tres%20arroyos!5e1!3m2!1ses-419!2sar!4v1740171744008!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
@@ -352,39 +226,6 @@
             }
         ],
         "description": "Disfrutá de la tranquilidad de Reta en esta hermosa cabaña ubicada en Calle 15 entre 20 y 22, a solo dos cuadras del mar y con una vista privilegiada al océano. De acceso por arena, cuenta con un amplio espacio guarda coche para varios vehículos. En su interior, ofrece un ambiente cómodo y funcional con aire acondicionado, calefacción, dos dormitorios, un baño y un espacio integrado de living, cocina y comedor en planta baja. Además, dispone de lavadero, parrilla y un balcón ideal para relajarse. La propiedad cuenta con planos y escritura, brindando total seguridad jurídica. ¡No te pierdas esta oportunidad única de vivir cerca del mar!\r\n\r\nMatías Settecerze CMYCP. 1219"
-    },
-    {
-        "id": "lotes-corderas-sanluis",
-        "detailsPage": "/lotes-corderas-sanluis.html",
-        "folder": "/assets/images/properties/sanluis/corderas/",
-        "operation": "venta",
-        "type": "Lotes en Barrio Abierto",
-        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2355.5205968186165!2d-65.00160316060143!3d-32.528873897777544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sus!4v1740171692184!5m2!1ses!2sus\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-        "location": "Corderas, San Luis",
-        "currency": "USD",
-        "address": "A 2000m de Ruta 1 km 22",
-        "value": 8000,
-        "rooms": 0,
-        "bathrooms": 0,
-        "features": [
-            {
-                "key": "sqrmeters",
-                "value": "- 990 m2"
-            },
-            {
-                "key": "type",
-                "value": "- uso residencial o comecial"
-            },
-            {
-                "key": "papers",
-                "value": "-escritura y posesión inmediata"
-            },
-            {
-                "key": "features",
-                "value": "- a 15 min de ela Villa de Merlo"
-            }
-        ],
-        "description": "Terrenos en venta en el valle de Cortaderas, con superficies de 990 a 1000 m² y hermosas vistas a la sierra. Ubicados a solo 20 cuadras de la Ruta 1 (Km 22) y a 15 minutos de la Villa de Merlo, con acceso rápido y seguro.\r\n\r\nA solo 10 cuadras se encuentra el Arroyo Benítez, uno de los principales atractivos turísticos junto al Dique Piscu Yaco.\r\n\r\nServicios de luz y agua disponibles\r\nLotes listos para escriturar\r\nNo es barrio privado ni country, no abonan expensas ni cuotas de mantenimiento\r\nDisponibilidad – Manzana 11:\r\n\r\nLote 1: 991 m². Medidas: 16.51m x 43.96m – U$D 8000\r\nLote 12: 1000 m². Medidas: 20.75m x 48.20m – U$D 8000\r\nConsultar para más información.\r\n\r\nTodas las medidas enunciadas son meramente orientativas, las medidas exactas serán las que se expresan en el respectivo título de propiedad de cada inmueble.\r\n\r\nMatias Settecerze CMYCP. 1219"
     },
     {
         "id": "casa-venta-las-acacias",
