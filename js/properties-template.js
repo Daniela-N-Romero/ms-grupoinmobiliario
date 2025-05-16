@@ -3,140 +3,137 @@
 
 // Función que genera el HTML para las imágenes de la propiedad en un carrusel
 function returnPropertyPictures(property) {
-    let slides = ``; // Variable para los slides
+    let slides = ``;
 
-    // Recorremos todas las imágenes de la propiedad
-    for (const image of property.images) {
-        let imgSrc, imgAlt; // Variables para almacenar la fuente y el texto alternativo de cada imagen
+    const resolutions = [480, 768, 1024, 1440];
 
-        // Recorremos las claves del objeto 'image' para obtener la fuente y el texto alternativo
-        for (let key in image) {
-            if (image.hasOwnProperty(key)) { // Aseguramos que la propiedad sea propia del objeto, no heredada
-                if (key.startsWith('img')) { // Si la clave comienza con 'img', la usamos para la fuente de la imagen
-                    imgSrc = image[key];
-                    console.log(image[key])
-                } else if (key === 'alt') { // Si la clave es 'alt', la usamos para el texto alternativo de la imagen
-                    imgAlt = image[key];
-                }
-            }
-        }
+    for (let i = 1; i <= property.cantidad_imagenes; i++) {
+        const basePath = `${property.folder}/${property.nombre_base_images}_${i}`;
 
-        // Suponiendo que el nombre base es algo como "/images/property123.jpg"
-        // y que tus versiones son: property123-480.webp, property123-768.webp, etc.
+        const webpSrcSet = resolutions.map(res => `${basePath}-${res}.webp ${res}w`).join(', ');
+        const jpgSrcSet = resolutions.map(res => `${basePath}-${res}.jpg ${res}w`).join(', ');
 
-        const imgNameWithoutExt = imgSrc.replace(/\.[^/.]+$/, ""); // Elimina la extensión
-        const webpSrcSet = `
-            ${imgNameWithoutExt}-480.webp 480w,
-            ${imgNameWithoutExt}-768.webp 768w,
-            ${imgNameWithoutExt}-1024.webp 1024w,
-            ${imgNameWithoutExt}-1440.webp 1440w
+    slides += `
+    <div class="swiper-slide">
+        <picture>
+        <source type="image/webp" srcset="${webpSrcSet}" sizes="(max-width: 768px) 100vw, 50vw">
+        <source type="image/jpeg" srcset="${jpgSrcSet}" sizes="(max-width: 768px) 100vw, 50vw">
+        <img 
+            src="${basePath}-480.jpg"
+            alt="${property.nombre_inmueble} imagen ${i}"
+            class="w-100 object-fit-cover"
+            loading="lazy">
+        </picture>
+    </div>
         `;
-        const fallbackSrcSet = `
-            ${imgNameWithoutExt}-480.jpg 480w,
-            ${imgNameWithoutExt}-768.jpg 768w,
-            ${imgNameWithoutExt}-1024.jpg 1024w,
-            ${imgNameWithoutExt}-1440.jpg 1440w
-        `;
-
-
-
-        slides += `
-            <div class="swiper-slide">
-                <picture>
-                    <source type="image/webp" srcset="${webpSrcSet}" sizes="(max-width: 768px) 100vw, 50vw">
-                    <img src="${imgSrc}" srcset="${fallbackSrcSet}" sizes="(max-width: 768px) 100vw, 50vw" alt="${imgAlt}" class="w-100 object-fit-cover" style="object-position: center;" loading="lazy">
-                </picture>
-            </div>`;
     }
-    console.log(slides)
 
     return `
-        <div class="swiper">
+        <div class="swiper images-swiper">
             <div class="swiper-wrapper">
                 ${slides}
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
-        </div>`;
+        </div>
+    `;
 }
 
-// Función que genera el HTML de las características de la propiedad
-function returnPropertyFeatures(property) {
-    let features = `` // Variable que almacenará el HTML de las características
 
-    // Recorremos todas las características de la propiedad
-    property.features.forEach(feature => {
-        for (let key in feature) { // Recorremos las claves de cada característica
-            if (feature.hasOwnProperty(key)) { // Aseguramos que la propiedad sea propia del objeto
-                // Generamos el HTML para cada característica como un encabezado <h3>
-                features += `<h2 class="property-features">${feature[key]}</h2>`;
-            }
-        }
-    });
-    return features; // Devolvemos el HTML de las características generadas
+function returnPropertyFeatures(property) {
+    return property.features.map(feature => {
+        const value = Object.values(feature)[1]; // Solo el valor
+        return `<li class="property-features">${value}</li>`;
+    }).join('');
 }
 
 // Función que genera el HTML completo de la página de la propiedad
 function returnPropertyPage(property) {
-    // Llamamos a las funciones anteriores para obtener el HTML de las imágenes y las características
-    images = returnPropertyPictures(property);
-    features = returnPropertyFeatures(property);
-    
-    // Comprobamos si existe un video de YouTube en la propiedad
-    const video = property.video ? `<div class="property-video">
-        <h3>Video de la propiedad</h3>
-        <iframe width="100%" height="400" src="${property.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>` : '';
+    // Generar las secciones dinámicas
+    const images = returnPropertyPictures(property);
+    const features = returnPropertyFeatures(property);
 
-    // Comprobamos si existe un pdf de YouTube en la propiedad
-    const pdf = property.pdf ? `<a href="${property.pdf}" class="link-bold-borders" download>Descargar PDF <i class="bi bi-file-earmark-pdf"></i></a>` : '';
+    const video = property.video
+        ? `<div class="property-video">
+            <h3>Video de la propiedad</h3>
+            <iframe width="100%" height="400" src="${property.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>`
+        : '';
 
+    const pdf = property.pdf
+        ? `<a href="${property.pdf}" class="link-bold-borders ms-3" download>
+                Descargar PDF <i class="bi bi-file-earmark-pdf"></i>
+            </a>`
+        : '';
 
-    // Generamos el HTML completo de la página de la propiedad
-    return `<div class="gallery__text models container">
-    <h1 class="gallery__title poppins mt-5 text-center " id="${property.id}Label">${property.type} en ${property.location}</h1>
-</div>
-<div class="container">
-<div class="row">
-    <div class="text-center d-md-flex justify-content-md-between mb-5">${features}</div>
+    return `
+    <div class="container">
+        <div class="row top-row mt-5">
+            <!-- Columna izquierda: Swiper -->
+            <div class="col-12 col-md-6 swiper-column d-flex align-items-center">
+                <div class="property-swiper-container w-100 overflow-hidden">
+                    ${images}
+                </div>
+            </div>
 
-    <!-- Columna izquierda: Swiper -->
-    <div class="col-md-6">
-        <div class="property-swiper-container">
-            ${images}
+            <!-- Columna derecha: características y acciones -->
+            <div class="col-12 col-md-6 info-column d-flex flex-column justify-content-center">
+                <div class="property-info-block text-center text-md-start">
+                    <!-- Título -->
+                    <h1 class="gallery__title poppins mt-5 text-center text-md-start" id="${property.id}Label">
+                        ${property.title}
+                    </h1>
+
+                    <!-- Precio (si existe) -->
+                    ${property.price ? `<p class="property-price poppins mt-2">${property.price}</p>` : ''}
+
+                    <!-- Características -->
+                    <ul class="property-characteristics poppins mb-3">
+                        ${features}
+                    </ul>
+
+                    <!-- Botón de WhatsApp + PDF -->
+                    <div class="model__actions text-center text-md-start mb-4">
+                        <a href="https://api.whatsapp.com/send?phone=5491164773427" class="link-bold-borders" target="_blank">
+                            Consultar <i class="bi bi-whatsapp"></i>
+                        </a>
+                        ${pdf}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila debajo: descripción larga -->
+            <div class="col-12 description-column mt-3">
+                <p class="mb-4">
+                    ${property.description}
+                </p>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="property-map">
+            <h3 class="inmo-title m-5">Ubicación</h3>
+            ${property.mapcode}
+        </div>
+
+        <!-- Video (si existe) -->
+        ${video}
+
+        <!-- Más propiedades -->
+        <div class="container more-properties">
+            <h3 class="inmo-title m-5">Más propiedades</h3>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1E2CISeVZT6T78IRiddKtF88Nf-qM74Y&ehbc=2E312F&noprof=1" width="100%" height="400"></iframe>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer m-5">
+            <a href="https://api.whatsapp.com/send?phone=5491164773427" class="link-bold-borders" target="_blank">
+                Consultar <i class="bi bi-whatsapp"></i>
+            </a>
         </div>
     </div>
-
-    <!-- Columna derecha: descripción -->
-    <div class="col-md-6">
-        <p class="mt-1 mb-4">${property.description}</p>
-        <div class="model__actions text-center mb-4">
-            <a href="https://api.whatsapp.com/send?phone=5491164773427" class="link-bold-borders" target="_blank">Consultar <i class="bi bi-whatsapp"></i></a>
-            ${pdf}
-        </div>
-    </div>
-
-    <!-- Mapa de Google con la ubicación de la propiedad -->
-    <div class="property-map">
-        <h3 class="inmo-title m-5">Ubicación</h3>
-        ${property.mapcode}
-    </div>
-</div>
-</div>
-
-<!-- Si existe un video de YouTube, lo mostramos -->
-${video}
-
-<!-- Mapa de propiedades adicionales -->
-<div class="container more-properties">
-<h3 class="inmo-title m-5">Más propiedades</h3>
-<iframe src="https://www.google.com/maps/d/embed?mid=1E2CISeVZT6T78IRiddKtF88Nf-qM74Y&ehbc=2E312F&noprof=1" width="100%" height="400"></iframe>
-</div>
-
-<div class="modal-footer m-5">
-<a href="https://api.whatsapp.com/send?phone=5491164773427" class="link-bold-borders" target="_blank">Consultar  <i class="bi bi-whatsapp"></i></a>
-</div>`;
+    `;
 }
 
 // API
@@ -155,6 +152,23 @@ fetch("/js/properties.json")
 			// Si encontramos la propiedad, insertamos el HTML generado en el contenedor correspondiente
 			const detailsContainer = document.getElementById("property-details");
 			detailsContainer.innerHTML = returnPropertyPage(property);
+
+            		// Inicializar Swiper después de insertar el HTML
+		setTimeout(() => {
+			new Swiper('.images-swiper', {
+				loop: property.cantidad_imagenes >= 3,
+				pagination: {
+					el: '.swiper-pagination',
+                    clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				slidesPerView: 1,
+				spaceBetween: 10,
+			});
+		}, 100);
 		} else {
 			// Si no encontramos la propiedad, mostramos un mensaje de error
 			document.getElementById("property-details").innerHTML =

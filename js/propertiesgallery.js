@@ -38,6 +38,15 @@ function returnPropertyBtn(property) {
 					</div>`;
 }
 
+const getResolution = () => {
+	if (window.innerWidth < 576) return 480;
+	if (window.innerWidth < 768) return 768;
+	if (window.innerWidth < 1024) return 1024;
+	return 1440;
+};
+
+const res = getResolution();
+
 fetch("../js/properties.json")
 	.then((response) => response.json())
 	.then((properties) => {
@@ -54,7 +63,10 @@ fetch("../js/properties.json")
 			slide.innerHTML = articleHTML;
 			slide.id = property.id;
 			slide.classList.add("houses-gallery--article");
-			slide.style.backgroundImage = `url(${property.cover})`;
+			//imagen de fondo del botón
+			const coverImg = `${property.folder}/${property.nombre_base_images}_1-${res}.jpg`;
+			slide.style.backgroundImage = `url(${coverImg})`;
+			
 			slide.style.cursor = "pointer";
 			slide.tabIndex = "0";
 

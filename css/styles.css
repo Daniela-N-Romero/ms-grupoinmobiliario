@@ -1509,6 +1509,36 @@ body.light-bg {
   line-height: 18px;
 }
 
+/* Asegura que el carrusel no se desborde */
+.swiper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+/* Las slides ocupan el 100% del contenedor */
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Las imágenes se adaptan al ancho del slide */
+.swiper-slide picture,
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  border-radius: 8px; /* opcional, para estética */
+}
+
 .services__container {
   position: relative;
 }
