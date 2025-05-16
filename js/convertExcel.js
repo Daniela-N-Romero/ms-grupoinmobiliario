@@ -18,7 +18,7 @@ function parseData(data) {
 function convertExcelToJson() {
     try {
         console.log('🟢 Ejecutando conversión...');
-        const workbook = xlsx.readFile('/assets/ddbb/properties.xlsx');
+        const workbook = xlsx.readFile('./assets/ddbb/properties.xlsx');
         const sheetName = workbook.SheetNames[0];
         const rawData = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]);
 
@@ -36,7 +36,7 @@ function convertExcelToJson() {
     }
 }
 
-const watcher = chokidar.watch('/assets/ddbb/properties.xlsx', {
+const watcher = chokidar.watch('./assets/ddbb/properties.xlsx', {
     persistent: true,
     usePolling: true,
     interval: 500
@@ -49,6 +49,7 @@ watcher.on('all', (event, path) => {
         console.log('👀 Monitoreando cambios en el archivo: ./assets/ddbb/properties.xlsx');
     }
 });
+
 
 console.log('HIzo algo?');
 
