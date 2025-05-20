@@ -111,7 +111,7 @@ function returnPropertyPage(property) {
 
     const video = property.video
         ? `<div class="property-video">
-                <h3>Video de la propiedad</h3>
+                <h3 class="inmo-title m-5">Video de la propiedad</h3>
                 <iframe width="100%" height="400" src="${property.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>`
         : "";
