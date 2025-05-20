@@ -29,7 +29,7 @@ function returnPropertyBtn(property) {
 							<h3 class="${property.operation}">${property.operation}</h3>
 						</div>
 						<div class="content--row">
-							<h2 class="house-title">${property.type} en ${property.location}</h2>
+							<h2 class="house-title">${property.title}</h2>
 							<p class="house-currency">${property.currency}</p>
 							<p class="house-address">${property.address}</p>
 							<p class="house-price">${property.value}</p>

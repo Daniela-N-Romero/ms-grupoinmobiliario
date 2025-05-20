@@ -1482,7 +1482,7 @@ body.light-bg {
   .house--content .content--row:nth-child(2) .house-currency, .house--content .content--row:nth-child(2) .house-price, .house--content .content--row:nth-child(2) .house-features {
     order: 1;
   }
-  .house--content .content--row:nth-child(2) .house-title {
+  .house--content .content--row:nth-child(2) .house-title, .house--content .content--row:nth-child(2) .house-address {
     padding-inline: 20px;
   }
 }
@@ -1509,34 +1509,37 @@ body.light-bg {
   line-height: 18px;
 }
 
-/* Asegura que el carrusel no se desborde */
-.swiper {
+/* Estilos generales para el cuerpo de la página */
+/* Contenedor principal del Swiper */
+.property-swiper-container {
   width: 100%;
-  max-width: 100%;
-  overflow: hidden;
+  height: 100%; /* Altura fija para el carrusel, puedes ajustarla */
+  overflow: hidden; /* Asegura que el contenido no se salga */
+  /* Estilo para cada slide */
+  /* Estilo para las imágenes dentro de cada slide */
+  /* Estilos opcionales para los botones de navegación (flechas) y la paginación (puntos) */
 }
-
-.swiper-wrapper {
-  display: flex;
-}
-
-/* Las slides ocupan el 100% del contenedor */
-.swiper-slide {
-  width: 100%;
+.property-swiper-container .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }
-
-/* Las imágenes se adaptan al ancho del slide */
-.swiper-slide picture,
-.swiper-slide img {
+.property-swiper-container .swiper-slide img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  max-width: 100%;
-  border-radius: 8px; /* opcional, para estética */
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el slide sin distorsionarse */
+  display: block; /* Elimina el pequeño espacio extra debajo de las imágenes */
+}
+.property-swiper-container .swiper-button-prev,
+.property-swiper-container .swiper-button-next {
+  color: #fff; /* Color de las flechas */
+  --swiper-navigation-size: 30px; /* Tamaño de las flechas */
+}
+.property-swiper-container .swiper-pagination-bullet-active {
+  background-color: #fff; /* Color del punto activo de la paginación */
 }
 
 .services__container {
@@ -2244,7 +2247,7 @@ body.light-bg {
 }
 
 /* Ajustes generales para las tarjetas */
-.property-swiper-container .swiper-slide {
+.property-swiper-container .swiper-slide-300 {
   width: auto;
   max-width: 300px; /* Ancho máximo por tarjeta */
   flex-shrink: 0;
