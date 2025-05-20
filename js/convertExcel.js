@@ -49,4 +49,3 @@ watcher.on('all', (event, path) => {
         console.log('👀 Monitoreando cambios en el archivo: ./assets/ddbb/properties.xlsx');
     }
 });
-

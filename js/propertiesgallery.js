@@ -32,7 +32,7 @@ function returnPropertyBtn(property) {
 							<h2 class="house-title">${property.title}</h2>
 							<p class="house-currency">${property.currency}</p>
 							<p class="house-address">${property.address}</p>
-							<p class="house-price">${property.value}</p>
+							<p class="house-price">${property.price}</p>
 							<h3 class="house-features">${property.rooms} ambientes | ${property.bathrooms} baños</h3>
 						</div>
 					</div>`;
