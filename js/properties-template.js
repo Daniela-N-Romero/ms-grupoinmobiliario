@@ -141,7 +141,7 @@ function returnPropertyPage(property) {
 
                         ${
                             property.price
-                                ? `<p class="property-price poppins mt-2">${property.price}</p>`
+                                ? `<p class="property-price poppins mt-2">$${property.price}</p>`
                                 : ""
                         }
 

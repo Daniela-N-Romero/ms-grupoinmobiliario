@@ -68,19 +68,19 @@
         "features": [
             {
                 "key": "sqrmeters",
-                "value": "- 300 m2"
+                "value": "📐 300 m2"
             },
             {
                 "key": "type",
-                "value": "- uso residencial o comecial"
+                "value": "🏡 uso residencial o comecial"
             },
             {
                 "key": "papers",
-                "value": "-escritura y posesión inmediata"
+                "value": "📋 escritura y posesión inmediata"
             },
             {
                 "key": "features",
-                "value": "- cercano a escuelas y colectivos"
+                "value": "🚌 cercano a escuelas y colectivos"
             }
         ],
         "title": "Lotes en Florencio Varela",
@@ -106,19 +106,19 @@
         "features": [
             {
                 "key": "sqrmeters",
-                "value": "- 300 m2"
+                "value": "📐 300 m2"
             },
             {
                 "key": "measurements",
-                "value": "- medidas"
+                "value": "medidas"
             },
             {
                 "key": "papers",
-                "value": "-escritura indivisa"
+                "value": "📋 escritura indivisa"
             },
             {
                 "key": "features",
-                "value": "- accesos pavimentados y alumbrado público"
+                "value": "🚗 accesos pavimentados y alumbrado público"
             }
         ],
         "title": "Lotes en La Plata Ruta 36",
@@ -144,19 +144,19 @@
         "features": [
             {
                 "key": "sqrmeters",
-                "value": "- 378 m2"
+                "value": "📐 378 m2"
             },
             {
                 "key": "measurements",
-                "value": "- medidas"
+                "value": "📏 medidas"
             },
             {
                 "key": "papers",
-                "value": "-escritura indivisa"
+                "value": "📋 escritura indivisa"
             },
             {
                 "key": "features",
-                "value": "-servicio de luz disponible"
+                "value": "⚡ servicio de luz disponible"
             }
         ],
         "title": "Lotes en La Plata Cce. Etcheverry",
@@ -182,19 +182,19 @@
         "features": [
             {
                 "key": "sqrmeters",
-                "value": "- 320 m2"
+                "value": "📐 320 m2"
             },
             {
                 "key": "measurements",
-                "value": "- medidas"
+                "value": "📏 medidas"
             },
             {
                 "key": "papers",
-                "value": "-escritura y posesión inmediata"
+                "value": "📋 escritura y posesión inmediata"
             },
             {
                 "key": "features",
-                "value": "- acceso de asfalto, lote con servicios"
+                "value": "🚗 acceso de asfalto"
             }
         ],
         "title": "Lotes en La Plata Abasto",
@@ -330,8 +330,9 @@
     {
         "id": "nave-industrial-cir2-1300m2",
         "detailsPage": "/nave-industrial-cir2-1300m2.html",
-        "folder": "/assets/images/properties/berazategui/el_pato/cir2",
+        "folder": "/assets/images/properties/berazategui/el_pato/cir2/nave_1300",
         "nombre_base_images": "nave_ind_cir2_1300",
+        "cantidad_imagenes": 13,
         "alt": "Nave Industrial en Cir 2",
         "operation": "alquiler",
         "type": "industrial",
@@ -342,16 +343,38 @@
         "price": "4",
         "rooms": 1,
         "bathrooms": 2,
+        "features": [
+            {
+                "key": "squaremeters",
+                "value": "🚛 Superficie operativa de 1.359 m²"
+            },
+            {
+                "key": "layout",
+                "value": "🏗️ Planta libre sin columnas, ideal para múltiples usos"
+            },
+            {
+                "key": "access",
+                "value": "🚚 Acceso por portón apto para camión"
+            },
+            {
+                "key": "floor",
+                "value": "🧱 Piso de hormigón de alta resistencia"
+            },
+            {
+                "key": "location",
+                "value": "📍 Ubicación estratégica con acceso a Autovía 2"
+            }
+        ],
         "title": "Nave Industrial de 1300m2 en Alquiler en Cir 2",
         "description": "<br>Nave de 1.359 m² totales:<br><br>\r\n\r\nGalpón de 1.181,50 m²<br>\r\nOficinas y baños: 177,50 m²<br><br>\r\n\r\nAcceso por portón apto para camión<br>\r\nPlanta libre sin columnas, ideal para múltiples usos<br>\r\nTecho tipo shed con excelente ingreso de luz natural<br>\r\nPiso de hormigón de alta resistencia<br>\r\nIdeal para operaciones industriales, almacenamiento o logística de escala media.<br><br>\r\n\r\nParque Industrial CIR 2 – El Pato, Berazategui<br><br>\r\n\r\nUbicado estratégicamente sobre la colectora de la Autovía 2, km 37½, entre Capital Federal y La Plata, con conexión directa a la Autopista Buenos Aires – La Plata. Cercano a los principales accesos terrestres, marítimos (Puerto de Buenos Aires) y aéreos (Ezeiza y Aeroparque).<br><br>\r\n\r\nEl predio cuenta con:<br>\r\nSeguridad 24 hs, red de cámaras y vigilancia interna y externa.<br>\r\nEnergía eléctrica en media tensión, gas industrial, agua potable y planta de tratamiento de efluentes.<br>\r\nCuartel de bomberos propio con autobomba, red hidrante y sistema antiincendio.<br>\r\nOficinas, salas de reuniones, áreas de descanso, comedor, vestuarios y showroom.<br>\r\nBalanza electrónica de 80 tn, calles internas pavimentadas, y mantenimiento general continuo.<br><br>\r\n\r\nEntorno ideal para logística, industria y operaciones con infraestructura de primer nivel.<br><br>\r\n\r\nConsulte para más información. <br><br>\r\n\r\nMatías Settecerze Col.1219",
-        "video": "https://youtube.com/embed/K5r8xMShgDg?feature=share",
-        "features": []
+        "video": "https://youtube.com/embed/K5r8xMShgDg?feature=share"
     },
     {
         "id": "nave-industrial-cir2-5800m2",
         "detailsPage": "/nave-industrial-cir2-5800m2.html",
-        "folder": "/assets/images/properties/berazategui/el_pato/cir2",
+        "folder": "/assets/images/properties/berazategui/el_pato/cir2/nave_5800",
         "nombre_base_images": "nave_ind_cir2_5800",
+        "cantidad_imagenes": 7,
         "alt": "Nave Industrial en Cir 2",
         "operation": "alquiler",
         "type": "industrial",
@@ -362,16 +385,38 @@
         "price": "4",
         "rooms": 5,
         "bathrooms": 2,
+        "features": [
+            {
+                "key": "squaremeters",
+                "value": "🚛 Superficie operativa de 5.884,5 m²"
+            },
+            {
+                "key": "layout",
+                "value": "🏗️ Planta semi libre con columnas cada 7 x 22 m"
+            },
+            {
+                "key": "access",
+                "value": "🚚 Dos portones para camiones"
+            },
+            {
+                "key": "floor",
+                "value": "🧱 Piso industrial de hormigón de alta resistencia"
+            },
+            {
+                "key": "location",
+                "value": "📍 Ubicación estratégica en Parque CIR 2 – El Pato"
+            }
+        ],
         "title": "Nave Industrial de 5800m2 en Alquiler en Cir 2",
         "description": "<br>Alquiler Nave Industrial 5884 m² – Parque CIR2 El Pato – Amplia Nave + Oficinas<br><br>\r\n\r\nNave de 5.884,5 m² totales:<br>\r\nGalpón de 5.062,50 m²<br>\r\nOficinas y baños: 822 m² (PB y PA)<br><br>\r\n\r\nDos portones de acceso para camiones .<br>\r\nPlanta semi libre: columnas cada 7 m x 22 m<br>\r\nTecho tipo shed con gran ingreso de luz natural<br>\r\nPiso industrial de hormigón de alta resistencia<br>\r\nIdeal para logística, distribución o procesos productivos de gran escala.<br><br>\r\n\r\nParque Industrial CIR 2 – El Pato, Berazategui<br>\r\nUbicado estratégicamente sobre la colectora de la Autovía 2, km 37½, entre Capital Federal y La Plata, con conexión directa a la Autopista Buenos Aires – La Plata. Cercano a los principales accesos terrestres, marítimos (Puerto de Buenos Aires) y aéreos (Ezeiza y Aeroparque).<br><br>\r\n\r\nEl predio cuenta con:<br>\r\nSeguridad 24 hs, red de cámaras y vigilancia interna y externa.<br>\r\nEnergía eléctrica en media tensión, gas industrial, agua potable y planta de tratamiento de efluentes.<br>\r\nCuartel de bomberos propio con autobomba, red hidrante y sistema antiincendio. <br>\r\nOficinas, salas de reuniones, áreas de descanso, comedor, vestuarios y showroom.<br>\r\nBalanza electrónica de 80 tn, calles internas pavimentadas, y mantenimiento general continuo.<br><br>\r\n\r\nEntorno ideal para logística, industria y operaciones con infraestructura de primer nivel.<br><br>\r\n\r\nConsulte para más información. <br><br>\r\n\r\nMatías Settecerze Col.1219",
-        "video": "https://youtube.com/embed/sAyULmch0Uc?feature=share",
-        "features": []
+        "video": "https://youtube.com/embed/sAyULmch0Uc?feature=share"
     },
     {
         "id": "nave-industrial-cir2-13800m2",
         "detailsPage": "/nave-industrial-cir2-13800m2.html",
-        "folder": "/assets/images/properties/berazategui/el_pato/cir2",
+        "folder": "/assets/images/properties/berazategui/el_pato/cir2/nave_13800",
         "nombre_base_images": "nave_ind_cir2_13800",
+        "cantidad_imagenes": 8,
         "alt": "Nave Industrial en Cir 2",
         "operation": "alquiler",
         "type": "industrial",
@@ -382,9 +427,243 @@
         "price": "4",
         "rooms": 10,
         "bathrooms": 4,
+        "features": [
+            {
+                "key": "squaremeters",
+                "value": "🚛 Superficie operativa de 13.835 m²"
+            },
+            {
+                "key": "access",
+                "value": "🚚 Ingresos para camiones de gran porte"
+            },
+            {
+                "key": "floor",
+                "value": "🧱 Piso de hormigón de alta resistencia"
+            },
+            {
+                "key": "location",
+                "value": "📍 Ubicación estratégica con acceso a Autovía 2"
+            }
+        ],
         "title": "Nave Industrial de 13800m2 en Alquiler en Cir 2",
         "description": "<br>Nave de 13.835 m² totales:<br>\r\nGalpón de 13.170 m²<br>\r\nOficinas y baños: 665 m²<br><br>\r\n\r\nVarios ingresos para camiones de gran porte (5 m alto x 4 m ancho)<br>\r\nPlanta semi libre (7 m entre columnas y 22 m entre líneas de columnas)<br>\r\nAltura a cabreada: 7 m<br>\r\nTecho tipo shed con luz natural<br>\r\nDetectores de humo recién instalados<br>\r\nMúltiples espacios de depósito<br>\r\nPiso de hormigón de alta resistencia<br>\r\nIdeal para industrias de gran volumen, centros logísticos o distribución nacional.<br><br>\r\n\r\nParque Industrial CIR 2 – El Pato, Berazategui<br>\r\nUbicado estratégicamente sobre la colectora de la Autovía 2, km 37½, entre Capital Federal y La Plata, con conexión directa a la Autopista Buenos Aires – La Plata. Cercano a los principales accesos terrestres, marítimos (Puerto de Buenos Aires) y aéreos (Ezeiza y Aeroparque).<br><br>\r\n\r\nEl predio cuenta con:<br>\r\nSeguridad 24 hs, red de cámaras y vigilancia interna y externa.<br>\r\nEnergía eléctrica en media tensión, gas industrial, agua potable y planta de tratamiento de efluentes.<br>\r\nCuartel de bomberos propio con autobomba, red hidrante y sistema antiincendio. <br>\r\nOficinas, salas de reuniones, áreas de descanso, comedor, vestuarios y showroom.<br>\r\nBalanza electrónica de 80 tn, calles internas pavimentadas, y mantenimiento general continuo.<br><br>\r\n\r\nEntorno ideal para logística, industria y operaciones con infraestructura de primer nivel.<br><br>\r\n\r\nConsulte para más información. <br><br>\r\n\r\nMatías Settecerze Col.1219",
-        "video": "https://youtube.com/embed/QL_majT7DPY?feature=share",
-        "features": []
+        "video": "https://youtube.com/embed/QL_majT7DPY?feature=share"
+    },
+    {
+        "id": "loteo-elangel-laplata",
+        "detailsPage": "/loteo-elangel-laplata.html",
+        "folder": "/assets/images/properties/laplata/elangel/",
+        "nombre_base_images": "el_angel",
+        "cantidad_imagenes": 6,
+        "alt": "Lote en L. Olmos",
+        "operation": "venta",
+        "type": "lote",
+        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3268.473039602125!2d-58.06415092424266!3d-34.99486197281655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDU5JzQxLjUiUyA1OMKwMDMnNDEuNyJX!5e0!3m2!1ses-419!2sar!4v1740171395129!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "location": "La Plata",
+        "currency": "USD",
+        "address": "Calle 203 y 38",
+        "price": "12,000",
+        "rooms": 0,
+        "bathrooms": 0,
+        "features": [
+            {
+                "key": "sqrmeters",
+                "value": "📐 300 m2"
+            },
+            {
+                "key": "measurements",
+                "value": "📏 medidas"
+            },
+            {
+                "key": "papers",
+                "value": "📋 escritura indivisa"
+            },
+            {
+                "key": "features",
+                "value": "📍  Fácil acceso a Av. 520 y Av. 44."
+            }
+        ],
+        "title": "Lote en L. Olmos",
+        "description": "<br>¡Bienvenidos a Aromas, el lugar donde tus sueños se hacen realidad! Una oportunidad única para adquirir tu lote en un barrio abierto con excelente ubicación y servicios cercanos.<br><br>\r\n\r\nUbicación estratégica:<br><br>\r\n\r\n- Sobre Calle 173, completamente asfaltada.<br>\r\n- Fácil acceso a Av. 520 y Av. 44.<br>\r\n- A pocos minutos del Hospital Alejandro Korn y - cerca de la Escuela Primaria N°48.<br>\r\n- A solo 5 cuadras del Club Royal, ideal para actividades deportivas y recreación.<br><br>\r\n\r\nInfraestructura y servicios:<br><br>\r\nServicios disponibles en la zona (a 5 cuadras): cloacas, gas natural, y electricidad.<br><br>\r\n\r\nUn entorno ideal:<br>\r\nUn barrio diseñado para combinar comodidad, naturaleza y comunidad.<br>\r\nPerfecto para construir tu hogar o invertir con una excelente proyección de valor.<br><br>\r\n\r\n¡No pierdas esta oportunidad de ser parte de Las Palmeras! Contactanos para más información y asegurá tu lote.<br><br>\r\n\r\nMatias Settecerze Col. 1219"
+    },
+    {
+        "id": "cabana_512y624",
+        "detailsPage": "/cabana_512y624.html",
+        "folder": "/assets/images/properties/berazategui/el_pato/cabana_512y624/",
+        "nombre_base_images": "cabana_elpato",
+        "cantidad_imagenes": 12,
+        "alt": "Cabaña en El Pato",
+        "operation": "venta",
+        "type": "vivienda",
+        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.177692325078!2d-58.189039099999995!3d-34.88656230000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d74a90d090fd%3A0x9892c59ca06c44d6!2sGruas%20Daniel!5e1!3m2!1ses-419!2sar!4v1747937482337!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "currency": "USD",
+        "address": "C. 512 y  624",
+        "price": "28.000",
+        "rooms": 1,
+        "bathrooms": 1,
+        "features": [
+            {
+                "key": "feature1",
+                "value": "🏡 Cabaña rústica y tranquila"
+            },
+            {
+                "key": "feature2",
+                "value": "🛏️ Dormitorio en entrepiso de madera"
+            },
+            {
+                "key": "feature3",
+                "value": "🌳 Lote amplio con espacio libre"
+            },
+            {
+                "key": "feature4",
+                "value": "📍 Acceso por calle de tierra en entorno natural"
+            }
+        ],
+        "title": "Cabaña en El Pato",
+        "description": "Encanto rústico y tranquilidad en El Pato<br><br>\r\n\r\nUbicada en una zona serena y de entorno natural, esta cabaña es ideal para quienes buscan desconectarse del ruido y disfrutar de un espacio acogedor.<br><br>\r\n\r\nLa propiedad cuenta con:<br>\r\n-- Dormitorio en entrepiso de madera, con estilo cálido y funcional<br>\r\n-- Espacio integrado de cocina y comedor en planta baja<br>\r\n-- Baño completo<br>\r\n-- Lote amplio con mucho espacio libre, hoy utilizado como estacionamiento<br>\r\n-- Galerías en ambos laterales, ideales para disfrutar del aire libre<br><br>\r\n\r\nAcceso por calle de tierra en un entorno tranquilo, perfecto como vivienda permanente o casa de fin de semana.<br><br>\r\n\r\nUna oportunidad única para vivir rodeado de naturaleza y con el confort de lo simple.<br><br>\r\n\r\nMatías Settecerze Col. 1219"
+    },
+    {
+        "id": "casa_508y621",
+        "detailsPage": "/casa_508y621.html",
+        "folder": "/assets/images/properties/berazategui/el_pato/casa_508y621/",
+        "nombre_base_images": "casa_elpato_508y621",
+        "cantidad_imagenes": 14,
+        "alt": "Casa en El Pato",
+        "operation": "venta",
+        "type": "vivienda",
+        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.385988211153!2d-58.187272099999994!3d-34.881263100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d9d50fc0b323%3A0xeb8e4fc1215c898d!2sEGO%2C%20C.%20621%20503%2C%20B1893%20El%20Pato%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1747937415741!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "currency": "USD",
+        "address": "C. 508 y  621",
+        "price": "50.000",
+        "rooms": 4,
+        "bathrooms": 2,
+        "features": [
+            {
+                "key": "feature1",
+                "value": "🗺️ 5 parcelas en venta"
+            },
+            {
+                "key": "feature2",
+                "value": "📈 Zona en pleno desarrollo"
+            },
+            {
+                "key": "feature3",
+                "value": "🛣️ Acceso desde calle 627 y Av. Ingeniero Allan"
+            },
+            {
+                "key": "feature4",
+                "value": "✍️ Escritura y papeles al día"
+            }
+        ],
+        "title": "Casa en El Pato",
+        "description": "<br>Funcional, cómoda y lista para disfrutar. Esta casa de dos plantas combina practicidad y calidez en un entorno tranquilo y rodeado de verde.<br><br>\r\n\r\n- Amplio parque con espacio para dos autos y cuarto de guardado al fondo del lote<br>\r\n- Planta baja: cocina integrada al comedor, living, dormitorio, lavadero bajo escalera y salida a quincho conectado por pasillo con reja<br>\r\n- Planta alta: dormitorio con baño en suite, balcón y acceso independiente por escalera techada<br><br>\r\n\r\nAcepta permuta por departamento en zona Cruce Varela.<br><br>\r\n\r\nPerfecta como vivienda permanente, casa de fin de semana o inversión.<br><br>\r\n\r\n¡Una oportunidad para mudarte a una casa que lo tiene todo!<br><br> Matias Settecerze Col. 1219 "
+    },
+    {
+        "id": "lote_avingallan",
+        "detailsPage": "/lote_avingallan.html",
+        "folder": "/assets/images/properties/berazategui/el_pato/lote_avingallan/",
+        "nombre_base_images": "lote_elpato_avingallan",
+        "cantidad_imagenes": 5,
+        "alt": "Lotes en El Pato",
+        "operation": "venta",
+        "type": "lote",
+        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.341601083557!2d-58.1980356!3d-34.8823924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d78281cecf71%3A0xe3638ea971bc7c51!2sAv.%20Ing.%20Allan%202694%2C%20B1893%20El%20Pato%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1747937374237!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "currency": "USD",
+        "address": "Av. Ing. Allan y 627",
+        "price": "Desde 30.000",
+        "rooms": 0,
+        "bathrooms": 0,
+        "features": [
+            {
+                "key": "feature1",
+                "value": "🗺️ 5 parcelas en venta"
+            },
+            {
+                "key": "feature2",
+                "value": "📈 Zona en pleno desarrollo"
+            },
+            {
+                "key": "feature3",
+                "value": "🛣️ Acceso desde calle 627 y Av. Ingeniero Allan"
+            },
+            {
+                "key": "feature4",
+                "value": "✍️ Escritura y papeles al día"
+            }
+        ],
+        "title": "Lotes en El Pato",
+        "description": "Se venden 5 parcelas ubicadas en una zona en pleno desarrollo, ideales para vivienda permanente, emprendimientos o inversión a futuro. Ideal desarrollista. <br>Con acceso desde la calle 627 y Av. Ingeniero Allan. A pocos metros hay una cancha de fútbol y negocios en la esquina que brindan actividad y servicios a la zona.<br><br>\r\n\r\nDetalles de los lotes disponibles:<br><br>\r\n\r\nParcela 23: 2.925 m² – U$D 52.000 (frente a calle 627)<br>\r\nParcela 24: 2.917 m² – U$D 52.000 (frente a calle 627)<br>\r\nParcela 25: 1.586 m² – U$D 30.000 (frente a calle 627)<br>\r\nParcela 27: 2.966 m² – U$D 52.000 (frente a Av. Ingeniero Allan)<br>\r\nParcela 28: 2.951 m² – U$D 52.000 (frente a Av. Ingeniero Allan)<br><br>\r\n\r\nZona con gran potencial de valorización. Escritura y papeles al día. Se escuchan propuestas razonables.<br><br>\r\n\r\nConsultanos para más información o para coordinar una visita.<br><br>\r\n\r\nMatías Settecerze Col. 1219"
+    },
+    {
+        "id": "casa_peronyescalada",
+        "detailsPage": "/casa_peronyescalada.html",
+        "folder": "/assets/images/properties/berazategui/el_pato/casa_peronyescalada/",
+        "nombre_base_images": "casa_locales_fciovarela",
+        "cantidad_imagenes": 7,
+        "alt": "Casa + local + taller en Fcio. Varela",
+        "operation": "venta",
+        "type": "vivienda",
+        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10267.186412978142!2d-58.24772190377577!3d-34.803450212557934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3291086873ded%3A0x97964de5db60d798!2sAv.%20Tte.%20Gral.%20Juan%20Domingo%20Per%C3%B3n%202778%2C%20B1888IUX%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1747937349270!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "currency": "USD",
+        "address": "Av. Pte Peron y Rd. De Escalada",
+        "price": "100.000 y cuotas",
+        "rooms": 6,
+        "bathrooms": 3,
+        "features": [
+            {
+                "key": "feature1",
+                "value": "🏢 Tres pisos"
+            },
+            {
+                "key": "feature2",
+                "value": "📐 300 m² cubiertos"
+            },
+            {
+                "key": "feature3",
+                "value": "🛣️ Sobre Av. Presidente Perón"
+            },
+            {
+                "key": "feature4",
+                "value": "🚗 Ingreso vehicular con playa de maniobras"
+            }
+        ],
+        "title": "Casa + local + taller en Fcio. Varela",
+        "description": "<br>Venta Taller con Local a la Calle y Vivienda – 300 m² Cubiertos – Florencio Varela – Avenida Presidente Perón al 2700<br><br>\r\n\r\nPropiedad con múltiples usos: taller, comercio y vivienda – Excelente ubicación sobre avenida principal<br><br>\r\n\r\nInmueble de 10 x 30 metros (300 m²), con construcción 100% sobre lote propio. Ideal para emprendimientos productivos, comerciales o mixtos (trabajo y vivienda).<br><br>\r\n\r\n-Taller amplio con acceso vehicular directo: Techo de tinglado de 10 metros de altura. Piso de cemento alisado. Ideal para carpintería, herrería, mecánica o depósito logístico.<br><br>\r\n\r\n-Local a la calle: Frente vidriado sobre Avenida Presidente Perón, con entrada independiente. Gran visibilidad y circulación vehicular.<br><br>\r\n\r\n-Departamento con entrepiso: Espacio habitable dentro del mismo inmueble, ideal para uso propio o alquiler adicional.<br><br>\r\n\r\n-Ingreso vehicular con playa de maniobras<br><br>\r\n\r\nAcceso totalmente de cemento, pensado para vehículos pesados o múltiples utilitarios.<br><br>\r\n\r\nUbicación estratégica<br>\r\nA solo 7 cuadras de Ruta 36. Rápido acceso a Autovía 2, Av. Calchaquí y principales arterias del sur del conurbano.<br><br>\r\n\r\nOportunidad para quienes buscan integrar trabajo, vivienda y visibilidad comercial en una misma propiedad.<br><br>\r\n\r\nMatías Settecerze Col. 1219"
+    },
+    {
+        "id": "lote_avnaval",
+        "detailsPage": "/lote_avnaval.html",
+        "folder": "/assets/images/properties/sanclemente/lote_avnaval",
+        "nombre_base_images": "san_clemente",
+        "cantidad_imagenes": 7,
+        "alt": "Lote en San Clemente",
+        "operation": "venta",
+        "type": "lote",
+        "mapcode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d559.806638786037!2d-56.72661575032685!3d-36.372152286304164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c1b46ef20eeeb%3A0x9324655715dfa994!2sAv.%20Naval%203185%2C%20B7105%20San%20Clemente%20del%20Tuyu%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1747937524424!5m2!1ses-419!2sar\" width=\"100%\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "currency": "USD",
+        "address": "Av Naval y c. 71",
+        "price": "14.000",
+        "rooms": 0,
+        "bathrooms": 0,
+        "features": [
+            {
+                "key": "feature1",
+                "value": "🏞️ Lote en San Clemente"
+            },
+            {
+                "key": "feature2",
+                "value": "📍 Av. Naval y Calle 71"
+            },
+            {
+                "key": "feature3",
+                "value": "💡 Pilar de luz instalado y escritura"
+            },
+            {
+                "key": "feature4",
+                "value": "🔄 Acepta permuta por vehículo o terreno"
+            }
+        ],
+        "title": "Lote en San Clemente",
+        "description": "<br>Lote en Venta en San Clemente - Ubicación Ideal<br><br>\r\n\r\nUbicado en Av. Naval y Calle 71, en una zona con vecinos y frente a un parque con un arroyo natural. Cuenta con pilar de luz instalado y escritura. Se acepta permuta por vehiculo o terreno en zona Berazategui, La Plata, Cruce Varela.<br><br>\r\n\r\nA solo 3 minutos de la terminal de ómnibus y a 1500 metros de la costa.<br><br>\r\n\r\nUna oportunidad única para construir tu hogar o invertir en una zona con gran potencial. Contactanos para más información.<br><br> Matías Settecerze Col.1219"
     }
 ]
