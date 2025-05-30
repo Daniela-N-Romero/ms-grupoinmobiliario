@@ -92,7 +92,7 @@ fetch("../js/properties.json")
         const commonSwiperOptions = {
             slidesPerView: 1,
             spaceBetween: 20,
-			loop: true,
+            loop:true,
             breakpoints: {
                 768: {
                     slidesPerView: 3,
