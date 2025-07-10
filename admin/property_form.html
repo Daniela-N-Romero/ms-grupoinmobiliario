@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Propiedad - Panel de Administración</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; min-height: 100vh; background-color: #f4f4f4; }
+        .header { background-color: #333; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { margin: 0; font-size: 24px; }
+        .header .back-btn { background-color: #6c757d; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; }
+        .header .back-btn:hover { background-color: #5a6268; }
+        .container { flex-grow: 1; padding: 20px; display: flex; justify-content: center; align-items: flex-start; }
+        .property-form { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 100%; max-width: 800px; }
+        .property-form h2 { text-align: center; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group textarea,
+        .form-group select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .form-group textarea { resize: vertical; min-height: 80px; }
+        .checkbox-group label { display: inline-block; margin-right: 15px; }
+        .image-upload-preview { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .image-upload-preview .image-item { position: relative; width: 100px; height: 100px; border: 1px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+        .image-upload-preview .image-item img { max-width: 100%; max-height: 100%; object-fit: cover; }
+        .image-upload-preview .image-item .delete-img-btn { position: absolute; top: 5px; right: 5px; background-color: rgba(220, 53, 69, 0.8); color: white; border: none; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; display: flex; justify-content: center; align-items: center; cursor: pointer; }
+        .form-actions { text-align: right; margin-top: 20px; }
+        .form-actions button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .form-actions button:hover { background-color: #0056b3; }
+        h3 { margin-top: 25px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Gestión de Propiedad</h1>
+        <a href="/admin/dashboard.html" class="back-btn">Volver al Dashboard</a>
+    </div>
+
+    <div class="container">
+        <div class="property-form">
+            <h2>Crear/Editar Propiedad</h2>
+            <form id="propertyForm"> <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="locality">Localidad:</label> <input type="text" id="locality" name="locality">
+                </div>
+
+                <div class="form-group">
+                    <label for="neighbourhood">Barrio / Zona:</label> <input type="text" id="neighbourhood" name="neighbourhood">
+                </div>
+
+                <div class="form-group">
+                    <label for="totalSurface">Superficie Total (m²):</label>
+                    <input
+                      type="number"
+                      id="totalSurface"
+                      name="totalSurface"
+                      min="0"
+                      step="0.01" />
+                </div>
+
+                <div class="form-group">
+                    <label for="coveredSurface">Superficie Cubierta (m²):</label>
+                    <input
+                      type="number"
+                      id="coveredSurface"
+                      name="coveredSurface"
+                      min="0"
+                      step="0.01" />
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Tipo de Propiedad:</label>
+                    <select id="type" name="type">
+                        <option value="">Seleccione</option>
+                        <option value="vivienda">Vivienda</option>
+                        <option value="lote">Lote</option>
+                        <option value="industrial">Industrial</option>
+                        <option value="comercial">Comercial</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subtype">Subtipo de Propiedad:</label> <select id="subtype" name="subtype">
+                        <option value="">Seleccione primero un Tipo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Categoría:</label>
+                    <select id="category" name="category">
+                        <option value="">Seleccione</option>
+                        <option value="venta">Venta</option>
+                        <option value="alquiler">Alquiler</option>
+                    </select>
+                </div>
+
+                <div id="viviendaFields" style="display: none;"> <h3>Características de Vivienda</h3>
+                    <div class="form-group">
+                        <label for="v_ambientes">Cantidad de Ambientes:</label>
+                        <input type="number" id="v_ambientes" name="v_ambientes" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="v_dormitorios">Dormitorios:</label>
+                        <input type="number" id="v_dormitorios" name="v_dormitorios" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="v_banos">Baños:</label>
+                        <input type="number" id="v_banos" name="v_banos" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="v_cocheras">Cocheras:</label>
+                        <input type="number" id="v_cocheras" name="v_cocheras" min="0">
+                    </div>
+                </div>
+
+                <div id="loteFields" style="display: none;"> <h3>Características de Lote</h3>
+                    <div class="form-group">
+                        <label for="l_topografia">Topografía:</label>
+                        <input type="text" id="l_topografia" name="l_topografia">
+                    </div>
+                    <div class="form-group">
+                        <label for="l_metrosFrente">Metros de Frente:</label>
+                        <input type="number" id="l_metrosFrente" name="l_metrosFrente" min="0" step="0.01">
+                    </div>
+                    </div>
+
+                <div id="industrialFields" style="display: none;"> <h3>Características Industriales</h3>
+                    <div class="form-group">
+                        <label for="i_potenciaKw">Potencia Eléctrica (kW):</label>
+                        <input type="number" id="i_potenciaKw" name="i_potenciaKw" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="i_redHidrante">Red Hidrante:</label>
+                        <select id="i_redHidrante" name="i_redHidrante">
+                            <option value="false">No</option>
+                            <option value="true">Sí</option>
+                        </select>
+                    </div>
+                    </div>
+
+                <div id="comercialFields" style="display: none;"> <h3>Características Comerciales</h3>
+                    <div class="form-group">
+                        <label for="c_tieneCocina">Tiene Cocina:</label>
+                        <input type="checkbox" id="c_tieneCocina" name="c_tieneCocina">
+                    </div>
+                    <div class="form-group">
+                        <label for="c_cortinaElectrica">Cortina Eléctrica:</label>
+                        <input type="checkbox" id="c_cortinaElectrica" name="c_cortinaElectrica">
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <label>Comodidades:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="amenities" value="pileta"> Pileta</label>
+                        <label><input type="checkbox" name="amenities" value="parrilla"> Parrilla</label>
+                        <label><input type="checkbox" name="amenities" value="garage"> Garage</label>
+                        <label><input type="checkbox" name="amenities" value="lavadero"> Lavadero</label>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" name="price" min="0" step="0.01">
+                </div>
+
+                <div class="form-group">
+                    <label for="currency">Moneda:</label>
+                    <select id="currency" name="currency">
+                        <option value="USD">USD</option>
+                        <option value="ARS">ARS</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="images">Imágenes:</label>
+                    <input
+                      type="file"
+                      id="images"
+                      name="images[]"
+                      multiple
+                      accept="image/*"
+                      onchange="previewImages(event)" />
+                    <div class="image-upload-preview" id="image-preview"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="video">Video (URL o archivo):</label>
+                    <input type="file" id="video" name="video" accept="video/*" />
+                    <div id="video-preview"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pdf">PDF Informativo:</label>
+                    <input type="file" id="pdf" name="pdf" accept="application/pdf" />
+                    <div id="pdf-preview"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Guardar Propiedad</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/property_form.js"></script> </body>
+</html>

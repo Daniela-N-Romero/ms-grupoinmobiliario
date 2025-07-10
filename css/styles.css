@@ -254,6 +254,17 @@ body.light-bg {
   background-color: #fff;
   margin-right: 1rem;
 }
+.navbar .nav-btn {
+  background-color: #2F69B1;
+  color: #fff !important;
+  border: 1px solid rgb(112, 137, 163);
+  border-radius: 20px;
+  padding: 8px 15px;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+.navbar .nav-btn:hover, .navbar .nav-btn:focus {
+  background-color: #4a80f5;
+}
 
 .navbar-collapse.show {
   flex-grow: 0;
@@ -272,6 +283,22 @@ body.light-bg {
 .nav-link.nav-link-block.show {
   color: rgb(182, 187, 196);
 }
+.nav-link.nav-link-block.hover-underline {
+  transition: 0.3s;
+}
+.nav-link.nav-link-block.hover-underline::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #2F69B1;
+  opacity: 70%;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link.nav-link-block.hover-underline:hover::after {
+  width: 100%;
+}
 
 .nav-link.dropdown-toggle {
   font-size: 0.7rem;
@@ -282,8 +309,10 @@ body.light-bg {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-item.dropdown {
-    margin-right: 0.2rem;
+  .nav-item {
+    margin-inline: 8px;
+  }
+  .nav-btn {
     margin-left: 15px;
   }
 }

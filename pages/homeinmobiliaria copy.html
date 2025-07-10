@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inmobiliaria especializada en tasaciones, venta y alquiler de casas, departamentos y locales situada en Berazategui, GBA Sur."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/lightbox.css" />
+
+    <title>MS Propiedades</title>
+    <!-- averiguar que keywords incluir en el meta description que matcheen en search intent y que sean menos de 120 caracteres -->
+    <meta name="description" content="" />
+    <meta
+      name="title"
+      content="MS Propiedades - Venta y alquiler de casas, terrenos, departamentos y mas en Berazategui, Buenos Aires"
+    />
+  </head>
+
+  <body id="propertieshome">
+    <header class="header header-blue">
+      <nav
+        class="container navbar navbar-expand-md d-md-flex navbar-dark"
+        aria-label="Barra de navegacion"
+      >
+        <a
+          href="../pages/homeinmobiliaria.html"
+          aria-label="Logo a página de inicio"
+          ><img
+            src="../assets/images/logos/logo-ms-propiedades-transparente.png"
+            alt="Logo a página de inicio"
+            class="logo"
+            role="button"
+            tabindex="0"
+        /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Botón de Barra de navegación">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto align-items-center">
+					<li class="nav-item">
+					</li>
+					<li class="nav-item dropdown dropdown-header text-center">
+						<a class="nav-link nav-link-block hover-underline" href="" role="button" tabindex="0"
+							aria-label="Informacion acerca de nosotros">Inicio</a>
+					</li>
+
+					<li class="nav-item dropdown dropdown-header text-center">
+						<a class="nav-link nav-link-block hover-underline" href="" role="button" tabindex="0"
+							aria-label="Ver nuestras obras">Categorias</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link nav-link-block hover-underline" href="" role="button" tabindex="0"
+							aria-label="Contactanos">Propiedades</a>
+					</li>
+          <li class="nav-item">
+						<a class="nav-link nav-link-block nav-btn" href="" role="button" tabindex="0"
+							aria-label="Contactanos">Tasa tu propiedad</a>
+					</li>
+				</ul>
+			</div>
+      </nav>
+    </header>
+
+    <section class="hero hero-inmo container-fluid gx-0">
+      <div class="row hero__content">
+        <div class="hero__content--text">
+          <h1 class="hero__title">La inmobiliaria <br/>que resuelve</h1>
+          <h2 class="hero__subtitle noscroll">
+            Encontra la <span>casa de tus sueños </span> o tu próxima inversión con los mejores profesionales.</h2>
+          <div class="d-flex justify-content-center">
+            <h3 class="btn btn-animated-border-box"><a class="btn btn-animated-border-content" href="">Ver propiedades</a></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main container">
+      <!-- more properties -->
+      <!-- <section class="homegallery-inmo">
+			<h2 class="inmo-title">Propiedades destacadas</h2>
+			<div class="container">
+				<section id="inmogallery" class="gallery">
+					
+				</section>
+			</div>
+		</section> -->
+
+      <!-- Carrusel de propiedades -->
+      <h3 class="inmo-title mt-4">Propiedades disponibles</h3>
+      <p class="text-center">
+        Recorre las propiedades disponibles en venta o alquiler
+      </p>
+      <section class="properties-section">
+        <h4 class="inmo-title mt-4">Viviendas en Venta</h4>
+        <div class="swiper properties-swiper viviendas-swiper">
+          <div class="swiper-wrapper h-100" id="viviendas-gallery"></div>
+          <div class="swiper-button-prev viviendas-prev"></div>
+          <div class="swiper-button-next viviendas-next"></div>
+        </div>
+      </section>
+
+      <section class="properties-section">
+        <h4 class="inmo-title mt-4">Lotes</h4>
+        <div class="swiper properties-swiper lotes-swiper">
+          <div class="swiper-wrapper" id="lotes-gallery"></div>
+          <div class="swiper-button-prev lotes-prev"></div>
+          <div class="swiper-button-next lotes-next"></div>
+        </div>
+      </section>
+
+      <section class="properties-section">
+        <h4 class="inmo-title mt-4">Propiedades Industriales</h4>
+        <div class="swiper properties-swiper industriales-swiper">
+          <div class="swiper-wrapper" id="industriales-gallery"></div>
+          <div class="swiper-button-prev industriales-prev"></div>
+          <div class="swiper-button-next industriales-next"></div>
+        </div>
+      </section>
+
+      <!-- carrusel de "quienes somos" -->
+      <div class="container">
+        <div class="swiper carrousel-inmo mb-5 overflow-hidden">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="carousel-item-content">
+                <h2>¿Quiénes somos?</h2>
+                <p>
+                  Somos una
+                  <strong class="topic">agencia inmobiliaria</strong>
+                  especializada en venta y alquiler de viviendas en la zona de
+                  <strong class="topic">Hudson, Berazategui</strong>.
+                </p>
+                <img src="../assets/images/inmob-home/banner-img5.png" alt="" />
+                <p>
+                  Nos adaptamos y resolvemos tus necesidades con precisión para
+                  encontrar lo que buscás.
+                </p>
+                <p class="topic">
+                  Nuestros clientes nos eligen por nuestras políticas flexibles
+                  y por nuestro alto compromiso.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="carousel-item-content">
+                <div>
+                  <h2>¿Qué servicios ofrecemos?</h2>
+                  <p>
+                    Nuestros servicios están adaptados según tu tipo de
+                    necesidad, tu búsqueda y tu potencial de inversión.
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src="../assets/images/inmob-home/banner-img6.png"
+                    alt=""
+                  />
+                  <p>
+                    Ofrecemos <strong class="topic">tasaciones</strong> precisas
+                    y
+                    <strong class="topic"
+                      >venta/alquiler de viviendas residenciales</strong
+                    >, industriales y lotes. También disponemos de opciones de
+                    financiamiento para venta de viviendas estandarizadas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 - Matías -->
+            <div class="swiper-slide">
+              <div class="carousel-item-content team">
+                <h2>Nuestro equipo</h2>
+
+                <div class="team-member">
+                  <img
+                    class="member-picture"
+                    src="../assets/images/inmob-home/banner-img3.png"
+                    alt=""
+                  />
+                  <div class="member-description">
+                    <h3>Matias Settecerze - Martillero público</h3>
+                    <p>
+                      “Cuento con más de 10 años de trayectoria en el rubro
+                      inmobiliario. Hacer negocios conmigo es saber que contás
+                      con completa disponibilidad y atención para que adquirir
+                      tu próxima propiedad sea la mejor experiencia.”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 (Mariana) -->
+            <div class="swiper-slide">
+              <div class="carousel-item-content team">
+                <h2>Nuestro equipo</h2>
+
+                <div class="team-member">
+                  <img
+                    class="member-picture"
+                    src="../assets/images/inmob-home/banner-img4.png"
+                    alt=""
+                  />
+                  <div class="member-description">
+                    <h3>Mariana Carrizo - Martillera pública</h3>
+                    <p>
+                      “Estudié en la universidad Nacional de Lomas de Zamora. Mi
+                      amplia experiencia en el área de la construcción me llevó
+                      a querer incursionar en el mundo de los bienes raíces. Mi
+                      objetivo es encontrar el negocio más favorable para vos.”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flechas -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Paginación (bolitas) -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- js buttons -->
+      <div id="inmobiliariabtns"></div>
+    </main>
+
+    <footer class="footer footer-dark">
+      <div class="container-fluid container-lg">
+        <div
+          class="row flex-column align-items-center flex-md-row justify-content-around justify-content-lg-between"
+        >
+          <a
+            class="footer__div footer__div__logo footer__div--link"
+            href="../pages/homeinmobiliaria.html"
+            aria-label="Logo a página de inicio"
+            ><img
+              src="../assets/images/logos/logo-ms-propiedades-transparente.png"
+              alt="Logo a página de inicio"
+              class="logo"
+              role="button"
+              tabindex="0"
+          /></a>
+          <div class="footer__div footer__div__datos">
+            <ul class="footer__div--breadcrumbs">
+              <li class="footer__div--li">
+                <a
+                  class="footer__div--link"
+                  href="../pages/homeinmobiliaria.html"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Página actual: Inicio"
+                  aria-current="page"
+                  >> Inicio</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__div--contacto">
+              <li class="footer__div--li">
+                <a
+                  class="footer__div--link"
+                  href="tel:+5491136358302"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Llamar a MS Construcción"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="footer__div--icon bi bi-telephone"></i>
+                  <p class="footer__div--text">+54 9 11-3635-8302</p>
+                </a>
+              </li>
+              <li class="footer__div--li">
+                <a
+                  class="footer__div--link"
+                  href="https://maps.app.goo.gl/ky4WNc6oxsfFvLor9"
+                  target="_blank"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Ver la ubicación de MS Construcción"
+                  rel="noopener"
+                  ><i class="footer__div--icon bi bi-geo-alt"></i>
+                  <p class="footer__div--text">El Pato, Berazategui</p>
+                </a>
+              </li>
+              <li class="footer__div--li">
+                <a
+                  class="footer__div--link"
+                  href="mailto:info@msgrupoinmobiliario.com.ar"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Enviar un correo electronico a MS Construcción"
+                  rel="noopener"
+                  ><i class="footer__div--icon bi bi-envelope"></i>
+                  <p class="footer__div--text">
+                    info@msgrupoinmobiliario.com.ar
+                  </p>
+                </a>
+              </li>
+              <li class="footer__div--li">
+                <a
+                  class="footer__div--link"
+                  href="https://www.instagram.com/grupoms.propiedades/"
+                  target="_blank"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Ir al Instagram de MS Construcción"
+                  rel="noopener"
+                  ><i class="footer__div--icon bi bi-instagram"></i>
+                  <p class="footer__div--text">@grupoms.propiedades</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/variables.js"></script>
+    <script src="../js/templates.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/propertiesgallery.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/lightbox-plus-jquery.js"></script>
+    <script src="../js/fixed-btns.js"></script>
+    <!-- Swiper JS -->
+    <script src="../js/swiper.js"></script>
+  </body>
+</html>
